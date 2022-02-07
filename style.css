@@ -55,7 +55,8 @@ header {
 article {
   padding: 16px;
 }
-article .meta-exposition {
+article .meta-exposition,
+article .meta {
   margin-top: 0;
 }
 article:not(.slider_action):hover {
