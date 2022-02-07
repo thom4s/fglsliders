@@ -42,6 +42,13 @@ section {
   margin-bottom: 200px;
 }
 
+@media screen and (max-width: 700px) {
+  .slide_wrapper {
+    position: relative;
+  }
+}
+
+
 .slide_large {
     position: relative;
 }
@@ -77,6 +84,22 @@ section {
 }
 .tns-controls {
   right: 0;
+}
+.tns-nav {
+  background-color: #F0ECEC;
+  display: flex;
+  justify-content: space-between;
+  min-width: 500px;
+}
+.tns-nav button {
+  width: auto;
+  height: 3px;
+  border: none;
+  background: none;
+  flex: 1;
+}
+button.tns-nav-active {
+  background-color: black;
 }
 
 .tns-ovh {
