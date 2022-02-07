@@ -35,7 +35,9 @@ body {
   margin: 0;
   font-family: 'Apercu', Arial, Helvetica, sans-serif;
 }
-
+.hidden {
+  opacity: 0;
+}
 .flex {
   display: flex;
 }
@@ -54,7 +56,7 @@ header {
 article {
   padding: 16px;
 }
-article:hover {
+article:not(.slider_action):hover {
   background-color: #83F8DD;
 }
 .cover {
