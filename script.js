@@ -41,6 +41,13 @@ document.addEventListener('DOMContentLoaded', () => {
       }
   });
 
+  const openContent = document.querySelector('#js-openContent')
+
+  openContent.addEventListener('click', (e) => {
+    e.preventDefault();
+    document.querySelector('.page_copy').classList.toggle('open')
+  })
+
 })
 
 

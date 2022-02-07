@@ -35,6 +35,7 @@ body {
 }
 .hidden {
   opacity: 0;
+  display: block;
 }
 .flex {
   display: flex;
@@ -78,9 +79,14 @@ article:not(.slider_action):hover {
 }
 
 .page_copy {
-  max-height: 200px;
+  max-height: 260px;
   overflow: hidden;
   margin-bottom: 0;
+  transition: all .3s;
+  padding-bottom: 32px;
+}
+.page_copy.open {
+  max-height: 3000px;
 }
 .page_copy + section {
   box-shadow: 0 -10px 10px gainsboro;
