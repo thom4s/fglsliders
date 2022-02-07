@@ -4,6 +4,32 @@
 
 body {
   overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+}
+.flex-justify {
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  margin-bottom: 100px;
+}
+article {
+  padding: 16px;
+}
+article:hover {
+  background-color: #83F8DD;
+}
+.cover {
+  width: 100%;
+}
+.player {
+  margin: auto;
 }
 
 .ratio {
@@ -30,7 +56,8 @@ body {
 .wrap {
     width: 95%;
     max-width: 1400px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 img {
@@ -97,6 +124,7 @@ section {
   border: none;
   background: none;
   flex: 1;
+  transition: all 1s;
 }
 button.tns-nav-active {
   background-color: black;

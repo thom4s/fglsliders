@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
     var slider_large = tns({
         container: '.slide_large',
         items: 1.4,
-        gutter: 32,
         autoplay: false,
         loop: false,
         responsive: {
@@ -21,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
     var slider_medium = tns({
         container: '.slide_medium',
         items: 1.4,
-        gutter: 32,
         autoplay: false,
         loop: false,
         responsive: {
@@ -34,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
     var slider_small = tns({
       container: '.slide_small',
       items: 1.4,
-      gutter: 32,
       autoplay: false,
       loop: false,
       responsive: {
