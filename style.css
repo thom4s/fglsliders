@@ -63,6 +63,10 @@ article:hover {
 .player {
   margin: auto;
 }
+.copy {
+  color: #777777;
+  font-weight: 100;
+}
 
 .ratio {
   position: relative;

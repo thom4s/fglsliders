@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         loop: false,
         responsive: {
           700: {
-            items: 2.2
+            items: 1.8
           }
         }
     });
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         loop: false,
         responsive: {
           700: {
-            items: 3.2
+            items: 2.2
           }
         }
     });
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
       loop: false,
       responsive: {
         700: {
-           items: 4
+           items: 3
         }
       }
   });
