@@ -62,6 +62,9 @@ article .meta {
 article:not(.slider_action):hover {
   background-color: #83F8DD;
 }
+.card_title {
+  min-height: 2.4em;
+}
 .card_footer {
   border-top: 1px solid #F0ECEC;
   padding-top: 14px;

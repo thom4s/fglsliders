@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         controlsText: ['', ''],
         responsive: {
           700: {
-            items: 1.8
+            items: 1.73
           }
         }
     });
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         controlsText: ['', ''],
         responsive: {
           700: {
-            items: 2.19
+            items: 2.2
           }
         }
     });
