@@ -47,12 +47,15 @@ document.addEventListener('DOMContentLoaded', () => {
       }
   });
 
-  const openContent = document.querySelector('#js-openContent')
+  // const openContent = document.querySelector('#js-openContent')
 
-  openContent.addEventListener('click', (e) => {
-    e.preventDefault();
-    document.querySelector('.page_copy').classList.toggle('open')
-  })
+  // if() {
+
+  //   openContent.addEventListener('click', (e) => {
+  //     e.preventDefault();
+  //     document.querySelector('.page_copy').classList.toggle('open')
+  //   })
+  // }
 
 })
 
