@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         autoplay: false,
         loop: false,
         mouseDrag: true,
+        controlsText: ['', ''],
         responsive: {
           700: {
             items: 1.8
@@ -24,9 +25,10 @@ document.addEventListener('DOMContentLoaded', () => {
         autoplay: false,
         loop: false,
         mouseDrag: true,
+        controlsText: ['', ''],
         responsive: {
           700: {
-            items: 2.2
+            items: 2.19
           }
         }
     });
@@ -37,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
       autoplay: false,
       loop: false,
       mouseDrag: true,
+      controlsText: ['', ''],
       responsive: {
         700: {
            items: 3

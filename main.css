@@ -453,7 +453,7 @@ th {
 .bg--gray {
   background-color: #f0ecec; }
   .bg--gray [class^="bordered-"], .bg--gray [class*=" bordered-"] {
-    border-color: #ccc; }
+    border-color: #ddd; }
 
 .bg--green {
   background-color: #83f8dd; }

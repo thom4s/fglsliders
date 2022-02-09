@@ -167,15 +167,25 @@ img {
 .tns-controls {
   right: 0;
 }
-[data-controls="prev"] {
+.tns-controls button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+button[data-controls="prev"] {
   bottom: -40px;
   left: 16px;
   position: absolute;
+  background-image: url("/icons/arrow-left.png");
 }
-[data-controls="next"] {
+button[data-controls="next"] {
   bottom: -40px;
   right: 16px;
   position: absolute;
+  background-image: url("/icons/arrow-right.png");
 }
 .tns-nav {
   background-color: #F0ECEC;
@@ -206,7 +216,7 @@ button.tns-nav-active {
 
 .separator {
   position: relative;
-  z-index: -1;
+  z-index: 0;
 }
 
 
