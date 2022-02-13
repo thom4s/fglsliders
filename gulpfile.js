@@ -18,9 +18,9 @@ var theme_folder = './';
 var assets_folder = theme_folder + 'assets/';
 
 var jsfolder = assets_folder + 'js/';
-var mainjs = jsfolder + 'scripts.js';
-var libjs = jsfolder + 'libs/*.js';
-var alljs = [mainjs];
+var mainjs = jsfolder + 'script.js';
+var vendorsjs = jsfolder + 'lib/*.js';
+var alljs = [vendorsjs, mainjs];
 
 var sassfolder = assets_folder + 'stylesheets/';
 var sassfiles = sassfolder + '**/*.scss';
@@ -43,7 +43,7 @@ function sassMainTask(){
 // task3.1
 const jsBundle = () =>
   src(alljs)
-    .pipe(concat('main.min.js'))
+    .pipe(concat('all.js'))
     .pipe(dest(assets_folder));
 
 
