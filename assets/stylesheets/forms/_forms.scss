@@ -1,0 +1,198 @@
+/* 
+ * Forms
+ * 
+ * @package lavantseine-v2
+ */
+
+
+$input_border:                      1px solid $black !default;
+$input_background:                  $white !default;
+$input_height:                      $base_line_height ;
+$input_width:                      	$base_line_height ;
+
+$placeholder_text:                  $gray_lighter !default;
+
+
+button,
+input,
+select,
+textarea {
+	font-size: 100%; /* Corrects font size not being inherited in all browsers */
+	margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+	vertical-align: baseline; /* Improves appearance and consistency in all browsers */
+	*vertical-align: middle; /* Improves appearance and consistency in all browsers */ }
+
+button::-moz-focus-inner,
+input::-moz-focus-inner { /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+	border: 0;
+	padding: 0; }
+
+
+
+@import "buttons";
+@import "fields";
+
+
+
+.newsletter_form {
+
+
+	input[type="text"] {
+		padding: 0 1em;
+		background-color: $white;
+		padding: 15px 23px;
+		border: 3px solid $black;
+
+		&:nth-child(2) {
+			border-left: none
+		}
+	}
+
+
+	.inputs_bloc {
+		display: inline-flex;
+		width: 100%;
+		// border: 3px solid $black;
+
+		&.inputs-names {
+			border-bottom: none;
+
+			input {
+				width: 50%;
+
+				@include at-least(medium) {
+					&:first-child {
+						border-right: 3px solid;
+					}
+				}
+			}
+		}
+
+		&.inputs-submit {
+
+			input[type="text"] {
+				width: 70%;
+				border-top: none;
+			}
+			input[type="button"] {
+				width: 30%;
+				float: right;
+				border-top: none;
+			}
+		}
+
+
+		@include up-to(medium) {
+			flex-direction: column;
+
+			input[type="text"],
+			input[type="button"]  {
+				width: 100%;
+				border: 3px solid;
+			}
+			&.inputs-names {
+
+				input:first-child {
+					border-bottom: 0;
+				}
+
+				input[type="text"] {
+
+				}
+			}
+			&.inputs-submit {
+
+				input[type="text"],
+				input[type="button"] {
+					width: 100%;
+				}
+				input[type="button"] {
+					border: 3px solid #a5a5a5;
+				}
+			}
+		}
+
+	}
+
+
+	.msg_error {
+		color: $red;
+	}
+	.msg_valid {
+		color: #6eaa64;
+	}
+
+}
+
+
+// COLLECTION SEARCH FORM
+
+.inputs_outer {
+	width: 100%;
+	border: 2px solid $black;
+	display: flex;
+	justify-content: space-between;
+
+	@include up-to(medium) {
+		flex-direction: column;
+		border: none;
+	}
+
+	.form-item {
+		flex: 1;
+		width: 100%;
+	}
+
+	input[type="text"] {
+		padding: 10px 20px;
+		width: 100%;
+		@include up-to(medium) {
+			margin-bottom: 10px;
+			border: 2px solid $black;
+			padding-right: 55px;
+		}
+	}
+
+	input[type="submit"] {
+		min-width: 165px;
+	}
+
+}
+
+#btn_acquisition.active {
+	background-color: #83f8dd;
+}
+
+#btn_clear {
+	background: none;
+	opacity: 0;
+	color: $black;
+	font-size: 2.2rem;
+	padding: 0 10px;
+	width: 45px;
+
+	&.active {
+		opacity: 1;
+	}
+
+	@include up-to(medium) {
+		position: absolute;
+		right: 10px;
+		top: 13px;
+	}
+}
+
+#edit-term:focus {
+	outline: 0;
+}
+
+.btn.disabled {
+	background-color: #a5a5a5;
+
+	&:hover {
+		background-color: #a5a5a5 !important;
+		cursor: default;
+		color: #fff !important;
+	}
+}
+

@@ -1,0 +1,784 @@
+/* 
+ * event template
+ * 
+ * @package fegl
+ *
+ */
+
+
+.event_title {
+	line-height: 0.9;
+	margin-bottom: 0;
+
+	h1 {
+		margin-bottom: 0;
+	}
+	span {
+		display: block;
+	}
+
+
+	@include up-to(medium) {
+		font-size: 7.4rem !important;
+		
+		.line_1,
+		.line_2,
+		.line_3,
+		.line_3_g,
+		.line_3_d {
+			text-align: left !important;
+			padding: 0 !important;
+			float: none !important;
+		}
+		span {
+			margin-top: 0px;
+		}
+
+		&.wrap {
+			width: 100%;
+		}
+	}
+
+	@include at-least(medium) {
+		font-size: 20rem;
+
+		span {
+			margin-top: -20px;
+		}
+	}
+
+	@include at-least(large) {
+		font-size: 26rem;
+
+		span {
+			margin-top: -30px;
+		}
+
+	}
+
+}
+
+	.page_header_caption {
+		z-index: 99;
+		position: relative;
+	}
+
+	.expo_practical {
+		@include transition(opacity .2s);
+
+		& .pinned > div {
+			position: relative;
+			top: 0;
+		}
+		&.fixed .pinned > div {
+			@include transition(top .1s);
+			top: -220px;
+		}
+	}
+	.event_dates--test {
+    position: absolute;
+    background: white;
+    width: 16%;
+    bottom: 0;
+    left: 34%;
+	}
+
+	.expo_dates_inner {
+		@include up-to(medium) {
+			padding-bottom: $base_line_height;
+		}
+	}
+
+	.event_dates {
+		margin-top: -25px;
+		
+		@include up-to(medium) {
+			margin-top: 0;
+			margin-bottom: $base_line_height;
+
+			br {
+				display: none;
+			}
+		}
+	}
+	.event_date_start {
+		display: flex !important;
+		align-items: flex-end;
+
+	}
+	.event_date_end {
+		display: flex;
+		align-items: flex-end;
+	}
+		.event_date_word {
+			flex: 0 0 15%;
+			font-weight: $regular;
+			line-height: 0.4;
+		}
+		.event_date_item {
+			flex: 0 0 85%;
+		}
+		.manif_date_item {
+			@include up-to(medium) {
+				margin-top: $base_line_height * 1.25;
+			}
+		}
+
+	.horaires_list {
+		border-bottom: 1px solid $gray_light;
+		padding-bottom: $base_line_height;
+
+		* {
+			line-height: 25px;
+			letter-spacing: 0;
+		}
+	}
+	.event_social_links {
+
+		@include up-to(medium) {
+			text-align: center !important;
+			border-top: 1px solid $gray_light;
+			padding-top: $base_line_height / 2;
+
+			a {
+				display: block;
+			}
+			a:first-child {
+				border-bottom: 1px solid $gray_light;
+				padding-bottom: $base_line_height / 2;
+			}
+		}
+	}
+	.event_social_share {
+
+		.item:not(:last-child) {
+			margin-right: 10px;
+		}
+
+		@include up-to(medium) {
+			padding: 1em 0;
+			border-top: 1px solid $gray_light;
+		}
+	}
+
+	.artist_artwork {
+		display: block;
+
+		&:last-child {
+			margin-bottom: $base_line_height * 4;
+		}
+	}
+	.event_artists {
+		.mb-3 {
+			margin-bottom: 0;
+		}
+	}
+	.event_artists_inner {
+
+		@include up-to(medium) {
+			padding-bottom: 0;
+			
+
+			.pinned {
+				padding-bottom: 0;
+			}
+			.artist_artworks {
+				display: none;
+			}
+
+			& > div {
+				margin-left: 0;
+				margin-right: 0;
+				float: right;
+				width: 100%;
+
+				&:nth-child(even) {
+					clear: none;
+					float: left;
+
+				}
+			}
+
+			@include up-to(medium) {
+				.row {
+					clear: none;
+					width: 47%;
+					border-bottom: none !important;
+					margin-bottom: $base_line_height !important;
+
+					&:nth-child(odd) {
+						float: left;
+						clear: both;
+					}
+					&:nth-child(even) {
+						float: right;
+					}
+				}
+			}
+
+			@include at-least(medium) {
+
+				& > div {
+					width: 48%;
+				}
+			}
+		}
+	}
+
+	.exposition_relatedEvents {
+
+		.actions {
+			margin-top: $base_line_height * 1.5;
+			margin-bottom: $base_line_height * 2.5;
+		}
+
+		@include up-to(medium) {
+			.actions {
+				margin-top: $base_line_height * 2;
+				margin-bottom: $base_line_height * 2.8;
+			}
+		}
+	}
+
+
+	.page_aside_more {
+		margin-top: $base_line_height * 2;
+	}
+
+		.wrapper_articles {
+			padding-top: 3em;
+			padding-bottom: 3em;
+
+			.inner {
+				border-bottom: 1px solid $gray_light;
+			}
+
+			@include up-to(medium) {
+
+				.m-2col:not(:last-child) .teaser_article{
+					border-bottom: 1px solid $gray_ccc;
+					padding-bottom: $base_line_height;
+					margin-bottom: $base_line_height;
+				}
+			}
+		}
+
+		.wrapper_nextExpo {
+			padding: 3em 0;
+			background-color: $color_tertiary;
+
+			.inner {
+				//border-bottom: 1px solid $gray_light;
+				//padding-bottom: $base_line_height;
+			}
+
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: -20px;
+				left: -20px;
+				right: 20px;
+				height: 20px;
+				background-color: $color_tertiary;
+			}
+			&:after {
+				content: '';
+				display: block;
+				position: absolute;
+				bottom: -20px;
+				left: -20px;
+				right: 20px;
+				height: 20px;
+				background-color: $color_tertiary;
+			}
+
+			[class^="bordered-"], [class*=" bordered-"] {
+				border-color: rgb(50, 50, 50);
+				border-color: rgba(50, 50, 50, 0.2);
+			}	
+			
+			& + & {
+				margin-left: 40px;
+			}
+
+			@include up-to(medium) {
+				padding: 2em;
+
+				.date_expo {
+					display: flex;
+					justify-content: space-between;
+					align-items: baseline;
+
+					span {
+						float: left;
+						color: white;
+					}
+				}
+
+				.nextExpo_title {
+					margin-bottom: 1em;
+				}
+				.nextExpo_title h3 {
+					margin-bottom: $base_line_height;
+				}
+			}
+		}
+		.wrapper_nextExpo_action {
+			a {
+				display: block;
+				padding-top: $base_line_height;
+				border-top: 1px solid rgb(50, 50, 50);
+    		border-top: 1px solid rgba(50, 50, 50, 0.2);
+			}
+		}
+
+		.pastExhibition {
+			
+			.event_dates,
+			.event_daysleft * {
+				color: $gray_999;
+			}
+
+			.event_daysleft span {
+				background-color: $gray_999;
+			}
+
+			.billetterie_action .btn,
+			.horaires_list {
+				display: none;
+			}
+			.event_social_links {
+				padding-top: 1em;
+				margin-top: 2em;
+				border-top: 1px solid $gray_light;
+			}
+		}
+
+
+		
+.clock {
+	display: inline-block;
+  position: relative;
+  width: 25px;
+  height: 25px;
+  background: $gray_lighter;
+  list-style: none;
+  margin: 0 7px 0 0 ;
+  padding: 0;
+
+  & + span {
+  	flex: 1;
+  }
+}
+
+.clock--white,
+.bg--gray .clock {
+	background-color: $white;
+}
+
+.min, .hour {
+  position: absolute;
+  transform-origin: bottom;
+  background: $black;
+  width: 2px;
+}
+   
+.min {
+  z-index: 2;
+  height: 9px;
+  top: 3px;
+  left: 12px;
+}
+   
+.hour {
+  height: 5px;
+  z-index: 1;
+	top: 7px;
+  left: 12px;
+}
+
+
+.card.pastDate {
+
+	.teaser_img {
+		position: relative;
+	}
+	.teaser_img:after {
+    content: '\A';
+    position: absolute;
+    width: 100%; height:100%;
+    top:0; left:0;
+    background:rgba(255,255,255,0.65);
+	}
+
+	h5 {
+		color: #999;
+	}
+	.fc_12, 
+	.fc_9 {
+		font-weight: normal;
+		color: #999;
+		
+		* {
+			font-weight: inherit;
+			color: inherit;
+		}
+	}
+	
+	&:hover {
+		h5 {
+			color: $white;
+		}
+	}
+}
+	.pastDateEvent {
+		.teaser_details,
+		.manif_date_item *, {
+			color: #999;
+		}
+		.on_air {
+			display: none;
+		}
+	}
+
+	.fc_12.pastDate, 
+	.fc_9.pastDate {
+		font-weight: normal;
+		color: #999;
+		
+		* {
+			font-weight: inherit;
+			color: inherit;
+		}
+	}
+
+
+
+	.visites_title {
+		
+		a {
+			line-height: 25px;
+			padding-left: 7px;
+		}
+		
+		a:before {
+			content: '';
+			position: absolute;
+			width: 25px;
+			height: 25px;
+			background-color: #ffc2e4;
+			z-index: -1;
+			left: 0;
+		}
+	}
+
+
+
+
+
+// SPECIFIC TITLES OF EXHIBITIONS
+
+[alt="mutant-stage"] {
+
+	h1 {
+
+		span {
+			display: inline-block;
+		}
+
+		@include at-least(medium) {
+
+			.line_1 {
+				float: left;
+			}
+			.line_2 {
+				width: 50%;
+				float: right;
+				text-align: left;
+				clear: both;
+			}
+		}
+
+		@include at-least(large) {
+		}
+
+	}
+}
+
+[alt="faisons-de-linconnu-un-allie"] {
+
+	h1 {
+
+		span {
+			display: inline-block;
+		}
+
+		@include at-least(medium) {
+
+
+			.line_1 {
+				float: left;
+				width: 100%;
+			}
+			.line_2 {
+				float: left;
+			}
+			.line_3 {
+				width: 50%;
+				float: right;
+				text-align: left;
+			}
+		}
+
+		@include at-least(large) {
+
+			span {
+			}
+		}
+	}
+
+}
+
+[alt="silence-sea"],
+[alt="lutz-bacher-silence-sea"] {
+
+	h1 {
+
+		@include up-to(medium) {
+			.line_3,
+			.line_2 {
+				display: inline;
+			}
+			.line_3 {
+				left: 15px;
+				position: relative;
+			}
+		}
+
+		@include at-least(medium) {
+
+			.line_1 {
+			}
+			.line_1, 
+			.line_2 {
+				text-align: left;
+			}
+			.line_2 {
+				width: 33.33333%;
+				text-align: right;
+				padding-right: $base_line_height;
+				float: left;
+			}
+
+			.line_3 {
+				width: 50%;
+				float: right;
+				text-align: left;
+			}
+		}
+
+	}
+
+}
+
+[alt="le-centre-ne-peut-tenir"] {
+	h1 {
+
+		@include at-least(medium) {
+
+			.line_1 {
+			} 
+			.line_2 {
+				text-align: left;
+				padding-left: .5em;
+			}
+			.line_3 {
+				width: 50%;
+				float: right;
+				text-align: left;
+			}
+		}	
+
+	}
+}
+
+[alt="tarik-kiswanson"] {
+
+	@include at-least(medium) {
+		align-items: center !important;
+
+	}
+
+	h1 {
+		span {
+		}
+
+		@include at-least(medium) {
+
+			.line_1 {
+				padding-right: 2.8em;
+			}
+			.line_2 {
+				padding-left: .8em;
+			}
+		}
+
+		@include at-least(large) {
+		}
+	}
+}
+
+
+
+[alt="camille-henrot-au-palais-de-tokyo"] {
+
+	@include at-least(medium) {
+
+	}
+
+	h1 {
+		span {
+			margin-top: -10px;
+		}
+
+		@include at-least(medium) {
+			font-size: 20rem;
+
+			.line_2 {
+				float: left;
+				padding-left: .4em;
+			}
+			.line_3 {
+				width: 33%;
+				float: left;
+				text-align: right;
+				clear: both;
+			}
+			.line_4 {
+				width: 50%;
+				float: right;
+				text-align: left;
+			}
+		}
+
+		@include at-least(large) {
+			font-size: 22rem;
+		}
+	}
+}
+
+
+[alt="baisse-toi-montagne-leve-toi-vallon"] {
+
+	@include at-least(medium) {
+
+	}
+
+	h1 {
+		span {
+			margin-top: -10px;
+		}
+
+		@include at-least(medium) {
+			font-size: 18rem;
+
+			.line_1 {
+				text-align: right;
+			}
+			.line_2 {
+				float: left;
+				padding-left: .4em;
+			}
+			.line_3 {
+				width: 33%;
+				float: left;
+				text-align: right;
+				clear: both;
+			}
+			.line_4 {
+				width: 50%;
+				float: right;
+				text-align: left;
+			}
+		}
+
+		@include at-least(large) {
+			font-size: 20rem;
+		}
+	}
+}
+
+
+[alt="karla-black-au-festival-dautomne"] {
+
+	@include at-least(medium) {
+	}
+
+	h1 {
+		span {
+			margin-top: -10px;
+		}
+
+		@include at-least(medium) {
+			font-size: 19rem;
+
+			.line_2 {
+				float: left;
+				padding-left: .4em;
+			}
+			.line_3 {
+				width: 33%;
+				float: left;
+				text-align: right;
+				clear: both;
+			}
+			.line_4 {
+				width: 50%;
+				float: right;
+				text-align: left;
+			}
+		}
+
+
+		@include at-least(large) {
+			font-size: 22rem;
+
+		}
+	}
+}
+
+
+[alt="14e-biennale-de-lyon"] {
+
+	@include at-least(medium) {
+	}
+
+	h1 {
+		span {
+			margin-top: -10px;
+		}
+
+		@include at-least(medium) {
+
+			.line_1 {
+
+			}
+			.line_2 {
+				width: 33%;
+				float: left;
+				text-align: right;
+				clear: both;
+			}
+			.line_3 {
+				width: 50%;
+				float: right;
+				text-align: left;
+			}
+		}
+
+
+		@include at-least(large) {
+		}
+	}
+}

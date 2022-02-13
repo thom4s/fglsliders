@@ -1,0 +1,350 @@
+/* 
+ * Grid system
+ * 
+ * @package fegl
+ */
+
+
+
+/* 
+ * GRID VARIABLES SETTING
+ */ 
+
+$max_width:                         1200px;
+$max_width_large:                   1500px;
+$cols:                              12 !default; 
+$gutter:                            0 !default; 
+$padding:                           0 !default; 
+
+$mobile_first:                      true !default; 
+$minimal_breakpoint:                320px !default; 
+$medium_breakpoint:                 880px !default; 
+$large_breakpoint:                  1240px !default; 
+$wide_breakpoint:                   1550px !default; 
+
+
+* {
+    @include box-sizing();
+}
+
+.plain {
+    @include box-sizing;
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrap {
+    @include box-sizing;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include up-to(medium) {
+        width: 90%;
+    }
+    @include at-least(medium) {
+        width: 95%;
+    }
+    @include at-least(large) { 
+        //width: 90%;
+    }
+    @include at-least(wide) {
+        width: $max_width_large;
+    }
+}
+
+.square {
+  position: relative;
+  width: 100%;
+}
+
+.square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.square-content,
+.ratio_inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.is-half {
+    @include at-least(medium) {
+      width: 50%;
+      float: left;
+  }
+}
+
+.pt_1 {
+  padding-top: 1em;
+}
+.pb_1 {
+  padding-bottom: 1em;
+}
+.pt_2 {
+  padding-top: 2em;
+}
+.pb_2 {
+  padding-bottom: 2em;
+}
+.pt_3 {
+  padding-top: 3em;
+}
+.pb_3 {
+  padding-bottom: 3em;
+}
+
+.is-flex {
+  display: flex;
+  
+  .flex {
+    flex: 1;
+  }
+
+  @include up-to(medium) {
+
+    &:not(.icon_info) {
+      flex-direction: column;
+    }
+
+
+    .flex-s-1 {
+        order: 1
+    }
+    .flex-s-2 {
+        order: 2
+    }
+    .flex-s-3 {
+        order: 3
+    }
+  }
+  @include at-least(medium) {
+    
+    flex-direction: row;
+    
+    .flex-m-1 {
+        order: 1
+    }
+    .flex-m-2 {
+        order: 2
+    }
+    .flex-m-3 {
+        order: 3
+    }
+  }    
+}
+
+
+@include up-to(large) {
+    .paddinged-left {
+      padding-left: 12px;
+    }
+    .paddinged-right {
+      padding-right: 12px;
+    }
+}
+@include up-to(medium) {
+    .paddinged-left {
+      padding-left: 0;
+    }
+    .paddinged-right {
+      padding-right: 0;
+    }
+}
+@include at-least(large) {
+    .paddinged-left {
+      padding-left: 14px;
+    }
+    .paddinged-right {
+      padding-right: 14px;
+    }
+}
+@include at-least(wide) {
+    .paddinged-left {
+      padding-left: 16px;
+    }
+    .paddinged-right {
+      padding-right: 16px;
+    }
+}
+
+    .paddinged-both {
+      @extend .paddinged-right;
+      @extend .paddinged-left;
+    }
+
+@include at-least(medium) {
+    .bordered-left {
+        border-left: 1px solid $gray_light;
+    }
+    .bordered-right {
+        border-right: 1px solid $gray_light;
+    }
+    .bordered-both {
+        @extend .bordered-right;
+        @extend .bordered-left;
+    }
+}
+
+
+.separator {
+    height: 3em;
+    * {
+        height: inherit;
+    }
+}
+
+%offset {
+
+  @include at-least(medium) {
+    position: absolute;
+    display: block !important;
+    content: '';
+    background-color: inherit;
+    top: 0;
+    bottom: 0;
+    width: 5000px;          
+    height: 100%;
+    z-index: -2;
+  }
+}
+.offset-right {
+  position: relative;
+
+  &:after {
+    @extend %offset;
+
+    @include at-least(medium) {
+      right: -5000px;
+    }
+  }
+}
+.offset-left {
+  position: relative;
+  
+  &:before {
+    @extend %offset;
+
+    @include at-least(medium) {
+      left: -5000px;
+    }
+  }      
+}
+
+.pin {
+  z-index: 99;
+}
+
+.pinned:after {
+  content: "";
+  display: block;
+  @extend .clearfix;
+}
+
+/* 
+ * DON'T TOUCHE THIS !
+ */
+
+$one_col: (100% - ($gutter * ($cols - 1))) / $cols;
+
+@mixin cols($num) {
+    @include box-sizing();
+    width: ($one_col * $num) + ($gutter * ($num - 1));
+    float: left;
+    position: relative;
+}
+
+@mixin sub_cols($num_child, $num_parent) {
+    $parent_size: ($one_col * $num_parent) + ($gutter * ($num_parent - 1));
+    $child_size: ($one_col * $num_child) + ($gutter * ($num_child - 1));
+    width: ($child_size / $parent_size) * 100%;
+
+}
+
+@mixin parse-columns($suffix: ''){
+    .row {
+        @for $i from 1 through $cols {
+            %#{$suffix}-#{$i}col,
+            .#{$suffix}-#{$i}col{
+                @include cols($i);
+
+                .row {
+                    @for $j from 1 through ($i - 1) {
+                        %#{$suffix}-#{$j}col,
+                        .#{$suffix}-#{$j}col {
+                            @include sub_cols($j, $i);
+                        }
+                    }
+                }   
+            }
+            
+
+            %#{$suffix}-#{$i}col-push, .#{$suffix}-#{$i}col-push { left: $i / $cols * 100%; position: relative; right: auto; }
+            %#{$suffix}-#{$i}col-pull, .#{$suffix}-#{$i}col-pull { right: $i / $cols * 100%; position: relative; left: auto; }
+        }
+        .#{$suffix}-clearfix { margin-left: 0 !important; clear: both; }
+        %#{$suffix}-hide, .#{$suffix}-hide { display: none; }
+        %#{$suffix}-show, .#{$suffix}-show { display: block; }
+        %#{$suffix}-first, .#{$suffix}-first { margin-left: 0 !important; }
+        %#{$suffix}-last, .#{$suffix}-last { float: right !important; }
+    }
+}
+
+.row {
+    @include clearfix;
+    //display: flex;
+    //height: 90vh;
+    //overflow: scroll;
+    //margin-bottom: 40px;
+
+    > div:first-child, 
+    .row > div:first-child { 
+        //margin-left: 0 !important;
+    }
+
+    .is-centered {
+      margin-left: auto !important;
+      margin-right: auto !important;
+      float: none !important;
+    }
+
+    &.fixe-it {
+        position: fixed;
+    }
+}
+
+
+/* 
+ * GRID GENERATOR
+ */
+
+@if $mobile_first {
+    @include at-least(minimal) {
+        @include parse-columns('s');
+    }
+    @include at-least(medium) {
+        @include parse-columns('m');
+    }
+    @include at-least(large) {
+        @include parse-columns('l');
+    }
+    @include at-least(wide) {
+        @include parse-columns('w');
+    }
+}
+@else {
+    @include parse-columns('w');
+
+    @include up-to(wide) {
+        @include parse-columns('l');
+    }
+    @include up-to(large) {
+        @include parse-columns('m');
+    }
+    @include up-to(medium) {
+        @include parse-columns('s');
+    }
+}

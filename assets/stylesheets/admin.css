@@ -1,0 +1,608 @@
+
+a {
+  color:#0074BD;
+  text-decoration:none;
+}
+
+#admin-menu .dropdown a[href$="admin/help"]{display:none}
+#admin-menu .dropdown a[href$="admin/index"]{display:none}
+#admin-menu .dropdown a[href$="node/add/acteur"]{display:none}
+#admin-menu .dropdown a[href$="node/add/exposition"]{display:none}
+#admin-menu .dropdown a[href$="node/add/oeuvre"]{display:none}
+#admin-menu .dropdown a[href$="node/add/event"]{display:none}
+
+.admin-rebond .admin-menu-icon{display:none}
+.admin-web .admin-menu-icon {display:none}
+.admin-billetterie .admin-menu-icon {display:none}
+/*
+.admin-admin .admin-menu-icon {display:none}
+*/
+
+
+#admin-menu-menu a[href$="admin/help"]{display:none}
+#media-resource-external #edit-submit{margin-top:25px}
+#media-internet-add-upload .field-name-field-video-qualite-web{display:none}
+#media-internet-add-upload .field-name-field-video-qualite-rebond{display:none}
+.button.browse.element-hidden{display: inline-block}
+.media-list-thumbnails ul.pager{padding-bottom:20px}
+.media-list-thumbnails .media-item .label-wrapper label {
+    color: #058AC5;
+    display: block;
+    width: 150px;
+    text-align: left;
+    min-height: 60px;
+}
+
+.view-display-id-media_browser_1 .media-thumbnail{min-width:200px}
+.fake-submit.media_default--media_browser_1.jquery-once-1-processed{display:none}
+.media-thumbnail .label-wrapper{width: 150px;
+    text-align: left;
+    min-height: 100px;}
+.media-widget.form-media .media-thumbnail .label-wrapper{width:auto;min-height: 0px;}
+.media-item.media-ressource .label-wrapper{display:block;width: 150px;
+    text-align: left;
+    min-height: 100px;}
+#media-browser-library-list .form-checkbox{margin:10px 10px 0 100px}
+
+
+.i18n-fr .field-name-field-legende-en{display:none}
+.i18n-fr .field-name-field-credits-en{display:none}
+.i18n-fr .field-name-field-video-texte-en{display:none}
+.i18n-fr .field-name-field-label-a-propos-en{display:none}
+.i18n-fr .field-name-field-virtual-label-1-en{display:none}
+.i18n-fr .field-name-field-virtual-texte-1-en{display:none}
+.i18n-fr .field-name-field-virtual-label-2-en{display:none}
+.i18n-fr .field-name-field-virtual-texte-2-en{display:none}
+.i18n-fr .field-name-field-virtual-label-3-en{display:none}
+.i18n-fr .field-name-field-virtual-texte-3-en{display:none}
+.i18n-fr .field-name-field-virtual-label-4-en{display:none}
+.i18n-fr .field-name-field-virtual-texte-4-en{display:none}
+.i18n-fr .field-name-field-event-virtual-txt-en{display:none}
+
+
+.i18n-fr .field-name-field-file-image-alt-text-en{display:none}
+.i18n-en-gb .field-name-field-legende{display:none}
+.i18n-en-gb  .node-home-form .field-name-field-legende{display:block}
+.i18n-en-gb .field-name-field-credits{display:none}
+.i18n-en-gb .field-name-field-video-texte{display:none}
+.i18n-en-gb .field-name-field-label-a-propos{display:none}
+.i18n-en-gb .field-name-field-virtual-label-1{display:none}
+.i18n-en-gb .field-name-field-virtual-texte-1{display:none}
+.i18n-en-gb .field-name-field-virtual-label-2{display:none}
+.i18n-en-gb .field-name-field-virtual-texte-2{display:none}
+.i18n-en-gb .field-name-field-virtual-label-3{display:none}
+.i18n-en-gb .field-name-field-virtual-texte-3{display:none}
+.i18n-en-gb .field-name-field-virtual-label-4{display:none}
+.i18n-en-gb .field-name-field-virtual-texte-4{display:none}
+.i18n-en-gb .field-name-field-event-virtual-txt{display:none}
+.i18n-en-gb .field-name-field-video-exposition{display:none}
+.i18n-en-gb .field-name-field-video-artiste{display:none}
+.i18n-en-gb .field-name-field-video-oeuvre{display:none}
+.i18n-en-gb .field-name-field-video-representation{display:none}
+.i18n-en-gb .field-name-field-video-edition{display:none}
+.i18n-en-gb .field-name-field-video-lien-exposition{display:none}
+.i18n-en-gb .field-name-field-video-lien-artiste{display:none}
+.i18n-en-gb .field-name-field-video-lien-oeuvre{display:none}
+.i18n-en-gb .field-name-field-video-lien-representation{display:none}
+.i18n-en-gb .field-name-field-video-lien-edition{display:none}
+
+
+.i18n-en-gb  .field-name-field-file-image-alt-text{display:none}
+
+
+
+.page-admin-content .action-links{display:none}
+.page-admin-content #edit-operation option[value="action::node_make_sticky_action"]{display:none}
+.page-admin-content #edit-operation option[value="action::node_make_unsticky_action"]{display:none}
+.page-admin-content #edit-operation option[value="action::node_promote_action"]{display:none}
+.page-admin-content #edit-operation option[value="action::node_unpromote_action"]{display:none}
+.page-admin-content #edit-type option[value="organization"]{display:none}
+.page-admin-content #edit-type option[value="person"]{display:none}
+.page-admin-content #edit-type option[value="place"]{display:none}
+
+.page-admin-content.admin-web #edit-type option[value="pack"]{display:none}
+.page-admin-content.admin-web #edit-type option[value="poi"]{display:none}
+
+.page-admin-content.admin-billetterie #edit-type option[value="home"]{display:none}
+.page-admin-content.admin-billetterie #edit-type option[value="news"]{display:none}
+.page-admin-content.admin-billetterie #edit-type option[value="page"]{display:none}
+.page-admin-content.admin-billetterie #edit-type option[value="poi"]{display:none}
+.page-admin-content.admin-billetterie #edit-type option[value="pack"]{display:none}
+.page-admin-content.admin-billetterie #edit-type option[value="acteur"]{display:none}
+.page-admin-content.admin-billetterie #edit-type option[value="oeuvre"]{display:none}
+.page-admin-content.admin-billetterie #edit-type option[value="exposition"]{display:none}
+.page-admin-content.admin-billetterie #edit-type option[value="ressource_presse"]{display:none}
+.page-admin-content.admin-billetterie #edit-type option[value="ressource_pedagogique"]{display:none}
+
+.page-admin-content.admin-rebond #edit-type option[value="home"]{display:none}
+.page-admin-content.admin-rebond #edit-type option[value="news"]{display:none}
+.page-admin-content.admin-rebond #edit-type option[value="page"]{display:none}
+.page-admin-content.admin-rebond #edit-type option[value="acteur"]{display:none}
+.page-admin-content.admin-rebond #edit-type option[value="oeuvre"]{display:none}
+.page-admin-content.admin-rebond #edit-type option[value="exposition"]{display:none}
+.page-admin-content.admin-rebond #edit-type option[value="event"]{display:none}
+.page-admin-content.admin-rebond #edit-type option[value="ressource_presse"]{display:none}
+.page-admin-content.admin-rebond #edit-type option[value="ressource_pedagogique"]{display:none}
+
+
+
+.page-admin-content .vbo-table-select-all-markup{display:none}
+
+
+.aside-menu{position:relative}
+.head_languages{float:right;}
+.head_languages li{float:left;list-style: none;margin-top:20px}
+.page-media-browser .head_languages{display:none}
+input.form-autocomplete.localize, 
+input.form-text.localize, 
+input.form-file.localize, 
+textarea.form-textarea.localize, 
+select.form-select.localize{background: #f5f5f5}
+.legende_form span{display:block;background: #f5f5f5;width:50px; height:20px;margin-right:15px;float:left;border:solid 1px #ddd}
+.page-node-edit #edit-delete{display:none}
+#logo{float:right}
+.horaires_admin fieldset .form-type-textfield{margin-bottom:0px}
+.horaires_admin fieldset .form-type-textfield label{float:left;width:60px}
+.horaires_admin fieldset input[type=text]{float:left;width:50px;margin-right:50px}
+
+.horaires_admin .form-type-textfield[class*="form-item-horaire-start"]{clear:both}
+#fgl-sys-settings .vertical-tabs-pane .horaires_admin .fieldset-wrapper > div:first-child{padding-top:0px}
+#fgl-sys-settings .form-item-archives-1-datetime-start-date label{display:none}
+#fgl-sys-settings .form-item-archives-1-datetime-end-date label{display:none}
+#fgl-sys-settings .form-item-archives-2-datetime-start-date label{display:none}
+#fgl-sys-settings .form-item-archives-2-datetime-end-date label{display:none}
+
+#fgl-sys-settings .form-item-collection-acquisition-datetime-start-date label{display:none}
+#fgl-sys-settings .form-item-collection-acquisition-datetime-end-date label{display:none}
+
+#edit-visites .form-type-textfield{margin-bottom:0px}
+#edit-visites .form-type-textfield label{float:left;width:60px}
+#edit-visites input[type=text]{float:left;width:50px;margin-right:50px}
+#edit-visites .form-type-textfield[class*="form-item-visite-start"]{clear:both}
+
+
+#field-place-opening-hours-values tbody label{font-weight: normal;font-size: 13px}
+
+.node-page-form #edit-translation{display:none}
+.node-page-form .field-name-field-bloc-template{display:none}
+.node-page-form .field-name-field-bloc-media{display:none}
+.node-page-form .field-name-field-bloc-description{display:none}
+
+.node-exposition-form #edit-translation{display:none}
+.node-exposition-form #edit-field-archive{display:none}
+.node-exposition-form #edit-field-titre input{width:80%}
+
+.node-exposition-form #edit-field-horaires{display:none}
+.node-exposition-form #edit-field-visites{display:none}
+.node-exposition-form .form-item-field-date-expo-und-0-show-todate{display:none}
+.node-exposition-form .field-name-field-date-expo{margin-bottom:0}
+.node-exposition-form .field-name-field-date-expo .date-no-float{clear:none;width:250px;float:left}
+.node-exposition-form .field-name-field-date-expo .date-no-float.start-date-wrapper{width:200px}
+.node-exposition-form .field-name-field-date-expo fieldset{border: none;box-shadow: none;padding:0;margin:0;margin-left:-10px}
+.node-exposition-form .field-name-field-date-expo input{width:100px}
+.node-exposition-form .field-name-field-date-expo legend{display:none !important;margin-left: 5px; font-size: 1.3em;}
+.node-exposition-form .field-name-field-visites-guidees{display:none}
+
+.node-exposition-form .field-name-field-description .filter-wrapper{display:none}
+.node-exposition-form .form-item.form-item-field-date-expo-und-0-value2 > label{display:inline-block;width:50px;float:left;margin-top:20px}
+.node-exposition-form div.vertical-tabs .field-group-tab .field-name-field-expo-date-publication fieldset{border: none;box-shadow: none;padding:0;margin:0;margin-left:-10px}
+.node-exposition-form div.vertical-tabs .field-group-tab .field-name-field-expo-date-publication legend{font-size: 1.3em;display: block !important;padding-left: 10px;margin: 50px 0 0 0;padding-top: 20px;}
+.node-exposition-form #edit-field-billeterie{display:none}
+
+.node-type-exposition #nodeorder .item-wrapper > div.form-item{display: none}
+
+.node-type-exposition .form-radios .form-item-field-expo-titre-1-align-und:first-child{display:none}
+.node-type-exposition .form-radios .form-item-field-expo-titre-2-align-und:first-child{display:none}
+
+.node-type-exposition #edit-field-expo-titre-1-align{display:none}
+.node-type-exposition #edit-field-expo-titre-2-align{display:none}
+.node-type-exposition #edit-field-expo-titre-1-padding{display:none}
+.node-type-exposition #edit-field-expo-titre-2-padding{display:none}
+.node-type-exposition #edit-field-expo-titre-1-css-und-0-value{width:600px}
+.node-type-exposition #edit-field-expo-titre-2-css-und-0-value{width:600px}
+
+.node-type-acteur #nodeorder .item-wrapper > div.form-item{display: none}
+.node-oeuvre-form #edit-translation{display:none}
+.node-oeuvre-form #edit-field-archive{display:none}
+.node-oeuvre-form .field-name-field-ordre-oeuvre{display:none}
+.node-oeuvre-form .field-name-field-date-oeuvre{margin-bottom:0}
+.node-oeuvre-form .field-name-field-date-oeuvre fieldset.date-combo .container-inline-date .date-padding{padding:0 10px}
+.node-oeuvre-form .field-name-field-date-oeuvre fieldset{border: none;box-shadow: none;padding:0;margin:0;margin-left:-10px}
+.node-oeuvre-form .field-name-field-date-oeuvre legend{display:block !important;margin-left: 5px; font-size: 1.3em;}
+.node-oeuvre-form .field-name-field-description .filter-wrapper{display:none}
+.node-oeuvre-form .field-name-field-exposition .field-add-more-submit{display:none}
+.node-oeuvre-form .field-name-field-auteurs .field-add-more-submit{display:none}
+.node-oeuvre-form .field-name-field-participants .field-add-more-submit{display:none}
+
+
+.node-edition-form .field-name-field-date-parution{margin-bottom:0}
+.node-edition-form div.vertical-tabs .field-group-tab .field-name-field-date-parution fieldset.date-combo .container-inline-date .date-padding{padding:0 10px}
+.node-edition-form div.vertical-tabs .field-group-tab .field-name-field-date-parution fieldset{border: none;box-shadow: none;padding:0;margin:0;margin-left:-10px}
+.node-edition-form div.vertical-tabs .field-group-tab .field-name-field-date-parution legend{display:block !important;margin-left: 5px; font-size: 1.3em;background:none}
+.node-edition-form div.vertical-tabs .field-group-tab .field-name-field-date-parution legend span{background:none;padding-left:0}
+.node-edition-form div.vertical-tabs .field-group-tab .field-name-field-date-parution label{display:none}
+.node-edition-form .field-name-field-description .filter-wrapper{display:none}
+.node-edition-form .field-name-field-format-largeur{float:left}
+.node-edition-form .field-name-field-nombre-page{clear:both}
+
+.node-oeuvre_collection-form #edit-translation{display:none}
+.node-oeuvre_collection-form .field-name-field-description .filter-wrapper{display:none}
+.node-oeuvre_collection-form .field-name-field-expositions-coll .field-add-more-submit{display:none}
+.node-oeuvre_collection-form .field-name-field-artistes-coll .field-add-more-submit{display:none}
+.node-oeuvre_collection-form .field-name-field-visuel-header input.remove{display:none}
+.node-oeuvre_collection-form .field-name-field-visuel-header a.ctools-modal-media-file-edit{display:none}
+
+.node-acteur-form #edit-translation{display:none}
+.node-acteur-form #edit-field-archive{display:none}
+.node-acteur-form .field-name-field-description .filter-wrapper{display:none}
+.node-acteur-form .field-name-field-membres .field-add-more-submit{display:none}
+.node-acteur-form .field-name-field-date-naissance fieldset.date-combo .container-inline-date .date-padding{padding:0 10px}
+.node-acteur-form .field-name-field-date-naissance fieldset{border: none;box-shadow: none;padding:0;margin:0;margin-left:-10px}
+.node-acteur-form .field-name-field-date-naissance fieldset legend{display:block !important;font-size: 1.3em;padding-left:10px;border-left:solid 1px #ddd}
+.node-acteur-form .field-name-field-date-naissance .fieldset-legend{background: none;padding:0}
+.node-acteur-form .field-name-field-date-naissance{margin-bottom:0}
+.node-acteur-form .field-name-field-ordre-acteur{display:none}
+
+.node-acteur_collection-form #edit-translation{display:none}
+.node-acteur_collection-form .field-name-field-visuel-header input.remove{display:none}
+.node-acteur_collection-form .field-name-field-visuel-header a.ctools-modal-media-file-edit{display:none}
+.node-exposition_collection-form #edit-translation{display:none}
+
+.node-event-form .filter-wrapper{display:none}
+.node-event-form .field-name-field-update{display:none}
+.node-event-form #edit-translation{display:none}
+.node-event-form .field-name-field-event-age-range{display:none}
+.node-event-form .field-name-field-event-date-start{display:none}
+.node-event-form .field-name-field-event-date-end{display:none}
+.node-event-form .field-name-field-event-duration{display:none}
+.node-event-form .field-name-field-event-door-time{display:none}
+.node-event-form .field-name-field-event-places{display:none}
+.node-event-form .field-name-field-event-parents{display:none}
+.node-event-form .field-name-field-event-performers{display:none}
+.node-event-form .field-name-field-description .filter-wrapper{display:none}
+.node-event-form .field-name-field-description .description{display:none}
+.node-event-form .field-name-field-event-date .date-no-float{clear:none;width:400px;float:left}
+.node-event-form .field-name-field-event-date .date-no-float.start-date-wrapper{width:300px}
+.node-event-form .end-date-wrapper .form-item.form-type-date-popup > label{display:inline-block;width:50px;float:left;margin-top:40px}
+.node-event-form .field-name-field-event-date .field-multiple-drag{display:none}
+.node-event-form .field-name-field-event-date #field-event-date-values tr{display:none}
+.node-event-form .field-name-field-event-date #field-event-date-values tr:first-child{display:block}
+
+.node-event-form .field-name-field-event-datetime{}
+.node-event-form .date-form-element-content-multiline{padding:0; border:none}
+.node-event-form .field-name-field-event-datetime .date-no-float{width: auto;float: left;clear:none;}
+.node-event-form .field-name-field-event-datetime .form-item-field-event-datetime-und-0-value2-date{display:none}
+.node-event-form .field-name-field-event-datetime #edit-field-event-datetime-und-0-value2{margin-left:30px}
+.node-event-form .field-name-field-event-datetime .end-date-wrapper .form-item.form-type-date-popup.form-item-field-event-datetime-und-0-value2 label{display:none}
+.node-event-form .field-name-field-event-datetime .end-date-wrapper .form-item.form-type-date-popup.form-item-field-event-datetime-und-0-value2 div label{display:block}
+.node-event-form .form-item-field-event-datetime-und-0-show-repeat-settings{display:none}
+
+.node-event-form #edit-field-event-focus input{margin:30px 0 0 30px}
+
+.node-event-form #edit-field-event-datetime-3{padding-top:0px;display:none}
+.node-event-form #edit-field-event-datetime-3 thead{display:none}
+.node-event-form #edit-field-event-datetime-3.date_admin_event{display:block}
+.node-event-form #edit-field-event-datetime-3 .date-float{display:none}
+.node-event-form #edit-field-event-datetime-3  fieldset{border: none;box-shadow: none;padding:0;margin:0;margin-left:-10px}
+.node-event-form #edit-field-event-datetime-3  legend{display:none !important}
+.node-event-form .field-name-field-event-datetime-3 .date-no-float{width: auto;float: left;clear:none;}
+.node-event-form #edit-field-event-datetime-3 [class*=value2-date] {display:none}
+.node-event-form #edit-field-event-datetime-3 .description{display:none}
+.node-event-form #edit-field-event-datetime-3 tbody .draggable{display:none}
+/* nth-child(1n+11) 
+.node-event-form #edit-field-event-datetime-3 tbody .draggable{display:block}
+*/
+.node-event-form #edit-field-event-datetime-3 .field-multiple-drag{display:none}
+.node-event-form #edit-field-event-datetime-3 .delta-order{display:none}
+.node-event-form #edit-field-event-datetime-3 tbody .even{background: white}
+.node-event-form #edit-field-event-datetime-3 tbody .odd{background: white}
+
+.node-event-form .field-name-field-event-datetime-3 #edit-field-event-datetime-und-0-value2{margin-left:30px}
+.node-event-form .field-name-field-event-datetime-3 .end-date-wrapper .form-item.form-type-date-popup.form-item-field-event-datetime-und-0-value2 label{display:none}
+.node-event-form .field-name-field-event-datetime-3 .end-date-wrapper .form-item.form-type-date-popup.form-item-field-event-datetime-und-0-value2 div label{display:block}
+.node-event-form #edit-field-event-date-recurrence{clear:both}
+
+.node-event-form .field-name-field-event-date-type{display:none}
+.node-event-form .field-name-field-event-datetime{display:none}
+.node-event-form .field-name-field-event-datetime2{display:none}
+.node-event-form .group-date .form-type-textfield{width:150px;float:left;margin-right:20px}
+.node-event-form .group-date .form-type-textfield input{width:120px;}
+.node-event-form .group-date .form-type-checkbox{width:150px;float:left}
+.node-event-form .group-date .form-type-textfield[class^="form-item-date-start"]{clear:both;float:none}
+
+
+.node-event-form #edit-field-event-datetime-2{display:none}
+.node-event-form #edit-field-event-datetime-2 td{padding:0}
+.node-event-form .field-name-field-event-bloc-datetime{float:left}
+.node-event-form .field-name-field-event-bloc-datetime fieldset{border: none;box-shadow: none;padding:0;margin:0;margin-left:-10px}
+.node-event-form .field-name-field-event-bloc-datetime legend{display:none !important}
+.node-event-form .field-name-field-event-bloc-datetime .date-no-float{width: auto;float: left;clear:none;}
+.node-event-form .field-name-field-event-bloc-datetime .end-date-wrapper .form-item.form-type-date-popup[class^="form-item-field-event-datetime"] label{display:none}
+.node-event-form .field-name-field-event-bloc-datetime .end-date-wrapper .form-item.form-type-date-popup[class^="form-item-field-event-datetime"] div label{display:block}
+.node-event-form .field-name-field-event-bloc-datetime #edit-field-event-bloc-datetime-und-0-value2{margin-left:30px}
+.node-event-form .field-name-field-event-bloc-datetime div[class*=field-event-bloc-datetime-und-0-value2-date]{display:none}
+.node-event-form .field-name-field-event-bloc-datetime div[class*=field-event-bloc-datetime-und-0-value2-time]{margin-left:10px}
+.node-event-form .field-name-field-event-bloc-datetime-focus{float: left;width: 150px;margin: 50px 0 0 20px;}
+.node-event-form #edit-field-event-datetime-2 input[type=submit]{margin-top:50px}
+.node-event-form #edit-field-event-datetime-2 input.field-add-more-submit[type=submit]{margin-top:0px}
+
+.node-event-form .field-name-field-event-prix{display:none}
+.node-event-form .field-name-field-event-date-valid{display:none}
+
+
+
+.node-news-form #edit-translation{display:none}
+.node-news-form .field-name-field-event-age-range{display:none}
+.node-news-form .field-name-field-event-date-start{display:none}
+.node-news-form .field-name-field-event-date-end{display:none}
+.node-news-form .field-name-field-event-duration{display:none}
+.node-news-form .field-name-field-event-door-time{display:none}
+.node-news-form .field-name-field-event-places{display:none}
+.node-news-form .field-name-field-event-parents{display:none}
+.node-news-form .field-name-field-event-performers{display:none}
+.node-news-form .field-name-field-description .filter-wrapper{display:none}
+.node-news-form .field-name-field-description .description{display:none}
+.node-news-form .field-name-field-event-date .date-no-float{clear:none;width:400px;float:left}
+.node-news-form .field-name-field-event-date .date-no-float.start-date-wrapper{width:300px}
+.node-news-form .end-date-wrapper .form-item.form-type-date-popup > label{display:inline-block;width:50px;float:left;margin-top:40px}
+.node-news-form .field-name-field-event-date .field-multiple-drag{display:none}
+.node-news-form .field-name-field-event-date #field-event-date-values tr{display:none}
+.node-news-form .field-name-field-event-date #field-event-date-values tr:first-child{display:block}
+
+.node-news-form .field-name-field-event-datetime{}
+.node-news-form .date-form-element-content-multiline{padding:0; border:none}
+.node-news-form .field-name-field-event-datetime .date-no-float{width: auto;float: left;clear:none;}
+.node-news-form .field-name-field-event-datetime .form-item-field-event-datetime-und-0-value2-date{display:none}
+.node-news-form .field-name-field-event-datetime #edit-field-event-datetime-und-0-value2{margin-left:30px}
+.node-news-form .field-name-field-event-datetime .end-date-wrapper .form-item.form-type-date-popup.form-item-field-event-datetime-und-0-value2 label{display:none}
+.node-news-form .field-name-field-event-datetime .end-date-wrapper .form-item.form-type-date-popup.form-item-field-event-datetime-und-0-value2 div label{display:block}
+.node-news-form .form-item-field-event-datetime-und-0-show-repeat-settings{display:none}
+
+.node-news-form #edit-field-event-focus input{margin:30px 0 0 30px}
+
+
+.node-news-form #edit-field-event-datetime-2{display:none}
+.node-news-form #edit-field-event-datetime-2 td{padding:0}
+.node-news-form .field-name-field-event-bloc-datetime{float:left}
+.node-news-form .field-name-field-event-bloc-datetime fieldset{border: none;box-shadow: none;padding:0;margin:0;margin-left:-10px}
+.node-news-form .field-name-field-event-bloc-datetime legend{display:none !important}
+.node-news-form .field-name-field-event-bloc-datetime .date-no-float{width: auto;float: left;clear:none;}
+.node-news-form .field-name-field-event-bloc-datetime .end-date-wrapper .form-item.form-type-date-popup[class^="form-item-field-event-datetime"] label{display:none}
+.node-news-form .field-name-field-event-bloc-datetime .end-date-wrapper .form-item.form-type-date-popup[class^="form-item-field-event-datetime"] div label{display:block}
+.node-news-form .field-name-field-event-bloc-datetime #edit-field-event-bloc-datetime-und-0-value2{margin-left:30px}
+.node-news-form .field-name-field-event-bloc-datetime div[class*=field-event-bloc-datetime-und-0-value2-date]{display:none}
+.node-news-form .field-name-field-event-bloc-datetime div[class*=field-event-bloc-datetime-und-0-value2-time]{margin-left:10px}
+.node-news-form .field-name-field-event-bloc-datetime-focus{float: left;width: 150px;margin: 50px 0 0 20px;}
+.node-news-form #edit-field-event-datetime-2 input[type=submit]{margin-top:50px}
+.node-news-form #edit-field-event-datetime-2 input.field-add-more-submit[type=submit]{margin-top:0px}
+.node-news-form .field-name-field-event-datetime fieldset{border: none;box-shadow: none;padding:0;margin:0;margin-left:-10px}
+.node-news-form .field-name-field-event-datetime fieldset span{font-size: 0.8em;padding-left:8px}
+
+
+
+
+
+
+
+
+.node-home-form #edit-translation{display:none}
+.node-home-form .field-name-field-event-age-range{display:none}
+.node-home-form .field-name-field-event-date-start{display:none}
+.node-home-form .field-name-field-event-date-end{display:none}
+.node-home-form .field-name-field-event-duration{display:none}
+.node-home-form .field-name-field-event-door-time{display:none}
+.node-home-form .field-name-field-event-places{display:none}
+.node-home-form .field-name-field-event-parents{display:none}
+.node-home-form .field-name-field-event-performers{display:none}
+.node-home-form .field-name-field-description .filter-wrapper{display:none}
+.node-home-form .field-name-field-description .description{display:none}
+.node-home-form .field-name-field-event-date .date-no-float{clear:none;width:400px;float:left}
+.node-home-form .field-name-field-event-date .date-no-float.start-date-wrapper{width:300px}
+.node-home-form .end-date-wrapper .form-item.form-type-date-popup > label{display:inline-block;width:50px;float:left;margin-top:40px}
+.node-home-form .field-name-field-event-date .field-multiple-drag{display:none}
+.node-home-form .field-name-field-event-date #field-event-date-values tr{display:none}
+.node-home-form .field-name-field-event-date #field-event-date-values tr:first-child{display:block}
+
+.node-home-form .field-name-field-event-datetime{}
+.node-home-form .date-form-element-content-multiline{padding:0; border:none}
+.node-home-form .field-name-field-event-datetime .date-no-float{width: auto;float: left;clear:none;}
+.node-home-form .field-name-field-event-datetime .form-item-field-event-datetime-und-0-value2-date{display:none}
+.node-home-form .field-name-field-event-datetime #edit-field-event-datetime-und-0-value2{margin-left:30px}
+.node-home-form .field-name-field-event-datetime .end-date-wrapper .form-item.form-type-date-popup.form-item-field-event-datetime-und-0-value2 label{display:none}
+.node-home-form .field-name-field-event-datetime .end-date-wrapper .form-item.form-type-date-popup.form-item-field-event-datetime-und-0-value2 div label{display:block}
+.node-home-form .form-item-field-event-datetime-und-0-show-repeat-settings{display:none}
+
+.node-home-form #edit-field-event-focus input{margin:30px 0 0 30px}
+
+
+.node-home-form #edit-field-event-datetime-2{display:none}
+.node-home-form #edit-field-event-datetime-2 td{padding:0}
+.node-home-form .field-name-field-event-bloc-datetime{float:left}
+.node-home-form .field-name-field-event-bloc-datetime fieldset{border: none;box-shadow: none;padding:0;margin:0;margin-left:-10px}
+.node-home-form .field-name-field-event-bloc-datetime legend{display:none !important}
+.node-home-form .field-name-field-event-bloc-datetime .date-no-float{width: auto;float: left;clear:none;}
+.node-home-form .field-name-field-event-bloc-datetime .end-date-wrapper .form-item.form-type-date-popup[class^="form-item-field-event-datetime"] label{display:none}
+.node-home-form .field-name-field-event-bloc-datetime .end-date-wrapper .form-item.form-type-date-popup[class^="form-item-field-event-datetime"] div label{display:block}
+.node-home-form .field-name-field-event-bloc-datetime #edit-field-event-bloc-datetime-und-0-value2{margin-left:30px}
+.node-home-form .field-name-field-event-bloc-datetime div[class*=field-event-bloc-datetime-und-0-value2-date]{display:none}
+.node-home-form .field-name-field-event-bloc-datetime div[class*=field-event-bloc-datetime-und-0-value2-time]{margin-left:10px}
+.node-home-form .field-name-field-event-bloc-datetime-focus{float: left;width: 150px;margin: 50px 0 0 20px;}
+.node-home-form #edit-field-event-datetime-2 input[type=submit]{margin-top:50px}
+.node-home-form #edit-field-event-datetime-2 input.field-add-more-submit[type=submit]{margin-top:0px}
+.node-home-form .field-name-field-event-datetime fieldset{border: none;box-shadow: none;padding:0;margin:0;margin-left:-10px}
+.node-home-form .field-name-field-event-datetime fieldset span{font-size: 0.8em;padding-left:8px}
+
+
+.node-page-form  .filter-wrapper{display:none}
+.node-page-form .field-name-field-titre{width:300px;margin-right:50px;}
+.node-page-form .group-col-23 .field-name-field-titre{float:none;}
+
+.node-poi-form #edit-translation{display:none}
+.node-poi-form #edit-field-story .field-name-field-story-date fieldset{border: none;box-shadow: none;padding:0;margin:0;margin-left:-10px}
+.node-poi-form #edit-field-story .field-name-field-story-date legend{display:none !important}
+.node-poi-form #edit-field-story thead{display:none}
+.node-poi-form .field-name-field-cartel-texte-1 .filter-wrapper{display:none}
+.node-poi-form .field-name-field-cartel-texte-2 .filter-wrapper{display:none}
+.node-poi-form .field-name-field-notification-texte .filter-wrapper{display:none}
+.node-poi-form .field-name-field-ordre-poi{display:none}
+.node-poi-form .field-name-field-poi-date fieldset{border: none;box-shadow: none;padding:0;margin:0;margin-left:-10px}
+.node-poi-form .field-name-field-poi-date legend{display:none !important}
+
+
+.node-poi_festival-form #edit-translation{display:none}
+.node-poi_festival-form .field-name-field-event-age-range{display:none}
+.node-poi_festival-form .field-name-field-event-date-start{display:none}
+.node-poi_festival-form .field-name-field-event-date-end{display:none}
+.node-poi_festival-form .field-name-field-event-duration{display:none}
+.node-poi_festival-form .field-name-field-event-door-time{display:none}
+.node-poi_festival-form .field-name-field-event-places{display:none}
+.node-poi_festival-form .field-name-field-event-parents{display:none}
+.node-poi_festival-form .field-name-field-event-performers{display:none}
+.node-poi_festival-form .field-name-field-description .filter-wrapper{display:none}
+.node-poi_festival-form .field-name-field-description .description{display:none}
+.node-poi_festival-form .field-name-field-event-date .date-no-float{clear:none;width:400px;float:left}
+.node-poi_festival-form .field-name-field-event-date .date-no-float.start-date-wrapper{width:300px}
+.node-poi_festival-form .end-date-wrapper .form-item.form-type-date-popup > label{display:inline-block;width:50px;float:left;margin-top:40px}
+.node-poi_festival-form .field-name-field-event-date .field-multiple-drag{display:none}
+.node-poi_festival-form .field-name-field-event-date #field-event-date-values tr{display:none}
+.node-poi_festival-form .field-name-field-event-date #field-event-date-values tr:first-child{display:block}
+
+.node-poi_festival-form .field-name-field-event-datetime{}
+.node-poi_festival-form .date-form-element-content-multiline{padding:0; border:none}
+.node-poi_festival-form .field-name-field-event-datetime .date-no-float{width: auto;float: left;clear:none;}
+.node-poi_festival-form .field-name-field-event-datetime .form-item-field-event-datetime-und-0-value2-date{display:none}
+.node-poi_festival-form .field-name-field-event-datetime #edit-field-event-datetime-und-0-value2{margin-left:30px}
+.node-poi_festival-form .field-name-field-event-datetime .end-date-wrapper .form-item.form-type-date-popup.form-item-field-event-datetime-und-0-value2 label{display:none}
+.node-poi_festival-form .field-name-field-event-datetime .end-date-wrapper .form-item.form-type-date-popup.form-item-field-event-datetime-und-0-value2 div label{display:block}
+.node-poi_festival-form .form-item-field-event-datetime-und-0-show-repeat-settings{display:none}
+
+.node-poi_festival-form #edit-field-event-focus input{margin:30px 0 0 30px}
+.node-poi_festival-form .field-name-field-event-bloc-datetime-focus{display:none}
+
+
+.node-poi_festival-form #edit-field-event-datetime-2{display:none}
+.node-poi_festival-form #edit-field-event-datetime-2 td{padding:0}
+.node-poi_festival-form .field-name-field-event-bloc-datetime{float:left}
+.node-poi_festival-form .field-name-field-event-bloc-datetime fieldset{border: none;box-shadow: none;padding:0;margin:0;margin-left:-10px}
+.node-poi_festival-form .field-name-field-event-bloc-datetime legend{display:none !important}
+.node-poi_festival-form .field-name-field-event-bloc-datetime .date-no-float{width: auto;float: left;clear:none;}
+.node-poi_festival-form .field-name-field-event-bloc-datetime .end-date-wrapper .form-item.form-type-date-popup[class^="form-item-field-event-datetime"] label{display:none}
+.node-poi_festival-form .field-name-field-event-bloc-datetime .end-date-wrapper .form-item.form-type-date-popup[class^="form-item-field-event-datetime"] div label{display:block}
+.node-poi_festival-form .field-name-field-event-bloc-datetime #edit-field-event-bloc-datetime-und-0-value2{margin-left:30px}
+.node-poi_festival-form .field-name-field-event-bloc-datetime div[class*=field-event-bloc-datetime-und-0-value2-date]{display:none}
+.node-poi_festival-form .field-name-field-event-bloc-datetime div[class*=field-event-bloc-datetime-und-0-value2-time]{margin-left:10px}
+.node-poi_festival-form .field-name-field-event-bloc-datetime-focus{float: left;width: 150px;margin: 50px 0 0 20px;}
+.node-poi_festival-form #edit-field-event-datetime-2 input[type=submit]{margin-top:50px}
+.node-poi_festival-form #edit-field-event-datetime-2 input.field-add-more-submit[type=submit]{margin-top:0px}
+.node-poi_festival-form .field-name-field-event-datetime fieldset{border: none;box-shadow: none;padding:0;margin:0;margin-left:-10px}
+.node-poi_festival-form .field-name-field-event-datetime fieldset span{font-size: 0.8em;padding-left:8px}
+
+
+
+.node-ressource-pedagogique-form .field-name-field-ress-date{margin-bottom:0}
+.node-ressource-pedagogique-form .field-name-field-ress-date fieldset{border: none;box-shadow: none;padding:0;margin:0;margin-left:-10px}
+.node-ressource-pedagogique-form .field-name-field-ress-date legend{display:none !important}
+
+#media-resource-external .field-name-field-idr{display:none}
+
+.node-form .tabledrag-toggle-weight{display:none}
+.filter-guidelines-item .tips{display:none}
+input.form-text.resource, textarea.form-textarea.resource, .style-checkboxes input[type=checkbox].form-checkbox.resource {background: #f5f5f5}
+body.adminimal-theme .text-format-wrapper .ckeditor_links{display:none}
+
+.field-name-field-update-synchro{display:none}
+.loader{display:none;width:20px;height:20px;background: url(img/loader.gif) no-repeat center center;}
+.unactive{opacity:0.5}
+#fgl-res-batch-form #edit-submit{float:left}
+#fgl-res-batch-form .loader{margin-left:200px}
+.media-widget .manualcrop-thumblist{display:none}
+.media-item{background:none;border:none;box-shadow:none}
+.media-item .label-wrapper{position:static;margin-top:5px;background: none;border:none;box-shadow:none}
+.media-item .label-wrapper label{padding:0}
+.manualcrop-thumblist{margin-bottom:30px;overflow:visible;overflow-x:visible;}
+.form-type-media .form-item.form-type-select[class$="manualcrop-style"]{display:none}
+/*
+.form-type-media .form-item-field-visuel-header-und-0-manualcrop-style{display:none}
+*/
+.form-type-media .manualcrop-preview-cropped{display:none}
+.media-widget .preview{float:left;margin-right:100px}
+
+
+.file-form .field-name-field-idr{display:none}
+
+
+
+
+#file-entity-add-upload .field-name-field-idr{display:none}
+
+/*
+//.file-video-form .field-name-field-video-qualite-web{display:none}
+.file-video-form .field-name-field-video-qualite-rebond{display:none}
+*/
+
+.field-name-field-video-qualite-web{margin-top:20px}
+
+.form-item-home-event-3-fr{display:none}
+.form-item-home-event-4-fr{display:none}
+.error_home_nb_event{display:none}
+
+.file-video-form .field-name-field-video-lien-principal{display:none}
+.file-audio-form .field-name-field-video-lien-principal{display:none}
+#media-internet-add-upload .field-name-field-video-lien-principal{display:none}
+#edit-field-video-texte-und-0-format{display:none}
+#edit-field-virtual-texte-1-und-0-format{display:none}
+#edit-field-virtual-texte-2-und-0-format{display:none}
+#edit-field-virtual-texte-3-und-0-format{display:none}
+#edit-field-virtual-texte-4-und-0-format{display:none}
+#edit-field-event-virtual-txt-und-0-format{display:none}
+
+#edit-field-video-texte-en-und-0-format{display:none}
+#edit-field-virtual-texte-1-en-und-0-format{display:none}
+#edit-field-virtual-texte-2-en-und-0-format{display:none}
+#edit-field-virtual-texte-3-en-und-0-format{display:none}
+#edit-field-virtual-texte-4-en-und-0-format{display:none}
+#edit-field-event-virtual-txt-en-und-0-format{display:none}
+
+#media-internet-add-upload #edit-field-video-texte-und-0-format{display:none}
+body div.ctools-modal-content .resizable-textarea{margin-left:18.5em}
+.field-name-field-video-exposition th label{text-align: left;color:white}
+.field-name-field-video-artiste th label{text-align: left;color:white}
+.field-name-field-video-oeuvre th label{text-align: left;color:white}
+.field-name-field-video-representation th label{text-align: left;color:white}
+.field-name-field-video-edition th label{text-align: left;color:white }
+
+#file-entity-edit .field-name-field-video-exposition th label{text-align: left;color:black}
+#file-entity-edit .field-name-field-video-artiste th label{text-align: left;color:black}
+#file-entity-edit .field-name-field-video-oeuvre th label{text-align: left;color:black}
+#file-entity-edit .field-name-field-video-representation th label{text-align: left;color:black}
+#file-entity-edit .field-name-field-video-edition th label{text-align: left;color:black }
+
+
+#edit-field-video-lien-oeuvre-und{border-radius:50px}
+#edit-field-video-lien-exposition-und{border-radius:50px}
+#edit-field-video-lien-artiste-und{border-radius:50px}
+#edit-field-video-lien-edition-und{border-radius:50px}
+#edit-field-video-lien-representation-und{border-radius:50px}
+
+.modal-content #file-entity-edit .field-name-field-video-date input{margin-left:240px}
+.modal-content #file-entity-edit .field-name-field-video-date .form-item .description{margin-left:240px}
+.modal-content #file-entity-edit .field-name-field-video-texte .form-item .description{margin-left:240px}
+
+
+.field-name-field-video-qualite-web{display:block}
+.field-name-field-video-qualite-rebond{display:block}
+
+/*
+.file-video-form .vertical-tabs{display:none}
+*/
+
+.node-homepage-form .field-name-field-lien-externe{width:400px;float:left}
+.node-homepage-form .field-name-field-video-categorie{display:none}
+.node-homepage-form .field-name-field-event-type{display:none}
+
+.page-admin-fgl-settings-slider-collection #nodeorder .item-wrapper > div.form-type-item{display:none}
+.field-name-field-ordre-slider{display:none}
+
+
+
+

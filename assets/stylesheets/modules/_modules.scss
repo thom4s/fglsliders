@@ -1,0 +1,88 @@
+/* 
+ * Set up general & particulars modules : headers, contents, footers
+ * 
+ * @package FEGL
+ *
+ */
+
+
+
+@import "header";
+@import "footer";
+@import "modals";
+
+.widget_map {
+	height: 650px; 
+	width: 100%;
+
+	@include up-to(medium) {
+		height: 400px;
+		margin-bottom: $base_line_height;
+	}
+}
+
+
+
+
+
+.widget_rebond .link_rebond_ios,
+.widget_rebond .link_rebond_android,
+.bloc_apps .link_rebond_android, 
+.bloc_apps .link_rebond_ios { 
+	display:block;
+	background-position: center;
+	height:56px;
+	background-size: contain;
+	margin-bottom:10px;
+	background-repeat: no-repeat;
+}
+
+.widget_rebond a.link_rebond_android,
+.bloc_apps a.link_rebond_android{
+	@include up-to(medium) {
+		height: 100px;
+	}
+
+	@include at-least(medium) {
+		background-size: 98%;
+	}
+}
+.widget_rebond a.link_rebond_ios,
+.bloc_apps a.link_rebond_ios{
+	@include up-to(medium) {
+		height: 107px;
+	}
+
+	@include at-least(medium) {
+		background-size: 98%;
+	}
+}
+
+
+.widget_rebond hr {margin-top: 28px;}
+
+
+.bloc_apps a {
+	float: left;
+	width: 150px;
+	margin-right: 15px;
+	margin-top: -10px;
+	
+	&:hover {
+		border: none !important;
+		text-decoration: none !important;
+	}
+
+	@include up-to(medium) {
+    width: 200px;
+    margin: auto;
+    display: block;
+    float: none;
+    background-position: top;
+    height: 75px !important;
+	}
+}
+
+
+
+

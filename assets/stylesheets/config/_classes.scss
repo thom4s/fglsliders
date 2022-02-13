@@ -1,0 +1,133 @@
+/* 
+ * Placeholders & utility classes
+ * 
+ * @package fegl
+ */
+
+ 
+
+
+/* 
+ * Layout
+ */
+
+.is-on-left {
+  float: left !important; }
+
+.is-on-right {
+  float: right !important; }
+
+.has-no-float {
+  float: none !important;
+  clear: none !important; }
+
+.has-no-clear {
+  clear: none !important; }
+
+.is-hidden {
+  display: none; }
+
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+ 
+.is-fixed {
+  width: 100%;
+  position: fixed !important;
+  left: 0;
+  top: 0;
+  z-index: 99; }
+.is-relative {
+  position: relative;
+}
+.is_absolute {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.is-rounded {
+  border-radius: 50%;
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.has-transition {
+  @include transition(all 0.2s);
+}
+
+
+/* 
+ * Text
+ */
+
+.text-on-left {
+  text-align: left; }
+
+.text-on-right {
+  text-align: right; }
+
+.text-on-center {
+  text-align: center !important; }
+
+.text-justify {
+  text-align: justify !important; }
+
+
+
+
+// make sure container is [position: relative]
+// http://codepen.io/shshaw/full/gEiDt
+.absolute-centered {
+  width: 50%;
+  height: 50%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+
+
+// Hide only visually, but have it available for screenreaders: h5bp.com/v
+%visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+
+  // Extends the .visuallyhidden class to allow the element to be focusable
+  // when navigated to via the keyboard: h5bp.com/p
+
+  &.focusable:active,
+  &.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+  }
+}
+
+// Hide visually and from screenreaders, but maintain layout
+
+%invisible {
+  visibility: hidden;
+}
+.hidden {
+  display: none;
+}
+

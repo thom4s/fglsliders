@@ -1,0 +1,109 @@
+/* 
+ * Navigation
+ * 
+ * @package fegl
+ */
+
+
+// Settings
+
+
+
+@import "links";
+
+@import "menu";
+
+
+
+.nav_page {
+	margin-top: $base_line_height / 2;
+
+	@include up-to(medium) {
+		border-bottom: 2px solid;
+		border-top: 2px solid;
+		padding: 2em 0;
+		position: relative;
+
+		&:before {
+			border-left: 2px solid;
+			position: absolute;
+			top: 0;
+			bottom: 5px;
+			left: 50%;
+			width: 13px;
+			visibility: visible;
+			height: 84%;
+		}
+		.nav_page-prev {
+			float: left;
+		}
+		.nav_page-next {
+			text-align: right;
+		}
+	}
+}
+
+.head_languages {
+	// position:absolute;
+	// left: 0;
+	// top: 0;
+	// min-width: 70px;
+	float: right;
+	margin-bottom: 5px;
+	
+	li {
+		float:left
+	}
+	.active{
+		font-weight: 900
+	}
+}
+
+
+.nav_page_mobile {
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	padding: 0 0 1em 0;
+	margin-top: 1em;
+	margin-bottom: 4em;
+
+	a {
+		padding-top: 1em;
+		padding-bottom: 0.3em;
+		display: inline-block;
+		width: 50%;
+		margin: 0;
+		line-height: 0.8em;
+
+		&:first-child {
+			border-right: 1px solid;
+		}
+	}
+}
+
+.btn--up {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: $black;
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	text-align: center;
+	float: none;
+	z-index: 9999;
+
+	* {
+		line-height: 40px;
+	}
+	@include up-to(medium) {
+
+		&.active {
+			display: block;
+		}
+	}
+}
+
+
+

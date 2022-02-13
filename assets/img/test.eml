@@ -1,0 +1,22 @@
+root@mta:~/stage# cat test.eml
+Date: Wed, 27 Apr 2011 09:58:01 +0200 (CEST)
+From: Dupond <dupond@reseau.loc>
+To: admin@reseau.loc
+Subject: test
+Message-ID: <9fc22f81-5d3c-4c06-8237-e2c2f9f947c3@mta>
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+X-Originating-IP: [192.168.2.57]
+X-Mailer: Zimbra 7.0.1_GA_3105 (ZimbraWebClient - FF3.0 (Linux)/7.0.1_GA_3105)
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+ 
+Curabitur auctor accumsan urna sed dapibus. Donec id sapien ac magna facilisis dignissim at vehicula mi. 
+Nam elementum sit amet mauris ut rhoncus. Phasellus ullamcorper a risus in dictum. Sed vehicula imperdiet arcu, 
+laoreet blandit lorem tristique vestibulum. Sed tristique, tellus ac egestas consectetur, felis velit bibendum est, quis vestibulum diam purus nec magna. 
+Sed interdum fringilla finibus. Pellentesque convallis venenatis lacinia. Ut sagittis fringilla eros, eu faucibus libero dictum non. 
+Donec vulputate sed magna sit amet facilisis. 
+ 
+Nulla ex ipsum, finibus et nulla nec, blandit pellentesque sapien. 
+ 

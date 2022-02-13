@@ -1,0 +1,50 @@
+
+
+.page-file {
+
+	#video_upper_layer {
+		display: none
+	}
+
+	#main-content,
+	#scene_0 {
+		padding-top: 0;
+	}
+
+	.oeuvre_carnet {
+		margin-top: $base_line_height * 2;
+		margin-bottom: $base_line_height * 2;
+	}
+
+	.virtual_infos {
+
+		.scene > .layer {
+			padding-top: $base_line_height;
+		}
+
+	}
+
+
+	#scene_0,
+	.media_embed_node_acteur {
+
+		.event_medias {
+			order: 2;
+			padding-right: 16px;
+			border-right: 1px solid #f0ecec;
+		}
+
+		.col:nth-child(2),
+		.teaser_artist {
+			order: 3;
+			margin-bottom: 0;
+		}
+	}
+
+
+}
+
+
+
+
+

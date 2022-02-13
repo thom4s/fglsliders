@@ -1,0 +1,37 @@
+/* 
+ * Elements
+ * 
+ * @package lavantseine-v2
+ */
+
+@import "lists";
+@import "tables";
+@import "cards";
+
+
+
+.meter { 
+	height: 6px;
+	position: relative;
+	background: $color_tertiary;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+}
+.meter--left { 
+	@extend .meter;
+	background: $gray_ccc;
+
+}
+
+.meter > span {
+  display: block;
+  height: 100%;
+  background-color: $gray_darker;
+  position: relative;
+  overflow: hidden;
+
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+}

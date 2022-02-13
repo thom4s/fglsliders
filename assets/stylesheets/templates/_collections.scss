@@ -1,0 +1,237 @@
+
+.page-collection {
+	.scene {
+		border-bottom: none !important;
+	}
+}
+
+.search_head {
+	padding: 10px 0;
+	border-top: 1px solid $gray;
+	border-bottom: 1px solid $gray;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.icon-back {
+		margin-right: 20px;
+		font-size: 10px;
+	}
+
+}
+
+.artwork_from_collection {
+	background-color: #f7f5f6;
+	padding: 40px 0;
+}
+
+
+.collection_liste_oeuvres {
+	column-count: 4;
+	columns: 4;
+	-webkit-columns: 4;
+}
+
+#collection_subform {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	@include up-to(medium) {
+		flex-direction: column;
+
+		.btn--gray {
+			width: 100%;
+			margin-top: 20px;
+			margin-bottom: 40px;
+		}
+	}
+
+	& > div {
+		flex: 1;
+		@include up-to(medium) {
+			width: 100%;
+		}
+	}
+	.search_metas {
+			display: flex;
+			justify-content: inherit;
+			align-items: center;
+
+		@include up-to(medium) {
+			margin-bottom: 40px;
+
+		}
+	}
+}
+
+
+.collection_liste_artistes {
+
+	@include at-least(medium) {
+		column-count: 4;
+		columns: 4;
+		-webkit-columns: 4;
+	}
+
+
+	li {
+		padding: 2px 0;
+	}
+}
+
+.link_direct_artiste:hover {
+	border-bottom: 2px solid #83f8dd;
+}
+.vues_btn_outer {
+	opacity: 0;
+}
+
+.artist_founded {
+	border-bottom: 2px solid $color_tertiary;
+
+	.strong {
+		font-weight: bold;
+	}
+}
+
+
+.results_item {
+	@extend .m-2col;
+
+	a {
+		display: block;
+	}
+	&:nth-child(4n +1) {
+		clear: both;
+		margin-left: 0;
+	}
+	&:nth-child(4n) {
+		border: none;
+	}
+	.artwork_outer .square-content {
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+
+		img {
+			object-fit: contain;
+			max-height: 100%;
+		}
+	}
+
+	@include up-to(medium) {
+		.square-content {
+			position: relative;
+		}
+		.square::after {
+		    padding-bottom: 0;
+		}
+
+	}
+}
+
+.results_item--list {
+
+	a {
+		margin-bottom: 7px;
+		display: block;
+		line-height: 1.3;
+
+		&:hover {
+			span {
+				border-bottom: 2px solid $green;
+			}
+		}
+	}
+
+	@include up-to(medium) {
+		margin-bottom: 10px;
+	}
+
+	.artist, 
+	.date {
+		color: $gray_999;
+
+		@include up-to(medium) {
+			display: inline;
+		}
+	}
+
+	.artwork {
+		padding-right: 20px;
+	}
+	
+	.artist:after {
+
+		@include up-to(medium) {
+			content: ', ';
+		}
+	}
+}
+
+.js-loadMore {
+	float: right;
+	width: 23%;
+}
+
+
+.collection_team_item {
+	margin-bottom: $base_line-height;
+}
+
+
+.coll_artwork_expositions {
+	
+}
+
+
+// AUTOCOMPLETE
+
+#collections_search {
+	position: relative;
+
+	#autocomplete {
+		position: absolute;
+		left: -4px;
+		bottom: -45px;
+		right: -45px;
+		background: white;
+		z-index: 999;
+
+		ul {
+			margin: 0;
+			padding:0;
+			border: 1px solid $gray;
+			padding: 8px 13px;
+			background: white;
+		}
+
+		li {
+			list-style: none;
+			background: white;
+			padding: 5px;
+
+			&:hover,
+			&:focus {
+				background-color: $gray_lighter;
+				cursor: pointer;
+			}
+		}
+
+		span {
+			color: $gray_777;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

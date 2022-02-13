@@ -1,0 +1,420 @@
+
+
+// HIDE LOG
+
+
+
+
+.page_header--live {
+	height: 100vh;
+	width: 100vw;
+  background-size: cover;
+	background-position: center;
+  position: relative;
+  overflow: hidden;
+
+  .search_head {
+  	background-color: rgba(255, 255, 255, 0.75);
+  	position: absolute;
+		top: $header_height;
+		left: 0;
+		right: 0;
+		z-index: 9994;
+		@include up-to(medium) {
+			top: 109px;
+		}
+  }
+	.search_head_inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.page_header_contents {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 999;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	height: 100%;
+	text-align: center;
+	padding-bottom: 20vh;
+	padding-top: 20vh;
+	background-color: rgba(0,0,0,0.5);
+
+
+	.header_intro {
+		font-size: 3.4rem;
+		line-height: 1.1;
+		margin-bottom: 3rem;
+		font-weight: 900;
+		@include up-to(medium) {
+			font-size: 2.4rem;
+		}
+	}
+
+	.header_title {
+		margin-bottom: 6rem;
+		max-width: 1000px;
+		@include up-to(medium) {
+			font-size: 6rem;
+			margin-bottom: 40px;
+		}
+	}
+
+	.header_play {
+		background-color: rgba(0,0,0,.5);
+		border-radius: 5px;
+		color: white;
+		border: none;
+		padding: .6em 1.2em .5em;
+		font-size: 3rem;
+		z-index: 999;
+
+		@include up-to(medium) {
+			padding: .4em .8em .3em;
+			font-size: 2.6rem;
+		}
+	}
+
+}
+
+@media (max-height: 880px) and (min-width: 880px) {
+	.page_header--live {
+
+		.header_intro {
+			font-size: 2.8rem;
+		}
+
+		.header_title {
+			font-size: 9rem;
+			margin-bottom: 45px;
+		}
+		.page_header_contents--afterlive {
+			padding-bottom: 50px;
+		}
+		.virtual_clock {
+			font-size: 7rem;
+		}
+	}
+
+}
+
+
+.header_arrow {
+	position: absolute;
+	bottom: 30px;
+	text-align: center;
+	left: 0;
+	right: 0;
+	@include up-to(medium) {
+		bottom: 20px;
+	}
+	&:before {
+		font-size: 4rem
+	}
+}
+
+#backtomediatheque {
+	@include transition(opacity 0.5s);
+}
+.hide {
+	opacity: 0;
+}
+
+
+
+.header_video_live {
+	height: 100%;
+	width: 100%;
+	background: black;
+	position: relative;
+
+	& > div {
+		height: 100%;
+	}
+
+	& iframe {
+		height: 100%;
+		width: 100%;
+		transform: scale(1.4);
+	}
+
+	@include up-to(medium) {
+
+		& > div {
+			padding-bottom: 56.25%;
+		}
+
+		& iframe {
+			position: absolute;
+		}
+
+	}
+
+	.header_video_live_inner {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		opacity: .5;
+		z-index: 99;
+	}
+}
+
+.header_wearelive_title {
+	position: absolute;
+	top: $header_height + 40px;
+	left: 0;
+	right: 0;
+	z-index: 9;
+	@include up-to(medium) {
+		top: $header_height
+	}
+
+	&.up {
+		top: 3px;
+	}
+
+	.header_wearelive_inner {
+		background-color: rgba(60,60,60,.8);
+		padding: 5px 15px;
+		color: white;
+		font-weight: $light;
+		display: inline-block;
+		font-size: 2.4rem;
+		font-weight: 900;
+		@include up-to(medium) {
+			font-size: 1.6rem;
+		}
+	}	
+}
+
+
+// AFTER
+
+.page_header_contents--afterlive {
+	@extend .page_header_contents;
+	background: rgba(0,0,0,0.4);
+
+	@include up-to(880px) {
+		padding-bottom: 10px
+	}
+}
+
+
+#videoonpause_layer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 99;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	iframe {
+		width: 100%;
+		height: 100%;
+		background: black;
+		transform: scale(1.4);
+	}
+}
+
+.virtual_infos {
+
+	.text-on-right {
+		@include up-to(medium) {
+			text-align: left;
+			font-size: 4.6rem;
+		}
+	}
+	.fh_4 {
+		@include up-to(medium) {
+			margin-bottom: 0;
+		}		
+	}
+}
+
+.virtual_transcription {
+	overflow: hidden;
+	position: relative;
+	transition: max-height .2s;
+
+	@include up-to(medium) {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.col {
+		padding-top: 2rem;
+	}
+
+
+	.trigger {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		z-index: 9999;
+		
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	&:not(.open) {
+
+		.inner_shadow {
+	    position:absolute;
+	    z-index: 99;
+	    bottom:0;
+	    left:0;
+	    width:100%;
+	    height:25px;
+			-webkit-box-shadow: inset 1px -13px 16px -14px black;
+			-moz-box-shadow: inset 1px -13px 16px -14px black;
+			box-shadow: inset 1px -13px 16px -14px black;	
+		}
+
+	}
+}
+
+
+.header_blur {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 999;
+	background-color: rgba(0,0,0,0.5);
+
+	// & + iframe {
+	// 	filter: blur(15px);
+	// 	transform: scale(1.4);
+	// }
+}
+
+#transcription_icon {
+	display: block;
+	text-align: center;
+	padding-top: 10rem;
+	@include up-to(medium) {
+		padding-top: 2rem;
+	}
+}
+
+
+	#link_calendar {
+		font-weight: 500;
+	}
+
+	div.icon_live {
+		margin: 20px 0;
+		align-items: center;
+		flex-direction: inherit !important;
+
+		.icon-online {
+			font-size: 2rem;
+			padding-right: 10px;
+		}
+	}
+
+
+
+.event_artists_inner.virtual {
+
+	.row {
+		@include up-to(medium) {
+			width: 100%;
+		}
+	}
+	.artist_portrait_outer {
+		@include up-to(medium) {
+			width: 100%;
+		}	
+	}
+}
+
+	.virtual_clock {
+		font-size: 8rem;
+		line-height: .9;
+		background-color: rgba(0,0,0,.7);
+		padding: 7px 20px 42px;
+	  font-family: $font_family_title;
+		margin-bottom: 0;
+		width: 380px;
+		text-align: center;
+		@include up-to(medium) {
+			font-size: 7rem;
+		}
+		&.on_air {
+			padding-bottom: 16px !important;
+		}
+	}
+
+	.clock_label_outer {
+		position: relative;
+		width: 68px;
+		display: inline-block;
+	}
+	.clock_label {
+		position: absolute;
+		bottom: -24px;
+		font-size: 1.6rem;
+		left: 0;
+		right: 0;
+		text-align: center;
+		line-height: 1;
+	  font-family: $font_family_paragraph;
+	  font-weight: 100;
+	  color: rgba(255,255,255,.75);
+	}
+
+	.header_time {
+		position: absolute;
+		bottom: 30px;
+		right: calc( (100vw - 1500px) / 2);
+		background-color: rgba(0,0,0,.7);
+		padding: 5px 20px;
+		font-weight: 100;
+		color: white;
+	}
+
+
+
+
+// SPECIAL THINGS ON HEADER LIVE
+
+[data-live="1"] {
+	@include up-to(medium) {
+		&.page_header--live {
+			height: auto !important;
+			padding-top: 108px;
+			background: black;
+		}
+	}
+	iframe {
+		transform: scale(1);
+	}
+}
+
+[data-replay] {
+	@include up-to(medium) {
+		&.page_header--live {
+			height: 100vh;
+		}
+	}
+}
+

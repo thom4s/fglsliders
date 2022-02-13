@@ -1,0 +1,42 @@
+
+
+
+
+.artist_event {
+
+	&:not(.past-expo) {
+		padding-top: $base_line_height;
+	}
+
+	@include up-to(medium) {
+		padding-left: 5%;
+		padding-right: 5%;
+
+		.inner {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
+
+.artist_artworks {
+	.grid-item {
+		width: 50%;
+	}
+}
+
+
+
+.artist_artworks_incollection {
+	background-color: #f7f5f6;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.view_artist_incollection {
+	padding: 10px;
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+	margin-top: $base_line_height;
+	
+}

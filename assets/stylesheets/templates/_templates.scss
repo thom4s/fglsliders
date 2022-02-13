@@ -1,0 +1,159 @@
+/* 
+ * Set up specific templates : home, single...
+ * 
+ * @package fegl
+ *
+ */
+
+
+
+
+@import "home";
+@import "single";
+@import "prog";
+@import "event";
+@import "artist";
+@import "page";
+@import "artwork";
+@import "collections";
+@import "editions";
+@import "eventlive";
+@import "mediatheque";
+@import "files";
+
+
+body {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+  overflow-x: hidden;
+}
+  .no-scroll {
+    overflow: hidden;
+  }
+
+  .open ~ .page-content,
+  .open ~ .upper-footer,
+  .open ~ .footer {
+    //opacity: 0.1;
+  }
+
+
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $white;
+  z-index: 99999;
+  justify-content:center;
+  align-items:center;
+}
+
+
+/*
+ * Common classes
+ */
+
+#main-content {
+  //margin-bottom: $base_line_height * 2;
+}
+
+
+  .page-content {
+    @include transition( opacity, 0.2s);
+  }
+  
+  .scene:not(:last-child) {
+    @include up-to(medium) {
+      border-bottom: 1px solid $gray_light;
+      margin-bottom: $base_line_height * 1.5;
+    }
+  }
+
+ 
+
+  .page_header_visuel {
+    position: relative;
+    height: 375px;
+    text-align: center;
+    align-items: flex-end;
+
+    @include up-to(medium) {
+      text-align: left;
+      justify-content: flex-end;
+      align-items: flex-start;
+      padding: 0 2em;
+
+      .meta-exposition {
+        color: $white;
+      }
+    }
+
+    @include at-least(medium) {
+      height: 80vh;
+    }
+  }
+  .page_mainInfos {
+    background-color: $white;
+
+    @include at-least(medium) {
+      &.up {
+        margin-top: -14em;
+      }
+    }
+  }
+
+
+
+  // id elements (artist, oeuvre)
+
+
+  .id_item {
+    display: flex;
+    justify-content: space-between;
+    padding-top: $base_line_height / 2;
+    border-top: 1px solid $gray;
+    margin-bottom: $base_line_height / 2;
+
+    span:first-child {
+      line-height: 23px;
+      margin-right: 10px;
+    }
+    .fix-align {
+      line-height: 26px !important;
+    }
+    &:last-child {
+      border-bottom: 1px solid $gray;
+      padding-bottom: $base_line_height / 2;
+    }
+
+    * {
+      line-height: 20px;
+    }
+
+    @include up-to(large) {
+      span:first-child {
+        line-height: 22px;
+      }
+      .fix-align {
+        line-height: 24px !important;
+      }
+    }
+  }
+
+
+  .artist_portrait_outer {
+    @include up-to(medium) {
+      width: 65%;
+      margin: auto;
+      display: block;
+    }
+  }
+
+  .teaser_artist {
+    a {
+      max-width: 100%;
+    }
+  }

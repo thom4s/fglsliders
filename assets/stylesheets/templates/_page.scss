@@ -1,0 +1,53 @@
+/* 
+ * templates/single
+ * 
+ * @package fegl
+ */
+
+
+		[class^="metro-"] {
+			display: inline-block;
+			@include border-radius(50%);
+			height: 20px;
+			width: 20px;
+			text-align: center;
+			line-height: 20px;
+		}
+
+	.metro-1 {
+		background-color: #ffcc00;
+	}
+
+	.metro-11 {
+		background-color: #87612e;
+		color: $white;
+	}
+
+		[class^="bus-"] {
+			display: inline-block;
+			height: 20px;
+			text-align: center;
+			line-height: 20px;
+			padding-left: 3px;
+			padding-right: 3px;
+			margin-bottom: 3px;
+		}
+	.bus-67 {
+		background-color: #ff99b7;
+	}
+	.bus-69 {
+		background-color: #96f2fd;
+	}
+	.bus-76 {
+		background-color: #621f94;
+		color: $white;
+	}	
+	.bus-96 {
+		background-color: #fed949;
+	}
+	.bus-n11 {
+		background-color: #f7944a;
+	}	
+	.bus-n16 {
+		background-color: #cece29;
+	}	

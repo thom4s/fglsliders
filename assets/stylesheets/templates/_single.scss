@@ -1,0 +1,49 @@
+/* 
+ * templates/single
+ * 
+ * @package fegl
+ */
+
+
+
+
+
+.artist_id {
+	margin-bottom: 1em;
+}
+
+.artist_id_line {
+	padding: 1em 0;
+	border-bottom: 1px solid $gray_light;
+
+	&.is-flex {
+		span {
+			flex: 1;
+		}
+	}
+
+	@include up-to(medium) {
+		flex-direction: row !important;
+	}
+}
+.artist_socials {
+	a {
+		margin-left: 10px;
+	}
+}
+
+
+
+
+.widget_restaurant,
+.widget_boutique {
+
+	.artist_socials {
+		border-top: 1px solid #f0ecec;
+		padding-top: 10px;
+	}
+}
+
+.event_acces_libre {
+	margin-bottom: 20px;
+}

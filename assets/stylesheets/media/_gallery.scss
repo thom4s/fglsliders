@@ -1,0 +1,234 @@
+/**
+ * BxSlider v4.1.2 - Fully loaded, responsive content slider
+ * http://bxslider.com
+ *
+ * Written by: Steven Wanderski, 2014
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
+ */
+
+
+
+.bx-next,
+.bx-prev {
+	@include type-setting(1);
+	font-weight: $bold;
+	margin-left: 5px;
+}
+
+
+/* BUG FIX FOR CLONE SLIDE FIRST */
+
+.bx-wrapper img {
+    max-width: 100%;
+    display: inline-block;
+}
+
+.bx-viewport li { 
+    min-height: 1px; 
+    min-width: 1px; 
+}
+
+
+
+
+
+
+
+/* Slider */
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    &:focus {
+        outline: none;
+    }
+
+    &.dragging {
+        cursor: pointer;
+        cursor: hand;
+    }
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+
+    .slick-loading & {
+        visibility: hidden;
+    }
+}
+.slick-slide {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    [dir="rtl"] & {
+        float: right;
+    }
+    img {
+        display: block;
+    }
+    &.slick-loading img {
+        display: none;
+    }
+
+    display: none;
+
+    &.dragging img {
+        pointer-events: none;
+    }
+
+    .slick-initialized & {
+        display: block;
+    }
+ 
+    .slick-loading & {
+        visibility: hidden;
+    }
+
+    .slick-vertical & {
+        display: block;
+        height: auto;
+        border: 1px solid transparent;
+    }
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+
+
+// SLIDE COLLECTION
+
+.slider_outer {
+    margin: 40px 0 0;
+    opacity: 0;
+    transition: opacity .6s;
+}
+
+.collections_slider--img {
+
+    .slick-list {
+        overflow: visible;
+    }
+
+    img {
+        transition: transform .4s;
+    }
+
+    .slick-current {
+        img { 
+            transform: scale(1.2);
+        } 
+    }
+
+    @include at-least(medium) {
+        img {
+            height: 400px;
+        }
+    }
+
+    @include up-to(medium) {
+        img {
+            max-width: 80vw;
+            max-height: 350px;
+        }
+        .slick-track {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+
+}
+ 
+.collections_slider--caption {
+    width: 500px;
+    margin: 60px auto 0;
+    position: relative;
+    text-align: center;
+    color: #999999;
+
+    .slick-arrow {
+        position: absolute;
+        background: none;
+        border: none;
+        width: 30px;
+        height: 30px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        top: 0;
+    }
+
+    .slick-prev {
+        left: -100px;
+        background-image: url('/sites/all/themes/fgl/assets/icons/arrow-left.png');
+    }
+    .slick-next {
+        right: -100px;
+        background-image: url('/sites/all/themes/fgl/assets/icons/arrow-right.png');
+    }
+
+
+    @include up-to(medium) {
+        width: 70%;
+
+        .slick-prev {
+            left: -16%
+        }
+        .slick-next {
+            right: -16%
+        }
+
+    }
+
+
+
+}
+
+
+
+

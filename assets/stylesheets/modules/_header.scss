@@ -1,0 +1,131 @@
+/* 
+ * Header
+ * 
+ * @package fegl
+ */
+
+
+.site-title {
+  font-family: $font_family_title;
+  line-height: 36px;
+  font-size: 40px;
+	font-weight: 400;
+	margin-bottom: 0;
+	margin-top: -10px;
+
+	@include up-to(medium) {
+		font-size: 70px;
+		line-height: 30px;
+		margin-top: 10px;
+	}
+}
+
+.site-subtitle {
+	font-size: 10px;
+	line-height: 3;
+	font-weight: 400;
+	margin: 0;
+
+	@include up-to(medium) {
+		display: none;
+	}
+}
+
+.site-header {
+	height: $header_height;
+	position: relative;
+	z-index: 99999;
+	background-color: rgba(255,255,255,.75);
+	top: 0;
+
+	@include transition(top 0.5s, opacity 0.5s);
+
+	&.nav-up { top: - $header_height; } 
+
+	&.white {
+		background-color: $white;
+	}
+
+	& .wrap {
+		position: relative;
+		height: $header_height;
+		padding-bottom: 0.5em;
+		padding-top: 0;
+		//border-bottom: 1px solid $gray;
+	}
+
+	@include up-to(medium) {
+		height: auto;
+		
+		.wrap {
+			border: none;
+			height: auto;
+			padding-bottom: 0;
+			padding-top: .3em;
+		}
+	}
+
+		&.open + .after_header {
+			display: block;
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			background-color: $white;
+			opacity: 0.9;
+			z-index: 9999;
+		}
+
+	.reader_open & {
+		display: none;
+	}
+}
+
+.after_header {
+	display: block;
+	opacity: 0;
+	@include transition(opacity .2s);
+
+}
+
+.logo_menu_group {
+	height: 68px;
+
+	@include up-to(medium) {
+		height: 55px;
+	}
+}
+	.menu_group {
+		flex-direction: column;
+		margin-left: 40px;
+	}
+		.horaires {
+			flex: 1 50%;
+			align-self: flex-start;
+			line-height: 2.9;
+			font-size: 1.9rem;
+			font-weight: 100;
+
+			span {
+				font-weight: bold;
+			}
+
+			@include up-to(medium) {
+				display: none;
+			}
+		}
+
+
+	.padtop-005 {
+		padding-top: $base_line_height;
+	}
+	.padtop-02 {
+		padding-top: $base_line_height * 2;
+	}	
+	.padtop-1 {
+		padding-top: $header_height;
+	}
+	.padtop-2 {
+		padding-top: $header_height + $base_line_height;
+	}

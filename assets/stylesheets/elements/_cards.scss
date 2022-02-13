@@ -1,0 +1,1069 @@
+/* 
+ * Lists
+ * 
+ * @package FEGL
+ */
+
+
+
+.card {
+	position: relative;
+  -webkit-transition: color .5s;
+          transition: color .5s;
+
+	.inner {
+		display: block;
+		position: relative;
+		padding-top: 28px;
+		padding-bottom: 1.2em;
+
+		@include up-to(large) {
+			padding-left: 12px;
+			padding-right: 12px;
+		}
+		@include at-least(large) {
+			padding-left: 14px;
+			padding-right: 14px;
+		}
+		@include at-least(wide) {
+			padding-left: 16px;
+			padding-right: 16px;
+		}
+	}
+
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: -1px;
+		height: 50%;
+	  z-index: 0;
+    transition: all 0.5s ease;
+    opacity: 0;
+	}
+	.no-touch &:hover {
+		cursor: pointer;
+
+		&:not(.card--shop):before {
+    	background-position:left bottom;
+    	opacity: 1;
+		}
+
+		.meta:before {
+			background: white;
+		}
+	}
+
+
+
+	@include up-to(medium) {
+		.inner {
+			clear: both;
+			float: none;
+		}
+	}
+}
+
+
+
+
+
+	.meta {
+		padding-left: 8px; 
+		margin-bottom: 5px;
+		position: relative;
+		z-index: 9;
+		line-height: 25px;
+		
+		&:before {
+			content: ' ';
+			display: block;
+			position: absolute;
+			width: 25px;
+			height: 25px;
+			z-index: -1;
+			left: 0;
+			top: 0;
+			background-color: $expo;
+
+		}
+	}
+	.meta-exposition {
+		@extend .meta;
+		margin-top: $base_line_height / 2;
+
+		&:before {
+			background-color: $color_tertiary;
+		}
+	}
+	.meta-exposition--white {
+		@extend .meta;
+		margin-top: 0;
+
+		&:before {
+			background-color: $white;
+		}
+	}
+	.meta-gray {
+		@extend .meta;
+
+		&:before {
+			background-color: $gray_lighter;
+		}
+	}
+
+
+.card-jeunepublic {
+	.meta:before {
+			background-color: $green_alt;
+	}
+
+	&:before {
+		/* Old browsers */
+    background: linear-gradient(to left, transparent 50%, $green_alt 50%);
+    background-size: 200% 100%;
+    background-position: right 0px bottom;
+	}
+	.no-touch  &:hover {
+
+		&:before {
+			//background-color: $green_alt;	
+		}
+	}
+
+	&.card-bordered {
+		border: 5px solid $green_alt;
+	}
+}
+
+
+.card-rencontre {
+	.meta:before {
+			background-color: $rencontre;
+	}
+	&:before {
+		/* Old browsers */
+    background: linear-gradient(to left, transparent 50%, $rencontre 50%);
+    background-size: 200% 100%;
+    background-position: right 0px bottom;
+	}
+	.no-touch  &:hover {
+
+		&:before {
+			//background-color: $color_quaternary;	
+		}
+	}
+
+	&.card-bordered {
+		border: 5px solid $rencontre;
+		margin-bottom: 0;
+	}
+}
+
+
+.card-conversation {
+	.meta:before {
+			background-color: $conversation;
+	}
+	&:before {
+		/* Old browsers */
+    background: linear-gradient(to left, transparent 50%, $conversation 50%);
+    background-size: 200% 100%;
+    background-position: right 0px bottom;
+	}
+
+	&.card-bordered {
+		border: 5px solid $conversation;
+		margin-bottom: 0;
+	}
+}
+
+
+.card-dance {
+	.meta:before {
+			background-color: $dance;
+	}
+	&:before {
+		/* Old browsers */
+    background: linear-gradient(to left, transparent 50%, $dance 50%);
+    background-size: 200% 100%;
+    background-position: right 0px bottom;
+	}
+
+	&.card-bordered {
+		border: 5px solid $dance;
+		margin-bottom: 0;
+	}
+}
+
+.card-music {
+	.meta:before {
+			background-color: $music;
+	}
+	&:before {
+		/* Old browsers */
+    background: linear-gradient(to left, transparent 50%, $music 50%);
+    background-size: 200% 100%;
+    background-position: right 0px bottom;
+	}
+
+	&.card-bordered {
+		border: 5px solid $music;
+		margin-bottom: 0;
+	}
+}
+
+.card-warmup {
+	.meta:before {
+			background-color: $warmup;
+	}
+	&:before {
+		/* Old browsers */
+    background: linear-gradient(to left, transparent 50%, $warmup 50%);
+    background-size: 200% 100%;
+    background-position: right 0px bottom;
+	}
+
+	&.card-bordered {
+		border: 5px solid $warmup;
+		margin-bottom: 0;
+	}
+}
+
+.card-specialproject {
+	.meta:before {
+			background-color: $specialproject;
+	}
+	&:before {
+		/* Old browsers */
+    background: linear-gradient(to left, transparent 50%, $specialproject 50%);
+    background-size: 200% 100%;
+    background-position: right 0px bottom;
+	}
+
+	&.card-bordered {
+		border: 5px solid $specialproject;
+		margin-bottom: 0;
+	}
+}
+
+
+.card-visiteguidee,
+.card-exposition {
+	.meta:before {
+			background-color: $expo;
+	}
+	&:before {
+		/* Old browsers */
+    background: linear-gradient(to left, transparent 50%, $expo 50%);
+    background-size: 200% 100%;
+    background-position: right 0px bottom;
+	}
+	.no-touch  &:hover {
+
+		&:before {
+			//background-color: $color_quaternary;	
+		}
+	}
+
+	&.card-bordered {
+		border: 5px solid $expo;
+		margin-bottom: 0;
+	}
+}
+
+
+.card-atelier {
+	.meta:before {
+			background-color: $atelier;
+	}
+	&:before {
+		/* Old browsers */
+    background: linear-gradient(to left, transparent 50%, $atelier 50%);
+    background-size: 200% 100%;
+    background-position: right 0px bottom;
+	}
+	.no-touch &:hover {
+
+		&:before {
+			//background-color: $color_secondary;	
+		}
+	}
+
+	&.card-bordered {
+		border: 5px solid $atelier;
+	}
+}
+
+.card-performance {
+
+	.meta:before {
+			background-color: $performance;
+	}
+	&:before {
+		/* Old browsers */
+    background: linear-gradient(to left, transparent 50%, $performance 50%);
+    background-size: 200% 100%;
+    background-position: right 0px bottom;
+	}
+	.no-touch &:hover {
+
+		&:before {
+			//background-color: $color_primary;	
+		}
+	}
+
+	&.card-bordered {
+		border: 5px solid $performance;
+	}
+}
+
+
+.card-concert {
+
+	.meta:before {
+			background-color: $concert;
+	}
+	&:before {
+		/* Old browsers */
+    background: linear-gradient(to left, transparent 50%, $concert 50%);
+    background-size: 200% 100%;
+    background-position: right 0px bottom;
+	}
+	.no-touch &:hover {
+
+		&:before {
+			//background-color: $color_primary;	
+		}
+	}
+
+	&.card-bordered {
+		border: 5px solid $concert;
+	}
+}
+
+.card-projection {
+
+	.meta:before {
+			background-color: $projection;
+	}
+	&:before {
+		/* Old browsers */
+    background: linear-gradient(to left, transparent 50%, $projection 50%);
+    background-size: 200% 100%;
+    background-position: right 0px bottom;
+	}
+	.no-touch &:hover {
+
+		&:before {
+			//background-color: $color_primary;	
+		}
+	}
+
+	&.card-bordered {
+		border: 5px solid $projection;
+	}
+}
+
+
+.card-visite {
+
+	.meta:before {
+			background-color: $visite;
+	}
+	&:before {
+		/* Old browsers */
+    background: linear-gradient(to left, transparent 50%, $visite 50%);
+    background-size: 200% 100%;
+    background-position: right 0px bottom;
+	}
+	.no-touch &:hover {
+
+		&:before {
+			//background-color: $color_primary;	
+		}
+	}
+
+	&.card-bordered {
+		border: 5px solid $visite;
+	}
+}
+
+
+.card-bordered {
+	border: 5px solid;
+
+	&:after {
+		border: none !important;
+	}
+}
+
+.card.grand_format {
+
+	.teaser_img {
+		position: relative;
+		z-index: 9;
+	}
+
+	.teaser_title,
+	.teaser_horaires {
+		z-index: 99;	
+		color: $white !important;
+		width: 100%;
+
+		* {
+			line-height: 1.4;
+			color: inherit !important;
+		}
+	}
+
+
+	.teaser_title {
+		position: absolute;
+		padding: .5em .5em 2em .5em;
+		top: 0;
+		left: 0;
+		right: 0; 
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+		/* FF3.6-15 */
+		background: -webkit-linear-gradient(rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%);
+		background: -o-linear-gradient(rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%);
+		background: linear-gradient(rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+	}
+	.teaser_horaires {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0; 
+		padding: 1em .5em .5em .5em;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+100 */
+		background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+
+		.icon_info {
+			margin: 0;
+		}
+	}
+
+
+	&.pastDate {
+		.teaser_title {
+			background: -webkit-linear-gradient(rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+			background: -o-linear-gradient(rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+			background: linear-gradient(rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+		}
+		.teaser_horaires {
+			background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+		}
+
+	}
+
+	.teaser_iframe {
+		height: 300px;
+	}
+
+}
+
+
+.card {
+
+	.teaser_img {
+		overflow: hidden;
+		position: relative;
+		@include up-to(large) {
+			min-height: 350px;
+		}
+		@include up-to(medium) {
+			max-height: none;
+		}
+	}
+
+	.iframe_ratio,
+	.img_ratio {
+	  position: relative;
+	  width: 100%;
+	  height: 100%;
+	  img {
+	  	height: 100%;
+	  	object-fit: cover;
+	  }
+	}
+
+	.iframe_ratio:after {
+	  content: "";
+	  display: block;
+	  padding-bottom: 70%;
+	}
+	.img_ratio:after {
+	  content: "";
+	  display: block;
+	  padding-bottom: 80%;
+	}
+
+	.teaser_iframe {
+		display: block;
+		width: 100%;
+		height: 100%;
+		transform: scale(1.4);
+	}
+
+	.teaser_live {
+		position: absolute;
+		z-index: 9;
+		top: 0;
+		left: 0;
+		display: inline-block;
+		background-color: rgba(0,0,0,.5);
+		color: white;
+		padding: .3em .4em .4em;
+		display: flex;
+		align-items: center;
+		line-height: 1;
+
+		span {
+			padding-right: 10px;
+			font-size: 2rem;
+			padding-top: 2px;
+		}
+	}
+
+	&.pastDate {
+		.teaser_live {
+			opacity: .4;
+		}
+	}
+}
+
+
+.card-exposition {
+
+	.no-touch &:hover {
+		cursor: unset;
+	}
+
+	.meta:before {
+		background-color: $color_tertiary;
+	}
+
+	&:before {
+		top: -200px;
+		right: -200px;
+		height: auto;
+		z-index: 0;
+		bottom: 50%;
+
+		@include up-to(large) {
+		  left: -0.7em;
+		}
+		@include up-to(medium) {
+		  left: -5.7em;
+		}
+		@include at-least(large) {
+		  left: -1em;
+		}
+		@include at-least(wide) {
+		  left: -1.5em;
+		}
+
+		background-color:  $gray_light;
+		/* Old browsers */
+    background: linear-gradient(to left, $gray_light 50%, $color_tertiary 50%);
+    background-size: 200% 100%;
+    background-position: right 0px bottom;
+	}
+
+	&.no-top:before {
+		top: 0;
+		right: 0;
+		height: 45%;
+		z-index: 0;
+	}
+
+	.no-touch &:hover {
+
+		&:before {
+			//background-color: $color_tertiary;
+		}
+	}
+}
+
+.card-exposition--plain {
+
+	.meta:before {
+		background-color: $white;
+	}
+
+	.inner {
+		z-index: 99;
+	}
+
+	&:before {
+		top: -200px;
+		right: -200px;
+		height: auto;
+		z-index: 0;
+		bottom: 50%;
+    opacity: 1;
+    background-color: $color_tertiary;
+
+		@include up-to(large) {
+		  left: -12px;
+		}
+		@include up-to(medium) {
+			top: -10px;
+		  left: -5.7em;
+		}
+		@include at-least(large) {
+		  left: -14px;
+		}
+		@include at-least(wide) {
+		  left: -16px;
+		}
+	}
+
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		height: 50%;
+		z-index: 0;
+		transition: all 0.5s ease;
+		opacity: 1;
+		right: -200px;
+		z-index: 0;
+		bottom: 0;
+
+		@include up-to(large) {
+		  left: -12px;
+		}
+		@include up-to(medium) {
+		  left: -5.7em;
+		}
+		@include at-least(large) {
+		  left: -14px;
+		}
+		@include at-least(wide) {
+		  left: -16px;
+		}
+
+		background-color: $gray_light;
+		/* Old browsers */
+    background: linear-gradient(to left, $gray_light 50%, $color_tertiary 50%);
+    background-size: 200% 100%;
+    background-position: right 0px bottom;
+	}
+
+	&:hover {
+
+		&:after {
+    	background-position:left bottom;
+    	opacity: 1;
+		}
+
+	}
+
+	.expo_2 & {
+
+		@include up-to(medium) {
+			&:before {
+				top: -10px;
+			}
+		}
+		@include at-least(medium) {
+			&:before {
+				top: 0;
+			}
+		}
+
+	}
+}
+
+
+.card-exposition--little {
+
+	.meta:before {
+		background-color: $white;
+	}
+
+	.no-touch &:hover {
+
+		.meta:before {
+			background-color: $color_tertiary;
+		}
+	}
+}
+
+.artist_event {
+	position: relative;
+
+	.fc_24 {
+		position: relative;
+	}
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 45%;
+
+    transition: all 0.5s ease;
+		/* Old browsers */
+    background: linear-gradient(to left, $color_tertiary 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right 0px bottom;
+	}
+	.no-touch &:hover {
+		cursor: pointer;
+
+		.meta:before {
+			background-color: $color_tertiary;
+		}
+		
+		&:before {
+    	background-position:left bottom;
+
+		}
+	}
+}
+.past-expo {
+
+	.fc_24 {
+	}
+
+	&:before {
+
+    transition: all 0.5s ease;
+		/* Old browsers */
+    background: linear-gradient(to left, #eeeeee 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right 0px bottom;
+	}
+
+	.no-touch &:hover {
+		cursor: pointer;
+
+		.meta:before {
+			background-color: #eeeeee;
+		}
+		
+		&:before {
+    	background-position:left bottom;
+
+		}
+	}
+}
+
+
+.nextExpo_title {
+
+	position: relative;
+
+	h3 {
+		position: relative;
+	}
+
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 45%;
+
+    transition: all 0.5s ease;
+		/* Old browsers */
+    background: linear-gradient(to left, $color_tertiary 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right 0px bottom;
+	}
+	.no-touch &:hover {
+		cursor: pointer;
+
+		&:before {
+    	background-position:left bottom;
+
+		}
+	}
+
+}
+
+
+
+
+
+
+// SHOP
+
+.card--shop {
+	padding: $base_line_height * 2 1.5em;
+	color: $white;
+
+	&::before {
+	  height: 100%;
+	  background: black;
+	  opacity: .15;
+	  z-index: 0;
+	}
+	.card-title {
+		position: relative;
+	}
+	.inner {
+		padding: 34px;
+		background-color: rgba(0,0,0,0.3);
+	}
+	span {
+		color: inherit;
+		position: relative;
+	}
+}
+
+.card-restaurant {
+
+	& > div {
+		position: relative;
+	}
+	p {
+		clear: both;
+	}
+
+
+}
+
+
+
+
+.teaser_event_large {
+
+		.days_remaining {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			color: $white;
+			display: block;
+			height: auto;
+			width: auto;
+			padding: 6px 13px 15px;
+			background-color: rgba(0,0,0,0.5);
+			line-height: .8;
+			z-index: 9;
+
+			span {
+				font-size: 8rem;
+				font-family: $font_family_title;
+			}
+
+		}
+
+
+	.teaser_img {
+		height: 350px;
+	}
+
+	.manif_date_item {
+		margin-top: 0;
+	}
+
+	@include up-to(medium) {
+
+		margin-bottom: $base_line_height / 2;
+
+		&::before {
+			background-size: 200% 100%;
+		}
+
+		.teaser_img {
+			margin-bottom: 10px;
+			min-height: auto;
+			height: 275px;
+		}
+	}
+
+	@include at-least(medium) {
+
+		&::before {
+			background-size: 135% 100%; 
+		}
+
+		&.virtual::before {
+			background-size: 200% 100%;
+		} 
+
+		.teaser_img {
+			width: 66%;
+		}
+
+		.teaser_details {
+			width: 33%;
+			flex-direction: column;
+			justify-content: space-between;
+			padding-left: 10px;
+		}
+
+	}
+
+
+	&.virtual {
+
+		.inner > .is-flex {
+			position: relative;
+		}
+		
+		.teaser_img {
+			width: 100%;
+			position: relative;
+			overflow: hidden;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				max-height: 350px;
+			}
+
+			iframe {
+				height: 100%;
+				width: 100%;
+				background: black;
+				display: block;
+				transform: scale(1.6); 
+			}
+
+			@include at-least(medium) {
+
+				&:after {
+					content: '';
+					position: absolute;
+					right: 0;
+					top: 0;
+					bottom: 0;
+					left: 40%;
+					/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.07+0,0.91+100 */
+					background: -moz-linear-gradient(left,  rgba(0,0,0,0.0) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+					background: -webkit-linear-gradient(left,  rgba(0,0,0,0.0) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+					background: linear-gradient(to right,  rgba(0,0,0,0.0) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#12000000', endColorstr='#e8000000',GradientType=1 ); /* IE6-9 */
+				}
+			}
+
+		}
+
+
+		
+		.teaser_details {
+			position: absolute;
+			right: 10px;
+			top: 28px;
+	    bottom: 28px;
+	    width: 33%;
+	    justify-content: space-between;
+			color: white;
+			@include up-to(medium) {
+				width: 100%;
+				position: static;
+				color: black;
+
+			}
+		}
+
+		.teaser_clock {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			padding: 3px 10px 35px;
+			background-color: rgba(0,0,0,.5);
+			color: white;
+			width: auto;
+			.clock_label {
+				bottom: -22px;
+			}
+			@include up-to(medium) {
+				font-size: 6rem;
+				line-height: .9;
+				width: auto;
+
+				.clock_label_outer {
+					width: 56px;
+				}
+				.clock_label {
+					font-size: 1.4rem;
+				}
+			}
+		}
+
+		.manif_date_item * {
+			@include at-least(medium) {
+				color: white;
+			}
+		}
+		.teaser_user {
+			margin-top: 3px;
+			font-weight: bold;
+		}
+		.icon-user {
+			width: 25px;
+			height: 25px;
+			background: #f0f0f0;
+			display: inline-block;
+			line-height: 25px;
+			text-align: center;
+			font-weight: 400;
+			margin-right: 7px;
+			color: black;
+		}
+	}
+
+}
+
+
+
+.card-page {
+
+	.card-inner {
+		color: white;
+
+	}
+	.card_title {
+		content: '';
+		position: absolute;
+		padding: .5em .5em 2em .5em;
+		top: 0;
+		left: 0;
+		right: 0; 
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+		/* FF3.6-15 */
+		background: -webkit-linear-gradient(rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%);
+		background: -o-linear-gradient(rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%);
+		background: linear-gradient(rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+	}
+
+	.card_intro {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0; 
+		padding: 3em .5em .5em .5em;
+		background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+	}
+		
+
+}
+

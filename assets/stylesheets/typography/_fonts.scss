@@ -1,0 +1,282 @@
+/*
+ * Font faces
+ *
+ * @package fegl
+ */
+
+
+
+
+@font-face {
+  font-family: 'AnticipationsSans';
+  src: url('assets/fonts/AnticipationsSans/AnticipationsSans-Option1BETA.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+} 
+// @font-face {
+//   font-family: 'AnticipationsSans';
+//   src: url('assets/fonts/AnticipationsSans/AnticipationsSans-Option2BETA.otf') format('opentype');
+//   font-weight: 400;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: 'AnticipationsSans';
+//   src: url('assets/fonts/AnticipationsSans/AnticipationsSans-Option3BETA.otf') format('opentype');
+//   font-weight: 400;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: 'AnticipationsSans';
+//   src: url('assets/fonts/AnticipationsSans/AnticipationsSans-Option4BETA.otf') format('opentype');
+//   font-weight: 400;
+//   font-style: normal;
+// }
+
+
+@font-face {
+  font-family: 'Apercu';
+  src: url('assets/fonts/Apercu/apercu-regular-pro.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+// @font-face {
+//   font-family: 'Apercu';
+//   src: url('assets/fonts/Apercu/apercu-italic-pro.otf') format('opentype');
+//   font-weight: 400;
+//   font-style: italic;
+// }
+// @font-face {
+//   font-family: 'Apercu';
+//   src: url('assets/fonts/Apercu/apercu-light-pro.otf') format('opentype');
+//   font-weight: 100;
+//   font-style: normal;
+// }
+@font-face {
+  font-family: 'Apercu';
+  src: url('assets/fonts/Apercu/ApercuPro-Light.eot?#iefix') format('embedded-opentype'),  
+        url('assets/fonts/Apercu/ApercuPro-Light.otf')  format('opentype'),
+        url('assets/fonts/Apercu/ApercuPro-Light.woff') format('woff'), 
+        url('assets/fonts/Apercu/ApercuPro-Light.ttf')  format('truetype'),
+        url('assets/fonts/Apercu/ApercuPro-Light.svg#ApercuPro-Light') format('svg');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Apercu';
+  src: url('assets/fonts/Apercu/apercu-bold-pro.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+// @font-face {
+//   font-family: 'Apercu';
+//   src: url('assets/fonts/Apercu/apercu-medium-pro.otf') format('opentype');
+//   font-weight: 700;
+//   font-style: normal;
+// }
+@font-face {
+  font-family: 'ApercuMono';
+  src: url('assets/fonts/Apercu/apercu-mono-pro.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'ApercuMono';
+  src: url('assets/fonts/Apercu/apercu-mono-bold-pro.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('assets/fonts/icons/icomoon.eot?17plex');
+  src:  url('assets/fonts/icons/icomoon.eot?17plex#iefix') format('embedded-opentype'),
+    url('assets/fonts/icons/icomoon.ttf?17plex') format('truetype'),
+    url('assets/fonts/icons/icomoon.woff?17plex') format('woff'),
+    url('assets/fonts/icons/icomoon.svg?17plex#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+[class^="icon-"], [class*=" icon-"],
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-fleche_down:before {
+  content: "\e926";
+  color: #fff;
+}
+.icon-online:before {
+  content: "\e922";
+}
+.icon-user:before {
+  content: "\e923";
+}
+.icon-cinema:before {
+  content: "\e924";
+}
+.icon-audio:before {
+  content: "\e925";
+}
+.icon-play:before {
+  content: "\e91d";
+}
+
+.icon-feuilleter {
+  background-image: url('/sites/all/themes/fgl/assets/img/decouvrir.png');
+  width: 35px !important;
+  height: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon-feuilleter:before {
+//  content: "\e921";
+}
+
+.icon-liste:before {
+  content: "\e91f";
+  font-size: 2.5rem;
+  padding: 6px;
+}
+.icon-mosaic:before {
+  content: "\e920";
+  font-size: 2.5rem;
+  padding: 6px;
+}
+.icon-liste,
+.icon-mosaic {
+  &.active:before,
+  &:hover:before {
+    background-color: $black;
+    color: $white;
+  }
+}
+
+.icon-back:before {
+  content: "\e91e";
+}
+
+.icon-plus:before {
+  content: "\e915";
+  font-size: 2rem;
+}
+// .icon-close-modal:before {
+//   content: "\e916";
+//   font-size: 2rem;
+// }
+.icon-moins:before {
+  content: "\e91b";
+  font-size: 2rem;
+}
+.icon-close-modal:before {
+  content: "\e91c";
+}
+
+.icon-fleche_up:before {
+  content: "\e914";
+  color: $white;
+  font-size: 20px; 
+  font-size: 2rem;
+}
+.icon-lien_interne--left:before {
+  content: "\e910";
+  font-size: 0.7em; 
+}
+.icon-lien_externe:before {
+  content: "\e911";
+  font-size: 0.7em; 
+}
+.icon-lien_interne:before {
+  content: "\e912";
+  font-size: 0.7em; 
+}
+.icon-fermer:before {
+  content: "\e90e";
+}
+.icon-appleplan:before {
+  content: "\e90a";
+}
+.icon-citymapper:before {
+  content: "\e90b";
+}
+.icon-gmaps:before {
+  content: "\e90c";
+}
+
+.icon-like_empty:before {
+  content: "\e908";
+}
+.icon-like_full:before {
+  content: "\e909";
+}
+.icon-bus:before {
+  content: "\e900";
+  @include type-setting(0);
+}
+.icon-car:before {
+  content: "\e901";
+  @include type-setting(0);
+}
+.icon-metro:before {
+  content: "\e902";
+  @include type-setting(0);
+}
+.icon-velo:before {
+  content: "\e903";
+  @include type-setting(0);
+}
+.icon-autolib:before {
+  content: "\e913";
+  font-size: 2rem;
+}
+
+.icon-instagram:before {
+  content: "\e904";
+  @include type-setting(2);
+}
+.icon-tweeter:before {
+  content: "\e905";
+  @include type-setting(2);
+}
+.icon-facebook:before {
+  content: "\e90d";
+  @include type-setting(2);
+}
+.icon-internet:before {
+  content: "\e90f";
+  @include type-setting(2);
+  font-weight: $bold;
+}
+
+.icon-down:before {
+  content: "\e906";
+  font-size: 15px;
+}
+.icon-up:before {
+  content: "\e907";
+  font-size: 15px;
+}

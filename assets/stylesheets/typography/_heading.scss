@@ -1,0 +1,205 @@
+/*
+ * Heading
+ *
+ * @package fegl
+ */
+
+
+
+
+h1, h2, h3,h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: $base_line_half;
+  //@include word-wrap;
+}
+
+h3.text-on-right {
+  @include up-to(medium) {
+    text-align: left !important;
+  }
+}
+
+.page-content {
+  h2:not([class *= "fh"]) {
+    font-family: $font_family_title;
+    font-size: 8rem;
+    line-height: .8;
+    font-weight: $regular;
+    margin-bottom: $base_line_height * 2;
+  }
+}
+.fh_0 {
+  @include type-setting(3);
+  font-family: $font_family_paragraph;
+  line-height: 1.2;
+  font-weight: $bold;
+}
+.fh_1 {
+  @include type-setting(4);
+  font-family: $font_family_paragraph;
+  line-height: 1.2;
+  font-weight: $bold;
+}
+.fh_11 {
+  @include type-setting(4);
+  font-family: $font_family_paragraph;
+  line-height: 1.2;
+  font-weight: $regular;
+}
+.fh_12 {
+  @include type-setting(5);
+  font-family: $font_family_paragraph;
+  line-height: 1.2;
+  font-weight: $bold;
+}
+.fh_2 {
+  @include type-setting(5);
+  font-family: $font_family_title;
+  line-height: 0.9;
+  color: $gray_darker;
+  font-weight: $regular;
+}
+.fh_2_1 {
+  @include type-setting(5);
+  font-family: $font_family_title;
+  line-height: 0.9;
+  color: $white;
+}
+
+.fh_3 {
+  @include type-setting(6);
+  font-family: $font_family_title;
+  line-height: 0.9;
+  font-weight: $regular;
+  color: $gray_darker;
+}
+.fh_31 {
+  font-size: 50px;
+  font-size: 5rem;
+  font-family: $font_family_title;
+  line-height: 0.6;
+  font-weight: $regular;
+  color: $gray_darker;
+}
+.fh_4 {
+  @include type-setting(7);
+  font-family: $font_family_title;
+  line-height: 0.9;
+  font-weight: $regular;
+
+  @include up-to(medium) {
+    font-size: 55px;
+    font-size: 5.5rem;
+  }
+}
+.fh_5 {
+  @include type-setting(7);
+  font-family: $font_family_title;
+  line-height: 0.8;
+  font-weight: $regular;
+
+  @include up-to(medium) {
+    font-size: 50px;
+    font-size: 5rem;
+  }
+}
+
+.fh_6 {
+  @include type-setting(8);
+  font-family: $font_family_title;
+  line-height: 0.85;
+  font-weight: $regular;
+
+  @include up-to(medium) {
+    font-size: 80px;
+    font-size: 8rem;
+  }
+}
+
+.fh_7 {
+  @include type-setting(9);
+  font-family: $font_family_title;
+  color: $color_tertiary;
+  font-weight: $regular;
+  text-align: center;
+  line-height: 0.8;
+}
+.fh_71 {
+  @include type-setting(9);
+  font-family: $font_family_title;
+  color: $white;
+  font-weight: $regular;
+  line-height: 0.8;
+
+  @include up-to(medium) {
+    font-size: 100px;
+    font-size: 10rem;
+  }
+}
+.fh_72 {
+  font-size: 10rem;
+  font-family: $font_family_title;
+  color: $white;
+  font-weight: $regular;
+  line-height: 0.8;
+
+  @include up-to(medium) {
+    font-size: 100px;
+    font-size: 10rem;
+  }
+}
+
+.fh_8 {
+  @include type-setting(10);
+  font-family: $font_family_title;
+  line-height: 0.6;
+  color: $white;
+  font-weight: $regular;
+  @include transition(all 0.1s);
+
+  @include up-to(medium) {
+    font-size: 64px;
+    font-size: 6.4rem;
+  }
+}
+.fh_9 {
+  font-family: $font_family_title;
+  font-size: 145px;
+  font-size: 14.5rem;
+  line-height: 0.8;
+  color: $white;
+  font-weight: $regular;
+
+  @include at-least(medium) {
+    font-size: 135px;
+    font-size: 13.5rem;
+  }
+  @include at-least(large) {
+    font-size: 165px;
+    font-size: 16.5rem;
+    line-height: 0.8;
+  }
+}
+.fh_10 {
+  font-family: $font_family_title;
+  font-size: 170px;
+  font-size: 17rem;
+  line-height: 0.9;
+  color: $white;
+  font-weight: $regular;
+
+  @include at-least(medium) {
+    font-size: 200px;
+    font-size: 20rem;
+  }
+  @include at-least(large) {
+    font-size: 28px;
+    font-size: 28rem;
+    line-height: 0.8;
+  }
+}
+
+.meta {
+}
+
+
