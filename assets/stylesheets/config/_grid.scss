@@ -137,44 +137,18 @@ $wide_breakpoint:                   1550px !default;
   }    
 }
 
-
-@include up-to(large) {
-    .paddinged-left {
-      padding-left: 12px;
-    }
-    .paddinged-right {
-      padding-right: 12px;
-    }
+.paddinged-left {
+  padding-left: 20px;
 }
-@include up-to(medium) {
-    .paddinged-left {
-      padding-left: 0;
-    }
-    .paddinged-right {
-      padding-right: 0;
-    }
-}
-@include at-least(large) {
-    .paddinged-left {
-      padding-left: 14px;
-    }
-    .paddinged-right {
-      padding-right: 14px;
-    }
-}
-@include at-least(wide) {
-    .paddinged-left {
-      padding-left: 16px;
-    }
-    .paddinged-right {
-      padding-right: 16px;
-    }
+.paddinged-right {
+  padding-right: 20px;
 }
 
-    .paddinged-both {
-      @extend .paddinged-right;
-      @extend .paddinged-left;
-    }
+.paddinged-both {
+  @extend .paddinged-right;
+  @extend .paddinged-left;
+}
+
 
 @include at-least(medium) {
     .bordered-left {

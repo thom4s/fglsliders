@@ -125,6 +125,10 @@ body {
     }
   }
 
+  .section_content {
+    padding-left: 20px;
+  }
+
   .section_content:before {
       content: '';
       position: absolute;
