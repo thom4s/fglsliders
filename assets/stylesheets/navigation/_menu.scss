@@ -120,12 +120,6 @@ ul.nice-menu > li {
 		@include transition(none);
 		display: inline-block;
 		padding-bottom: 3px;
-		font-size: 1.8rem;
-	
-		@include at-least(medium) {
-			font-size: 2.1rem;
-
-		} 
 
 		&:active {
 			color: $black !important;
