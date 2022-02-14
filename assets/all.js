@@ -2418,49 +2418,58 @@ jQuery( document ).ready(function( ) {
 	 * NEW SLIDERS (02/2022)
 	 *******************/ 
 
+	if( document.querySelector('.slide_large') ) {
 
-	var slider_large = tns({
-        container: '.slide_large',
-        items: 1.4,
-        autoplay: false,
-        loop: false,
-        mouseDrag: true,
-        controlsText: ['', ''],
-        responsive: {
-          880: {
-            items: 1.73
-          }
-        }
-    });
+		var slider_large = tns({
+			container: '.slide_large',
+			items: 1.4,
+			autoplay: false,
+			loop: false,
+			mouseDrag: true,
+			controlsText: ['', ''],
+			responsive: {
+				880: {
+					items: 1.73
+				}
+			}
+		});
+	}
 
+	if( document.querySelector('.slide_medium') ) {
 
-    var slider_medium = tns({
-        container: '.slide_medium',
-        items: 1.4,
-        autoplay: false,
-        loop: false,
-        mouseDrag: true,
-        controlsText: ['', ''],
-        responsive: {
-          880: {
-            items: 2.2
-          }
-        }
-    });
+		var slider_medium = tns({
+			container: '.slide_medium',
+			items: 1.4,
+			autoplay: false,
+			loop: false,
+			mouseDrag: true,
+			controlsText: ['', ''],
+			responsive: {
+				880: {
+					items: 2.2
+				}
+			}
+		});
+	}
 
-    var slider_small = tns({
-      container: '.slide_small',
-      items: 1.4,
-      autoplay: false,
-      loop: false,
-      mouseDrag: true,
-      controlsText: ['', ''],
-      responsive: {
-        880: {
-           items: 3
-        }
-      }
-  });
+	if( document.querySelector('.slide_medium') ) {
+
+		var slider_small = tns({
+			container: '.slide_small',
+			items: 1.4,
+			autoplay: false,
+			loop: false,
+			mouseDrag: true,
+			controlsText: ['', ''],
+			responsive: {
+				880: {
+					items: 3
+				}
+			}
+		});
+	}
+
+	
 
 
 
