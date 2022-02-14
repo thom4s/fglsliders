@@ -13,21 +13,21 @@
 .meter { 
 	height: 6px;
 	position: relative;
-	background: $color_tertiary;
+	background: $color_primary;
 	-moz-border-radius: 2px;
 	-webkit-border-radius: 2px;
 	border-radius: 2px;
 }
 .meter--left { 
 	@extend .meter;
-	background: $gray_ccc;
+	background: $gray_light;
 
 }
 
 .meter > span {
   display: block;
   height: 100%;
-  background-color: $gray_darker;
+  background-color: $gray_dark;
   position: relative;
   overflow: hidden;
 

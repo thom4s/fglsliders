@@ -212,7 +212,7 @@ h1, h2, h3,h4, h5, h6 {
   @include type-setting(5);
   font-family: $font_family_title;
   line-height: 0.9;
-  color: $gray_darker;
+  color: $gray_dark;
   font-weight: $regular;
 }
 .fh_2_1 {
@@ -227,7 +227,7 @@ h1, h2, h3,h4, h5, h6 {
   font-family: $font_family_title;
   line-height: 0.9;
   font-weight: $regular;
-  color: $gray_darker;
+  color: $gray_dark;
 }
 .fh_31 {
   font-size: 50px;
@@ -235,7 +235,7 @@ h1, h2, h3,h4, h5, h6 {
   font-family: $font_family_title;
   line-height: 0.6;
   font-weight: $regular;
-  color: $gray_darker;
+  color: $gray_dark;
 }
 .fh_4 {
   @include type-setting(7);
@@ -275,7 +275,7 @@ h1, h2, h3,h4, h5, h6 {
 .fh_7 {
   @include type-setting(9);
   font-family: $font_family_title;
-  color: $color_tertiary;
+  color: $color_primary;
   font-weight: $regular;
   text-align: center;
   line-height: 0.8;

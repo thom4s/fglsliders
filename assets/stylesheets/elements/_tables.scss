@@ -346,13 +346,13 @@ th {
 .ui-widget.ui-widget-content {
 }
 .ui-widget-content {
-  color: $gray_darker;
+  color: $gray_dark;
 }
 .ui-widget-content a {
   color: #333333;
 }
 .ui-widget-header {
-  color: $gray_darker;
+  color: $gray_dark;
 }
 .ui-widget-header a {
   color: #333333;
@@ -366,11 +366,11 @@ th {
 .ui-button,
 .no-touch  .ui-button.ui-state-disabled:hover,
 .no-touch  .ui-button.ui-state-disabled:active {
-  color: $gray_darker;
+  color: $gray_dark;
   text-align: center;
 }
 .passed a.ui-state-default {
-  color: $gray_ccc;
+  color: $gray_medium;
 }
 .ui-state-default a,
 .ui-state-default a:link,
@@ -437,7 +437,7 @@ a.ui-button:active,
 .ui-state-highlight,
 .ui-widget-content .ui-state-highlight,
 .ui-widget-header .ui-state-highlight {
-  background: $gray_darker;
+  background: $gray_dark;
   color: $white;
 }
 .ui-state-checked {

@@ -19,7 +19,7 @@ a {
 		.no-touch &:hover,
 		&:active {
 			text-decoration: none !important;
-			border-bottom: 2px solid $color_tertiary;
+			border-bottom: 2px solid $color_primary;
 		}
   }
   p &,
@@ -37,7 +37,7 @@ a:active {
 		.no-touch &:hover,
 		&:active {
 			text-decoration: none !important;
-			border-bottom: 2px solid $color_tertiary;
+			border-bottom: 2px solid $color_primary;
 		}
 }
 
@@ -58,7 +58,7 @@ a:active {
 	@include transition(all 0.5s);
 
 	.no-touch &:hover {
-		background-color: $color_tertiary;
+		background-color: $color_primary;
 		color: $black;
 	}
 

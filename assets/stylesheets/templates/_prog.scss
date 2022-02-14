@@ -27,43 +27,43 @@
 			background-color: #f0f0f0;
 		}
 		&.card-atelier:before {
-			background-color: $atelier;
+			background-color: $color_primary;
 		}
 		&.card-visite:before {
-			background-color: $visite;
+			background-color: $color_primary;
 		}
 		&.card-performance:before {
-			background-color: $performance;
+			background-color: $color_primary;
 		}
 		&.card-concert:before {
-			background-color: $concert;
+			background-color: $color_primary;
 		}
 		&.card-rencontre:before {
-			background-color: $rencontre;
+			background-color: $color_primary;
 		}
 		&.card-projection:before {
-			background-color: $projection;
+			background-color: $color_primary;
 		}
 		&.card-expo:before {
-			background-color: $expo;
+			background-color: $color_primary;
 		}
 		&.card-visite-guidee:before {
-			background-color: $visite-guidee;
+			background-color: $color_primary;
 		}
 		&.card-conversation:before {
-			background-color: $conversation;
+			background-color: $color_primary;
 		}
 		&.card-dance:before {
-			background-color: $dance;
+			background-color: $color_primary;
 		}
 		&.card-music:before {
-			background-color: $music;
+			background-color: $color_primary;
 		}
 		&.card-warmup:before {
-			background-color: $warmup;
+			background-color: $color_primary;
 		}
 		&.card-special:before {
-			background-color: $specialproject;
+			background-color: $color_primary;
 		}
 
 		&:hover {
@@ -175,7 +175,7 @@
 				height: 1px;
 				display: block;
 				margin: auto;
-				border-bottom: 1px solid $gray;
+				border-bottom: 1px solid $gray_medium;
 				content: "";
 			}
 		}
@@ -342,10 +342,10 @@
 		}
 
 		&.expo_majeur a {
-			background-color: $color_tertiary;
+			background-color: $color_primary;
 
 			.meta-exposition::before {
-				background-color: $gray_lighter;
+				background-color: $gray_light;
 			}
 			.item_title {
 				font-size: 4.8rem;

@@ -86,7 +86,7 @@
 			z-index: -1;
 			left: 0;
 			top: 0;
-			background-color: $expo;
+			background-color: $color_primary;
 
 		}
 	}
@@ -95,7 +95,7 @@
 		margin-top: $base_line_height / 2;
 
 		&:before {
-			background-color: $color_tertiary;
+			background-color: $color_primary;
 		}
 	}
 	.meta-exposition--white {
@@ -110,19 +110,19 @@
 		@extend .meta;
 
 		&:before {
-			background-color: $gray_lighter;
+			background-color: $gray_light;
 		}
 	}
 
 
 .card-jeunepublic {
 	.meta:before {
-			background-color: $green_alt;
+			background-color: $color_primary;
 	}
 
 	&:before {
 		/* Old browsers */
-    background: linear-gradient(to left, transparent 50%, $green_alt 50%);
+    background: linear-gradient(to left, transparent 50%, $color_primary 50%);
     background-size: 200% 100%;
     background-position: right 0px bottom;
 	}
@@ -134,18 +134,18 @@
 	}
 
 	&.card-bordered {
-		border: 5px solid $green_alt;
+		border: 5px solid $color_primary;
 	}
 }
 
 
 .card-rencontre {
 	.meta:before {
-			background-color: $rencontre;
+			background-color: $color_primary;
 	}
 	&:before {
 		/* Old browsers */
-    background: linear-gradient(to left, transparent 50%, $rencontre 50%);
+    background: linear-gradient(to left, transparent 50%, $color_primary 50%);
     background-size: 200% 100%;
     background-position: right 0px bottom;
 	}
@@ -157,7 +157,7 @@
 	}
 
 	&.card-bordered {
-		border: 5px solid $rencontre;
+		border: 5px solid $color_primary;
 		margin-bottom: 0;
 	}
 }
@@ -165,17 +165,17 @@
 
 .card-conversation {
 	.meta:before {
-			background-color: $conversation;
+			background-color: $color_primary;
 	}
 	&:before {
 		/* Old browsers */
-    background: linear-gradient(to left, transparent 50%, $conversation 50%);
+    background: linear-gradient(to left, transparent 50%, $color_primary 50%);
     background-size: 200% 100%;
     background-position: right 0px bottom;
 	}
 
 	&.card-bordered {
-		border: 5px solid $conversation;
+		border: 5px solid $color_primary;
 		margin-bottom: 0;
 	}
 }
@@ -183,68 +183,68 @@
 
 .card-dance {
 	.meta:before {
-			background-color: $dance;
+			background-color: $color_primary;
 	}
 	&:before {
 		/* Old browsers */
-    background: linear-gradient(to left, transparent 50%, $dance 50%);
+    background: linear-gradient(to left, transparent 50%, $color_primary 50%);
     background-size: 200% 100%;
     background-position: right 0px bottom;
 	}
 
 	&.card-bordered {
-		border: 5px solid $dance;
+		border: 5px solid $color_primary;
 		margin-bottom: 0;
 	}
 }
 
 .card-music {
 	.meta:before {
-			background-color: $music;
+			background-color: $color_primary;
 	}
 	&:before {
 		/* Old browsers */
-    background: linear-gradient(to left, transparent 50%, $music 50%);
+    background: linear-gradient(to left, transparent 50%, $color_primary 50%);
     background-size: 200% 100%;
     background-position: right 0px bottom;
 	}
 
 	&.card-bordered {
-		border: 5px solid $music;
+		border: 5px solid $color_primary;
 		margin-bottom: 0;
 	}
 }
 
 .card-warmup {
 	.meta:before {
-			background-color: $warmup;
+			background-color: $color_primary;
 	}
 	&:before {
 		/* Old browsers */
-    background: linear-gradient(to left, transparent 50%, $warmup 50%);
+    background: linear-gradient(to left, transparent 50%, $color_primary 50%);
     background-size: 200% 100%;
     background-position: right 0px bottom;
 	}
 
 	&.card-bordered {
-		border: 5px solid $warmup;
+		border: 5px solid $color_primary;
 		margin-bottom: 0;
 	}
 }
 
 .card-specialproject {
 	.meta:before {
-			background-color: $specialproject;
+			background-color: $color_primary;
 	}
 	&:before {
 		/* Old browsers */
-    background: linear-gradient(to left, transparent 50%, $specialproject 50%);
+    background: linear-gradient(to left, transparent 50%, $color_primary 50%);
     background-size: 200% 100%;
     background-position: right 0px bottom;
 	}
 
 	&.card-bordered {
-		border: 5px solid $specialproject;
+		border: 5px solid $color_primary;
 		margin-bottom: 0;
 	}
 }
@@ -253,11 +253,11 @@
 .card-visiteguidee,
 .card-exposition {
 	.meta:before {
-			background-color: $expo;
+			background-color: $color_primary;
 	}
 	&:before {
 		/* Old browsers */
-    background: linear-gradient(to left, transparent 50%, $expo 50%);
+    background: linear-gradient(to left, transparent 50%, $color_primary 50%);
     background-size: 200% 100%;
     background-position: right 0px bottom;
 	}
@@ -269,7 +269,7 @@
 	}
 
 	&.card-bordered {
-		border: 5px solid $expo;
+		border: 5px solid $color_primary;
 		margin-bottom: 0;
 	}
 }
@@ -277,11 +277,11 @@
 
 .card-atelier {
 	.meta:before {
-			background-color: $atelier;
+			background-color: $color_primary;
 	}
 	&:before {
 		/* Old browsers */
-    background: linear-gradient(to left, transparent 50%, $atelier 50%);
+    background: linear-gradient(to left, transparent 50%, $color_primary 50%);
     background-size: 200% 100%;
     background-position: right 0px bottom;
 	}
@@ -293,18 +293,18 @@
 	}
 
 	&.card-bordered {
-		border: 5px solid $atelier;
+		border: 5px solid $color_primary;
 	}
 }
 
 .card-performance {
 
 	.meta:before {
-			background-color: $performance;
+			background-color: $color_primary;
 	}
 	&:before {
 		/* Old browsers */
-    background: linear-gradient(to left, transparent 50%, $performance 50%);
+    background: linear-gradient(to left, transparent 50%, $color_primary 50%);
     background-size: 200% 100%;
     background-position: right 0px bottom;
 	}
@@ -316,7 +316,7 @@
 	}
 
 	&.card-bordered {
-		border: 5px solid $performance;
+		border: 5px solid $color_primary;
 	}
 }
 
@@ -324,11 +324,11 @@
 .card-concert {
 
 	.meta:before {
-			background-color: $concert;
+			background-color: $color_primary;
 	}
 	&:before {
 		/* Old browsers */
-    background: linear-gradient(to left, transparent 50%, $concert 50%);
+    background: linear-gradient(to left, transparent 50%, $color_primary 50%);
     background-size: 200% 100%;
     background-position: right 0px bottom;
 	}
@@ -340,18 +340,18 @@
 	}
 
 	&.card-bordered {
-		border: 5px solid $concert;
+		border: 5px solid $color_primary;
 	}
 }
 
 .card-projection {
 
 	.meta:before {
-			background-color: $projection;
+			background-color: $color_primary;
 	}
 	&:before {
 		/* Old browsers */
-    background: linear-gradient(to left, transparent 50%, $projection 50%);
+    background: linear-gradient(to left, transparent 50%, $color_primary 50%);
     background-size: 200% 100%;
     background-position: right 0px bottom;
 	}
@@ -363,7 +363,7 @@
 	}
 
 	&.card-bordered {
-		border: 5px solid $projection;
+		border: 5px solid $color_primary;
 	}
 }
 
@@ -371,11 +371,11 @@
 .card-visite {
 
 	.meta:before {
-			background-color: $visite;
+			background-color: $color_primary;
 	}
 	&:before {
 		/* Old browsers */
-    background: linear-gradient(to left, transparent 50%, $visite 50%);
+    background: linear-gradient(to left, transparent 50%, $color_primary 50%);
     background-size: 200% 100%;
     background-position: right 0px bottom;
 	}
@@ -387,7 +387,7 @@
 	}
 
 	&.card-bordered {
-		border: 5px solid $visite;
+		border: 5px solid $color_primary;
 	}
 }
 
@@ -551,7 +551,7 @@
 	}
 
 	.meta:before {
-		background-color: $color_tertiary;
+		background-color: $color_primary;
 	}
 
 	&:before {
@@ -576,7 +576,7 @@
 
 		background-color:  $gray_light;
 		/* Old browsers */
-    background: linear-gradient(to left, $gray_light 50%, $color_tertiary 50%);
+    background: linear-gradient(to left, $gray_light 50%, $color_primary 50%);
     background-size: 200% 100%;
     background-position: right 0px bottom;
 	}
@@ -591,7 +591,7 @@
 	.no-touch &:hover {
 
 		&:before {
-			//background-color: $color_tertiary;
+			//background-color: $color_primary;
 		}
 	}
 }
@@ -613,7 +613,7 @@
 		z-index: 0;
 		bottom: 50%;
     opacity: 1;
-    background-color: $color_tertiary;
+    background-color: $color_primary;
 
 		@include up-to(large) {
 		  left: -12px;
@@ -659,7 +659,7 @@
 
 		background-color: $gray_light;
 		/* Old browsers */
-    background: linear-gradient(to left, $gray_light 50%, $color_tertiary 50%);
+    background: linear-gradient(to left, $gray_light 50%, $color_primary 50%);
     background-size: 200% 100%;
     background-position: right 0px bottom;
 	}
@@ -699,7 +699,7 @@
 	.no-touch &:hover {
 
 		.meta:before {
-			background-color: $color_tertiary;
+			background-color: $color_primary;
 		}
 	}
 }
@@ -721,7 +721,7 @@
 
     transition: all 0.5s ease;
 		/* Old browsers */
-    background: linear-gradient(to left, $color_tertiary 50%, white 50%);
+    background: linear-gradient(to left, $color_primary 50%, white 50%);
     background-size: 200% 100%;
     background-position: right 0px bottom;
 	}
@@ -729,7 +729,7 @@
 		cursor: pointer;
 
 		.meta:before {
-			background-color: $color_tertiary;
+			background-color: $color_primary;
 		}
 		
 		&:before {
@@ -786,7 +786,7 @@
 
     transition: all 0.5s ease;
 		/* Old browsers */
-    background: linear-gradient(to left, $color_tertiary 50%, white 50%);
+    background: linear-gradient(to left, $color_primary 50%, white 50%);
     background-size: 200% 100%;
     background-position: right 0px bottom;
 	}

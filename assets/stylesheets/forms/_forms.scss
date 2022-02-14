@@ -10,7 +10,7 @@ $input_background:                  $white !default;
 $input_height:                      $base_line_height ;
 $input_width:                      	$base_line_height ;
 
-$placeholder_text:                  $gray_lighter !default;
+$placeholder_text:                  $gray_light !default;
 
 
 button,
@@ -116,7 +116,7 @@ input::-moz-focus-inner { /* Corrects inner padding and border displayed oddly i
 
 
 	.msg_error {
-		color: $red;
+		color: $color_important;
 	}
 	.msg_valid {
 		color: #6eaa64;

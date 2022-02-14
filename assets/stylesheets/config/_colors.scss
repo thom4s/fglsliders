@@ -6,59 +6,24 @@
 
 
 // Descriptive colors
-$yellow : #ffe972;
-$green : #83f8dd;
-$green_alt: #83f986;
-$purple : #ccaafc;
-$red : #fe967e;
-
+$cyan: #83F8DD;
 
 // Grey nuances
-$black                        : #000 !default;
-$gray_darker                  : #1a1a1a;
-$gray_444											: #444;
-$gray_666											: #666;
-$gray_777											: #777777;
-$gray_999											: #999999;
-$gray_ccc											: #ccc;
-$gray                         : #e5e5e5 !default;
-$gray_light	                  : #f0ecec !default;
-$gray_lighter                 : #f0f0f0 !default;
-$white                        : #fff !default;
-
-
+$black						: #1A1A1A;
+$gray_dark					: #777777;
+$gray_medium				: #d2d2d2;
+$gray_light					: #F0ECEC;
+$white                      : #fff;
 
 // Main color palette
-$color_primary                : $yellow; // performances
-$color_secondary              : $purple; // ateliers
-$color_tertiary               : $green; // jeune public
-$color_quaternary             : $red; // rencontres
-
-$atelier					: #ccaafc;
-$projection				: #fe967e;
-$performance			: #ffe972;
-$rencontre				: #a2e6ff;
-$visite						: #ffc2e4;
-$expo							: #83f8dd;
-$visite-guidee		: #83f8dd;
-$concert					: #ff967b;
-
-$conversation			: #bce593;
-$dance						: #9db6ff;
-$music						: #c2fffb;
-$warmup						: #f2dff7;
-$specialproject		: #f0daac;
-
+$color_primary                : $cyan;
 
 // Common colors
 $color_background             : $white;
-$color_text                   : $gray_darker;
+$color_text                   : $gray_dark;
 
 // Links
-$color_link                   : $color_primary;
-
-// Selections
-$color_selection              : #b3d4fc;
+$color_link                   : $gray_dark;
 
 // Messages
 $color_message                : #f4ecbb;
@@ -73,11 +38,11 @@ $color_notice                 : #66b;
 	background-color: $gray_light;
 
 	[class^="bordered-"], [class*=" bordered-"] {
-		border-color: $gray_ccc;
+		border-color: $gray_medium;
 	}	
 }
 .bg--green {
-	background-color: $color_tertiary;
+	background-color: $color_primary;
 
 	[class^="bordered-"], [class*=" bordered-"] {
 		border-color: #323232;
@@ -85,10 +50,10 @@ $color_notice                 : #66b;
 	}
 }
 .bg--tertiary {
-	background-color: $color_tertiary;
+	background-color: $color_primary;
 
 	[class^="bordered-"], [class*=" bordered-"] {
-		border-color: $gray;
+		border-color: $gray_medium;
 	}	
 }
 .bg--black {

@@ -256,7 +256,7 @@
 			@include up-to(medium) {
 
 				.m-2col:not(:last-child) .teaser_article{
-					border-bottom: 1px solid $gray_ccc;
+					border-bottom: 1px solid $gray_medium;
 					padding-bottom: $base_line_height;
 					margin-bottom: $base_line_height;
 				}
@@ -265,7 +265,7 @@
 
 		.wrapper_nextExpo {
 			padding: 3em 0;
-			background-color: $color_tertiary;
+			background-color: $color_primary;
 
 			.inner {
 				//border-bottom: 1px solid $gray_light;
@@ -280,7 +280,7 @@
 				left: -20px;
 				right: 20px;
 				height: 20px;
-				background-color: $color_tertiary;
+				background-color: $color_primary;
 			}
 			&:after {
 				content: '';
@@ -290,7 +290,7 @@
 				left: -20px;
 				right: 20px;
 				height: 20px;
-				background-color: $color_tertiary;
+				background-color: $color_primary;
 			}
 
 			[class^="bordered-"], [class*=" bordered-"] {
@@ -337,11 +337,11 @@
 			
 			.event_dates,
 			.event_daysleft * {
-				color: $gray_999;
+				color: $gray_medium;
 			}
 
 			.event_daysleft span {
-				background-color: $gray_999;
+				background-color: $gray_medium;
 			}
 
 			.billetterie_action .btn,
@@ -362,7 +362,7 @@
   position: relative;
   width: 25px;
   height: 25px;
-  background: $gray_lighter;
+  background: $gray_light;
   list-style: none;
   margin: 0 7px 0 0 ;
   padding: 0;

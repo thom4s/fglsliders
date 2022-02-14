@@ -10,7 +10,7 @@ button,
 input,
 select,
 textarea {
-  color: $gray_darker;
+  color: $gray_dark;
 }
 
 
@@ -103,7 +103,6 @@ div.short_description {
 %common_a {
   @include type-setting(-4);
   line-height: 20px;
-  color: $gray_999;
 }
 .fc_1 {
   @extend %common_a;
@@ -126,7 +125,6 @@ div.short_description {
 }
 .fc_4 {
   @extend %common_b;
-  color: $gray_999;
   text-transform: uppercase;
 }
 
@@ -158,17 +156,14 @@ div.short_description {
 .fc_71 {
   @extend %common_d;
   font-weight: $regular;
-  color: $gray_777;
   line-height: 2;
 }
 .fc_72 {
   @extend %common_d;
-  color: $gray_444;
   letter-spacing: 0.02em;
 }
 .fc_73 {
   @extend %common_d;
-  color: $gray_666;
   letter-spacing: 0.02em;
 }
 
@@ -179,18 +174,15 @@ div.short_description {
 }
 .fc_8 {
   @extend %common_e;
-  color: $gray_999;
   font-weight: $regular;
   line-height: 1.8;
 }
 .fc_9 {
   @extend %common_e;
-  color: $gray_darker;
   font-weight: $bold;
 }
 .fc_10 {
   @extend %common_e;
-  color: $gray_777;
   font-weight: $light;
 }
 .fc_11 {
@@ -203,21 +195,18 @@ div.short_description {
 .fc_112 {
   @extend %common_e;
   font-weight: $light;
-  color: $gray_777;
 }
 
 .fc_12 {
   @extend %common_e;
   font-weight: $bold;
   line-height: 1.4;
-  color: $gray_darker;
   //letter-spacing: 0.03em;
 }
 .fc_121 {
   @extend %common_e;
   font-weight: $regular;
   line-height: 1.4;
-  color: $gray_darker;
 }
 
 %common_f {
@@ -265,13 +254,11 @@ div.short_description {
 
 %common_g {
   @include type-setting(2);
-  color: $gray_999;
   font-weight: $bold;
 }
 .fc_19 {
   @extend %common_g;
   line-height: 1.6;
-  color: $gray_darker;
 }
 .fc_20 {
   @extend %common_g;
@@ -285,12 +272,10 @@ div.short_description {
 .fc_22 {
   @extend %common_g;
   line-height: 28px;
-  color: $gray_darker;
 }
 .fc_23 {
   @extend %common_g;
   line-height: 30px;
-  color: $gray_darker;
   line-height: 1;
 }
 
@@ -316,7 +301,7 @@ div.short_description {
 .fc_26 {
   @extend %common_h;
   line-height: 1.2;
-  color: $gray_darker;
+  color: $gray_dark;
   font-weight: $light;
   text-transform: uppercase;
 }

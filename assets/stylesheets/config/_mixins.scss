@@ -266,7 +266,7 @@
 
 // Placeholder text
 
-@mixin placeholder($color: $gray_lighter) {
+@mixin placeholder($color: $gray_light) {
   ::-webkit-input-placeholder {
     color: $color;
     opacity: 1;

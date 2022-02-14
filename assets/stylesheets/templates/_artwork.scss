@@ -9,7 +9,7 @@
 
 	[class^="bordered-"], 
 	[class*=" bordered-"] {
-	  border-color: $gray_ccc;
+	  border-color: $gray_medium;
 	 }	
 
 		@include up-to(medium) {
@@ -129,7 +129,7 @@
 		}
 
 		[class^="bordered-"], [class*=" bordered-"] {
-			border-color: $gray_ccc;
+			border-color: $gray_medium;
 		}
 
 		@include up-to(medium) {
@@ -160,7 +160,7 @@
 	}
 
 	.item-email--slide .bx-viewport {
-		background-color: $color_tertiary !important;
+		background-color: $color_primary !important;
 	}
 
 		.memo--inner {
@@ -524,7 +524,7 @@
 	.artwork_curators {
 		background-color: $gray_light;
 		padding-top: $base_line_height;
-		border-top: 1px solid $gray;
+		border-top: 1px solid $gray_medium;
 		padding-bottom: $base_line_height / 2;
 
 		@include at-least(medium) {

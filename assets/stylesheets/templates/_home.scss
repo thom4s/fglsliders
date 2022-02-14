@@ -853,7 +853,7 @@
 		padding-top: $header_height;
 	}
 	.meta:before {
-		//background-color: $color_tertiary;
+		//background-color: $color_primary;
 	}
 	.action,
 	.home_main_description {
@@ -1025,7 +1025,7 @@
 		}
 
 		.home_shortInfo {
-			background-color: $color_tertiary;
+			background-color: $color_primary;
 
 			&:after {
 				z-index: 1;
@@ -1112,7 +1112,7 @@
 				text-align: left;
 				padding-top: $base_line_height;
 				padding-bottom: 0;
-				border-top: 1px solid $gray_ccc;
+				border-top: 1px solid $gray_medium;
 			}
 		}
 	.aside_text {
@@ -1131,7 +1131,7 @@
 
 
 	.home_footer {
-		background-color: $gray_lighter;
+		background-color: $gray_light;
 
 		.wrapper_nextExpo {
 
@@ -1153,7 +1153,7 @@
 	}
 
 	.home_shop--dark {
-		background-color: $gray_darker;
+		background-color: $gray_dark;
 		color: $white;
 
 		&:before {
@@ -1161,7 +1161,7 @@
 			position: absolute;
 			height: 30px;
 			top: -30px;
-			background: $gray_darker;
+			background: $gray_dark;
 			left: -20px;
 			right: 0;
 		}
@@ -1171,7 +1171,7 @@
 			position: absolute;
 			height: 30px;
 			bottom: -30px;
-			background: $gray_darker;
+			background: $gray_dark;
 			left: -20px;
 			right: 0;
 		}
@@ -1202,7 +1202,7 @@
 		}
 	}
 	.home_shop--light {
-		background-color: $gray_lighter;
+		background-color: $gray_light;
 		
 		&.home_footer_left {
 			padding-right: 2em;
