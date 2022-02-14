@@ -49,16 +49,16 @@
 		left: 0;
 		right: -1px;
 		height: 50%;
-	  z-index: 0;
-    transition: all 0.5s ease;
-    opacity: 0;
+		z-index: 0;
+		transition: all 0.5s ease;
+		opacity: 0;
 	}
 	.no-touch &:hover {
 		cursor: pointer;
 
 		&:not(.card--shop):before {
-    	background-position:left bottom;
-    	opacity: 1;
+			background-position:left bottom;
+			opacity: 1;
 		}
 
 		.meta:before {
@@ -124,6 +124,8 @@
 		}
 	}
 
+
+// TODO: CLEAN & REMOVE
 
 .card-jeunepublic {
 	.meta:before {

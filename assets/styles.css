@@ -669,7 +669,7 @@ td, th { padding: 0; }
   .row .w-last { float: right !important; } }
 
 /*  Placeholders & utility classes @package fegl */
-/*  Layout */
+/*  Utilities for Layout */
 .is-on-left { float: left !important; }
 
 .is-on-right { float: right !important; }
@@ -702,7 +702,7 @@ td, th { padding: 0; }
 
 .has-transition { -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
 
-/*  Text */
+/*  Utilities for Text */
 .text-on-left { text-align: left; }
 
 .text-on-right { text-align: right; }
@@ -715,7 +715,7 @@ td, th { padding: 0; }
 
 .hidden { display: none; }
 
-/* UTILITY FLEX CLASSES */
+/*  Utilities for FLEX */
 .is-flex { display: flex; }
 
 .is-flex .flex { flex: 1; }
@@ -735,6 +735,10 @@ td, th { padding: 0; }
 .fl-justify { display: flex; justify-content: space-between; }
 
 .fl-centered { display: flex; justify-content: center; align-items: center; }
+
+.flex-justify { display: flex; justify-content: space-between; }
+
+.flex-centered { display: flex; justify-content: center; align-items: center; }
 
 .grid_img_carnet[data-columns]::before { content: '2 .s-6col.m-3col.img_carnet_col'; display: none; }
 
@@ -2089,8 +2093,6 @@ img.desaturate { -webkit-filter: grayscale(100%); filter: grayscale(100%); filte
 
 .tns-ah { -webkit-transition: height 0s; -moz-transition: height 0s; transition: height 0s; }
 
-.tns-ovh { overflow: hidden; }
-
 .tns-visually-hidden { position: absolute; left: -10000em; }
 
 .tns-transparent { opacity: 0; visibility: hidden; }
@@ -2110,6 +2112,28 @@ img.desaturate { -webkit-filter: grayscale(100%); filter: grayscale(100%); filte
 .tns-t-ct:after { content: ''; display: table; clear: both; }
 
 .tns-t-ct > div { width: 1.4285714%; width: -webkit-calc(100% / 70); width: -moz-calc(100% / 70); width: calc(100% / 70); height: 10px; float: left; }
+
+.tns-controls { right: 0; }
+
+.tns-controls button { width: 15px; height: 25px; border: none; background: none; background-size: contain; background-repeat: no-repeat; z-index: 999; }
+
+.tns-controls button[data-controls="prev"] { bottom: -40px; left: 20px; position: absolute; background-image: url("/icons/arrow-left.png"); }
+
+.tns-controls button[data-controls="next"] { bottom: -40px; right: 16px; position: absolute; background-image: url("/icons/arrow-right.png"); }
+
+.tns-controls button[disabled] { opacity: 0.3; cursor: auto; }
+
+.tns-nav { position: absolute; bottom: -30px; background-color: #F0ECEC; display: flex; justify-content: space-between; max-width: 500px; width: 80%; left: 0; right: 0; margin: auto; }
+
+.tns-nav button { width: auto; height: 3px; border: none; background: none; flex: 1; transition: all 1s; }
+
+.tns-nav button.tns-nav-active { background-color: black; }
+
+.slide_wrapper { padding-bottom: 50px; }
+
+.slide_medium--artworks img { height: 500px; }
+
+.slide_medium--artworks p { max-width: 350px; }
 
 /*--------------------------------------------------------------
 # Layout
@@ -3582,12 +3606,6 @@ body { overflow-y: scroll; -webkit-overflow-scrolling: touch; position: relative
 /* CSS FOR NEW FEGL... TO BE CLEANED */
 .hidden { opacity: 0; display: block; }
 
-.flex { display: flex; }
-
-.flex-justify { display: flex; justify-content: space-between; }
-
-.flex-centered { display: flex; justify-content: center; align-items: center; }
-
 /* CARDS  TODO: CLEAN & REMOVE */
 .card, .card_event, .card_visite { padding: 20px; }
 
@@ -3624,26 +3642,6 @@ article .card_title { min-height: 2.4em; }
 .bg--gray .section_content:before { background-color: #f0ecec; }
 
 .section_title { position: relative; z-index: 9999; }
-
-.tns-nav { position: absolute; bottom: -30px; }
-
-.tns-controls { right: 0; }
-
-.tns-controls button { width: 15px; height: 25px; border: none; background: none; background-size: contain; background-repeat: no-repeat; z-index: 999; }
-
-button[data-controls="prev"] { bottom: -40px; left: 20px; position: absolute; background-image: url("/icons/arrow-left.png"); }
-
-button[data-controls="next"] { bottom: -40px; right: 16px; position: absolute; background-image: url("/icons/arrow-right.png"); }
-
-.tns-outer button[disabled] { opacity: 0.3; cursor: auto; }
-
-.tns-nav { background-color: #F0ECEC; display: flex; justify-content: space-between; max-width: 500px; width: 80%; left: 0; right: 0; margin: auto; }
-
-.tns-nav button { width: auto; height: 3px; border: none; background: none; flex: 1; transition: all 1s; }
-
-button.tns-nav-active { background-color: black; }
-
-.tns-ovh { overflow: visible !important; }
 
 .separator { position: relative; z-index: 0; }
 

@@ -11,18 +11,7 @@
     opacity: 0;
     display: block;
   }
-  .flex {
-    display: flex;
-  }
-  .flex-justify {
-    display: flex;
-    justify-content: space-between;
-  }
-  .flex-centered {
-    display: flex;
-    justify-content:center;
-    align-items: center;
-  }
+
 
 
 
@@ -137,63 +126,6 @@
       z-index: 9999;
   }
   
-  .tns-nav {
-      position: absolute;
-      bottom: -30px;
-  }
-  .tns-controls {
-    right: 0;
-  }
-  .tns-controls button {
-    width: 15px;
-    height: 25px;
-    border: none;
-    background: none;
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 999;
-  }
-  button[data-controls="prev"] {
-    bottom: -40px;
-    left: 20px;
-    position: absolute;
-    background-image: url("/icons/arrow-left.png");
-  }
-  button[data-controls="next"] {
-    bottom: -40px;
-    right: 16px;
-    position: absolute;
-    background-image: url("/icons/arrow-right.png");
-  }
-  .tns-outer button[disabled] {
-    opacity: 0.3;
-    cursor: auto;
-  }
-  .tns-nav {
-    background-color: #F0ECEC;
-    display: flex;
-    justify-content: space-between;
-    max-width: 500px;
-    width: 80%;
-    left: 0;
-    right: 0;
-    margin: auto;
-  }
-  .tns-nav button {
-    width: auto;
-    height: 3px;
-    border: none;
-    background: none;
-    flex: 1;
-    transition: all 1s;
-  }
-  button.tns-nav-active {
-    background-color: black;
-  }
-  
-  .tns-ovh {
-      overflow: visible !important;
-  }
   
   
   .separator {

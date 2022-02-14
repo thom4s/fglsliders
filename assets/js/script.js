@@ -2352,22 +2352,51 @@ jQuery( document ).ready(function( ) {
 		});
 	}
 
-	if( document.querySelector('.slide_medium') ) {
+	const slide_mediums = document.querySelectorAll('.slide_medium');
 
-		var slider_medium = tns({
-			container: '.slide_medium',
-			items: 1.4,
-			autoplay: false,
-			loop: false,
-			mouseDrag: true,
-			controlsText: ['', ''],
-			responsive: {
-				880: {
-					items: 2.2
+	if( slide_mediums.length > 0 ) {
+
+		for( slide of slide_mediums ) {
+			var slider_medium = tns({
+				container: slide,
+				items: 1.4,
+				autoplay: false,
+				loop: false,
+				mouseDrag: true,
+				controlsText: ['', ''],
+				responsive: {
+					880: {
+						items: 2.2
+					}
 				}
-			}
-		});
+			});
+		}
 	}
+
+
+	const slide_artworks = document.querySelectorAll('.slide_medium--artworks');
+
+	if( slide_artworks.length > 0 ) {
+
+		for( slide of slide_artworks ) {
+			var slider_medium = tns({
+				container: slide,
+				items: 1.4,
+				autoplay: false,
+				loop: false,
+				mouseDrag: true,
+				autoWidth: true,
+				controlsText: ['', ''],
+				gutter: 40,
+				responsive: {
+					880: {
+						items: 2.2
+					}
+				}
+			});
+		}
+	}
+
 
 	if( document.querySelector('.slide_medium') ) {
 

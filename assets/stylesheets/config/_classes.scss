@@ -8,7 +8,7 @@
 
 
 /* 
- * Layout
+ * Utilities for Layout
  */
 
 .is-on-left {
@@ -66,7 +66,7 @@
 
 
 /* 
- * Text
+ * Utilities for Text
  */
 
 .text-on-left {
@@ -136,8 +136,8 @@
 
 
 
-/*
- * UTILITY FLEX CLASSES
+/* 
+ * Utilities for FLEX
  */
 
  .is-flex {
@@ -192,5 +192,16 @@
 .fl-centered {
   display: flex; 
   justify-content: center;
+  align-items: center;
+}
+
+// TODO: CLEAN & REMOVE
+.flex-justify {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-centered {
+  display: flex;
+  justify-content:center;
   align-items: center;
 }
