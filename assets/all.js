@@ -2427,7 +2427,7 @@ jQuery( document ).ready(function( ) {
         mouseDrag: true,
         controlsText: ['', ''],
         responsive: {
-          700: {
+          880: {
             items: 1.73
           }
         }
@@ -2442,7 +2442,7 @@ jQuery( document ).ready(function( ) {
         mouseDrag: true,
         controlsText: ['', ''],
         responsive: {
-          700: {
+          880: {
             items: 2.2
           }
         }
@@ -2456,7 +2456,7 @@ jQuery( document ).ready(function( ) {
       mouseDrag: true,
       controlsText: ['', ''],
       responsive: {
-        700: {
+        880: {
            items: 3
         }
       }

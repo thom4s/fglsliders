@@ -822,7 +822,7 @@ td, th { padding: 0; }
 /* TYPOGRAPHY VARIABLES SETTINGS */
 /* Imports typo parts */
 /* Copy @package fegl */
-body, button, input, select, textarea { color: #777777; }
+body, button, input, select, textarea { color: #1A1A1A; }
 
 p { margin: 0 0 28px 0; }
 
@@ -3606,9 +3606,9 @@ img { display: block; max-width: 100%; }
 
 .slide_large { position: relative; }
 
-.section_content--alt { margin-bottom: 100px; }
+.section_slider--alt .wrap { margin-left: 30px; }
 
-.section_content--alt .wrap { margin-left: 10px; }
+.section_slider--alt .slide_wrapper { left: -20px; }
 
 .section_content:before { content: ''; position: absolute; background-color: white; z-index: 999; top: 0; bottom: 0; left: -5002px; width: 5000px; }
 
@@ -3624,7 +3624,7 @@ img { display: block; max-width: 100%; }
 
 .tns-controls button { width: 15px; height: 25px; border: none; background: none; background-size: contain; background-repeat: no-repeat; z-index: 999; }
 
-button[data-controls="prev"] { bottom: -40px; left: 16px; position: absolute; background-image: url("/icons/arrow-left.png"); }
+button[data-controls="prev"] { bottom: -40px; left: 20px; position: absolute; background-image: url("/icons/arrow-left.png"); }
 
 button[data-controls="next"] { bottom: -40px; right: 16px; position: absolute; background-image: url("/icons/arrow-right.png"); }
 

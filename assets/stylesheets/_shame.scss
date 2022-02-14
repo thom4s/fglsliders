@@ -115,11 +115,13 @@ body {
       position: relative;
   }
   
-  .section_content--alt {
-    margin-bottom: 100px;
+  .section_slider--alt {
 
     .wrap {
-      margin-left: 10px;
+      margin-left: 30px;
+    }
+    .slide_wrapper {
+      left: -20px;
     }
   }
 
@@ -169,7 +171,7 @@ body {
   }
   button[data-controls="prev"] {
     bottom: -40px;
-    left: 16px;
+    left: 20px;
     position: absolute;
     background-image: url("/icons/arrow-left.png");
   }
