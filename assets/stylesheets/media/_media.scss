@@ -89,7 +89,85 @@ img.desaturate {
 
 
 
-// Icons
+/*
+ * RATIOS
+ */
+
+.ratio {
+  position: relative;
+  width: 100%;
+}
+
+.ratio:after {
+  content: "";
+  display: block;
+  padding-bottom: 66%;
+}
+.ratio_inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.ratio img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+.ratio_33 {
+  @extend .ratio;
+
+  &:after {
+    padding-bottom: 33%;
+  }
+}
+
+.ratio_66 {
+  @extend .ratio;
+
+  &:after {
+    padding-bottom: 66%;
+  }
+}
+
+.ratio_square {
+  @extend .ratio;
+
+  &:after {
+    padding-bottom: 100%;
+  }
+}
+
+// TODO: CLEAN & REMOVE
+
+.square {
+  position: relative;
+  width: 100%;
+}
+
+.square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.square-content,
+.ratio_inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+/*
+ * ICONS
+ */
+
 
 .icon_info {
   display: flex;

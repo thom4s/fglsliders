@@ -29,7 +29,7 @@ h1, h2, h3,h4, h5, h6 {
 
 .ft_h1 {
   font-size: 7rem;
-  letter-spacing: -1.5%;
+  letter-spacing: -.015em;
   line-height: 1;
   font-weight: $bold;
   
@@ -40,7 +40,7 @@ h1, h2, h3,h4, h5, h6 {
 
 .ft_h2 {
   font-size: 4rem;
-  letter-spacing: -1.5%;
+  letter-spacing: -.015em;
   line-height: 1;
   font-weight: $bold;
   
@@ -51,7 +51,7 @@ h1, h2, h3,h4, h5, h6 {
 
 .ft_h3 {
   font-size: 3rem;
-  letter-spacing: -1%;
+  letter-spacing: -.01em;
   line-height: 1;
   font-weight: $bold;
     
@@ -74,6 +74,11 @@ h1, h2, h3,h4, h5, h6 {
     font-weight: $bold;
   }
 }
+.ft_p1_a {
+  @extend .ft_p1;
+  font-weight: $bold;
+  text-decoration: underline;
+}
 
 .ft_p1_b {
   @extend .ft_p1;
@@ -89,8 +94,8 @@ h1, h2, h3,h4, h5, h6 {
 
 .ft_p3 { // CHAPOS
   font-size: 3rem;
-  letter-spacing: -1%;
-  line-height: 1;
+  letter-spacing: -.01em;
+  line-height: 1.6;
   font-weight: $regular;
     
   @include up-to(medium) {
@@ -102,6 +107,14 @@ h1, h2, h3,h4, h5, h6 {
     font-weight: bold;
     text-decoration: underline;
   }
+}
+
+.ft_p3_a {
+  font-size: 3rem;
+  letter-spacing: -.01em;
+  line-height: 1.6;
+  font-weight: $bold;
+  text-decoration: underline;
 }
 
 
@@ -133,7 +146,7 @@ h1, h2, h3,h4, h5, h6 {
 .card_title--big {
   font-size: 2.5rem;
   font-weight: $bold;
-  letter-spacing: -1%;
+  letter-spacing: -.01em;
   line-height: 1.2;
 }
 

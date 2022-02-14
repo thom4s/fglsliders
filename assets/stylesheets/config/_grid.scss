@@ -54,22 +54,7 @@ $wide_breakpoint:                   1550px !default;
     }
 }
 
-.square {
-  position: relative;
-  width: 100%;
-}
 
-.square:after {
-  content: "";
-  display: block;
-  padding-bottom: 100%;
-}
-.square-content,
-.ratio_inner {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
 
 .is-half {
     @include at-least(medium) {
@@ -97,51 +82,26 @@ $wide_breakpoint:                   1550px !default;
   padding-bottom: 3em;
 }
 
-.is-flex {
-  display: flex;
-  
-  .flex {
-    flex: 1;
-  }
-
-  @include up-to(medium) {
-
-    &:not(.icon_info) {
-      flex-direction: column;
-    }
 
 
-    .flex-s-1 {
-        order: 1
-    }
-    .flex-s-2 {
-        order: 2
-    }
-    .flex-s-3 {
-        order: 3
-    }
-  }
-  @include at-least(medium) {
-    
-    flex-direction: row;
-    
-    .flex-m-1 {
-        order: 1
-    }
-    .flex-m-2 {
-        order: 2
-    }
-    .flex-m-3 {
-        order: 3
-    }
-  }    
-}
+
+
+
+
+
+/*
+ * UTILITY PADDING & BORDER CLASSES
+ */
 
 .paddinged-left {
-  padding-left: 20px;
+  @include at-least(medium) {
+    padding-left: 20px;
+  }
 }
 .paddinged-right {
-  padding-right: 20px;
+  @include at-least(medium) {
+    padding-right: 20px;
+  }
 }
 
 .paddinged-both {

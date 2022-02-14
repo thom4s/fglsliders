@@ -6,12 +6,6 @@
 
 
 
-body {
-    overflow-x: hidden;
-    padding: 0;
-    margin: 0;
-    font-family: 'Apercu', Arial, Helvetica, sans-serif;
-  }
   
   .hidden {
     opacity: 0;
@@ -29,19 +23,38 @@ body {
     justify-content:center;
     align-items: center;
   }
-  header {
-    margin-bottom: 100px;
+
+
+
+/*
+ * CARDS 
+ * TODO: CLEAN & REMOVE
+ */
+
+  .card {
+    padding: 20px;
+
+    .meta {
+      margin-top: 0;
+    }
   }
-  article {
-    padding: 16px;
+  
+  .card_event {
+    @extend .card;
+
+    &:hover {
+      background-color: #83F8DD;
+    }
   }
-  article .meta-exposition,
-  article .meta {
-    margin-top: 0;
+
+  .card_visite {
+    @extend .card;
   }
-  article:not(.slider_action):hover {
-    background-color: #83F8DD;
-  }
+
+
+
+
+  article
   .card_title {
     min-height: 2.4em;
   }
@@ -76,32 +89,9 @@ body {
     box-shadow: 0 -10px 10px gainsboro;
   }
   
-  .ratio {
-    position: relative;
-    width: 100%;
-  }
-  
-  .ratio:after {
-    content: "";
-    display: block;
-    padding-bottom: 66%;
-  }
-  .ratio_inner {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-  }
-  .ratio img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+
   
   
-  img {
-      display: block;
-      max-width: 100%;
-  }
   
   
   @media screen and (max-width: 700px) {
@@ -125,9 +115,6 @@ body {
     }
   }
 
-  .section_content {
-    padding-left: 20px;
-  }
 
   .section_content:before {
       content: '';
@@ -144,13 +131,6 @@ body {
   
   }
   
-  .all {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #83F8DD;
-  
-  }
   
   .section_title {
       position: relative;

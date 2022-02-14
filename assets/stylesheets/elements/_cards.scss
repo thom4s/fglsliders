@@ -1,9 +1,19 @@
 /* 
- * Lists
+ * CARDS
  * 
  * @package FEGL
  */
 
+
+
+
+.green_card {
+	padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #83F8DD;
+}
 
 
 .card {

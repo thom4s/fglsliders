@@ -131,3 +131,66 @@
   display: none;
 }
 
+
+
+
+
+
+/*
+ * UTILITY FLEX CLASSES
+ */
+
+ .is-flex {
+  display: flex;
+  
+  .flex {
+    flex: 1;
+  }
+
+  @include up-to(medium) {
+
+    &:not(.icon_info) {
+      flex-direction: column;
+    }
+
+
+    .flex-s-1 {
+        order: 1
+    }
+    .flex-s-2 {
+        order: 2
+    }
+    .flex-s-3 {
+        order: 3
+    }
+  }
+  @include at-least(medium) {
+    
+    flex-direction: row;
+    
+    .flex-m-1 {
+        order: 1
+    }
+    .flex-m-2 {
+        order: 2
+    }
+    .flex-m-3 {
+        order: 3
+    }
+  }    
+}
+
+.fl-col {
+  display: flex; 
+  flex-direction: column;
+  height: 100%;
+}
+.fl-justify {
+  display: flex; 
+  justify-content: space-between;
+}
+.fl-centered {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
