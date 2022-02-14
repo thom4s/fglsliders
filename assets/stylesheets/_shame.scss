@@ -115,6 +115,14 @@ body {
       position: relative;
   }
   
+  .section_content--alt {
+    margin-bottom: 200px;
+    
+    .wrap {
+      margin-left: 10px;
+    }
+  }
+
   .section_content:before {
       content: '';
       position: absolute;

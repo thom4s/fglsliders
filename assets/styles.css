@@ -941,9 +941,57 @@ div.short_description { font-weight: 900; margin-bottom: 28px; }
 /* Heading @package fegl */
 h1, h2, h3, h4, h5, h6 { margin-top: 0; margin-bottom: 20px; }
 
+/* 2022 */
+.ft_btn { font-size: 1.7rem; font-weight: 900; }
+
+.ft_h1 { font-size: 7rem; letter-spacing: -1.5%; line-height: 1; font-weight: 900; }
+
+@media (max-width: 880px) { .ft_h1 { font-size: 4.8rem; } }
+
+.ft_h2 { font-size: 4rem; letter-spacing: -1.5%; line-height: 1; font-weight: 900; }
+
+@media (max-width: 880px) { .ft_h2 { font-size: 3rem; } }
+
+.ft_h3 { font-size: 3rem; letter-spacing: -1%; line-height: 1; font-weight: 900; }
+
+@media (max-width: 880px) { .ft_h3 { font-size: 2.4rem; } }
+
+.ft_p1, .ft_p1_b { font-size: 1.7rem; line-height: 1.65; font-weight: 400; }
+
+.ft_p1 a, .ft_p1_b a { font-size: inherit; text-decoration: underline; font-weight: 900; }
+
+.ft_p1_b { font-weight: 900; }
+
+.ft_p2 { font-size: 1.5rem; line-height: 1.65; font-weight: 400; }
+
+.ft_p3 { font-size: 3rem; letter-spacing: -1%; line-height: 1; font-weight: 400; }
+
+@media (max-width: 880px) { .ft_p3 { font-size: 2.4rem; } }
+
+.ft_p3 a { font-size: inherit; font-weight: bold; text-decoration: underline; }
+
+.ft_card_meta { font-size: 1.5rem; font-weight: 100; text-transform: uppercase; }
+
+@media (max-width: 880px) { .ft_card_meta { font-size: 1.4rem; } }
+
+.ft_card_title { font-size: 2rem; font-weight: 900; }
+
+@media (max-width: 880px) { .ft_card_title { font-size: 1.9rem; } }
+
+.ft_card_title--linked { font-size: 1.5rem; font-weight: 900; text-decoration: underline; }
+
+.card_title--big { font-size: 2.5rem; font-weight: 900; letter-spacing: -1%; line-height: 1.2; }
+
+.ft_n1, .ft_n1_b { font-size: 1.8rem; line-height: 1.45; font-weight: 400; }
+
+@media (max-width: 880px) { .ft_n1, .ft_n1_b { font-size: 1.65rem; } }
+
+.ft_n1_b { font-weight: 900; }
+
+/* CHECK & REMOVE */
 @media (max-width: 880px) { h3.text-on-right { text-align: left !important; } }
 
-.page-content h2:not([class*="fh"]) { font-family: "AnticipationsSans", Arial, Helvetica, sans-serif; font-size: 8rem; line-height: .8; font-weight: 400; margin-bottom: 56px; }
+.page-content h2:not([class*="fh"]) { font-family: "Apercu", Arial, Helvetica, sans-serif; font-size: 8rem; line-height: .8; font-weight: 400; margin-bottom: 56px; }
 
 .fh_0 { font-size: 2.4rem; font-family: "Apercu", Arial, Helvetica, sans-serif; line-height: 1.2; font-weight: 900; }
 
@@ -953,47 +1001,47 @@ h1, h2, h3, h4, h5, h6 { margin-top: 0; margin-bottom: 20px; }
 
 .fh_12 { font-size: 4.8rem; font-family: "Apercu", Arial, Helvetica, sans-serif; line-height: 1.2; font-weight: 900; }
 
-.fh_2 { font-size: 4.8rem; font-family: "AnticipationsSans", Arial, Helvetica, sans-serif; line-height: 0.9; color: #1a1a1a; font-weight: 400; }
+.fh_2 { font-size: 4.8rem; font-family: "Apercu", Arial, Helvetica, sans-serif; line-height: 0.9; color: #1a1a1a; font-weight: 400; }
 
-.fh_2_1 { font-size: 4.8rem; font-family: "AnticipationsSans", Arial, Helvetica, sans-serif; line-height: 0.9; color: #fff; }
+.fh_2_1 { font-size: 4.8rem; font-family: "Apercu", Arial, Helvetica, sans-serif; line-height: 0.9; color: #fff; }
 
-.fh_3 { font-size: 5rem; font-family: "AnticipationsSans", Arial, Helvetica, sans-serif; line-height: 0.9; font-weight: 400; color: #1a1a1a; }
+.fh_3 { font-size: 5rem; font-family: "Apercu", Arial, Helvetica, sans-serif; line-height: 0.9; font-weight: 400; color: #1a1a1a; }
 
-.fh_31 { font-size: 50px; font-size: 5rem; font-family: "AnticipationsSans", Arial, Helvetica, sans-serif; line-height: 0.6; font-weight: 400; color: #1a1a1a; }
+.fh_31 { font-size: 50px; font-size: 5rem; font-family: "Apercu", Arial, Helvetica, sans-serif; line-height: 0.6; font-weight: 400; color: #1a1a1a; }
 
-.fh_4 { font-size: 8rem; font-family: "AnticipationsSans", Arial, Helvetica, sans-serif; line-height: 0.9; font-weight: 400; }
+.fh_4 { font-size: 8rem; font-family: "Apercu", Arial, Helvetica, sans-serif; line-height: 0.9; font-weight: 400; }
 
 @media (max-width: 880px) { .fh_4 { font-size: 55px; font-size: 5.5rem; } }
 
-.fh_5 { font-size: 8rem; font-family: "AnticipationsSans", Arial, Helvetica, sans-serif; line-height: 0.8; font-weight: 400; }
+.fh_5 { font-size: 8rem; font-family: "Apercu", Arial, Helvetica, sans-serif; line-height: 0.8; font-weight: 400; }
 
 @media (max-width: 880px) { .fh_5 { font-size: 50px; font-size: 5rem; } }
 
-.fh_6 { font-size: 12rem; font-family: "AnticipationsSans", Arial, Helvetica, sans-serif; line-height: 0.85; font-weight: 400; }
+.fh_6 { font-size: 12rem; font-family: "Apercu", Arial, Helvetica, sans-serif; line-height: 0.85; font-weight: 400; }
 
 @media (max-width: 880px) { .fh_6 { font-size: 80px; font-size: 8rem; } }
 
-.fh_7 { font-size: 16rem; font-family: "AnticipationsSans", Arial, Helvetica, sans-serif; color: #83f8dd; font-weight: 400; text-align: center; line-height: 0.8; }
+.fh_7 { font-size: 16rem; font-family: "Apercu", Arial, Helvetica, sans-serif; color: #83f8dd; font-weight: 400; text-align: center; line-height: 0.8; }
 
-.fh_71 { font-size: 16rem; font-family: "AnticipationsSans", Arial, Helvetica, sans-serif; color: #fff; font-weight: 400; line-height: 0.8; }
+.fh_71 { font-size: 16rem; font-family: "Apercu", Arial, Helvetica, sans-serif; color: #fff; font-weight: 400; line-height: 0.8; }
 
 @media (max-width: 880px) { .fh_71 { font-size: 100px; font-size: 10rem; } }
 
-.fh_72 { font-size: 10rem; font-family: "AnticipationsSans", Arial, Helvetica, sans-serif; color: #fff; font-weight: 400; line-height: 0.8; }
+.fh_72 { font-size: 10rem; font-family: "Apercu", Arial, Helvetica, sans-serif; color: #fff; font-weight: 400; line-height: 0.8; }
 
 @media (max-width: 880px) { .fh_72 { font-size: 100px; font-size: 10rem; } }
 
-.fh_8 { font-size: 24rem; font-family: "AnticipationsSans", Arial, Helvetica, sans-serif; line-height: 0.6; color: #fff; font-weight: 400; -webkit-transition: all 0.1s; -moz-transition: all 0.1s; -o-transition: all 0.1s; transition: all 0.1s; }
+.fh_8 { font-size: 24rem; font-family: "Apercu", Arial, Helvetica, sans-serif; line-height: 0.6; color: #fff; font-weight: 400; -webkit-transition: all 0.1s; -moz-transition: all 0.1s; -o-transition: all 0.1s; transition: all 0.1s; }
 
 @media (max-width: 880px) { .fh_8 { font-size: 64px; font-size: 6.4rem; } }
 
-.fh_9 { font-family: "AnticipationsSans", Arial, Helvetica, sans-serif; font-size: 145px; font-size: 14.5rem; line-height: 0.8; color: #fff; font-weight: 400; }
+.fh_9 { font-family: "Apercu", Arial, Helvetica, sans-serif; font-size: 145px; font-size: 14.5rem; line-height: 0.8; color: #fff; font-weight: 400; }
 
 @media (min-width: 880px) { .fh_9 { font-size: 135px; font-size: 13.5rem; } }
 
 @media (min-width: 1240px) { .fh_9 { font-size: 165px; font-size: 16.5rem; line-height: 0.8; } }
 
-.fh_10 { font-family: "AnticipationsSans", Arial, Helvetica, sans-serif; font-size: 170px; font-size: 17rem; line-height: 0.9; color: #fff; font-weight: 400; }
+.fh_10 { font-family: "Apercu", Arial, Helvetica, sans-serif; font-size: 170px; font-size: 17rem; line-height: 0.9; color: #fff; font-weight: 400; }
 
 @media (min-width: 880px) { .fh_10 { font-size: 200px; font-size: 20rem; } }
 
@@ -1566,7 +1614,7 @@ th { font-weight: bold; }
 
 .teaser_event_large .days_remaining, .teaser_edition_large .days_remaining { position: absolute; bottom: 0; left: 0; color: #fff; display: block; height: auto; width: auto; padding: 6px 13px 15px; background-color: rgba(0, 0, 0, 0.5); line-height: .8; z-index: 9; }
 
-.teaser_event_large .days_remaining span, .teaser_edition_large .days_remaining span { font-size: 8rem; font-family: "AnticipationsSans", Arial, Helvetica, sans-serif; }
+.teaser_event_large .days_remaining span, .teaser_edition_large .days_remaining span { font-size: 8rem; font-family: "Apercu", Arial, Helvetica, sans-serif; }
 
 .teaser_event_large .teaser_img, .teaser_edition_large .teaser_img { height: 350px; }
 
@@ -1780,9 +1828,7 @@ p a, .copy a { font-weight: 900; }
 
 ul.nice-menu > li { position: relative; list-style: none; float: left; margin-right: 40px; border: none; background: none; line-height: 1; }
 
-ul.nice-menu > li > a { padding: 0 0 0 0; color: #7f7f7f; padding-right: 0 !important; -webkit-transition: none; -moz-transition: none; -o-transition: none; transition: none; display: inline-block; padding-bottom: 3px; font-size: 1.8rem; }
-
-@media (min-width: 880px) { ul.nice-menu > li > a { font-size: 2.1rem; } }
+ul.nice-menu > li > a { padding: 0 0 0 0; color: #7f7f7f; padding-right: 0 !important; -webkit-transition: none; -moz-transition: none; -o-transition: none; transition: none; display: inline-block; padding-bottom: 3px; }
 
 ul.nice-menu > li > a:active { color: #000 !important; background-size: 1px 1em; box-shadow: inset 0 -0.06em #83f8dd; }
 
@@ -2048,7 +2094,7 @@ img.desaturate { -webkit-filter: grayscale(100%); filter: grayscale(100%); filte
 --------------------------------------------------------------*/
 /*  Set up general & particulars modules : headers, contents, footers @package FEGL */
 /*  Header @package fegl */
-.site-title { font-family: "AnticipationsSans", Arial, Helvetica, sans-serif; line-height: 36px; font-size: 40px; font-weight: 400; margin-bottom: 0; margin-top: -10px; }
+.site-title { font-family: "Apercu", Arial, Helvetica, sans-serif; line-height: 36px; font-size: 40px; font-weight: 400; margin-bottom: 0; margin-top: -10px; }
 
 @media (max-width: 880px) { .site-title { font-size: 70px; line-height: 30px; margin-top: 10px; } }
 
@@ -2297,7 +2343,7 @@ img.desaturate { -webkit-filter: grayscale(100%); filter: grayscale(100%); filte
 
 @media (max-width: 880px) { .hphead_menu_link { height: 100vh; display: flex; justify-content: space-between; flex-direction: column; padding: 150px 5% 100px; padding: 25vh 5% 10vh; background-repeat: no-repeat; background-size: cover; position: relative; background-color: rgba(0, 0, 0, 0.2); } }
 
-.hphead_menu_link .link_text { font-size: 175px; font-family: "AnticipationsSans", Arial, Helvetica, sans-serif; line-height: .7; }
+.hphead_menu_link .link_text { font-size: 175px; font-family: "Apercu", Arial, Helvetica, sans-serif; line-height: .7; }
 
 @media (max-width: 1240px) { .hphead_menu_link .link_text { font-size: 100px; } }
 
@@ -2307,7 +2353,7 @@ img.desaturate { -webkit-filter: grayscale(100%); filter: grayscale(100%); filte
 
 @media screen and (min-width: 800px) and (max-height: 900px) { .hphead_menu_link .link_text { font-size: 140px; } }
 
-.hphead_menu_link .link_text--mobile { font-family: "AnticipationsSans", Arial, Helvetica, sans-serif; line-height: .7; font-size: 100px; word-break: break-all; }
+.hphead_menu_link .link_text--mobile { font-family: "Apercu", Arial, Helvetica, sans-serif; line-height: .7; font-size: 100px; word-break: break-all; }
 
 @media (min-width: 880px) { .hphead_menu_link .link_text--mobile { display: none; } }
 
@@ -2371,7 +2417,7 @@ img.desaturate { -webkit-filter: grayscale(100%); filter: grayscale(100%); filte
 
 @media (max-width: 880px) { .featured_event_head .item_type { font-size: 15px; line-height: 25px; padding-left: 32px; } }
 
-.featured_event_head .item_title { font-size: 122px; line-height: 0.85; font-family: "AnticipationsSans", Arial, Helvetica, sans-serif; font-weight: normal; margin-bottom: 0; }
+.featured_event_head .item_title { font-size: 122px; line-height: 0.85; font-family: "Apercu", Arial, Helvetica, sans-serif; font-weight: normal; margin-bottom: 0; }
 
 @media screen and (max-height: 800px) { .featured_event_head .item_title { height: 15vh; } }
 
@@ -2381,7 +2427,7 @@ img.desaturate { -webkit-filter: grayscale(100%); filter: grayscale(100%); filte
 
 @media (min-width: 880px) { .featured_event_head .item_title { height: 20vh; } }
 
-.featured_event_head .item_dates { display: flex; justify-content: flex-start; font-size: 40px; line-height: .75; font-family: "AnticipationsSans", Arial, Helvetica, sans-serif; }
+.featured_event_head .item_dates { display: flex; justify-content: flex-start; font-size: 40px; line-height: .75; font-family: "Apercu", Arial, Helvetica, sans-serif; }
 
 @media (max-width: 880px) { .featured_event_head .item_dates { justify-content: space-between; } }
 
@@ -3340,7 +3386,7 @@ div.icon_live .icon-online { font-size: 2rem; padding-right: 10px; }
 
 @media (max-width: 880px) { .event_artists_inner.virtual .artist_portrait_outer { width: 100%; } }
 
-.virtual_clock { font-size: 8rem; line-height: .9; background-color: rgba(0, 0, 0, 0.7); padding: 7px 20px 42px; font-family: "AnticipationsSans", Arial, Helvetica, sans-serif; margin-bottom: 0; width: 380px; text-align: center; }
+.virtual_clock { font-size: 8rem; line-height: .9; background-color: rgba(0, 0, 0, 0.7); padding: 7px 20px 42px; font-family: "Apercu", Arial, Helvetica, sans-serif; margin-bottom: 0; width: 380px; text-align: center; }
 
 @media (max-width: 880px) { .virtual_clock { font-size: 7rem; } }
 
@@ -3559,6 +3605,10 @@ img { display: block; max-width: 100%; }
 @media screen and (max-width: 700px) { .slide_wrapper { position: relative; } }
 
 .slide_large { position: relative; }
+
+.section_content--alt { margin-bottom: 200px; }
+
+.section_content--alt .wrap { margin-left: 10px; }
 
 .section_content:before { content: ''; position: absolute; background-color: white; z-index: 999; top: 0; bottom: 0; left: -5002px; width: 5000px; }
 
