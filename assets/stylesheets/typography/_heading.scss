@@ -76,7 +76,7 @@ h1, h2, h3,h4, h5, h6 {
   font-weight: $bold;
     
   @include up-to(medium) {
-    font-size: 1.9rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -124,7 +124,7 @@ h1, h2, h3,h4, h5, h6 {
   font-weight: $regular;
 }
 
-.ft_p2_b {
+.ft_p2_g {
   @extend .ft_p2;
   color: $gray_dark;
 }

@@ -145,6 +145,48 @@
 	}
 
 
+	
+// SEPARATORS
+	.m_separators {
+		margin-bottom: $marge-9;
+	}
+
+
+
+// Image en mosaic
+
+.mod_mosaic {
+
+	margin-bottom: $marge-9;
+
+
+	figure {
+		margin-bottom: 60px;
+	}
+	
+	img {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	
+	.m-4col {
+		&:first-child {
+			padding-right: 20px;
+		}
+		&:nth-child(2) {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+		&:last-child {
+			padding-left: 20px;
+		}
+	}
+}
+
+.mod_mosaic-grid[data-columns]::before {
+	content: '3 .m-4col';
+	display: none;
+  }
 
 
 // Events Navigation
@@ -179,3 +221,6 @@
 			justify-content: flex-start;
 		}
 	}
+
+
+

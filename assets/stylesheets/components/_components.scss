@@ -5,6 +5,11 @@
  */
 
 
+/*
+ * New CARDS (02.2022)
+ */
+
+
 // COMPONENTS CARD EVENTS
 
 .c-card {
@@ -74,6 +79,7 @@
     }
 }
 
+// Card for slider Big Button
 .c-card-1--empty {
     @extend .c-card-1;
     
@@ -82,6 +88,9 @@
     }
 }
 
+
+
+// Card for Artiste ID (in slider)
 .c-card-2 {
 
     h2 {
@@ -98,6 +107,9 @@
     
 }
 
+
+
+// Card in Edition Slider
 .c-card-3 {
     @extend .c-card;
 
@@ -118,7 +130,18 @@
 
 
 
-// NAVIGATION PAGES
+// Card in mod mosaic
+.c-card-4 {
+    
+}
+
+
+
+
+
+/*
+ * NAVIGATION PAGES (02.2022)
+ */
 
 .c-navItem {
     display: flex;
@@ -137,7 +160,10 @@
 
 
 
-// TRUNCATED LINES
+
+/*
+ * TRUNCATED LINES (02.2022)
+ */
 
 .truncated-line {
     display: -webkit-box;
@@ -153,8 +179,9 @@
 
 
 
-
-// COMPONENT OPENINGS HOURS
+/*
+ * COMPONENT OPENINGS HOURS (02.2022)
+ */
 
 .c-opening {
     max-width: 400px;
@@ -166,7 +193,9 @@
 
 
 
-// EVENTS COPY
+/*
+ * EVENTS COPY (02.2022)
+ */
 
 .c-copy {
     max-width: 750px;
