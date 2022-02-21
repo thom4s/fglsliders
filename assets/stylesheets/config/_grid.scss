@@ -47,7 +47,7 @@ $wide_breakpoint:                   1550px !default;
 }
 
 // TEST
-.wrap_alt {
+.wrapper {
   @include up-to(wide) {
       width: 100%;
   }
@@ -57,6 +57,11 @@ $wide_breakpoint:                   1550px !default;
       margin-right: auto;
   }
   .paddinged-both {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  [class*="m-"] {
     padding-right: 20px;
     padding-left: 20px;
   }
