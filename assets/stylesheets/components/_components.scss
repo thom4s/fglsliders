@@ -46,6 +46,13 @@
 	}
 
 }
+
+
+
+    
+.c-card-1 {
+    @extend .c-card;
+
     .c-card-title {
         height: calc( 1.2em * 4);
         position: relative;
@@ -56,6 +63,7 @@
     .c-card-footer {
         border-top: 1px solid #F0ECEC;
         padding-top: 14px;
+
         p {
             margin-bottom: 10px;
         }
@@ -64,32 +72,59 @@
             border-color: $gray_medium;
         }
     }
+}
 
-    .truncated-line {
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical; 
-        overflow: hidden;
+.c-card-2 {
+
+    h2 {
+        margin-bottom: 0;
     }
+}
 
-    
-.c-card-1 {
+.c-card-3 {
     @extend .c-card;
 
-    &_title {
-        
+    .c-card-media {
+        position: relative;
+    }
+
+    .c-card-action {
+        border-top: 1px solid #F0ECEC;
+        padding-top: 14px;
+
+        .bg--gray & {
+            border-color: $gray_medium;
+        }
     }
 }
 
 
 
-// Card Hovers
 
+// NAVIGATION PAGES
 
-.e-hover {
-
+.c-navItem {
+    display: flex;
+    padding: $marge-9 0;
+    p {
+        margin-bottom: 0;
+    }
 }
 
+
+
+// TRUNCATED LINES
+
+.truncated-line {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical; 
+    overflow: hidden;
+}
+.truncated-line--6 {
+    @extend .truncated-line;
+    -webkit-line-clamp: 6;
+}
 
 
 

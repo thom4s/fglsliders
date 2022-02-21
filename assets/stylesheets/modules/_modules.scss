@@ -87,10 +87,11 @@
 
 
 
-	/*
-	 * EVENT MODULES 2022
-	 */
+/*
+ * EVENT MODULES 2022
+ */
 
+ // Module pour contenu events (max height)
 	.mod-copy {
 		max-height: 400px;
 		overflow: hidden;
@@ -106,8 +107,40 @@
 
 
 
-
+// Sticky CSS
 	.mod-sticky {
 		position: sticky;
 		top: 200px;
+	}
+
+
+// Events Navigation
+	.mod-navigation {
+		display: flex;
+
+		.c-navItem {
+			width: 50%;
+			justify-content: space-between;
+		}
+
+		.icon-lien_interne {
+			display: inline-block;
+			padding-left: 10px;
+			font-size: 2rem;
+		}
+		.c-navItem:last-child {
+			justify-content: flex-end;
+
+			.icon-lien_interne {
+				padding-top: 3px;
+			}
+		}
+		.c-navItem:first-child {
+			justify-content: flex-start;
+
+			.icon-lien_interne {
+				transform: rotate(180deg);
+				padding-bottom: 5px;
+			}
+		}
 	}

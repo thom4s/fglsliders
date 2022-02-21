@@ -120,6 +120,11 @@ h1, h2, h3,h4, h5, h6 {
   font-weight: $regular;
 }
 
+.ft_p2_b {
+  @extend .ft_p2;
+  color: $gray_dark;
+}
+
 .ft_p3 { // CHAPOS
   font-size: 3rem;
   letter-spacing: -.01em;
@@ -194,15 +199,15 @@ h1, h2, h3,h4, h5, h6 {
   }
 }
 
-.page-content {
-  h2:not([class *= "fh"]) {
-    font-family: $font_family_title;
-    font-size: 8rem;
-    line-height: .8;
-    font-weight: $regular;
-    margin-bottom: $base_line_height * 2;
-  }
-}
+// .page-content {
+//   h2:not([class *= "fh"] [class *= "ft"]) {
+//     font-family: $font_family_title;
+//     font-size: 8rem;
+//     line-height: .8;
+//     font-weight: $regular;
+//     margin-bottom: $base_line_height * 2;
+//   }
+// }
 
 
 .fh_0 {
