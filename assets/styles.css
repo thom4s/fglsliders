@@ -176,6 +176,8 @@ td, th { padding: 0; }
 
 @media (min-width: 1550px) { .wrap_alt { width: 1500px; margin-left: auto; margin-right: auto; } }
 
+.wrap_alt .paddinged-both { padding-right: 20px; padding-left: 20px; }
+
 @media (min-width: 880px) { .is-half { width: 50%; float: left; } }
 
 .pt_1 { padding-top: 1em; }
@@ -2047,6 +2049,8 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 .c-card-3 .c-card-action { border-top: 1px solid #F0ECEC; padding-top: 14px; }
 
 .bg--gray .c-card-3 .c-card-action { border-color: #d2d2d2; }
+
+.c-card-5 { margin-bottom: 25px; }
 
 /* NAVIGATION PAGES (02.2022) */
 .c-navItem { display: flex; }
