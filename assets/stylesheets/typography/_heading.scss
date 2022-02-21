@@ -28,55 +28,65 @@ h1, h2, h3,h4, h5, h6 {
 // HEADINGS
 
 .ft_h1 {
-  font-size: 7rem;
   letter-spacing: -.015em;
   line-height: 1;
   font-weight: $bold;
   
+  @include at-least(medium) {
+    font-size: 7rem;
+  }
   @include up-to(medium) {
     font-size: 4.8rem;
   }
 }
 
 .ft_h2 {
-  font-size: 4rem;
   letter-spacing: -.015em;
   line-height: 1;
   font-weight: $bold;
   
+  @include at-least(medium) {
+    font-size: 4rem;
+  }
   @include up-to(medium) {
     font-size: 3rem;
   }
 }
 
 .ft_h3 {
-  font-size: 3rem;
   letter-spacing: -.01em;
   line-height: 1;
   font-weight: $bold;
-    
+
+  @include at-least(medium) {
+    font-size: 3rem;
+  }
   @include up-to(medium) {
     font-size: 2.4rem;
   }
 }
 
 .ft_h4 {
-  font-size: 2.5rem;
   font-weight: $bold;
   letter-spacing: -.01em;
   line-height: 1.2;
   
+  @include at-least(medium) {
+    font-size: 2.5rem;
+  }
   @include up-to(medium) {
     font-size: 1.9rem;
   }
 }
 
 .ft_h5 {
-  font-size: 2rem;
   font-weight: $bold;
-    
+  
+  @include at-least(medium) {
+    font-size: 2rem;
+  }
   @include up-to(medium) {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
   }
 }
 
@@ -130,13 +140,15 @@ h1, h2, h3,h4, h5, h6 {
 }
 
 .ft_p3 { // CHAPOS
-  font-size: 3rem;
   letter-spacing: -.01em;
   line-height: 1.6;
   font-weight: $regular;
     
   @include up-to(medium) {
     font-size: 2.4rem;
+  }
+  @include at-least(medium) {
+    font-size: 3rem;
   }
 
   a {
@@ -155,12 +167,14 @@ h1, h2, h3,h4, h5, h6 {
 }
 
 .ft_p4 {
-  font-size: 1.5rem;
   font-weight: $light;
   text-transform: uppercase;
     
   @include up-to(medium) {
     font-size: 1.4rem;
+  }
+  @include at-least(medium) {
+    font-size: 1.5rem;
   }
 }
 

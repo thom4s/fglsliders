@@ -79,6 +79,16 @@
     }
 }
 
+    .c-card-dates p,
+    .c-card-dates .ft_h5 {
+
+        @include up-to(medium) {
+            font-size: 1.7rem;
+        }
+
+    }
+
+
 // Card for slider Big Button
 .c-card-1--empty {
     @extend .c-card-1;
