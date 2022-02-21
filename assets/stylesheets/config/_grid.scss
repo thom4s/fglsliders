@@ -23,12 +23,11 @@ $large_breakpoint:                  1040px !default;
 $wide_breakpoint:                   1550px !default; 
 
 
-* {
+*, *:before, *:after {
     @include box-sizing();
 }
 
 .plain {
-    @include box-sizing;
     display: block;
     width: 100%;
     margin-left: auto;
@@ -36,22 +35,27 @@ $wide_breakpoint:                   1550px !default;
 }
 
 .wrap {
-    @include box-sizing;
     margin-left: auto;
     margin-right: auto;
 
-    @include up-to(medium) {
-        width: 90%;
-    }
-    @include at-least(medium) {
-        width: 95%;
-    }
-    @include at-least(large) { 
-        //width: 90%;
+    @include up-to(wide) {
+        width: calc(100% - 40px);
     }
     @include at-least(wide) {
         width: $max_width_large;
     }
+}
+
+// TEST
+.wrap_alt {
+  @include up-to(wide) {
+      width: 100%;
+  }
+  @include at-least(wide) {
+      width: $max_width_large;
+      margin-left: auto;
+      margin-right: auto;
+  }
 }
 
 

@@ -1578,10 +1578,12 @@ jQuery( document ).ready(function( ) {
 
 	}
 
-	trigger_event_video();
+	if( $('.mod-playerfull').length > 0 ) {
+		trigger_event_video();
+	}
 
 
-	
+
 
 
 
@@ -2437,20 +2439,23 @@ jQuery( document ).ready(function( ) {
 
 	const openContent = document.querySelector('#js-openContent')
 
-	openContent.addEventListener('click', (e) => {
-	  e.preventDefault();
+	if( openContent !== null ) {
 
-	  openContent.classList.toggle('reversed');
-	  document.querySelector('.mod-copy').classList.toggle('open')
+		openContent.addEventListener('click', (e) => {
+		e.preventDefault();
 
-	  if( openContent.classList.contains('reversed') ) {
-		openContent.querySelector('.c-more-label').innerText = 'voir moins';
-	  }
-	  else {
-		openContent.querySelector('.c-more-label').innerText = 'voir plus';
+		openContent.classList.toggle('reversed');
+		document.querySelector('.mod-copy').classList.toggle('open')
 
-	  }
-	})
+		if( openContent.classList.contains('reversed') ) {
+			openContent.querySelector('.c-more-label').innerText = 'voir moins';
+		}
+		else {
+			openContent.querySelector('.c-more-label').innerText = 'voir plus';
+
+		}
+		})
+	}
 
 
 

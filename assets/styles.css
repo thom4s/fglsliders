@@ -162,17 +162,19 @@ td, th { padding: 0; }
 
 /*  Grid system @package fegl */
 /*  GRID VARIABLES SETTING */
-* { /* Acceptable values are border, content, and padding - content is the default W3C model */ box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; }
+*, *:before, *:after { /* Acceptable values are border, content, and padding - content is the default W3C model */ box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; }
 
-.plain { /* Acceptable values are border, content, and padding - content is the default W3C model */ box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; display: block; width: 100%; margin-left: auto; margin-right: auto; }
+.plain { display: block; width: 100%; margin-left: auto; margin-right: auto; }
 
-.wrap { /* Acceptable values are border, content, and padding - content is the default W3C model */ box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; margin-left: auto; margin-right: auto; }
+.wrap { margin-left: auto; margin-right: auto; }
 
-@media (max-width: 880px) { .wrap { width: 90%; } }
-
-@media (min-width: 880px) { .wrap { width: 95%; } }
+@media (max-width: 1550px) { .wrap { width: calc(100% - 40px); } }
 
 @media (min-width: 1550px) { .wrap { width: 1500px; } }
+
+@media (max-width: 1550px) { .wrap_alt { width: 100%; } }
+
+@media (min-width: 1550px) { .wrap_alt { width: 1500px; margin-left: auto; margin-right: auto; } }
 
 @media (min-width: 880px) { .is-half { width: 50%; float: left; } }
 
@@ -1692,7 +1694,7 @@ th { font-weight: bold; }
 .card-page .card_intro { content: ''; position: absolute; bottom: 0; left: 0; right: 0; padding: 3em .5em .5em .5em; background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */ }
 
 /*  Medias @package lavantseine-v2 */
-img { /* Acceptable values are border, content, and padding - content is the default W3C model */ box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; display: block; max-width: 100%; height: auto; }
+img { display: block; max-width: 100%; height: auto; }
 
 @media (max-width: 880px) { img { width: 100%; } }
 
@@ -1780,13 +1782,13 @@ button::-moz-focus-inner, input::-moz-focus-inner { /* Corrects inner padding an
 
 /*  Buttons @package lavantseine-v2 */
 /*  Forms fields @package lavantseine-v2 */
-input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], textarea { /* Acceptable values are border, content, and padding - content is the default W3C model */ box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; background: none; border: none; border-radius: 0; }
+input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], textarea { background: none; border: none; border-radius: 0; }
 
-textarea { /* Acceptable values are border, content, and padding - content is the default W3C model */ box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */ vertical-align: top; /* Improves readability and alignment in all browsers */ width: 100%; border-radius: 0; }
+textarea { overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */ vertical-align: top; /* Improves readability and alignment in all browsers */ width: 100%; border-radius: 0; }
 
 input[type="checkbox"], input[type="radio"] { padding: 0; /* Addresses excess padding in IE8/9 */ }
 
-input[type="search"] { -webkit-appearance: textfield; /* Addresses appearance set to searchfield in S5, Chrome */ /* Acceptable values are border, content, and padding - content is the default W3C model */ box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; }
+input[type="search"] { -webkit-appearance: textfield; /* Addresses appearance set to searchfield in S5, Chrome */ }
 
 input[type="search"]::-webkit-search-decoration { /* Corrects inner padding displayed oddly in S5, Chrome on OSX */ -webkit-appearance: none; }
 
@@ -2421,7 +2423,9 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 .mod_mosaic .m-4col:last-child { padding-left: 20px; }
 
-.mod_mosaic-grid[data-columns]::before { content: '3 .m-4col'; display: none; }
+.mod_mosaic-grid[data-columns]::before { content: '3 .m-4col.paddinged-both'; display: none; }
+
+.mod_visites_list { margin-bottom: 70px; }
 
 .mod-navigation { display: flex; }
 

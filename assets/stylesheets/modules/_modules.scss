@@ -201,10 +201,18 @@
 }
 
 .mod_mosaic-grid[data-columns]::before {
-	content: '3 .m-4col';
+	content: '3 .m-4col.paddinged-both';
 	display: none;
   }
 
+
+
+
+
+// VISITE CARDS LIST
+.mod_visites_list {
+	margin-bottom: $marge-9;
+}
 
 // Events Navigation
 	.mod-navigation {
