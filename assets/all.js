@@ -2501,7 +2501,24 @@ jQuery( document ).ready(function( ) {
 	
 
 
+	// EVENTS > Open COPY 
 
+	const openContent = document.querySelector('#js-openContent')
+
+	openContent.addEventListener('click', (e) => {
+	  e.preventDefault();
+
+	  openContent.classList.toggle('reversed');
+	  document.querySelector('.m-copy').classList.toggle('open')
+
+	  if( openContent.classList.contains('reversed') ) {
+		openContent.querySelector('.c-more-label').innerText = 'voir moins';
+	  }
+	  else {
+		openContent.querySelector('.c-more-label').innerText = 'voir plus';
+
+	  }
+	})
 
 
 

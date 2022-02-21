@@ -1991,6 +1991,16 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 .c-opening p { margin-bottom: 5px; }
 
+.c-copy { max-height: 0px; transition: all .4s; overflow: hidden; }
+
+.m-copy.open .c-copy { max-height: 3000px; }
+
+.c-more button { border: none; background: none; display: flex; flex-direction: column; align-items: center; }
+
+.c-more button.reversed .icon-down, .c-more button.reversed .ui-datepicker .ui-datepicker-next, .ui-datepicker .c-more button.reversed .ui-datepicker-next { transform: rotate(180deg); }
+
+.c-more-label { padding-bottom: 5px; }
+
 /*--------------------------------------------------------------
 # Modules : 
 --------------------------------------------------------------*/
@@ -2272,6 +2282,9 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 .bloc_apps a:hover { border: none !important; text-decoration: none !important; }
 
 @media (max-width: 880px) { .bloc_apps a { width: 200px; margin: auto; display: block; float: none; background-position: top; height: 75px !important; } }
+
+/* EVENT MODULES 2022 */
+.m-copy:not(.open) + section { box-shadow: 0 -5px 10px #F0ECEC; }
 
 /*--------------------------------------------------------------
 # Templates

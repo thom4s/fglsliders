@@ -27,3 +27,38 @@
         margin-bottom: 5px;
     }
 }
+
+
+
+// EVENTS COPY
+
+.c-copy {
+    max-height: 0px;
+    transition: all .4s;
+    overflow: hidden;
+
+    .m-copy.open & {
+        max-height: 3000px;
+    }
+}
+
+.c-more {
+
+    button {
+        border: none;
+        background: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &.reversed {
+            .icon-down {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+    .c-more-label {
+        padding-bottom: 5px;
+    }
+

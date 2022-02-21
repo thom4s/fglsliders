@@ -87,4 +87,15 @@
 
 
 
+	/*
+	 * EVENT MODULES 2022
+	 */
+
+	 .m-copy {
+
+		&:not(.open) + section {
+			box-shadow: 0 -5px 10px $gray_light;
+		}
+	}
+
 
