@@ -235,13 +235,13 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 
 
     <section id="copy" class="mb-3">
-        <div class="wrap row">
+        <div class="wrap_alt row">
 
-            <div class="m-4col paddinged-right">
+            <div class="m-4col paddinged-both">
                 <h1 class="ft_h1">Les visites individuelles</h1>
             </div>
 
-            <div class="m-8col bordered-left paddinged-left">
+            <div class="m-8col bordered-left paddinged-both">
                 <div class="ft_p3">
                     <p>Les secrets de la première grande exposition en France de Xinyi Cheng Seen Through Others se dévoilent chaque jour lors de nos visites guidées gratuites !</p>
                 </div>
@@ -254,13 +254,15 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 
 
 
-    <section id="visites_lists" class="wrap mb-3">
+    <section id="visites_lists" class="wrap_alt mb-3">
 
       <div class="mb-2">
+        
+        <article class="c-card-6">
 
-        <article class="row flex">
+          <div class="row">
 
-            <div class=" m-8col paddinged-right">
+            <div class="m-8col paddinged-both">
               <figure class="ratio">
                 <div class="ratio_inner">
                   <img src="img/visite3.png" alt="">
@@ -268,23 +270,77 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
               </figure>
             </div>
 
-            <div class=" m-4col paddinged-left bordered-left">
+            <div class="m-4col paddinged-both bordered-left">
               <div class="fl-col fl-justify">
 
-                <header>
-                  <h3 class="ft_h2">La visite quotidienne</h3>
-                  <p>Une visite commentée, murmurée par un·e médiateur·trice, pour plonger sur la pointe des pieds dans l’intimité des peintures de Xinyi Cheng.</p>
+                <header class="">
+
+                  <h3 class="ft_h2 c-card-title">La visite quotidienne</h3>
+                  <p class="c-card-title ft_p1">Une visite commentée, murmurée par un·e médiateur·trice, pour plonger sur la pointe des pieds dans l’intimité des peintures de Xinyi Cheng.</p>
+
                 </header>
 
-                <footer>
-                  <div>
-                    <p>Tous les jours à 17h sauf le mardi</p>
-                    <p>Gratuit
-                      sur réservation</p>
+                <footer class="c-card-footer">
+                  
+                  <div class="fl-justify">
+                    <p class="ft_p1_b">Tous les jours à 17h sauf le mardi</p>
+                    <p class="ft_p1_g">Gratuit sur réservation</p>
                   </div>
-                  <div>
+
+                  <div class="c-card-action">
                     <a href="#" class="btn">Réserver</a>
                   </div>
+
+                </footer>
+
+              </div>
+            </div>
+
+        </article>
+
+      </div>
+      
+
+
+      <div class="mb-2">
+        
+        <article class="c-card-6">
+
+          <div class="row">
+
+            <div class="m-8col paddinged-both">
+              <figure class="ratio">
+                <div class="ratio_inner">
+                  <img src="img/visite4.png" alt="">
+                </div>
+              </figure>
+            </div>
+
+            <div class="m-4col paddinged-both bordered-left">
+              <div class="fl-col fl-justify">
+
+                <header class="">
+
+                  <h3 class="ft_h2 c-card-title">La visite nocturne</h3>
+                  <p class="c-card-title ft_p1">Une visite commentée, murmurée par un·e médiateur·trice, pour plonger sur la pointe des pieds dans l’intimité des peintures de Xinyi Cheng.</p>
+
+                </header>
+
+                <footer class="">
+                  
+                  <div class="c-card-footer fl-justify">
+                      <p class="ft_p1_b">Les jeudis à 19h</p>
+                      <p class="ft_p1_g">Gratuit sur réservation</p>
+                  </div>
+
+                  <div class="c-card-footer fl-justify">
+                    <a href="" class="ft_p1_a mb-1">Plus d'informations</a>
+                  </div>
+
+                  <div class="c-card-action">
+                    <a href="#" class="btn">Réserver</a>
+                  </div>
+
                 </footer>
 
               </div>
@@ -294,41 +350,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 
       </div>
 
-      <div class="mb-2">
-        <article class="row flex">
 
-          <div class="m-8col paddinged-right">
-            <figure class="ratio">
-              <div class="ratio_inner">
-                <img src="img/visite4.png" alt="">
-              </div>
-            </figure>
-          </div>
-
-          <div class=" m-4col paddinged-left bordered-left">
-            <div class="fl-col fl-justify">
-
-              <header>
-                <h3 class="ft_h2">La visite nocturne</h3>
-                <p>Chaque semaine, un·e médiateur·rice propose un regard singulier autour d'une thématique de l'exposition Seen Through Others.</p>
-              </header>
-
-              <footer>
-                <div>
-                  <p>Les jeudis à 19h</p>
-                  <p>Gratuit
-                    sur réservation</p>
-                </div>
-                <div>
-                  <a href="#" class="btn">Réserver</a>
-                </div>
-              </footer>
-
-            </div>
-          </div>
-
-        </article>
-      </div>
 
     </section>
 
@@ -338,25 +360,24 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 
 
 
+    <section class="mod_visites_list">
 
+      <div class="wrap_alt row" data-columns>
 
-    <section id="rebonds" class="">
-        <div class="wrap row">
+          <div class=" m-4col paddinged-both">
+            <article class="c-card-5">
+                <div class="ratio green_card">
+                  <a href="visites.html"  class="ratio_inner">
+                    <span class="el icon-lien_interne--left"> </span>
+                    <span href="#" class="ft_h2">Toutes les visites</span>
+                  </a>
+                </div>
 
-            <article class="card m-4col">
-                <a href="visites.html">
-
-                    <div class="ratio mb-05 ">
-                        <div class="ratio_inner green_card">
-                            <span class="el icon-lien_interne--left"></span>
-                            <span class="ft_p3_a">Toutes les visites</span>
-                        </div>
-                    </div>
-
-                </a>
             </article> 
+          </div>
 
-            <article class="card m-4col">
+          <div class=" m-4col paddinged-both">
+            <article class="c-card-5">
                 <a href="familles.html">
 
                     <figure class="ratio mb-05">
@@ -371,9 +392,11 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 
                 </a>
             </article> 
+          </div>
 
 
-            <article class="card m-4col">
+          <div class=" m-4col paddinged-both">
+            <article class="c-card-5">
                 <a href="groupes.html">
 
                     <figure class="ratio mb-05">
@@ -388,8 +411,13 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 
                 </a>
             </article> 
-        </div><!-- .row -->
-    </section>
+          </div>
+
+        </div><!-- .mod_mosaic-grid -->
+    </section><!-- /.mod_mosaic -->
+    
+
+
 
 
 
@@ -414,7 +442,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   
 <footer id="footer1" class="upper-footer has-padding">
 
-    <div class="row wrap mb-1">
+    <div class="row wrap_alt mb-1">
 
       <div class="m-2col paddinged-right mb-1">
         <h4 class="fh_1">Contactez-nous</h4>
@@ -448,7 +476,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   
   
   <footer id="footer2" class="footer bg--gray has-padding">
-  	<div class="wrap row">
+  	<div class="wrap_alt row">
       	
       <div class="m-4col mb-2">
      
@@ -511,7 +539,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     
 
    <div class="modal slide-modal">  
-    <div class="slide-modal_inner wrap row">
+    <div class="slide-modal_inner wrap_alt row">
 
         <a href="#" id="modal_close" class="close icon-back--white m-hide"></a>
         <a href="#" id="modal_close" class="s-hide m-show close icon-close-modal"></a>
@@ -545,7 +573,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   
   <!-- modal-contact -->
 <div class="modal modal-presse" id="modal-contact">
-    <div class="inner wrap row">
+    <div class="inner wrap_alt row">
 
       <a href="#" id="modal_close" class="close icon-fermer"></a>
 

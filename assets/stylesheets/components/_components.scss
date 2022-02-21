@@ -148,10 +148,34 @@
 
 
 
-// Card for bloc visites
+// Card for bloc visites list
 .c-card-5 {
     margin-bottom: $marge-5;
+
+
+
 }
+
+
+
+
+// Card for bloc visites
+.c-card-6 {
+    margin-bottom: $marge-9;
+
+    & > .row {
+        display: flex;
+    }
+    .c-card-title {
+        margin-bottom: 20px;
+    }
+    .c-card-footer {
+        border-top: 1px solid #F0ECEC;
+        padding-top: 14px;
+    }
+}
+
+
 
 
 
