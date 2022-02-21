@@ -2335,22 +2335,6 @@ jQuery( document ).ready(function( ) {
 	 * NEW SLIDERS (02/2022)
 	 *******************/ 
 
-	if( document.querySelector('.slide_large') ) {
-
-		var slider_large = tns({
-			container: '.slide_large',
-			items: 1.4,
-			autoplay: false,
-			loop: false,
-			mouseDrag: true,
-			controlsText: ['', ''],
-			responsive: {
-				880: {
-					items: 1.73
-				}
-			}
-		});
-	}
 
 	const slide_mediums = document.querySelectorAll('.slide_medium');
 
@@ -2372,6 +2356,29 @@ jQuery( document ).ready(function( ) {
 			});
 		}
 	}
+
+
+	const slide_smalls = document.querySelectorAll('.slide_small');
+
+	if( slide_smalls.length > 0 ) {
+
+		for( slide of slide_smalls ) {
+			var slide_small = tns({
+				container: slide,
+				items: 1.4,
+				autoplay: false,
+				loop: false,
+				mouseDrag: true,
+				controlsText: ['', ''],
+				responsive: {
+					880: {
+						items: 3
+					}
+				}
+			});
+		}
+	}
+
 
 
 	const slide_artworks = document.querySelectorAll('.slide_medium--artworks');
@@ -2397,24 +2404,7 @@ jQuery( document ).ready(function( ) {
 		}
 	}
 
-
-	if( document.querySelector('.slide_medium') ) {
-
-		var slider_small = tns({
-			container: '.slide_small',
-			items: 1.4,
-			autoplay: false,
-			loop: false,
-			mouseDrag: true,
-			controlsText: ['', ''],
-			responsive: {
-				880: {
-					items: 3
-				}
-			}
-		});
-	}
-
+	
 	
 
 

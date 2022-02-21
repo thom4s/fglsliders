@@ -19,7 +19,7 @@ $padding:                           0 !default;
 $mobile_first:                      true !default; 
 $minimal_breakpoint:                320px !default; 
 $medium_breakpoint:                 880px !default; 
-$large_breakpoint:                  1240px !default; 
+$large_breakpoint:                  1040px !default; 
 $wide_breakpoint:                   1550px !default; 
 
 
@@ -94,12 +94,12 @@ $wide_breakpoint:                   1550px !default;
  */
 
 .paddinged-left {
-  @include at-least(medium) {
+  @include at-least(large) {
     padding-left: 20px;
   }
 }
 .paddinged-right {
-  @include at-least(medium) {
+  @include at-least(large) {
     padding-right: 20px;
   }
 }
@@ -110,7 +110,7 @@ $wide_breakpoint:                   1550px !default;
 }
 
 
-@include at-least(medium) {
+@include at-least(large) {
     .bordered-left {
         border-left: 1px solid $gray_light;
     }

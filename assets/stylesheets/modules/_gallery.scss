@@ -260,7 +260,7 @@
         background-image: url("/icons/arrow-left.png");
     }
     button[data-controls="next"] {
-        right: 16px;
+        right: 20px;
         background-image: url("/icons/arrow-right.png");
     }
     button[disabled] {
@@ -281,6 +281,7 @@
     left: 0;
     right: 0;
     margin: auto;
+    
     button {
         width: auto;
         height: 3px;
@@ -302,6 +303,15 @@
 
 .slide_wrapper {
     padding-bottom: 50px;
+
+    @include up-to(large) {
+        position: relative;
+        left: -20px;
+
+        button[data-controls="next"] {
+            right: 0;
+        }
+    }
 }
 
 .slide_wrapper--artworks {
@@ -312,11 +322,33 @@
     .tns-controls button {
         bottom: -10px;
     }
+    @include up-to(large) {
+        left: 0;
+
+        button[data-controls="prev"] {
+            left: 0;
+        }
+        .tns-nav {
+            bottom: 0;
+        }
+    }
 }
     .slide_medium--artworks {
+
         img {
-            height: 500px;
+            width: auto;
         }
+        @include at-least(medium) {
+            img {
+                height: 500px;
+            }     
+        }
+        @include up-to(medium) {
+            img {
+                height: 300px;
+            }     
+        }
+
         p {
             max-width: 350px; 
         }    
