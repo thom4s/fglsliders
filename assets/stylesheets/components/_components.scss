@@ -5,14 +5,89 @@
  */
 
 
- // COMPONENTS CARD EVENTS
+// COMPONENTS CARD EVENTS
 
+.c-card {
+    padding: 20px;
+    position: relative;
+
+    .meta {
+        margin-top: 0;
+    }
+
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: -1px;
+		height: 50%;
+		z-index: 0;
+		transition: all 0.5s ease;
+		opacity: 0;
+        background: linear-gradient(to left, transparent 50%, $color_primary 50%);
+        background-size: 200% 100%;
+        background-position: right 0px bottom;
+	}
+
+    .no-touch &:hover {
+
+		cursor: pointer;
+
+		&:before {
+			background-position:left bottom;
+			opacity: 1;
+		}
+
+		.meta:before {
+			background: white;
+		}
+	}
+
+}
+    .c-card-title {
+        height: calc( 1.2em * 4);
+        position: relative;
+    }
+    .c-card-copy {
+        height: calc( 1.6em * 3 + 25px);
+    }
+    .c-card-footer {
+        border-top: 1px solid #F0ECEC;
+        padding-top: 14px;
+        p {
+            margin-bottom: 10px;
+        }
+
+        .bg--gray & {
+            border-color: $gray_medium;
+        }
+    }
+
+    .truncated-line {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical; 
+        overflow: hidden;
+    }
+
+    
 .c-card-1 {
-    display: block;
+    @extend .c-card;
 
     &_title {
         
     }
+}
+
+
+
+// Card Hovers
+
+
+.e-hover {
+
 }
 
 
@@ -33,16 +108,15 @@
 // EVENTS COPY
 
 .c-copy {
-    max-height: 0px;
-    transition: all .4s;
-    overflow: hidden;
-
-    .m-copy.open & {
-        max-height: 3000px;
-    }
+    max-width: 750px;
+    padding-bottom: $marge-8;
 }
 
 .c-more {
+    padding-top: 20px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
 
     button {
         border: none;

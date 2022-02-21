@@ -91,11 +91,23 @@
 	 * EVENT MODULES 2022
 	 */
 
-	 .m-copy {
+	.mod-copy {
+		max-height: 400px;
+		overflow: hidden;
+		
+		& + section {
+			box-shadow: 0 -20px 20px $gray_light;
+		}
 
-		&:not(.open) + section {
-			box-shadow: 0 -5px 10px $gray_light;
+		&.open {
+			max-height: 3000px;
 		}
 	}
 
 
+
+
+	.mod-sticky {
+		position: sticky;
+		top: 200px;
+	}

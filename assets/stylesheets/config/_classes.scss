@@ -195,6 +195,40 @@
   align-items: center;
 }
 
+
+
+
+/*
+* MARGES
+*/ 
+$marge-1: 5px;
+$marge-2: 10px;
+$marge-3: 15px;
+$marge-4: 20px;
+$marge-5: 25px;
+$marge-6: 30px;
+$marge-6: 40px;
+$marge-8: 45px;
+$marge-9: 70px;
+
+@include at-least(medium) {
+  $marge-1: 5px;
+  $marge-2: 10px;
+  $marge-3: 15px;
+  $marge-4: 25px;
+  $marge-5: 35px;
+  $marge-6: 40px;
+  $marge-6: 55px;
+  $marge-8: 90px;
+  $marge-9: 110px;
+}
+
+
+
+
+
+
+
 // TODO: CLEAN & REMOVE
 .flex-justify {
   display: flex;

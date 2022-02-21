@@ -60,6 +60,29 @@ h1, h2, h3,h4, h5, h6 {
   }
 }
 
+.ft_h4 {
+  font-size: 2.5rem;
+  font-weight: $bold;
+  letter-spacing: -.01em;
+  line-height: 1.2;
+}
+
+.ft_h5 {
+  font-size: 2rem;
+  font-weight: $bold;
+    
+  @include up-to(medium) {
+    font-size: 1.9rem;
+  }
+}
+
+.ft_h5_g {
+  @extend .ft_h5;
+  color: $gray_dark;
+}
+
+
+
 
 // COPY
 
@@ -122,11 +145,7 @@ h1, h2, h3,h4, h5, h6 {
   text-decoration: underline;
 }
 
-
-
-// CARDS
-
-.ft_card_meta {
+.ft_p4 {
   font-size: 1.5rem;
   font-weight: $light;
   text-transform: uppercase;
@@ -135,25 +154,9 @@ h1, h2, h3,h4, h5, h6 {
     font-size: 1.4rem;
   }
 }
-.ft_card_title {
-  font-size: 2rem;
-  font-weight: $bold;
-    
-  @include up-to(medium) {
-    font-size: 1.9rem;
-  }
-}
-.ft_card_title--linked {
-  font-size: 1.5rem;
-  font-weight: $bold;
-  text-decoration: underline;
-}
-.card_title--big {
-  font-size: 2.5rem;
-  font-weight: $bold;
-  letter-spacing: -.01em;
-  line-height: 1.2;
-}
+
+
+
 
 
 
