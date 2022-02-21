@@ -65,6 +65,10 @@ h1, h2, h3,h4, h5, h6 {
   font-weight: $bold;
   letter-spacing: -.01em;
   line-height: 1.2;
+  
+  @include up-to(medium) {
+    font-size: 1.9rem;
+  }
 }
 
 .ft_h5 {

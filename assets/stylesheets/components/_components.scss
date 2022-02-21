@@ -122,7 +122,14 @@
 
 .c-navItem {
     display: flex;
-    padding: $marge-9 0;
+
+    @include at-least(medium) {
+        padding: $marge-9 0;
+    }
+    @include up-to(medium) {
+        padding: $marge-5 0;
+    }
+
     p {
         margin-bottom: 0;
     }

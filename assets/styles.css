@@ -958,6 +958,8 @@ h1, h2, h3, h4, h5, h6 { margin-top: 0; margin-bottom: 20px; }
 
 .ft_h4 { font-size: 2.5rem; font-weight: 900; letter-spacing: -.01em; line-height: 1.2; }
 
+@media (max-width: 880px) { .ft_h4 { font-size: 1.9rem; } }
+
 .ft_h5, .ft_h5_g { font-size: 2rem; font-weight: 900; }
 
 @media (max-width: 880px) { .ft_h5, .ft_h5_g { font-size: 1.9rem; } }
@@ -2027,7 +2029,11 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 .bg--gray .c-card-3 .c-card-action { border-color: #d2d2d2; }
 
-.c-navItem { display: flex; padding: 70px 0; }
+.c-navItem { display: flex; }
+
+@media (min-width: 880px) { .c-navItem { padding: 70px 0; } }
+
+@media (max-width: 880px) { .c-navItem { padding: 25px 0; } }
 
 .c-navItem p { margin-bottom: 0; }
 
@@ -2297,7 +2303,7 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 .tns-controls button[disabled] { opacity: 0.3; cursor: auto; }
 
-.tns-nav { position: absolute; bottom: -50px; background-color: #F0ECEC; display: flex; justify-content: space-between; max-width: 500px; width: 80%; left: 0; right: 0; margin: auto; }
+.tns-nav { position: absolute; bottom: -50px; background-color: #F0ECEC; display: flex; justify-content: space-between; max-width: 500px; width: 70%; left: 0; right: 0; margin: auto; }
 
 .tns-nav button { width: auto; height: 3px; border: none; background: none; flex: 1; transition: all 1s; }
 
@@ -2376,11 +2382,17 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 .mod-navigation { display: flex; }
 
-.mod-navigation .c-navItem { width: 50%; justify-content: space-between; }
+@media (max-width: 880px) { .mod-navigation { flex-direction: column; padding: 25px 0; } }
+
+.mod-navigation .c-navItem { justify-content: space-between; }
+
+@media (min-width: 880px) { .mod-navigation .c-navItem { width: 50%; } }
 
 .mod-navigation [class*="icon-lien_interne"] { display: inline-block; padding: 3px 10px; font-size: 2rem; }
 
 .mod-navigation .c-navItem:last-child { justify-content: flex-end; }
+
+@media (max-width: 880px) { .mod-navigation .c-navItem:last-child { align-self: flex-end; } }
 
 .mod-navigation .c-navItem:first-child { justify-content: flex-start; }
 

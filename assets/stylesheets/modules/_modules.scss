@@ -122,7 +122,7 @@
 
 
 
-	
+
 // Module pour les section de sliders artistes
 	.mob-artistArtworks {
 		.section_content {
@@ -151,9 +151,17 @@
 	.mod-navigation {
 		display: flex;
 
+		@include up-to(medium) {
+			flex-direction: column;
+			padding: $marge-5 0;
+		}
+
 		.c-navItem {
-			width: 50%;
 			justify-content: space-between;
+
+			@include at-least(medium) {
+				width: 50%;
+			}
 		}
 
 		[class *= "icon-lien_interne"] {
@@ -163,6 +171,9 @@
 		}
 		.c-navItem:last-child {
 			justify-content: flex-end;
+			@include up-to(medium) {
+				align-self: flex-end;
+			}
 		}
 		.c-navItem:first-child {
 			justify-content: flex-start;
