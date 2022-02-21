@@ -124,7 +124,7 @@
 
 
 // Module pour les section de sliders artistes
-	.mob-artistArtworks {
+	.mod-artistArtworks {
 		.section_content {
 			@include up-to(large) {
 				margin-top: 20px;
@@ -136,6 +136,23 @@
 
 
 
+// Video player full
+
+	.mod-playerfull {
+		
+		margin-bottom: $marge-9;
+
+		img {
+			width: 70vw;
+			transition: all .4s;
+		}
+
+		&.open img {
+			width: 100vw
+		}
+
+	}
+
 
 
 // Sticky CSS
@@ -145,7 +162,7 @@
 	}
 
 
-	
+
 // SEPARATORS
 	.m_separators {
 		margin-bottom: $marge-9;

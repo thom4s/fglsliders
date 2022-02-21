@@ -1643,6 +1643,31 @@ jQuery( document ).ready(function( ) {
 
 
 
+
+	function trigger_event_video() {
+
+		$(window).scroll(function() {
+
+			if ( $('.mod-playerfull').isOnCenterScreen() == true) {
+				console.log('mod-playerfull on screen')
+				$('.mod-playerfull').addClass('open');
+		  	}
+
+			else {
+				$('.mod-playerfull').removeClass('open');
+			}
+
+		});
+
+	}
+
+	trigger_event_video();
+
+
+	
+
+
+
 	$('body').on('click', '#play_live', function() {
 
 		$('#video_upper_layer').hide();

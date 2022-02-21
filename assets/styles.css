@@ -2381,7 +2381,13 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
   .mod-copy .mod-copy-txt { order: 2; }
   .mod-copy .mod-copy-openings { margin-bottom: 70px; } }
 
-@media (max-width: 1040px) { .mob-artistArtworks .section_content { margin-top: 20px; padding-top: 10px; border-top: 1px solid #F0ECEC; } }
+@media (max-width: 1040px) { .mod-artistArtworks .section_content { margin-top: 20px; padding-top: 10px; border-top: 1px solid #F0ECEC; } }
+
+.mod-playerfull { margin-bottom: 70px; }
+
+.mod-playerfull img { width: 70vw; transition: all .4s; }
+
+.mod-playerfull.open img { width: 100vw; }
 
 .mod-sticky { position: sticky; top: 200px; }
 
