@@ -150,10 +150,7 @@
 
 // Card for bloc visites list
 .c-card-5 {
-    margin-bottom: $marge-5;
-
-
-
+    @extend %mb-5;
 }
 
 
@@ -161,7 +158,7 @@
 
 // Card for bloc visites
 .c-card-6 {
-    margin-bottom: $marge-9;
+    @extend %mb-9;
 
     & > .row {
         display: flex;
@@ -189,10 +186,10 @@
     display: flex;
 
     @include at-least(medium) {
-        padding: $marge-9 0;
+        padding: $m-step * 9 0;
     }
     @include up-to(medium) {
-        padding: $marge-5 0;
+        padding: $m-step * 5 0;
     }
 
     p {
@@ -234,7 +231,7 @@
 }
 .c-opening-group {
     margin-bottom: 40px;
-    
+
     & + & {
         border-top: 1px solid $gray_light;
         padding-top: 40px;
@@ -253,7 +250,7 @@
 
 .c-copy {
     max-width: 750px;
-    padding-bottom: $marge-8;
+    padding-bottom: $m-step * 8;
 }
 
 .c-more {

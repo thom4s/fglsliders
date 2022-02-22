@@ -105,6 +105,10 @@
 			max-height: 3000px;
 		}
 
+		.mod-copy-openings {
+			@extend %mb-9;
+		}
+
 		@include up-to(large) {
 			max-height: 600px;
 
@@ -114,9 +118,6 @@
 			}
 			.mod-copy-txt {
 				order: 2;
-			}
-			.mod-copy-openings {
-				margin-bottom: $marge-9;
 			}
 		}
 	}
@@ -144,8 +145,7 @@
 // Video player full
 
 	.mod-playerfull {
-		
-		margin-bottom: $marge-9;
+		@extend %mb-9;
 
 		img {
 			width: 70vw;
@@ -170,7 +170,7 @@
 
 // SEPARATORS
 	.m_separators {
-		margin-bottom: $marge-9;
+		@extend %mb-9;
 	}
 
 
@@ -179,11 +179,11 @@
 
 .mod_mosaic {
 
-	margin-bottom: $marge-9;
+    @extend %mb-9;
 
 
 	figure {
-		margin-bottom: 60px;
+		@extend %mb-8;
 	}
 	
 	img {
@@ -222,7 +222,7 @@
 
 // VISITE CARDS LIST
 .mod_visites_list {
-	margin-bottom: $marge-9;
+    @extend %mb-9;
 	
 }
 
@@ -232,7 +232,7 @@
 
 		@include up-to(medium) {
 			flex-direction: column;
-			padding: $marge-5 0;
+			padding: $m-step * 5 0;
 		}
 
 		.c-navItem {

@@ -745,6 +745,18 @@ td, th { padding: 0; }
 .fl-centered { display: flex; justify-content: center; align-items: center; }
 
 /* MARGES */
+@media (max-width: 880px) { .c-card-5 { margin-bottom: 25px; } }
+
+@media (min-width: 880px) { .c-card-5 { margin-bottom: 35px; } }
+
+@media (max-width: 880px) { .mod_mosaic figure { margin-bottom: 45px; } }
+
+@media (min-width: 880px) { .mod_mosaic figure { margin-bottom: 90px; } }
+
+@media (max-width: 880px) { .c-card-6, .mod-copy .mod-copy-openings, .mod-copy--festival .mod-copy-openings, .mod-playerfull, .m_separators, .mod_mosaic, .mod_visites_list { margin-bottom: 70px; } }
+
+@media (min-width: 880px) { .c-card-6, .mod-copy .mod-copy-openings, .mod-copy--festival .mod-copy-openings, .mod-playerfull, .m_separators, .mod_mosaic, .mod_visites_list { margin-bottom: 110px; } }
+
 .flex-justify { display: flex; justify-content: space-between; }
 
 .flex-centered { display: flex; justify-content: center; align-items: center; }
@@ -2054,10 +2066,6 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 .bg--gray .c-card-3 .c-card-action { border-color: #d2d2d2; }
 
-.c-card-5 { margin-bottom: 25px; }
-
-.c-card-6 { margin-bottom: 70px; }
-
 .c-card-6 > .row { display: flex; }
 
 .c-card-6 .c-card-title { margin-bottom: 20px; }
@@ -2067,7 +2075,7 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 /* NAVIGATION PAGES (02.2022) */
 .c-navItem { display: flex; }
 
-@media (min-width: 880px) { .c-navItem { padding: 70px 0; } }
+@media (min-width: 880px) { .c-navItem { padding: 45px 0; } }
 
 @media (max-width: 880px) { .c-navItem { padding: 25px 0; } }
 
@@ -2090,7 +2098,7 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 .c-opening-group:last-child { margin-bottom: 20px; }
 
 /* EVENTS COPY (02.2022) */
-.c-copy { max-width: 750px; padding-bottom: 45px; }
+.c-copy { max-width: 750px; padding-bottom: 40px; }
 
 .c-more { padding-top: 20px; padding-bottom: 80px; display: flex; justify-content: center; }
 
@@ -2418,26 +2426,17 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 @media (max-width: 1040px) { .mod-copy, .mod-copy--festival { max-height: 600px; }
   .mod-copy .row, .mod-copy--festival .row { display: flex; flex-direction: column; }
-  .mod-copy .mod-copy-txt, .mod-copy--festival .mod-copy-txt { order: 2; }
-  .mod-copy .mod-copy-openings, .mod-copy--festival .mod-copy-openings { margin-bottom: 70px; } }
+  .mod-copy .mod-copy-txt, .mod-copy--festival .mod-copy-txt { order: 2; } }
 
 .mod-copy--festival { max-height: 500px; }
 
 @media (max-width: 1040px) { .mod-artistArtworks .section_content { margin-top: 20px; padding-top: 10px; border-top: 1px solid #F0ECEC; } }
-
-.mod-playerfull { margin-bottom: 70px; }
 
 .mod-playerfull img { width: 70vw; transition: all .4s; }
 
 .mod-playerfull.open img { width: 100vw; }
 
 .mod-sticky { position: sticky; top: 200px; }
-
-.m_separators { margin-bottom: 70px; }
-
-.mod_mosaic { margin-bottom: 70px; }
-
-.mod_mosaic figure { margin-bottom: 60px; }
 
 .mod_mosaic img { width: 100%; margin-bottom: 10px; }
 
@@ -2452,8 +2451,6 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 @media (min-width: 880px) { .mod_mosaic-grid[data-columns]::before { content: '2 .m-6col'; } }
 
 @media (min-width: 1040px) { .mod_mosaic-grid[data-columns]::before { content: '3 .m-4col'; } }
-
-.mod_visites_list { margin-bottom: 70px; }
 
 .mod-navigation { display: flex; }
 
