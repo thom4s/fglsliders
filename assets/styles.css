@@ -176,11 +176,17 @@ td, th { padding: 0; }
 
 @media (max-width: 1550px) { .wrapper { width: calc(100% - 40px); } }
 
+@media (max-width: 880px) { .wrapper { width: 100%; } }
+
 @media (min-width: 1550px) { .wrapper { width: 1500px; } }
 
 .wrapper .paddinged-both { padding-right: 20px; padding-left: 20px; }
 
 .wrapper [class*="col"] { padding-right: 20px; padding-left: 20px; }
+
+.wrapper [class*="col"] [class*="col"]:first-child { padding-left: 0; }
+
+.wrapper [class*="col"] [class*="col"]:last-child { padding-right: 0; }
 
 @media (min-width: 880px) { .is-half { width: 50%; float: left; } }
 
@@ -696,7 +702,7 @@ td, th { padding: 0; }
 
 .is_absolute { position: absolute !important; top: 0; left: 0; right: 0; bottom: 0; }
 
-.is-rounded { border-radius: 50%; }
+.is-rounded { border-radius: 50%; overflow: hidden; }
 
 .clearfix, .pinned:after { clear: both; }
 
@@ -745,17 +751,27 @@ td, th { padding: 0; }
 .fl-centered { display: flex; justify-content: center; align-items: center; }
 
 /* MARGES */
+.c-copy p, .mod_slider .section_title { margin-bottom: 15px; }
+
+@media (max-width: 880px) { .c-card-persona { margin-bottom: 20px; } }
+
+@media (min-width: 880px) { .c-card-persona { margin-bottom: 25px; } }
+
 @media (max-width: 880px) { .c-card-5 { margin-bottom: 25px; } }
 
 @media (min-width: 880px) { .c-card-5 { margin-bottom: 35px; } }
+
+@media (max-width: 880px) { .mod_content h3 { margin-bottom: 30px; } }
+
+@media (min-width: 880px) { .mod_content h3 { margin-bottom: 40px; } }
 
 @media (max-width: 880px) { .mod_mosaic figure { margin-bottom: 45px; } }
 
 @media (min-width: 880px) { .mod_mosaic figure { margin-bottom: 90px; } }
 
-@media (max-width: 880px) { .c-card-6, .mod-copy .mod-copy-openings, .mod-copy--festival .mod-copy-openings, .mod-playerfull, .m_separators, .mod_mosaic, .mod_visites_list { margin-bottom: 70px; } }
+@media (max-width: 880px) { .c-card-6, .mod-copy .mod-copy-openings, .mod-copy--festival .mod-copy-openings, .mod-playerfull, .m_separators, .mod_mosaic, .mod_visites_list, .mod_content, .mod_slider:last-child, .mod_carnetprod { margin-bottom: 70px; } }
 
-@media (min-width: 880px) { .c-card-6, .mod-copy .mod-copy-openings, .mod-copy--festival .mod-copy-openings, .mod-playerfull, .m_separators, .mod_mosaic, .mod_visites_list { margin-bottom: 110px; } }
+@media (min-width: 880px) { .c-card-6, .mod-copy .mod-copy-openings, .mod-copy--festival .mod-copy-openings, .mod-playerfull, .m_separators, .mod_mosaic, .mod_visites_list, .mod_content, .mod_slider:last-child, .mod_carnetprod { margin-bottom: 110px; } }
 
 .flex-justify { display: flex; justify-content: space-between; }
 
@@ -976,11 +992,11 @@ h1, h2, h3, h4, h5, h6 { margin-top: 0; margin-bottom: 20px; }
 
 @media (max-width: 880px) { .ft_h2 { font-size: 3rem; } }
 
-.ft_h3 { letter-spacing: -.01em; line-height: 1; font-weight: 900; }
+.ft_h3, .c-copy h3 { letter-spacing: -.01em; line-height: 1; font-weight: 900; }
 
-@media (min-width: 880px) { .ft_h3 { font-size: 3rem; } }
+@media (min-width: 880px) { .ft_h3, .c-copy h3 { font-size: 3rem; } }
 
-@media (max-width: 880px) { .ft_h3 { font-size: 2.4rem; } }
+@media (max-width: 880px) { .ft_h3, .c-copy h3 { font-size: 2.4rem; } }
 
 .ft_h4 { font-weight: 900; letter-spacing: -.01em; line-height: 1.2; }
 
@@ -996,9 +1012,9 @@ h1, h2, h3, h4, h5, h6 { margin-top: 0; margin-bottom: 20px; }
 
 .ft_h5_g { color: #777777; }
 
-.ft_p1, .ft_p1_g, .ft_p1_a, .ft_p1_b { font-size: 1.7rem; line-height: 1.65; font-weight: 400; }
+.ft_p1, .ft_p1_g, .ft_p1_a, .ft_p1_b, .c-copy p { font-size: 1.7rem; line-height: 1.65; font-weight: 400; }
 
-.ft_p1 a, .ft_p1_g a, .ft_p1_a a, .ft_p1_b a { font-size: inherit; text-decoration: underline; font-weight: 900; }
+.ft_p1 a, .ft_p1_g a, .ft_p1_a a, .ft_p1_b a, .c-copy p a { font-size: inherit; text-decoration: underline; font-weight: 900; }
 
 .ft_p1_g { color: #777777; }
 
@@ -1094,7 +1110,7 @@ h1, h2, h3, h4, h5, h6 { margin-top: 0; margin-bottom: 20px; }
 
 @font-face { font-family: 'Apercu'; src: url("../assets/fonts/Apercu/ApercuPro-Light.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Apercu/ApercuPro-Light.otf") format("opentype"), url("../assets/fonts/Apercu/ApercuPro-Light.woff") format("woff"), url("../assets/fonts/Apercu/ApercuPro-Light.ttf") format("truetype"), url("../assets/fonts/Apercu/ApercuPro-Light.svg#ApercuPro-Light") format("svg"); font-weight: 100; font-style: normal; font-display: swap; }
 
-@font-face { font-family: 'Apercu'; src: url("../assets/fonts/Apercu/apercu-bold-pro.otf") format("opentype"); font-weight: 900; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Apercu'; src: url("../assets/fonts/Apercu/apercu-medium-pro.otf") format("opentype"); font-weight: 900; font-style: normal; font-display: swap; }
 
 @font-face { font-family: 'ApercuMono'; src: url("../assets/fonts/Apercu/apercu-mono-pro.otf") format("opentype"); font-weight: 400; font-style: normal; font-display: swap; }
 
@@ -1741,11 +1757,11 @@ img.desaturate { -webkit-filter: grayscale(100%); filter: grayscale(100%); filte
 /* RATIOS */
 .ratio, .ratio_33, .ratio_66, .ratio_square { position: relative; width: 100%; }
 
+.ratio img, .ratio_33 img, .ratio_66 img, .ratio_square img { width: 100%; height: 100%; object-fit: cover; }
+
 .ratio:after, .ratio_33:after, .ratio_66:after, .ratio_square:after { content: ""; display: block; padding-bottom: 66%; }
 
 .ratio_inner { position: absolute; width: 100%; height: 100%; }
-
-.ratio img, .ratio_33 img, .ratio_66 img, .ratio_square img { width: 100%; height: 100%; object-fit: cover; }
 
 .ratio_33:after { padding-bottom: 33%; }
 
@@ -2029,6 +2045,8 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 # Components
 --------------------------------------------------------------*/
 /* New Components (02.2022) */
+.c-card-persona p, .c-card-persona h4 { margin-bottom: 0; }
+
 /* New CARDS (02.2022) */
 .c-card, .c-card-1, .c-card-1--empty, .c-card-3 { position: relative; }
 
@@ -2066,11 +2084,15 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 .bg--gray .c-card-3 .c-card-action { border-color: #d2d2d2; }
 
+.c-card-5 .c-card-title { margin: 15px 0 10px 0; }
+
 .c-card-6 > .row { display: flex; }
 
 .c-card-6 .c-card-title { margin-bottom: 20px; }
 
 .c-card-6 .c-card-footer { border-top: 1px solid #F0ECEC; padding-top: 14px; }
+
+.c-card-7 .c-card-title { margin: 15px 0 10px 0; }
 
 /* NAVIGATION PAGES (02.2022) */
 .c-navItem { display: flex; }
@@ -2099,6 +2121,8 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 /* EVENTS COPY (02.2022) */
 .c-copy { max-width: 750px; padding-bottom: 40px; }
+
+.c-copy h3 { margin-top: 30px; margin-bottom: 30px; }
 
 .c-more { padding-top: 20px; padding-bottom: 80px; display: flex; justify-content: center; }
 
@@ -2364,8 +2388,9 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 .slide_wrapper, .slide_wrapper--artworks { padding-bottom: 50px; }
 
-@media (max-width: 1040px) { .slide_wrapper, .slide_wrapper--artworks { position: relative; left: -20px; }
-  .slide_wrapper button[data-controls="next"], .slide_wrapper--artworks button[data-controls="next"] { right: 0; } }
+@media (max-width: 1040px) { .slide_wrapper, .slide_wrapper--artworks { position: relative; }
+  .slide_wrapper button[data-controls="next"], .slide_wrapper--artworks button[data-controls="next"] { right: 0; }
+  .slide_wrapper button[data-controls="prev"], .slide_wrapper--artworks button[data-controls="prev"] { left: 0; } }
 
 .slide_wrapper--artworks .tns-nav { bottom: -30px; }
 
@@ -2467,6 +2492,12 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 @media (max-width: 880px) { .mod-navigation .c-navItem:last-child { align-self: flex-end; } }
 
 .mod-navigation .c-navItem:first-child { justify-content: flex-start; }
+
+.mod_content .separator { height: 90px; }
+
+.mod_slider .separator { height: 110px; }
+
+.mod_carnetprod .mod_inner { padding: 50px 0; min-height: 200px; background-color: #F0ECEC; box-shadow: inset 0 -10px 10px #d2d2d2; }
 
 /*--------------------------------------------------------------
 # Templates

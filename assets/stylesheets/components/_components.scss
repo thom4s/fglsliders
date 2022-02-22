@@ -4,6 +4,9 @@
  * New Components (02.2022)
  */
 
+ @import 'common';
+
+
 
 /*
  * New CARDS (02.2022)
@@ -151,6 +154,10 @@
 // Card for bloc visites list
 .c-card-5 {
     @extend %mb-5;
+
+    .c-card-title {
+        margin: 15px 0 10px 0;
+    }
 }
 
 
@@ -173,6 +180,14 @@
 }
 
 
+
+// Card for equipe slider
+
+.c-card-7 {
+    .c-card-title {
+        margin: 15px 0 10px 0;
+    }
+}
 
 
 
@@ -251,6 +266,17 @@
 .c-copy {
     max-width: 750px;
     padding-bottom: $m-step * 8;
+
+    h3 {
+        @extend .ft_h3;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    p {
+        @extend .ft_p1;
+        @extend %mb-3;
+    }
+
 }
 
 .c-more {

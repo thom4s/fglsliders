@@ -261,3 +261,49 @@
 
 
 
+
+
+// Module de CONTENU SIMPLE
+
+.mod_content {
+	@extend %mb-9;
+
+	h3 {
+		@extend %mb-6;
+	}
+
+	.separator {
+		height: 90px;
+	}
+}
+
+
+
+
+// Module de Slider
+
+.mod_slider {
+
+	.section_title {
+		@extend %mb-3;
+	}
+	.separator {
+		height: 110px;
+	}
+
+	&:last-child {
+		@extend %mb-9;
+	}
+}
+
+
+.mod_carnetprod {
+	@extend %mb-9;
+	
+	.mod_inner {
+		padding: 50px 0;
+		min-height: 200px;
+		background-color: $gray_light;
+		box-shadow: inset 0 -10px 10px $gray_medium;
+	}
+}

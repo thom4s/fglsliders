@@ -306,10 +306,12 @@
 
     @include up-to(large) {
         position: relative;
-        left: -20px;
 
         button[data-controls="next"] {
             right: 0;
+        }
+        button[data-controls="prev"] {
+            left: 0;
         }
     }
 }

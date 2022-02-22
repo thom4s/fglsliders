@@ -54,6 +54,9 @@ $wide_breakpoint:                   1550px !default;
   @include up-to(wide) {
       width: calc(100% - 40px);
   }
+  @include up-to(medium) {
+    width: 100%;
+  }
   @include at-least(wide) {
       width: $max_width_large;
   }
@@ -65,7 +68,12 @@ $wide_breakpoint:                   1550px !default;
     padding-right: 20px;
     padding-left: 20px;
   }
-
+  [class*="col"] [class*="col"]:first-child {
+    padding-left: 0;
+  }
+  [class*="col"] [class*="col"]:last-child {
+    padding-right: 0;
+  }
 }
 
 

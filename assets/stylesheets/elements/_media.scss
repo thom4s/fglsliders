@@ -95,22 +95,24 @@ img.desaturate {
 .ratio {
   position: relative;
   width: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    padding-bottom: 66%;
+  }
 }
 
-.ratio:after {
-  content: "";
-  display: block;
-  padding-bottom: 66%;
-}
 .ratio_inner {
   position: absolute;
   width: 100%;
   height: 100%;
-}
-.ratio img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 
@@ -139,6 +141,9 @@ img.desaturate {
     padding-bottom: 100%;
   }
 }
+
+
+
 
 // TODO: CLEAN & REMOVE
 

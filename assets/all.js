@@ -2451,6 +2451,13 @@ jQuery( document ).ready(function( ) {
 	if( slide_mediums.length > 0 ) {
 
 		for( slide of slide_mediums ) {
+
+			let data_items = slide.getAttribute('data-items');
+			
+			if( data_items === null ) {
+				data_items = 2.2
+			}
+
 			var slider_medium = tns({
 				container: slide,
 				gutter: 40,
@@ -2461,7 +2468,7 @@ jQuery( document ).ready(function( ) {
 				controlsText: ['', ''],
 				responsive: {
 					880: {
-						items: 2.2
+						items: data_items
 					}
 				}
 			});
@@ -2498,6 +2505,7 @@ jQuery( document ).ready(function( ) {
 	if( slide_artworks.length > 0 ) {
 
 		for( slide of slide_artworks ) {
+			
 			var slider_medium = tns({
 				container: slide,
 				items: 1.4,

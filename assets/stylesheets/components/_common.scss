@@ -1,0 +1,10 @@
+
+
+
+.c-card-persona {
+    @extend %mb-4;
+
+    p, h4 {
+        margin-bottom: 0;
+    }
+}
