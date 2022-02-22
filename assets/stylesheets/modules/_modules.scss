@@ -130,7 +130,9 @@
 
 
 // Module pour les section de sliders artistes
-	.mod-artistArtworks {
+	.mod_slider--artworks {
+		@extend .mod_slider;
+		
 		.section_content {
 			@include up-to(large) {
 				margin-top: 20px;
@@ -299,7 +301,7 @@
 
 .mod_carnetprod {
 	@extend %mb-9;
-	
+
 	.mod_inner {
 		padding: 50px 0;
 		min-height: 200px;
