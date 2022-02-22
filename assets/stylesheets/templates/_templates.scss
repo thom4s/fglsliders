@@ -78,7 +78,12 @@ body {
     position: relative;
     height: 375px;
     text-align: center;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      max-height: 70%;
+    }
 
     @include up-to(medium) {
       text-align: left;

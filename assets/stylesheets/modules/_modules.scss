@@ -95,6 +95,7 @@
 	.mod-copy {
 		max-height: 400px;
 		overflow: hidden;
+		transition: max-height .6s;
 		
 		& + section {
 			box-shadow: 0 -20px 20px $gray_light;
@@ -120,6 +121,10 @@
 		}
 	}
 
+	.mod-copy--festival {
+		@extend .mod-copy;
+		max-height: 500px;
+	}
 
 
 
@@ -201,9 +206,15 @@
 }
 
 .mod_mosaic-grid[data-columns]::before {
-	content: '3 .m-4col.paddinged-both';
 	display: none;
-  }
+
+	@include at-least(medium) {
+		content: '2 .m-6col';
+	}
+	@include at-least(large) {
+		content: '3 .m-4col';
+	}
+}
 
 
 

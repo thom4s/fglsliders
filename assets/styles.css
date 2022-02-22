@@ -172,13 +172,15 @@ td, th { padding: 0; }
 
 @media (min-width: 1550px) { .wrap { width: 1500px; } }
 
-@media (max-width: 1550px) { .wrapper { width: 100%; } }
+.wrapper { margin-left: auto; margin-right: auto; }
 
-@media (min-width: 1550px) { .wrapper { width: 1500px; margin-left: auto; margin-right: auto; } }
+@media (max-width: 1550px) { .wrapper { width: calc(100% - 40px); } }
+
+@media (min-width: 1550px) { .wrapper { width: 1500px; } }
 
 .wrapper .paddinged-both { padding-right: 20px; padding-left: 20px; }
 
-.wrapper [class*="m-"] { padding-right: 20px; padding-left: 20px; }
+.wrapper [class*="col"] { padding-right: 20px; padding-left: 20px; }
 
 @media (min-width: 880px) { .is-half { width: 50%; float: left; } }
 
@@ -1394,7 +1396,7 @@ th { font-weight: bold; }
 
 .green_card a { padding: 0 20px; align-items: center; display: flex; background-color: #83F8DD; }
 
-.green_card [class*="icon-lien_interne"] { font-size: 2.6rem; padding-left: 10px; }
+.green_card [class*="icon-lien_interne"] { font-size: 2.6rem; padding: 0 10px; }
 
 .card { position: relative; -webkit-transition: color .5s; transition: color .5s; }
 
@@ -2016,11 +2018,11 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 --------------------------------------------------------------*/
 /* New Components (02.2022) */
 /* New CARDS (02.2022) */
-.c-card, .c-card-1, .c-card-1--empty, .c-card-3 { padding: 20px; position: relative; }
+.c-card, .c-card-1, .c-card-1--empty, .c-card-3 { position: relative; }
 
 .c-card .meta, .c-card-1 .meta, .c-card-1--empty .meta, .c-card-3 .meta, .c-card .meta-exposition, .c-card-1 .meta-exposition, .c-card-1--empty .meta-exposition, .c-card-3 .meta-exposition, .c-card .meta-exposition--white, .c-card-1 .meta-exposition--white, .c-card-1--empty .meta-exposition--white, .c-card-3 .meta-exposition--white, .c-card .meta-gray, .c-card-1 .meta-gray, .c-card-1--empty .meta-gray, .c-card-3 .meta-gray, .c-card .meta-edition, .c-card-1 .meta-edition, .c-card-1--empty .meta-edition, .c-card-3 .meta-edition, .c-card .meta--file, .c-card-1 .meta--file, .c-card-1--empty .meta--file, .c-card-3 .meta--file { margin-top: 0; }
 
-.c-card:before, .c-card-1:before, .c-card-1--empty:before, .c-card-3:before { content: ''; display: block; position: absolute; top: 0; left: 0; right: -1px; height: 50%; z-index: 0; transition: all 0.5s ease; opacity: 0; background: linear-gradient(to left, transparent 50%, #83F8DD 50%); background-size: 200% 100%; background-position: right 0px bottom; }
+.c-card:before, .c-card-1:before, .c-card-1--empty:before, .c-card-3:before { content: ''; display: block; position: absolute; top: -20px; left: -20px; right: -20px; height: 50%; z-index: 0; transition: all 0.5s ease; opacity: 0; background: linear-gradient(to left, transparent 50%, #83F8DD 50%); background-size: 200% 100%; background-position: right 0px bottom; }
 
 .no-touch .c-card:hover, .no-touch .c-card-1:hover, .no-touch .c-card-1--empty:hover, .no-touch .c-card-3:hover { cursor: pointer; }
 
@@ -2402,16 +2404,18 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 @media (max-width: 880px) { .bloc_apps a { width: 200px; margin: auto; display: block; float: none; background-position: top; height: 75px !important; } }
 
 /* EVENT MODULES 2022 */
-.mod-copy { max-height: 400px; overflow: hidden; }
+.mod-copy, .mod-copy--festival { max-height: 400px; overflow: hidden; transition: max-height .6s; }
 
-.mod-copy + section { box-shadow: 0 -20px 20px #F0ECEC; }
+.mod-copy + section, .mod-copy--festival + section { box-shadow: 0 -20px 20px #F0ECEC; }
 
-.mod-copy.open { max-height: 3000px; }
+.mod-copy.open, .open.mod-copy--festival { max-height: 3000px; }
 
-@media (max-width: 1040px) { .mod-copy { max-height: 600px; }
-  .mod-copy .row { display: flex; flex-direction: column; }
-  .mod-copy .mod-copy-txt { order: 2; }
-  .mod-copy .mod-copy-openings { margin-bottom: 70px; } }
+@media (max-width: 1040px) { .mod-copy, .mod-copy--festival { max-height: 600px; }
+  .mod-copy .row, .mod-copy--festival .row { display: flex; flex-direction: column; }
+  .mod-copy .mod-copy-txt, .mod-copy--festival .mod-copy-txt { order: 2; }
+  .mod-copy .mod-copy-openings, .mod-copy--festival .mod-copy-openings { margin-bottom: 70px; } }
+
+.mod-copy--festival { max-height: 500px; }
 
 @media (max-width: 1040px) { .mod-artistArtworks .section_content { margin-top: 20px; padding-top: 10px; border-top: 1px solid #F0ECEC; } }
 
@@ -2437,7 +2441,11 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 .mod_mosaic .m-4col:last-child { padding-left: 20px; }
 
-.mod_mosaic-grid[data-columns]::before { content: '3 .m-4col.paddinged-both'; display: none; }
+.mod_mosaic-grid[data-columns]::before { display: none; }
+
+@media (min-width: 880px) { .mod_mosaic-grid[data-columns]::before { content: '2 .m-6col'; } }
+
+@media (min-width: 1040px) { .mod_mosaic-grid[data-columns]::before { content: '3 .m-4col'; } }
 
 .mod_visites_list { margin-bottom: 70px; }
 
@@ -3763,7 +3771,9 @@ body { overflow-y: scroll; -webkit-overflow-scrolling: touch; position: relative
 
 @media (max-width: 880px) { .scene:not(:last-child) { border-bottom: 1px solid #F0ECEC; margin-bottom: 42px; } }
 
-.page_header_visuel { position: relative; height: 375px; text-align: center; align-items: flex-end; }
+.page_header_visuel { position: relative; height: 375px; text-align: center; align-items: center; justify-content: center; }
+
+.page_header_visuel img { max-height: 70%; }
 
 @media (max-width: 880px) { .page_header_visuel { text-align: left; justify-content: flex-end; align-items: flex-start; padding: 0 2em; }
   .page_header_visuel .meta-exposition { color: #fff; } }

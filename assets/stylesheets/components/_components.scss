@@ -13,7 +13,7 @@
 // COMPONENTS CARD EVENTS
 
 .c-card {
-    padding: 20px;
+    //padding: 20px;
     position: relative;
 
     .meta {
@@ -24,9 +24,9 @@
 		content: '';
 		display: block;
 		position: absolute;
-		top: 0;
-		left: 0;
-		right: -1px;
+		top: -20px;
+		left: -20px;
+		right: -20px;
 		height: 50%;
 		z-index: 0;
 		transition: all 0.5s ease;

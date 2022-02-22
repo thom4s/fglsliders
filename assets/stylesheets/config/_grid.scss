@@ -48,20 +48,20 @@ $wide_breakpoint:                   1550px !default;
 
 // TEST
 .wrapper {
+  margin-left: auto;
+  margin-right: auto;
+
   @include up-to(wide) {
-      width: 100%;
+      width: calc(100% - 40px);
   }
   @include at-least(wide) {
       width: $max_width_large;
-      margin-left: auto;
-      margin-right: auto;
   }
   .paddinged-both {
     padding-right: 20px;
     padding-left: 20px;
   }
-
-  [class*="m-"] {
+  [class*="col"] {
     padding-right: 20px;
     padding-left: 20px;
   }

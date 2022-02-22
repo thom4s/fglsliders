@@ -2370,6 +2370,7 @@ jQuery( document ).ready(function( ) {
 		for( slide of slide_mediums ) {
 			var slider_medium = tns({
 				container: slide,
+				gutter: 40,
 				items: 1.4,
 				autoplay: false,
 				loop: false,
@@ -2393,6 +2394,7 @@ jQuery( document ).ready(function( ) {
 			var slide_small = tns({
 				container: slide,
 				items: 1.4,
+				gutter: 40,
 				autoplay: false,
 				loop: false,
 				mouseDrag: true,
@@ -2416,6 +2418,7 @@ jQuery( document ).ready(function( ) {
 			var slider_medium = tns({
 				container: slide,
 				items: 1.4,
+				gutter: 40,
 				autoplay: false,
 				loop: false,
 				mouseDrag: true,
