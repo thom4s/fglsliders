@@ -299,11 +299,12 @@
 
 	.mod_title {
 		@extend %mb-3;
+		padding-top: 40px;
 	}
 	.mod_aside {
 		padding-bottom: 160px;
+		padding-top: 40px;
 	}
-
 
 	&:last-child {
 		@extend %mb-9;

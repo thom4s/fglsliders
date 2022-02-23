@@ -2399,9 +2399,9 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 .tns-controls button { width: 15px; height: 25px; border: none; background: none; background-size: contain; background-repeat: no-repeat; z-index: 999; bottom: -60px; position: absolute; }
 
-.tns-controls button[data-controls="prev"] { left: 20px; background-image: url("/icons/arrow-left.png"); }
+.tns-controls button[data-controls="prev"] { left: 0; background-image: url("/icons/arrow-left.png"); }
 
-.tns-controls button[data-controls="next"] { right: 20px; background-image: url("/icons/arrow-right.png"); }
+.tns-controls button[data-controls="next"] { right: 0; background-image: url("/icons/arrow-right.png"); }
 
 .tns-controls button[disabled] { opacity: 0.1; cursor: auto; }
 
@@ -2413,17 +2413,9 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 .slide_wrapper, .slide_wrapper--artworks { position: relative; }
 
-@media (max-width: 1040px) { .slide_wrapper, .slide_wrapper--artworks { position: relative; }
-  .slide_wrapper button[data-controls="next"], .slide_wrapper--artworks button[data-controls="next"] { right: 0; }
-  .slide_wrapper button[data-controls="prev"], .slide_wrapper--artworks button[data-controls="prev"] { left: 0; } }
+@media (max-width: 1040px) { .slide_wrapper, .slide_wrapper--artworks { position: relative; } }
 
-.slide_wrapper--artworks .tns-nav { bottom: -30px; }
-
-.slide_wrapper--artworks .tns-controls button { bottom: -10px; }
-
-@media (max-width: 1040px) { .slide_wrapper--artworks { left: 0; }
-  .slide_wrapper--artworks button[data-controls="prev"] { left: 0; }
-  .slide_wrapper--artworks .tns-nav { bottom: 0; } }
+@media (max-width: 1040px) { .slide_wrapper--artworks { left: 0; } }
 
 .slide_medium--artworks img { width: auto; }
 
@@ -2522,7 +2514,9 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 .mod_content + .mod_content { margin-top: -110px; }
 
-.mod_slider .mod_aside, .mod_slider--artworks .mod_aside { padding-bottom: 160px; }
+.mod_slider .mod_title, .mod_slider--artworks .mod_title { padding-top: 40px; }
+
+.mod_slider .mod_aside, .mod_slider--artworks .mod_aside { padding-bottom: 160px; padding-top: 40px; }
 
 .mod_slider + .mod_slider, .mod_slider--artworks + .mod_slider, .mod_slider + .mod_slider--artworks, .mod_slider--artworks + .mod_slider--artworks { margin-top: -110px; }
 

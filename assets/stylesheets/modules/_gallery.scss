@@ -256,11 +256,11 @@
         position: absolute;
     }
     button[data-controls="prev"] {
-        left: 20px;
+        left: 0;
         background-image: url("/icons/arrow-left.png");
     }
     button[data-controls="next"] {
-        right: 20px;
+        right: 0;
         background-image: url("/icons/arrow-right.png");
     }
     button[disabled] {
@@ -306,33 +306,14 @@
 
     @include up-to(large) {
         position: relative;
-
-        button[data-controls="next"] {
-            right: 0;
-        }
-        button[data-controls="prev"] {
-            left: 0;
-        }
     }
 }
 
 .slide_wrapper--artworks {
     @extend .slide_wrapper;
-    .tns-nav {
-        bottom: -30px;
-    }
-    .tns-controls button {
-        bottom: -10px;
-    }
+
     @include up-to(large) {
         left: 0;
-
-        button[data-controls="prev"] {
-            left: 0;
-        }
-        .tns-nav {
-            bottom: 0;
-        }
     }
 }
     .slide_medium--artworks {
