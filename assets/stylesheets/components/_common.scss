@@ -1,5 +1,58 @@
 
 
+/*
+ * Utils
+ */
+
+.c-sticky {
+	position: sticky !important;
+	top: 200px;
+}
+
+
+
+/*
+ * Components for Informations pratiques
+ */
+
+.c-practicalmap {
+	margin-bottom: 45px;
+}
+
+.c-adress {
+	margin-bottom: 45px;
+	& > h3,
+	& > p {
+		margin-bottom: 5px;
+	}
+}
+.c-howtocome {
+	margin-bottom: 30px;
+
+	.c-title {
+		margin-bottom: 5px;
+	}
+	p {
+		margin-bottom: 5px;
+	}
+}
+
+.c-itineraries {
+	align-items: center;
+	margin-bottom: 45px;
+
+	& > * {
+		margin-right: 10px;
+		margin-bottom: 0 !important;
+	}
+}
+
+
+
+
+/*
+ * Components commons cards
+ */
 
 .c-card-persona {
     @extend %mb-4;

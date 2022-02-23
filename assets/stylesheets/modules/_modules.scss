@@ -162,11 +162,7 @@
 
 
 
-// Sticky CSS
-	.mod-sticky {
-		position: sticky;
-		top: 200px;
-	}
+
 
 
 
@@ -270,13 +266,26 @@
 .mod_content {
 	@extend %mb-9;
 
-	h3 {
+	.mod_title {
 		@extend %mb-6;
+	}
+
+	.mod_aside {
+		padding-bottom: 90px;
+
+		& > :last-child {
+			margin-bottom: 0;
+		}
 	}
 
 	.separator {
 		height: 90px;
 	}
+
+	& + & {
+		margin-top: -110px
+	}
+	
 }
 
 
@@ -308,4 +317,11 @@
 		background-color: $gray_light;
 		box-shadow: inset 0 -10px 10px $gray_medium;
 	}
+}
+
+
+
+
+.m-howtocome {
+	margin-bottom: 45px;
 }

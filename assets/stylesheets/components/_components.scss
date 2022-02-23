@@ -244,6 +244,17 @@
         margin-bottom: 5px;
     }
 }
+.c-opening--bordered {
+    @extend .c-opening;
+    margin-bottom: 30px;
+    width: 75%;
+
+    p:not(:last-child) {
+        border-bottom: 1px solid $gray_light;
+        padding-bottom: 10px;
+    }
+}
+
 .c-opening-group {
     margin-bottom: 40px;
 
@@ -258,6 +269,10 @@
 }
 
 
+.c-tarifs {
+    @extend .c-opening--bordered;
+}
+
 
 /*
  * EVENTS COPY (02.2022)
@@ -265,7 +280,6 @@
 
 .c-copy {
     max-width: 750px;
-    padding-bottom: $m-step * 8;
 
     h3 {
         @extend .ft_h3;
