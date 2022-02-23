@@ -2506,6 +2506,13 @@ jQuery( document ).ready(function( ) {
 
 		for( slide of slide_artworks ) {
 			
+			let data_items = slide.getAttribute('data-items');
+			
+			if( data_items === null ) {
+				data_items = 2.2
+			}
+			console.log(data_items);
+			
 			var slider_medium = tns({
 				container: slide,
 				items: 1.4,
@@ -2518,7 +2525,7 @@ jQuery( document ).ready(function( ) {
 				gutter: 40,
 				responsive: {
 					880: {
-						items: 2.2
+						items: data_items
 					}
 				}
 			});
