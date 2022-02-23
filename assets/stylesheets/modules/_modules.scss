@@ -133,7 +133,7 @@
 	.mod_slider--artworks {
 		@extend .mod_slider;
 		
-		.section_content {
+		.mod_aside {
 			@include up-to(large) {
 				margin-top: 20px;
 				padding-top: 10px;
@@ -267,7 +267,7 @@
 	@extend %mb-9;
 
 	.mod_title {
-		@extend %mb-6;
+		@extend %mb-8;
 	}
 
 	.mod_aside {
@@ -275,6 +275,7 @@
 
 		& > :last-child {
 			margin-bottom: 0;
+			padding-bottom: 0;
 		}
 	}
 
@@ -294,16 +295,22 @@
 // Module de Slider
 
 .mod_slider {
+	@extend %mb-9;
 
-	.section_title {
+	.mod_title {
 		@extend %mb-3;
 	}
-	.separator {
-		height: 110px;
+	.mod_aside {
+		padding-bottom: 160px;
 	}
+
 
 	&:last-child {
 		@extend %mb-9;
+	}
+
+	& + & {
+		margin-top: -110px;
 	}
 }
 

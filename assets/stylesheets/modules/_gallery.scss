@@ -264,7 +264,7 @@
         background-image: url("/icons/arrow-right.png");
     }
     button[disabled] {
-        opacity: 0.3;
+        opacity: 0.1;
         cursor: auto;
     }
 }
@@ -302,7 +302,7 @@
 // TNS SLIDE TYPES
 
 .slide_wrapper {
-    padding-bottom: 50px;
+    position: relative;
 
     @include up-to(large) {
         position: relative;
@@ -358,11 +358,7 @@
 
 
 
-@media screen and (max-width: 700px) {
-    .slide_wrapper {
-        position: relative;
-        }
-    }
+
     
   
     .slide_large {
@@ -370,7 +366,7 @@
     }
   
 
-    .section_content:before {
+    .mod_aside:before {
         content: '';
         position: absolute;
         background-color: white;
@@ -380,12 +376,12 @@
         left: -5002px;
         width: 5000px;
     }
-    .bg--gray .section_content:before {
+    .bg--gray .mod_aside:before {
         background-color: #f0ecec;
     
     }
     
-    .section_title {
+    .mod_title {
         position: relative;
         z-index: 9999;
     }

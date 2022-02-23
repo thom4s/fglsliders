@@ -5,8 +5,10 @@
  */
 
 .c-sticky {
-	position: sticky !important;
-	top: 200px;
+	@include at-least(large) {
+		position: sticky !important;
+		top: 200px;
+	}
 }
 
 
@@ -55,10 +57,13 @@
  */
 
 .c-card-persona {
-    @extend %mb-4;
+    @extend %mb-6;
 
+	.c-card-title {
+        margin-bottom: 5px;
+	}
     p, h4 {
-        margin-bottom: 0;
+        margin-bottom: 5px;
     }
 }
 

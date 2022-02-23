@@ -153,7 +153,7 @@
 
 // Card for bloc visites list
 .c-card-5 {
-    @extend %mb-5;
+    @extend %mb-9;
 
     .c-card-title {
         margin: 15px 0 10px 0;
@@ -184,6 +184,9 @@
 // Card for equipe slider
 
 .c-card-7 {
+    .c-card-media {
+        max-width: 200px;
+    }
     .c-card-title {
         margin: 15px 0 10px 0;
     }
