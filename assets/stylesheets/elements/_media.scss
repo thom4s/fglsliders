@@ -121,8 +121,15 @@ img.desaturate {
 .ratio_33 {
   @extend .ratio;
 
-  &:after {
-    padding-bottom: 33%;
+  @include at-least(medium) {
+    &:after {
+      padding-bottom: 33%;
+    }
+  }
+  @include up-to(medium) {
+    &:after {
+      padding-bottom: 75%;
+    }
   }
 }
 

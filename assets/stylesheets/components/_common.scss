@@ -85,7 +85,7 @@
 	}
 }
 
-.c-card-graycard {
+.c-card-file {
     @extend %coloredcard;
 
 	a {
@@ -93,6 +93,10 @@
         align-items: flex-start;
         justify-content: center;
 		background-color: $gray_light;
+	}
+	[class *= "icon-lien_interne"] {
+		transform: rotate(-30deg);
+		display: inline-block;
 	}
 }
 

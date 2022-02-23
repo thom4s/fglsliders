@@ -1745,7 +1745,9 @@ img.desaturate { -webkit-filter: grayscale(100%); filter: grayscale(100%); filte
 
 .ratio_inner { position: absolute; width: 100%; height: 100%; }
 
-.ratio_33:after { padding-bottom: 33%; }
+@media (min-width: 880px) { .ratio_33:after { padding-bottom: 33%; } }
+
+@media (max-width: 880px) { .ratio_33:after { padding-bottom: 75%; } }
 
 .ratio_66:after { padding-bottom: 66%; }
 
@@ -2052,13 +2054,15 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 .c-card-persona p, .c-card-persona h4 { margin-bottom: 5px; }
 
-.c-card-graycard a, .c-card-greencard a { padding: 0 20px; display: flex; }
+.c-card-file a, .c-card-greencard a { padding: 0 20px; display: flex; }
 
-.c-card-graycard p, .c-card-greencard p { margin-bottom: 0; }
+.c-card-file p, .c-card-greencard p { margin-bottom: 0; }
 
-.c-card-graycard [class*="icon-lien_interne"], .c-card-greencard [class*="icon-lien_interne"] { font-size: 2.6rem; padding: 0 10px; }
+.c-card-file [class*="icon-lien_interne"], .c-card-greencard [class*="icon-lien_interne"] { font-size: 2.6rem; padding: 0 10px; }
 
-.c-card-graycard a { flex-direction: column; align-items: flex-start; justify-content: center; background-color: #F0ECEC; }
+.c-card-file a { flex-direction: column; align-items: flex-start; justify-content: center; background-color: #F0ECEC; }
+
+.c-card-file [class*="icon-lien_interne"] { transform: rotate(-30deg); display: inline-block; }
 
 .c-card-greencard a { background-color: #83F8DD; align-items: center; }
 
