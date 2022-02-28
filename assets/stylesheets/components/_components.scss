@@ -61,6 +61,12 @@
 .c-card-1 {
     @extend .c-card;
 
+    .c-card-meta {
+        @extend %mb-1;
+    }
+    .c-card-media {
+        @extend %mb-2;
+    }
     .c-card-title {
         height: calc( 1.2em * 4);
         position: relative;
@@ -70,10 +76,10 @@
     }
     .c-card-footer {
         border-top: 1px solid #F0ECEC;
-        padding-top: 14px;
+        padding-top: 15px;
 
         p {
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
 
         .bg--gray & {
@@ -106,18 +112,16 @@
 // Card for Artiste ID (in slider)
 .c-card-2 {
 
+    .c-card-intro {
+        @extend %mb-4;
+    }
     h2 {
         margin-bottom: 0;
     }
-
-    .c-card-media img {
-        @include up-to(large) {
-            max-width: 275px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    }
-    
+    .c-card-media {
+        @extend %mb-4;
+        max-width: 275px;
+    } 
 }
 
 
@@ -128,11 +132,21 @@
 
     .c-card-media {
         position: relative;
+        @extend %mb-2;
     }
 
+    .c-card-meta {
+        @extend %mb-1;
+    }
+    .c-card-title {
+        @extend %mb-2;
+    }
+    .c-card-copy  {
+        @extend %mb-3;
+    }
     .c-card-action {
         border-top: 1px solid #F0ECEC;
-        padding-top: 14px;
+        padding-top: 15px;
 
         .bg--gray & {
             border-color: $gray_medium;
@@ -230,16 +244,16 @@
     position: relative;
 	padding-bottom: 5px;
 	padding-top: 5px;
-    margin-bottom: 35px;
+    margin-bottom: 55px;
     padding-right: 40px;
 
     .c-action {
         border-top: 1px solid $gray_light;
-        padding-top: 5px;
-        margin-top: 10px;
+        padding-top: 10px;
+        margin-top: 15px;
     }
 	.c-media {
-		margin-bottom: 5px;
+		margin-bottom: 10px;
 	}
 
 	img {

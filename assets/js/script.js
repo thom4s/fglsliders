@@ -2379,6 +2379,8 @@ jQuery( document ).ready(function( ) {
 				container: slide,
 				gutter: 40,
 				items: 1.4,
+				controlsPosition: 'bottom',
+				navPosition: 'bottom',
 				autoplay: false,
 				loop: false,
 				mouseDrag: true,
@@ -2393,27 +2395,29 @@ jQuery( document ).ready(function( ) {
 	}
 
 
-	const slide_smalls = document.querySelectorAll('.slide_small');
+	// const slide_smalls = document.querySelectorAll('.slide_small');
 
-	if( slide_smalls.length > 0 ) {
+	// if( slide_smalls.length > 0 ) {
 
-		for( slide of slide_smalls ) {
-			var slide_small = tns({
-				container: slide,
-				items: 1.4,
-				gutter: 40,
-				autoplay: false,
-				loop: false,
-				mouseDrag: true,
-				controlsText: ['', ''],
-				responsive: {
-					880: {
-						items: 3
-					}
-				}
-			});
-		}
-	}
+	// 	for( slide of slide_smalls ) {
+	// 		var slide_small = tns({
+	// 			container: slide,
+	// 			items: 1.4,
+	// 			gutter: 40,
+	// 			controlsPosition: 'bottom',
+	// 			navPosition: 'bottom',
+	// 			autoplay: false,
+	// 			loop: false,
+	// 			mouseDrag: true,
+	// 			controlsText: ['', ''],
+	// 			responsive: {
+	// 				880: {
+	// 					items: 3
+	// 				}
+	// 			}
+	// 		});
+	// 	}
+	// }
 
 
 
@@ -2435,6 +2439,8 @@ jQuery( document ).ready(function( ) {
 				items: 1.4,
 				gutter: 40,
 				autoplay: false,
+				controlsPosition: 'bottom',
+				navPosition: 'bottom',
 				loop: false,
 				mouseDrag: true,
 				autoWidth: true,

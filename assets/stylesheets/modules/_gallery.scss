@@ -242,7 +242,8 @@
 // TNS CONTROLS & NAVS
 
 .tns-controls {
-    right: 0;
+    display: flex;
+    justify-content: space-between;
 
     button {
         width: 15px;
@@ -252,8 +253,7 @@
         background-size: contain;
         background-repeat: no-repeat;
         z-index: 999;
-        bottom: -60px;
-        position: absolute;
+        position: relative;
     }
     button[data-controls="prev"] {
         left: 0;
@@ -271,16 +271,14 @@
 
 
 .tns-nav {
-    position: absolute;
-    bottom: -50px;
+    position: relative;
     background-color: #F0ECEC;
     display: flex;
     justify-content: space-between;
     max-width: 500px;
     width: 70%;
-    left: 0;
-    right: 0;
     margin: auto;
+    bottom: -14px;
     
     button {
         width: auto;
@@ -289,7 +287,7 @@
         background: none;
         flex: 1;
         transition: all 1s;
-      }
+    }
       
     button.tns-nav-active {
         background-color: black;
@@ -308,6 +306,10 @@
         position: relative;
     }
 }
+    .slide_medium {
+        @extend %mb-6;
+    }
+
 
 .slide_wrapper--artworks {
     @extend .slide_wrapper;
@@ -317,9 +319,11 @@
     }
 }
     .slide_medium--artworks {
+        @extend .slide_medium;
 
         img {
             width: auto;
+            @extend %mb-2;
         }
         @include at-least(medium) {
             img {
@@ -338,13 +342,6 @@
     }
 
 
-
-
-    
-  
-    .slide_large {
-        position: relative;
-    }
   
 
     .mod_aside:before {
