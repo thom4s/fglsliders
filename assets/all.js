@@ -2665,23 +2665,21 @@ $( window ).load(function() {
 	// Masonry Archives
 
 	$('.grid').masonry({
-  // options
-  	columnWidth: '.grid-sizer',
-	  itemSelector: '.archive_item',
-	  percentPosition: true
+		columnWidth: '.grid-sizer',
+		itemSelector: '.archive_item',
+		percentPosition: true
 	});
 
 
-  if( window_width > 768 ) {
+  	if( window_width > 768 ) {
 
 		$('.grid_edition').masonry({
-	  // options
-	  	columnWidth: '.grid-sizer',
-		  itemSelector: '.edition_item',
-		  percentPosition: true
+	  		columnWidth: '.grid-sizer',
+		  	itemSelector: '.grid_item',
+		  	percentPosition: true
 		});
 
-  }
+  	}
 
 });
 

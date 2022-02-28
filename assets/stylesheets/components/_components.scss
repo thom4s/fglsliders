@@ -208,6 +208,53 @@
 
 
 
+.c-grid-editions {
+    @include up-to(medium) {
+		display: flex;
+		align-items: flex-end;
+		flex-wrap: wrap;
+	}
+
+	.grid-sizer {
+		@include up-to(medium) {
+			display: none;
+			width: 0px;
+		}
+		width: 5%;
+	}
+}
+
+
+// Cards for edition templates
+.c-card-edition{
+    position: relative;
+	padding-bottom: 5px;
+	padding-top: 5px;
+    margin-bottom: 35px;
+    padding-right: 40px;
+
+    .c-action {
+        border-top: 1px solid $gray_light;
+        padding-top: 5px;
+        margin-top: 10px;
+    }
+	.c-media {
+		margin-bottom: 5px;
+	}
+
+	img {
+		box-shadow: 0px 0px 12px #7b7b7b;
+	}
+
+	@include up-to(medium) {
+		margin: 0 2%;
+		margin-bottom: 25px;
+		flex: 1 45%;
+		max-width: 46%;
+		padding: 10px;
+	}
+}
+
 
 
 /*
