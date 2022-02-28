@@ -91,6 +91,13 @@
  * EVENT MODULES 2022
  */
 
+
+
+	.page_cover {
+		@extend %mb-5;
+	}
+
+
  // Module pour contenu events (max height)
 	.mod-copy {
 		max-height: 400px;

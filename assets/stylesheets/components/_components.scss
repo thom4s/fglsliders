@@ -180,10 +180,12 @@
 
 // Card for bloc visites list
 .c-card-5 {
-    @extend %mb-9;
 
+    .c-card-media {
+        @extend %mb-3;
+    }
     .c-card-title {
-        margin: 15px 0 10px 0;
+        @extend %mb-1;
     }
 }
 
@@ -213,9 +215,10 @@
 .c-card-7 {
     .c-card-media {
         max-width: 200px;
+        @extend %mb-4;
     }
     .c-card-title {
-        margin: 15px 0 10px 0;
+        @extend %mb-1;
     }
 }
 
@@ -327,6 +330,10 @@
     p {
         margin-bottom: 5px;
     }
+
+    .c-opening-title {
+        @extend %mb-4;
+    }
 }
 .c-opening--bordered {
     @extend .c-opening;
@@ -340,16 +347,15 @@
 }
 
 .c-opening-group {
-    margin-bottom: 40px;
+    @extend %mb-6;
 
     & + & {
         border-top: 1px solid $gray_light;
         padding-top: 40px;
     }
-
-    &:last-child {
-        margin-bottom: 20px;
-    }
+}
+.c-opening-action {
+    margin-top: -15px;
 }
 
 

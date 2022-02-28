@@ -13,6 +13,10 @@
 
 
 
+.c-chapo {
+	@extend %mb-7;
+}
+
 /*
  * Components for Informations pratiques
  */
@@ -56,14 +60,21 @@
  * Components commons cards
  */
 
+.c-personas {
+
+}
+	.c-personas-title {
+		@extend %mb-7;
+	}
+
 .c-card-persona {
     @extend %mb-6;
 
 	.c-card-title {
-        margin-bottom: 5px;
+        @extend %mb-1;
 	}
     p, h4 {
-        margin-bottom: 5px;
+        @extend %mb-1;
     }
 }
 

@@ -751,27 +751,35 @@ td, th { padding: 0; }
 .fl-centered { display: flex; justify-content: center; align-items: center; }
 
 /* MARGES */
-.c-card-1 .c-card-meta, .c-card-1--empty .c-card-meta, .c-card-3 .c-card-meta { margin-bottom: 5px; }
+.c-card-persona .c-card-title, .c-card-persona p, .c-card-persona h4, .c-card-1 .c-card-meta, .c-card-1--empty .c-card-meta, .c-card-3 .c-card-meta, .c-card-5 .c-card-title, .c-card-7 .c-card-title { margin-bottom: 5px; }
 
 .c-card-1 .c-card-media, .c-card-1--empty .c-card-media, .c-card-3 .c-card-media, .c-card-3 .c-card-title, .slide_medium--artworks img { margin-bottom: 10px; }
 
-.c-card-3 .c-card-copy, .c-copy p, .mod_slider .mod_title, .mod_slider--artworks .mod_title { margin-bottom: 15px; }
+.c-card-3 .c-card-copy, .c-card-5 .c-card-media, .c-copy p, .mod_slider .mod_title, .mod_slider--artworks .mod_title { margin-bottom: 15px; }
 
-@media (max-width: 880px) { .c-card-2 .c-card-intro, .c-card-2 .c-card-media { margin-bottom: 20px; } }
+@media (max-width: 880px) { .c-card-2 .c-card-intro, .c-card-2 .c-card-media, .c-card-7 .c-card-media, .c-opening .c-opening-title, .c-opening--bordered .c-opening-title, .c-tarifs .c-opening-title { margin-bottom: 20px; } }
 
-@media (min-width: 880px) { .c-card-2 .c-card-intro, .c-card-2 .c-card-media { margin-bottom: 25px; } }
+@media (min-width: 880px) { .c-card-2 .c-card-intro, .c-card-2 .c-card-media, .c-card-7 .c-card-media, .c-opening .c-opening-title, .c-opening--bordered .c-opening-title, .c-tarifs .c-opening-title { margin-bottom: 25px; } }
 
-@media (max-width: 880px) { .c-card-persona, .slide_medium, .slide_medium--artworks, .mod_content .mod_title h2 { margin-bottom: 30px; } }
+@media (max-width: 880px) { .page_cover { margin-bottom: 25px; } }
 
-@media (min-width: 880px) { .c-card-persona, .slide_medium, .slide_medium--artworks, .mod_content .mod_title h2 { margin-bottom: 40px; } }
+@media (min-width: 880px) { .page_cover { margin-bottom: 35px; } }
+
+@media (max-width: 880px) { .c-card-persona, .c-opening-group, .slide_medium, .slide_medium--artworks, .mod_content .mod_title h2 { margin-bottom: 30px; } }
+
+@media (min-width: 880px) { .c-card-persona, .c-opening-group, .slide_medium, .slide_medium--artworks, .mod_content .mod_title h2 { margin-bottom: 40px; } }
+
+@media (max-width: 880px) { .c-chapo, .c-personas-title { margin-bottom: 40px; } }
+
+@media (min-width: 880px) { .c-chapo, .c-personas-title { margin-bottom: 55px; } }
 
 @media (max-width: 880px) { .mod_mosaic figure, .mod_content .mod_title { margin-bottom: 45px; } }
 
 @media (min-width: 880px) { .mod_mosaic figure, .mod_content .mod_title { margin-bottom: 90px; } }
 
-@media (max-width: 880px) { .c-card-5, .c-card-6, .mod-copy .mod-copy-openings, .mod-copy--festival .mod-copy-openings, .mod-playerfull, .m_separators, .mod_mosaic, .mod_visites_list, .mod_content, .mod_slider, .mod_slider--artworks, .mod_slider:last-child, .mod_slider--artworks:last-child, .mod_carnetprod { margin-bottom: 70px; } }
+@media (max-width: 880px) { .c-card-6, .mod-copy .mod-copy-openings, .mod-copy--festival .mod-copy-openings, .mod-playerfull, .m_separators, .mod_mosaic, .mod_visites_list, .mod_content, .mod_slider, .mod_slider--artworks, .mod_slider:last-child, .mod_slider--artworks:last-child, .mod_carnetprod { margin-bottom: 70px; } }
 
-@media (min-width: 880px) { .c-card-5, .c-card-6, .mod-copy .mod-copy-openings, .mod-copy--festival .mod-copy-openings, .mod-playerfull, .m_separators, .mod_mosaic, .mod_visites_list, .mod_content, .mod_slider, .mod_slider--artworks, .mod_slider:last-child, .mod_slider--artworks:last-child, .mod_carnetprod { margin-bottom: 110px; } }
+@media (min-width: 880px) { .c-card-6, .mod-copy .mod-copy-openings, .mod-copy--festival .mod-copy-openings, .mod-playerfull, .m_separators, .mod_mosaic, .mod_visites_list, .mod_content, .mod_slider, .mod_slider--artworks, .mod_slider:last-child, .mod_slider--artworks:last-child, .mod_carnetprod { margin-bottom: 110px; } }
 
 .flex-justify { display: flex; justify-content: space-between; }
 
@@ -2058,10 +2066,6 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 .c-itineraries > * { margin-right: 10px; margin-bottom: 0 !important; }
 
 /* Components commons cards */
-.c-card-persona .c-card-title { margin-bottom: 5px; }
-
-.c-card-persona p, .c-card-persona h4 { margin-bottom: 5px; }
-
 .c-card-file a, .c-card-greencard a { padding: 0 20px; display: flex; }
 
 .c-card-file p, .c-card-greencard p { margin-bottom: 0; }
@@ -2123,8 +2127,6 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 .bg--gray .c-card-3 .c-card-action { border-color: #d2d2d2; }
 
-.c-card-5 .c-card-title { margin: 15px 0 10px 0; }
-
 .c-card-6 > .row { display: flex; }
 
 .c-card-6 .c-card-title { margin-bottom: 20px; }
@@ -2132,8 +2134,6 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 .c-card-6 .c-card-footer { border-top: 1px solid #F0ECEC; padding-top: 14px; }
 
 .c-card-7 .c-card-media { max-width: 200px; }
-
-.c-card-7 .c-card-title { margin: 15px 0 10px 0; }
 
 .c-card-8 .c-card-title { margin: 15px 0 5px 0; }
 
@@ -2174,11 +2174,9 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 .c-opening--bordered p:not(:last-child), .c-tarifs p:not(:last-child) { border-bottom: 1px solid #F0ECEC; padding-bottom: 10px; }
 
-.c-opening-group { margin-bottom: 40px; }
-
 .c-opening-group + .c-opening-group { border-top: 1px solid #F0ECEC; padding-top: 40px; }
 
-.c-opening-group:last-child { margin-bottom: 20px; }
+.c-opening-action { margin-top: -15px; }
 
 /* EVENTS COPY (02.2022) */
 .c-copy { max-width: 750px; }
