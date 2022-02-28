@@ -225,12 +225,12 @@
 }
 
 // Events Navigation
-	.mod-navigation {
+	.mod_navigation {
 		display: flex;
+		padding: 110px 0;
 
 		@include up-to(medium) {
 			flex-direction: column;
-			padding: $m-step * 5 0;
 		}
 
 		.c-navItem {
@@ -306,7 +306,7 @@
 		padding-top: 40px;
 	}
 	.mod_aside {
-		padding-bottom: 160px;
+		padding-bottom: 75px;
 		padding-top: 40px;
 	}
 
