@@ -180,6 +180,7 @@
 
 // Card for bloc visites list
 .c-card-5 {
+    @extend %mb-8;
 
     .c-card-media {
         @extend %mb-3;
@@ -199,12 +200,24 @@
     & > .row {
         display: flex;
     }
-    .c-card-title {
-        margin-bottom: 20px;
+    .c-card-inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
-    .c-card-footer {
+    .c-card-title {
+        @extend %mb-6;
+    }
+    .c-card-group {
+        @extend %mb-3;
         border-top: 1px solid #F0ECEC;
-        padding-top: 14px;
+        padding-top: 15px;
+    }
+    .c-card-icon {
+        justify-self: flex-end;
+    }
+    .c-card-action {
+        margin-top: 25px;
     }
 }
 
@@ -416,7 +429,7 @@
     .c-event-label {
         @extend %mb-1;
     }
-    
+
 .c-expo-titles {
 
 }
