@@ -410,10 +410,17 @@
 
 // POUR EXPOSITIONS
 
+.c-event-dates {
+
+}
+    .c-event-label {
+        @extend %mb-1;
+    }
+    
 .c-expo-titles {
 
 }
-.c-expo-maintitle {
-    @extend %mb-2;
-}
+    .c-expo-maintitle {
+        @extend %mb-2;
+    }
 

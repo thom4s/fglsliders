@@ -751,7 +751,7 @@ td, th { padding: 0; }
 .fl-centered { display: flex; justify-content: center; align-items: center; }
 
 /* MARGES */
-.c-card-persona .c-card-title, .c-card-persona p, .c-card-persona h4, .c-card-1 .c-card-meta, .c-card-1--empty .c-card-meta, .c-card-3 .c-card-meta, .c-card-5 .c-card-title, .c-card-7 .c-card-title { margin-bottom: 5px; }
+.c-card-persona .c-card-title, .c-card-persona p, .c-card-persona h4, .c-card-1 .c-card-meta, .c-card-1--empty .c-card-meta, .c-card-3 .c-card-meta, .c-card-5 .c-card-title, .c-card-7 .c-card-title, .c-event-label { margin-bottom: 5px; }
 
 .c-card-1 .c-card-media, .c-card-1--empty .c-card-media, .c-card-3 .c-card-media, .c-card-3 .c-card-title, .c-expo-maintitle, .slide_medium--artworks img { margin-bottom: 10px; }
 
