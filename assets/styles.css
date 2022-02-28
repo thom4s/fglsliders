@@ -753,7 +753,7 @@ td, th { padding: 0; }
 /* MARGES */
 .c-card-persona .c-card-title, .c-card-persona p, .c-card-persona h4, .c-card-1 .c-card-meta, .c-card-1--empty .c-card-meta, .c-card-3 .c-card-meta, .c-card-5 .c-card-title, .c-card-7 .c-card-title { margin-bottom: 5px; }
 
-.c-card-1 .c-card-media, .c-card-1--empty .c-card-media, .c-card-3 .c-card-media, .c-card-3 .c-card-title, .slide_medium--artworks img { margin-bottom: 10px; }
+.c-card-1 .c-card-media, .c-card-1--empty .c-card-media, .c-card-3 .c-card-media, .c-card-3 .c-card-title, .c-expo-maintitle, .slide_medium--artworks img { margin-bottom: 10px; }
 
 .c-card-3 .c-card-copy, .c-card-5 .c-card-media, .c-copy p, .mod_slider .mod_title, .mod_slider--artworks .mod_title { margin-bottom: 15px; }
 
@@ -777,9 +777,9 @@ td, th { padding: 0; }
 
 @media (min-width: 880px) { .mod_mosaic figure, .mod_content .mod_title { margin-bottom: 90px; } }
 
-@media (max-width: 880px) { .c-card-6, .mod-copy .mod-copy-openings, .mod-copy--festival .mod-copy-openings, .mod-playerfull, .m_separators, .mod_mosaic, .mod_visites_list, .mod_content, .mod_slider, .mod_slider--artworks, .mod_slider:last-child, .mod_slider--artworks:last-child, .mod_carnetprod { margin-bottom: 70px; } }
+@media (max-width: 880px) { .c-card-6, .mod-copy .mod-copy-openings, .mod-copy--festival .mod-copy-openings, .mod-playerfull, .mod_titles, .m_separators, .mod_mosaic, .mod_visites_list, .mod_content, .mod_slider, .mod_slider--artworks, .mod_slider:last-child, .mod_slider--artworks:last-child, .mod_carnetprod { margin-bottom: 70px; } }
 
-@media (min-width: 880px) { .c-card-6, .mod-copy .mod-copy-openings, .mod-copy--festival .mod-copy-openings, .mod-playerfull, .m_separators, .mod_mosaic, .mod_visites_list, .mod_content, .mod_slider, .mod_slider--artworks, .mod_slider:last-child, .mod_slider--artworks:last-child, .mod_carnetprod { margin-bottom: 110px; } }
+@media (min-width: 880px) { .c-card-6, .mod-copy .mod-copy-openings, .mod-copy--festival .mod-copy-openings, .mod-playerfull, .mod_titles, .m_separators, .mod_mosaic, .mod_visites_list, .mod_content, .mod_slider, .mod_slider--artworks, .mod_slider:last-child, .mod_slider--artworks:last-child, .mod_carnetprod { margin-bottom: 110px; } }
 
 .flex-justify { display: flex; justify-content: space-between; }
 
@@ -2183,7 +2183,7 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 .c-copy h3 { margin-top: 30px; margin-bottom: 30px; }
 
-.c-more { padding-top: 20px; padding-bottom: 80px; display: flex; justify-content: center; }
+.c-more { padding-top: 20px; display: flex; justify-content: center; }
 
 .c-more button { border: none; background: none; display: flex; flex-direction: column; align-items: center; }
 
@@ -2491,6 +2491,8 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 /* EVENT MODULES 2022 */
 .mod-copy, .mod-copy--festival { max-height: 400px; overflow: hidden; transition: max-height .6s; }
+
+.mod-copy .c-copy, .mod-copy--festival .c-copy { padding-bottom: 55px; }
 
 .mod-copy + section, .mod-copy--festival + section { box-shadow: 0 -20px 20px #F0ECEC; }
 

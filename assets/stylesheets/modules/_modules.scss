@@ -103,6 +103,10 @@
 		max-height: 400px;
 		overflow: hidden;
 		transition: max-height .6s;
+
+		.c-copy {
+			padding-bottom: 55px;
+		}
 		
 		& + section {
 			box-shadow: 0 -20px 20px $gray_light;
@@ -169,6 +173,9 @@
 
 
 
+	.mod_titles {
+		@extend %mb-9;
+	}
 
 
 
