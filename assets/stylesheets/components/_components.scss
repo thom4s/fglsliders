@@ -144,13 +144,15 @@
 
 // Card in Edition Slider
 .c-card-3 {
-    @extend .c-card;
 
     .c-card-media {
         position: relative;
         @extend %mb-2;
+        overflow: hidden;
     }
-
+    img {
+        transition: transform .2s;
+    }
     .c-card-meta {
         @extend %mb-1;
     }
@@ -166,6 +168,11 @@
 
         .bg--gray & {
             border-color: $gray_medium;
+        }
+    }
+    .c-card-link:hover {
+        img {
+            transform: scale(1.1);
         }
     }
 }
