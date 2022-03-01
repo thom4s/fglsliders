@@ -233,6 +233,10 @@ td, th { padding: 0; }
 
 .row { *zoom: 1; }
 
+.row .row > [class*="col"]:first-child { padding-left: 0 !important; }
+
+.row .row > [class*="col"]:last-child { padding-right: 0 !important; }
+
 .row .is-centered { margin-left: auto !important; margin-right: auto !important; float: none !important; }
 
 .row.fixe-it { position: fixed; }
