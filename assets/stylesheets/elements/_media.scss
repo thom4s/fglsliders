@@ -140,6 +140,14 @@ img.desaturate {
     padding-bottom: 66%;
   }
 }
+.ratio_16_9 {
+  @extend .ratio;
+
+  &:after {
+    padding-bottom: 56.5%;
+  }
+}
+
 
 .ratio_square {
   @extend .ratio;
