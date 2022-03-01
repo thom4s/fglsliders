@@ -2127,6 +2127,12 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 .bg--gray .c-card-3 .c-card-action { border-color: #d2d2d2; }
 
+.c-card-5 .c-card-media { overflow: hidden; }
+
+.c-card-5 img { transition: transform .2s; }
+
+.c-card-5:hover img { transform: scale(1.1); }
+
 @media (min-width: 880px) { .c-card-6 > .row { display: flex; } }
 
 @media (max-width: 880px) { .c-card-6 .c-card-media { margin-bottom: 15px; } }

@@ -187,9 +187,18 @@
 
     .c-card-media {
         @extend %mb-3;
+        overflow: hidden;
+    }
+    img {
+        transition: transform .2s;
     }
     .c-card-title {
         @extend %mb-1;
+    }
+    &:hover {
+        img {
+            transform: scale(1.1);
+        }
     }
 }
 
