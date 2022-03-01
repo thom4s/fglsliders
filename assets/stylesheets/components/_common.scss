@@ -104,6 +104,7 @@
         align-items: flex-start;
         justify-content: center;
 		background-color: $gray_light;
+		height: 100%;
 	}
 	[class *= "icon-lien_interne"] {
 		transform: rotate(-30deg);
@@ -119,6 +120,7 @@
 	a {
 		background-color: #83F8DD;
 		align-items: center;
+		height: 100%;
 	}
 }
 

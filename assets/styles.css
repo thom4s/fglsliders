@@ -755,7 +755,7 @@ td, th { padding: 0; }
 
 .c-card-1 .c-card-media, .c-card-1--empty .c-card-media, .c-card-3 .c-card-media, .c-card-3 .c-card-title, .c-expo-maintitle, .slide_medium--artworks img { margin-bottom: 10px; }
 
-.c-card-3 .c-card-copy, .c-card-5 .c-card-media, .c-card-6 .c-card-media, .c-card-6 .c-card-group, .c-card-8 .c-card-media, .c-copy p, .mod_slider .mod_title, .mod_slider--artworks .mod_title { margin-bottom: 15px; }
+.c-card-3 .c-card-copy, .c-card-5 .c-card-media, .c-card-6 .c-card-group, .c-card-8 .c-card-media, .c-copy p, .mod_slider .mod_title, .mod_slider--artworks .mod_title { margin-bottom: 15px; }
 
 @media (max-width: 880px) { .c-card-2 .c-card-intro, .c-card-2 .c-card-media, .c-card-7 .c-card-media, .c-opening .c-opening-title, .c-opening--bordered .c-opening-title, .c-tarifs .c-opening-title { margin-bottom: 20px; } }
 
@@ -1911,6 +1911,8 @@ p a, .copy a { font-weight: 900; }
 
 .pulse_link { position: relative; display: inline-block; }
 
+.pulse_link--left { position: relative; display: inline-block; }
+
 .el { word-break: keep-all; word-wrap: normal; }
 
 .no-touch .pulse_link:hover .el { display: inline-block; animation-name: pulse; animation-duration: 1s; animation-timing-function: ease; animation-delay: 0s; animation-iteration-count: infinite; animation-direction: normal; animation-fill-mode: none; animation-play-state: running; }
@@ -2072,11 +2074,11 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 .c-card-file [class*="icon-lien_interne"], .c-card-greencard [class*="icon-lien_interne"] { font-size: 2.6rem; padding: 0 10px; }
 
-.c-card-file a { flex-direction: column; align-items: flex-start; justify-content: center; background-color: #F0ECEC; }
+.c-card-file a { flex-direction: column; align-items: flex-start; justify-content: center; background-color: #F0ECEC; height: 100%; }
 
 .c-card-file [class*="icon-lien_interne"] { transform: rotate(-30deg); display: inline-block; }
 
-.c-card-greencard a { background-color: #83F8DD; align-items: center; }
+.c-card-greencard a { background-color: #83F8DD; align-items: center; height: 100%; }
 
 .c-edition-feuilleter .c-media { background-color: #F0ECEC; margin-bottom: 20px; }
 
@@ -2130,6 +2132,8 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 .bg--gray .c-card-3 .c-card-action { border-color: #d2d2d2; }
 
 @media (min-width: 880px) { .c-card-6 > .row { display: flex; } }
+
+@media (max-width: 880px) { .c-card-6 .c-card-media { margin-bottom: 15px; } }
 
 .c-card-6 .c-card-inner { display: flex; flex-direction: column; justify-content: space-between; }
 
