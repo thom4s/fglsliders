@@ -765,9 +765,9 @@ td, th { padding: 0; }
 
 @media (min-width: 880px) { .page_cover { margin-bottom: 35px; } }
 
-@media (max-width: 880px) { .c-card-persona, .c-card-6 .c-card-title, .c-opening-group, .slide_medium, .slide_medium--artworks, .mod_content .mod_title h2 { margin-bottom: 30px; } }
+@media (max-width: 880px) { .c-card-persona, .c-section-title h2, .c-card-6 .c-card-title, .c-opening-group, .slide_medium, .slide_medium--artworks, .mod_content .mod_title h2 { margin-bottom: 30px; } }
 
-@media (min-width: 880px) { .c-card-persona, .c-card-6 .c-card-title, .c-opening-group, .slide_medium, .slide_medium--artworks, .mod_content .mod_title h2 { margin-bottom: 40px; } }
+@media (min-width: 880px) { .c-card-persona, .c-section-title h2, .c-card-6 .c-card-title, .c-opening-group, .slide_medium, .slide_medium--artworks, .mod_content .mod_title h2 { margin-bottom: 40px; } }
 
 @media (max-width: 880px) { .c-chapo, .c-personas-title { margin-bottom: 40px; } }
 
