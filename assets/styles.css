@@ -166,23 +166,17 @@ td, th { padding: 0; }
 
 .plain { display: block; width: 100%; margin-left: auto; margin-right: auto; }
 
-.wrap { margin-left: auto; margin-right: auto; }
+.wrapper, .wrap { margin-left: auto; margin-right: auto; }
 
-@media (max-width: 1550px) { .wrap { width: calc(100% - 40px); } }
+@media (max-width: 1550px) { .wrapper, .wrap { width: calc(100% - 40px); } }
 
-@media (min-width: 1550px) { .wrap { width: 1500px; } }
+@media (max-width: 880px) { .wrapper, .wrap { width: 100%; } }
 
-.wrapper { margin-left: auto; margin-right: auto; }
+@media (min-width: 1550px) { .wrapper, .wrap { width: 1500px; } }
 
-@media (max-width: 1550px) { .wrapper { width: calc(100% - 40px); } }
+.wrapper .paddinged-both, .wrap .paddinged-both { padding-right: 20px; padding-left: 20px; }
 
-@media (max-width: 880px) { .wrapper { width: 100%; } }
-
-@media (min-width: 1550px) { .wrapper { width: 1500px; } }
-
-.wrapper .paddinged-both { padding-right: 20px; padding-left: 20px; }
-
-.wrapper [class*="col"] { padding-right: 20px; padding-left: 20px; }
+.wrapper [class*="col"], .wrap [class*="col"] { padding-right: 20px; padding-left: 20px; }
 
 @media (min-width: 880px) { .is-half { width: 50%; float: left; } }
 
@@ -2224,7 +2218,7 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 .site-header.white { background-color: #fff; }
 
-.site-header .wrap { position: relative; height: 124px; padding-bottom: 0.5em; padding-top: 0; }
+.site-header .wrap { position: relative; height: 124px; padding-bottom: 0.5em; padding-top: 0; padding-left: 20px; padding-right: 20px; }
 
 @media (max-width: 880px) { .site-header { height: auto; }
   .site-header .wrap { border: none; height: auto; padding-bottom: 0; padding-top: .3em; } }

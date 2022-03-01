@@ -34,20 +34,10 @@ $wide_breakpoint:                   1550px !default;
     margin-right: auto;
 }
 
-.wrap {
-    margin-left: auto;
-    margin-right: auto;
-
-    @include up-to(wide) {
-        width: calc(100% - 40px);
-    }
-    @include at-least(wide) {
-        width: $max_width_large;
-    }
-}
 
 // TEST
-.wrapper {
+.wrapper,
+.wrap {
   margin-left: auto;
   margin-right: auto;
 
