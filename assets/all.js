@@ -723,29 +723,24 @@ function set_pins( outer ) {
 			if( this_parent_height > window_height ) {
 
 				if( $(this).hasClass("expo_dates_inner") ) {
-				  $(this).hcSticky({
-				    stickTo: this_parent[0],
-				    top: 340,
-				    bottom: 50,
-				    followScroll: false,
-				    queries: {
-			        768: {
-			          disable: true
-			        }
-			      },
-			      onStart: function() {
-			      	$('.expo_practical').addClass('fixed').removeClass('released');
-			      },
-			      onStop: function() {
-			      	$('.expo_practical').addClass('released').removeClass('fixed');
-			      }
-			      // onStart: function() {
-			      // 	$('.expo_practical').css('opacity', '1').addClass('fixed').removeClass('released');
-			      // },
-			      // onStop: function() {
-			      // 	$('.expo_practical').css('opacity', '1').addClass('released').removeClass('fixed');
-			      // }
-				  });
+					$(this).hcSticky({
+						stickTo: this_parent[0],
+						top: 340,
+						bottom: 50,
+						followScroll: false,
+						queries: {
+						768: {
+						disable: true
+						}
+					},
+					onStart: function() {
+						$('.expo_practical').addClass('fixed').removeClass('released');
+					},
+					onStop: function() {
+						$('.expo_practical').addClass('released').removeClass('fixed');
+					}
+
+					});
 				} 
 				else {
 
@@ -779,13 +774,13 @@ function set_pins( outer ) {
   // SCROLLING ANIMATIONS
 
 
-  $('.js-up-trigger').on('click', function(event) {
-    event.preventDefault();
-    $("html, body").animate({ scrollTop: 0 }, "slow", function() {
-    	$( ".btn--up" ).removeClass( "active" );
-	  });
-    return false;
-  });
+	$('.js-up-trigger').on('click', function(event) {
+		event.preventDefault();
+		$("html, body").animate({ scrollTop: 0 }, "slow", function() {
+			$( ".btn--up" ).removeClass( "active" );
+		});
+		return false;
+	});
 
  
 
@@ -811,31 +806,32 @@ function set_pins( outer ) {
 	}
 
 	function hasScrolled() {
-    var st = $(this).scrollTop();
-    
-    // Make sure they scroll more than delta
-    if(Math.abs(lastScrollTop - st) <= delta)
-        return;
-    
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > navbarHeight){
-        // Scroll Down
-        $('header').removeClass('nav-down').addClass('nav-up');
-        $('#backtomediatheque').addClass('hide');
-        $( ".btn--up" ).removeClass( "active" );
-        $('.news_feed.top').addClass('fixed_top');
-    } else {
-        // Scroll Up
-        if(st + $(window).height() < $(document).height()) {
-            $('header').removeClass('nav-up').addClass('nav-down');
-        		$('#backtomediatheque').removeClass('hide');
-            $( ".btn--up" ).addClass( "active" );
-        		$('.news_feed.top').removeClass('fixed_top');
-        }
-    }
-    
-    lastScrollTop = st;
+		var st = $(this).scrollTop();
+		
+		// Make sure they scroll more than delta
+		if(Math.abs(lastScrollTop - st) <= delta)
+			return;
+		
+		// If they scrolled down and are past the navbar, add class .nav-up.
+		// This is necessary so you never see what is "behind" the navbar.
+		if (st > lastScrollTop && st > navbarHeight){
+			// Scroll Down
+			$('header').removeClass('nav-down').addClass('nav-up');
+			$('#backtomediatheque').addClass('hide');
+			$( ".btn--up" ).removeClass( "active" );
+			$('.news_feed.top').addClass('fixed_top');
+		} 
+		else {
+			// Scroll Up
+			if(st + $(window).height() < $(document).height()) {
+				$('header').removeClass('nav-up').addClass('nav-down');
+				$('#backtomediatheque').removeClass('hide');
+				$( ".btn--up" ).addClass( "active" );
+				$('.news_feed.top').removeClass('fixed_top');
+			}
+		}
+		
+		lastScrollTop = st;
 	}
 
 
@@ -869,14 +865,13 @@ jQuery( document ).ready(function( ) {
 
 	if( jQuery.browser.mobile || mobile_window ) {
 		setTimeout( set_agenda_pins(), 1000 );
-	  document.addEventListener("touchmove", handle_scroll_for_header, false);
-	  document.addEventListener("scroll", handle_scroll_for_header, false);
-	  document.addEventListener("touchend", handle_scroll_for_header, false);
-
 	} else { 
 		setTimeout( set_pins(), 1000 );
 	}
-
+	
+	document.addEventListener("touchmove", handle_scroll_for_header, false);
+	document.addEventListener("scroll", handle_scroll_for_header, false);
+	document.addEventListener("touchend", handle_scroll_for_header, false);
 
 
 
