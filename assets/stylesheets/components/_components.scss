@@ -201,7 +201,12 @@
     @extend %mb-9;
 
     & > .row {
-        display: flex;
+        @include at-least(medium) {
+            display: flex;
+        }
+    }
+    .c-card-media  {
+        @extend %mb-3;
     }
     .c-card-inner {
         display: flex;
