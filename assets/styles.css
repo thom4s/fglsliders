@@ -751,11 +751,11 @@ td, th { padding: 0; }
 .fl-centered { display: flex; justify-content: center; align-items: center; }
 
 /* MARGES */
-.c-card-persona .c-card-title, .c-card-persona p, .c-card-persona h4, .c-card-1 .c-card-meta, .c-card-1--empty .c-card-meta, .c-card-3 .c-card-meta, .c-card-5 .c-card-title, .c-card-7 .c-card-title, .c-event-label { margin-bottom: 5px; }
+.c-card-persona .c-card-title, .c-card-persona p, .c-card-persona h4, .c-card-1 .c-card-meta, .c-card-1--empty .c-card-meta, .c-card-3 .c-card-meta, .c-card-5 .c-card-title, .c-card-7 .c-card-title, .c-card-8 .c-card-title, .c-event-label { margin-bottom: 5px; }
 
 .c-card-1 .c-card-media, .c-card-1--empty .c-card-media, .c-card-3 .c-card-media, .c-card-3 .c-card-title, .c-expo-maintitle, .slide_medium--artworks img { margin-bottom: 10px; }
 
-.c-card-3 .c-card-copy, .c-card-5 .c-card-media, .c-card-6 .c-card-media, .c-card-6 .c-card-group, .c-copy p, .mod_slider .mod_title, .mod_slider--artworks .mod_title { margin-bottom: 15px; }
+.c-card-3 .c-card-copy, .c-card-5 .c-card-media, .c-card-6 .c-card-media, .c-card-6 .c-card-group, .c-card-8 .c-card-media, .c-copy p, .mod_slider .mod_title, .mod_slider--artworks .mod_title { margin-bottom: 15px; }
 
 @media (max-width: 880px) { .c-card-2 .c-card-intro, .c-card-2 .c-card-media, .c-card-7 .c-card-media, .c-opening .c-opening-title, .c-opening--bordered .c-opening-title, .c-tarifs .c-opening-title { margin-bottom: 20px; } }
 
@@ -2143,8 +2143,6 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 .c-card-7 .c-card-media { max-width: 200px; }
 
-.c-card-8 .c-card-title { margin: 15px 0 5px 0; }
-
 .c-card-8 p { margin-bottom: 0; }
 
 @media (max-width: 880px) { .c-grid-editions { display: flex; align-items: flex-end; flex-wrap: wrap; } }
@@ -2514,9 +2512,13 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 @media (max-width: 1040px) { .mod_slider--artworks .mod_aside { margin-top: 20px; padding-top: 10px; border-top: 1px solid #F0ECEC; } }
 
-.mod-playerfull img { width: 70vw; transition: all .4s; }
+.mod-playerfull img, .mod-playerfull iframe { width: 70vw; transition: all .4s; }
+
+@media (max-width: 880px) { .mod-playerfull img, .mod-playerfull iframe { height: 100vh; } }
 
 .mod-playerfull.open img { width: 100vw; }
+
+@media (max-width: 880px) { .mod-playerfull { height: 100vh; } }
 
 .mod_mosaic img { width: 100%; margin-bottom: 10px; }
 

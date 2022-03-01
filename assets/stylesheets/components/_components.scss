@@ -251,8 +251,11 @@
 // Card for atelier slider
 
 .c-card-8 {
+    .c-card-media {
+        @extend %mb-3;
+    }
     .c-card-title {
-        margin: 15px 0 5px 0;
+        @extend %mb-1;
     }
     p {
         margin-bottom: 0;

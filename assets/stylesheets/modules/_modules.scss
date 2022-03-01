@@ -160,15 +160,21 @@
 	.mod-playerfull {
 		@extend %mb-9;
 
-		img {
+		img, iframe {
 			width: 70vw;
 			transition: all .4s;
+			@include up-to(medium) {
+				height: 100vh;
+			}
 		}
 
 		&.open img {
 			width: 100vw
 		}
 
+		@include up-to(medium) {
+			height: 100vh;
+		}
 	}
 
 
