@@ -422,6 +422,8 @@
 
 .c-tarifs {
     @extend .c-opening--bordered;
+    width: 100%;
+    max-width: none;
 }
 
 
