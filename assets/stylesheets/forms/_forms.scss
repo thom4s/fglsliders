@@ -196,3 +196,38 @@ input::-moz-focus-inner { /* Corrects inner padding and border displayed oddly i
 	}
 }
 
+
+
+
+
+.c-form-newsletter {
+
+	.c-group {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.inputs-submit {
+		margin-top: 25px;
+	}
+
+	input:not([type="button"]) {
+		padding: 20px;
+		background-color: $gray_light;
+		@extend %mb-2;
+	}
+	input[type="text"] {
+		@include at-least(medium) {
+			width: calc(50% - 5px);
+		}
+		@include up-to(medium) {
+			width: 100%;
+		}
+	}
+	input[type="email"] {
+		width: 100%;
+	}
+	input[type="submit"] {
+		color: $black;
+	}
+} 
