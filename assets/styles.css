@@ -1892,6 +1892,10 @@ label.error { font-size: 1.5rem; color: #83F8DD; margin-top: -14px; display: blo
 
 .c-form-newsletter input[type="submit"] { color: #1A1A1A; }
 
+.c-form-newsletter .msg_error { color: #d00; }
+
+.c-form-newsletter .msg_valid { color: #2cde2c; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/

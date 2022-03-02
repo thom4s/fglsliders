@@ -230,4 +230,10 @@ input::-moz-focus-inner { /* Corrects inner padding and border displayed oddly i
 	input[type="submit"] {
 		color: $black;
 	}
+	.msg_error {
+		color: $color_important;
+	}
+	.msg_valid {
+		color: $color_success;
+	}
 } 
