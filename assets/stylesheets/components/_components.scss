@@ -94,13 +94,12 @@
         border-top: 1px solid #F0ECEC;
         padding-top: 15px;
 
-        p {
-            margin-bottom: 5px;
-        }
-
         .bg--gray & {
             border-color: $gray_medium;
         }
+    }
+    .c-card-action {
+        margin-top: 5px;
     }
 }
 
