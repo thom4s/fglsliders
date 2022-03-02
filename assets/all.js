@@ -2544,18 +2544,19 @@ jQuery( document ).ready(function( ) {
 	if( openContent !== null ) {
 
 		openContent.addEventListener('click', (e) => {
-		e.preventDefault();
+			e.preventDefault();
 
-		openContent.classList.toggle('reversed');
-		document.querySelector('.mod-copy').classList.toggle('open')
+			openContent.classList.toggle('reversed');
+			document.querySelector('.mod-copy').classList.toggle('open')
 
-		if( openContent.classList.contains('reversed') ) {
-			openContent.querySelector('.c-more-label').innerText = 'voir moins';
-		}
-		else {
-			openContent.querySelector('.c-more-label').innerText = 'voir plus';
+			if( openContent.classList.contains('reversed') ) {
+				openContent.querySelector('.c-more-label').innerText = 'voir moins';
+			}
+			else {
+				openContent.querySelector('.c-more-label').innerText = 'voir plus';
+				document.querySelector(".c-more-label").scrollIntoView({ behavior: 'smooth', block: 'end'});
 
-		}
+			}
 		})
 	}
 
