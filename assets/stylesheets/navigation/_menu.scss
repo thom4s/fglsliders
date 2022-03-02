@@ -53,7 +53,7 @@
 	}
 
 	.btn--lang {
-		font-size: 1.9rem;
+		font-size: 1.7rem;
 		font-weight: 100;
 	}
 	.btn--lang.active{
@@ -120,6 +120,7 @@ ul.nice-menu > li {
 		@include transition(none);
 		display: inline-block;
 		padding-bottom: 3px;
+		font-size: 1.8rem;
 
 		&:active {
 			color: $black !important;
