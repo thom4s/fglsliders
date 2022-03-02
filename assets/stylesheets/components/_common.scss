@@ -7,7 +7,7 @@
 .c-sticky {
 	@include at-least(large) {
 		position: sticky !important;
-		top: 200px;
+		top: 140px;
 	}
 }
 

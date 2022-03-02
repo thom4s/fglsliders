@@ -2044,7 +2044,7 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 --------------------------------------------------------------*/
 /* New Components (02.2022) */
 /* Utils */
-@media (min-width: 1040px) { .c-sticky { position: sticky !important; top: 200px; } }
+@media (min-width: 1040px) { .c-sticky { position: sticky !important; top: 140px; } }
 
 /* Components for Informations pratiques */
 .c-practicalmap { margin-bottom: 45px; }
