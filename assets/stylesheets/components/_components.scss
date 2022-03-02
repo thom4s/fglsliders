@@ -410,7 +410,7 @@
 }
 .c-opening--passed {
     @extend .c-opening;
-    opacity: .5;
+    color: $gray_dark;
 }
 .c-opening--bordered {
     @extend .c-opening;

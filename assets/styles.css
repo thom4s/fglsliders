@@ -2198,7 +2198,7 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 .c-opening p, .c-opening--passed p, .c-opening--bordered p, .c-tarifs p { margin-bottom: 5px; }
 
-.c-opening--passed { opacity: .5; }
+.c-opening--passed { color: #777777; }
 
 .c-opening--bordered, .c-tarifs { margin-bottom: 30px; width: 75%; }
 
