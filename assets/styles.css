@@ -2648,21 +2648,23 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 .item_free_label { text-transform: uppercase; font-size: 17px; line-height: 24px; letter-spacing: 0.02em; font-style: normal; font-weight: normal; color: white; }
 
-.news_feed { text-transform: uppercase; z-index: 99999; left: 0; right: 0; font-weight: 500; font-size: 29px; line-height: 33px; height: 34px; overflow: hidden; color: white; }
+.news_feed, .news_feed--event { text-transform: uppercase; z-index: 99999; left: 0; right: 0; font-weight: 500; font-size: 29px; line-height: 33px; height: 34px; overflow: hidden; color: white; }
 
-@media (max-width: 880px) { .news_feed { font-size: 22px; line-height: 27px; height: 28px; } }
+@media (max-width: 880px) { .news_feed, .news_feed--event { font-size: 22px; line-height: 27px; height: 28px; } }
 
-.news_feed span { margin-left: 60px; display: inline-block; }
+.news_feed span, .news_feed--event span { margin-left: 60px; display: inline-block; }
 
-.news_feed.bottom { position: relative; }
+.news_feed.bottom, .bottom.news_feed--event { position: relative; }
 
-.news_feed.top { position: fixed; top: 124px; transition: all .2s; }
+.news_feed.top, .top.news_feed--event { position: fixed; top: 124px; transition: all .2s; }
 
-.news_feed.top.fixed_top { top: 0; }
+.news_feed.top.fixed_top, .top.fixed_top.news_feed--event { top: 0; }
 
-.scrolling .news_feed.top { opacity: 0; }
+.scrolling .news_feed.top, .scrolling .top.news_feed--event { opacity: 0; }
 
-.news_feed.is-relative { position: relative !important; top: auto !important; margin: 20px 0 30px; }
+.news_feed.is-relative, .is-relative.news_feed--event { position: relative !important; top: auto !important; margin: 20px 0 30px; }
+
+.news_feed--event { color: black; text-transform: none; height: 50px; }
 
 .hp_head { height: 100vh; width: 100vw; background-color: black; position: fixed; top: 0; bottom: 0; left: 0; right: 0; }
 

@@ -127,7 +127,13 @@
 		margin: 20px 0 30px;
 	}
 }
- 
+.news_feed--event {
+	 @extend .news_feed;
+
+	 color: black;
+	 text-transform: none;
+	 height: 50px; 
+}
 
 .hp_head {
 	height: 100vh;
