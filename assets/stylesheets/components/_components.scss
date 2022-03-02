@@ -301,15 +301,17 @@
     }
     .c-card-openings {
         border-top: 1px solid $gray_light;
-        border-bottom: 1px solid $gray_light;
-        padding: 15px 0;
-        margin: 15px 0;
+        padding-top: 15px;
+        margin-top: 15px;
     }
     p {
         margin: 0;
     }
     .c-card-action {
         align-items: center;
+        padding-top: 15px;
+        margin-top: 15px;
+        border-top: 1px solid $gray_light;
     }
 }
 

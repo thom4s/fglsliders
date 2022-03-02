@@ -128,11 +128,16 @@
 	}
 }
 .news_feed--event {
-	 @extend .news_feed;
+	@extend .news_feed;
 
-	 color: black;
-	 text-transform: none;
-	 height: 50px; 
+	color: black;
+	text-transform: none;
+	height: 50px; 
+
+	&.is-relative {
+		margin-top: -35px;
+		opacity: 1 !important;
+	}
 }
 
 .hp_head {

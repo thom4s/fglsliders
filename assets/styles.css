@@ -2165,11 +2165,11 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 .c-card-8 p { margin-bottom: 0; }
 
-.c-event-id .c-card-openings { border-top: 1px solid #F0ECEC; border-bottom: 1px solid #F0ECEC; padding: 15px 0; margin: 15px 0; }
+.c-event-id .c-card-openings { border-top: 1px solid #F0ECEC; padding-top: 15px; margin-top: 15px; }
 
 .c-event-id p { margin: 0; }
 
-.c-event-id .c-card-action { align-items: center; }
+.c-event-id .c-card-action { align-items: center; padding-top: 15px; margin-top: 15px; border-top: 1px solid #F0ECEC; }
 
 @media (max-width: 880px) { .c-grid-editions { display: flex; align-items: flex-end; flex-wrap: wrap; } }
 
@@ -2665,6 +2665,8 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 .news_feed.is-relative, .is-relative.news_feed--event { position: relative !important; top: auto !important; margin: 20px 0 30px; }
 
 .news_feed--event { color: black; text-transform: none; height: 50px; }
+
+.news_feed--event.is-relative { margin-top: -35px; opacity: 1 !important; }
 
 .hp_head { height: 100vh; width: 100vw; background-color: black; position: fixed; top: 0; bottom: 0; left: 0; right: 0; }
 
