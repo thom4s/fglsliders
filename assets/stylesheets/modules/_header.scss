@@ -40,7 +40,9 @@
 
 	@include transition(top 0.5s, opacity 0.5s);
 
-	&.nav-up { top: - $header_height; } 
+	&.nav-up { 
+		top: - $header_height; 
+	} 
 
 	&.white {
 		background-color: $white;

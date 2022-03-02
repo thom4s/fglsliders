@@ -5,9 +5,16 @@
  */
 
 .c-sticky {
+	transition: top .4s;
 	@include at-least(large) {
 		position: sticky !important;
-		top: 140px;
+		top: 164px;
+	}
+}
+
+.nav-up ~ .page-content .c-sticky {
+	@include at-least(large) {
+		top: 35px;
 	}
 }
 
