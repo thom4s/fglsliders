@@ -763,13 +763,13 @@ td, th { padding: 0; }
 
 @media (min-width: 880px) { .c-card-persona, .c-section-title h2, .c-card-6 .c-card-title, .c-opening-group, .slide_medium, .slide_medium--artworks, .mod_content .mod_title h2 { margin-bottom: 40px; } }
 
-@media (max-width: 880px) { .c-chapo, .c-personas-title { margin-bottom: 40px; } }
+@media (max-width: 880px) { .c-chapo, .c-personas-title, .mod_mosaic figure { margin-bottom: 40px; } }
 
-@media (min-width: 880px) { .c-chapo, .c-personas-title { margin-bottom: 55px; } }
+@media (min-width: 880px) { .c-chapo, .c-personas-title, .mod_mosaic figure { margin-bottom: 55px; } }
 
-@media (max-width: 880px) { .c-card-5, .mod_mosaic figure, .mod_content .mod_title { margin-bottom: 45px; } }
+@media (max-width: 880px) { .c-card-5, .mod_content .mod_title { margin-bottom: 45px; } }
 
-@media (min-width: 880px) { .c-card-5, .mod_mosaic figure, .mod_content .mod_title { margin-bottom: 90px; } }
+@media (min-width: 880px) { .c-card-5, .mod_content .mod_title { margin-bottom: 90px; } }
 
 @media (max-width: 880px) { .c-card-6, .mod-copy .mod-copy-openings, .mod-copy--festival .mod-copy-openings, .mod-playerfull, .mod_titles, .m_separators, .mod_mosaic, .mod_visites_list, .mod_content, .mod_slider, .mod_slider--artworks, .mod_slider:last-child, .mod_slider--artworks:last-child, .mod_carnetprod { margin-bottom: 70px; } }
 
