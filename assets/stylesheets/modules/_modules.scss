@@ -253,10 +253,10 @@
 		.mod_upper {
 			display: flex;
 			@extend %mb-3;
-		}
 
-		@include up-to(medium) {
-			flex-direction: column;
+			@include up-to(medium) {
+				flex-direction: column;
+			}
 		}
 
 		.c-navItem {
@@ -265,6 +265,7 @@
 			@include at-least(medium) {
 				width: 50%;
 			}
+
 		}
 
 		[class *= "icon-lien_interne"] {
@@ -280,9 +281,22 @@
 		}
 		.c-navItem:first-child {
 			justify-content: flex-start;
+			@include up-to(medium) {
+				margin-bottom: 70px;
+			}
 		}
 	}
 
+
+
+
+// MAnifestations
+
+.mod_event_head {
+	.mod_id {
+		@extend %mb-9;
+	}
+}
 
 
 

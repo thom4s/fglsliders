@@ -771,9 +771,9 @@ td, th { padding: 0; }
 
 @media (min-width: 880px) { .c-card-5, .mod_content .mod_title { margin-bottom: 90px; } }
 
-@media (max-width: 880px) { .c-card-6, .mod-copy .mod-copy-openings, .mod-copy--festival .mod-copy-openings, .mod-playerfull, .mod_titles, .m_separators, .mod_mosaic, .mod_visites_list, .mod_navigation, .mod_content, .mod_slider, .mod_slider--artworks, .mod_slider:last-child, .mod_slider--artworks:last-child, .mod_carnetprod { margin-bottom: 70px; } }
+@media (max-width: 880px) { .c-card-6, .mod-copy .mod-copy-openings, .mod-copy--festival .mod-copy-openings, .mod-playerfull, .mod_titles, .m_separators, .mod_mosaic, .mod_visites_list, .mod_navigation, .mod_event_head .mod_id, .mod_content, .mod_slider, .mod_slider--artworks, .mod_slider:last-child, .mod_slider--artworks:last-child, .mod_carnetprod { margin-bottom: 70px; } }
 
-@media (min-width: 880px) { .c-card-6, .mod-copy .mod-copy-openings, .mod-copy--festival .mod-copy-openings, .mod-playerfull, .mod_titles, .m_separators, .mod_mosaic, .mod_visites_list, .mod_navigation, .mod_content, .mod_slider, .mod_slider--artworks, .mod_slider:last-child, .mod_slider--artworks:last-child, .mod_carnetprod { margin-bottom: 110px; } }
+@media (min-width: 880px) { .c-card-6, .mod-copy .mod-copy-openings, .mod-copy--festival .mod-copy-openings, .mod-playerfull, .mod_titles, .m_separators, .mod_mosaic, .mod_visites_list, .mod_navigation, .mod_event_head .mod_id, .mod_content, .mod_slider, .mod_slider--artworks, .mod_slider:last-child, .mod_slider--artworks:last-child, .mod_carnetprod { margin-bottom: 110px; } }
 
 .flex-justify { display: flex; justify-content: space-between; }
 
@@ -2576,7 +2576,7 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 .mod_navigation .mod_upper { display: flex; }
 
-@media (max-width: 880px) { .mod_navigation { flex-direction: column; } }
+@media (max-width: 880px) { .mod_navigation .mod_upper { flex-direction: column; } }
 
 .mod_navigation .c-navItem { justify-content: space-between; }
 
@@ -2589,6 +2589,8 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 @media (max-width: 880px) { .mod_navigation .c-navItem:last-child { align-self: flex-end; } }
 
 .mod_navigation .c-navItem:first-child { justify-content: flex-start; }
+
+@media (max-width: 880px) { .mod_navigation .c-navItem:first-child { margin-bottom: 70px; } }
 
 .mod_content .mod_aside { padding-bottom: 90px; }
 
