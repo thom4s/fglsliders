@@ -747,7 +747,7 @@ td, th { padding: 0; }
 /* MARGES */
 .c-card-persona .c-card-title, .c-card-persona p, .c-card-persona h4, .c-card-1 .c-card-meta, .c-card-1--empty .c-card-meta, .c-card-3 .c-card-meta, .c-card-5 .c-card-title, .c-card-7 .c-card-title, .c-card-8 .c-card-title, .c-event-label { margin-bottom: 5px; }
 
-.c-card-1 .c-card-media, .c-card-1--empty .c-card-media, .c-card-3 .c-card-media, .c-card-3 .c-card-title, .c-expo-maintitle, .slide_medium--artworks img { margin-bottom: 10px; }
+.c-card-1 .c-card-media, .c-card-1--empty .c-card-media, .c-card-3 .c-card-media, .c-card-3 .c-card-title, .c-card-artwork .c-card-media, .c-expo-maintitle { margin-bottom: 10px; }
 
 .c-card-3 .c-card-copy, .c-card-5 .c-card-media, .c-card-6 .c-card-group, .c-card-8 .c-card-media, .c-copy p, .mod_slider .mod_title, .mod_slider--artworks .mod_title { margin-bottom: 15px; }
 
@@ -2176,6 +2176,12 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 @media (max-width: 880px) { .c-card-edition { margin: 0 2%; margin-bottom: 25px; flex: 1 45%; max-width: 46%; padding: 10px; } }
 
 .c-card-edition:hover img { transform: scale(1.1); }
+
+.c-card-artwork .c-card-media { overflow: hidden; }
+
+.c-card-artwork img { transition: transform .2s; }
+
+.c-card-artwork:hover img { transform: scale(1.1); }
 
 /* NAVIGATION PAGES (02.2022) */
 .c-navItem { display: flex; }

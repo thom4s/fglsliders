@@ -323,7 +323,6 @@
 
         img {
             width: auto;
-            @extend %mb-2;
         }
         @include at-least(medium) {
             img {

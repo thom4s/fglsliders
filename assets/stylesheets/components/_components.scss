@@ -344,6 +344,22 @@
 
 
 
+.c-card-artwork {
+    .c-card-media {
+        overflow: hidden;
+        @extend %mb-2;
+    }
+    img {
+        transition: transform .2s;
+    }
+    &:hover {
+        img {
+            transform: scale(1.1);
+        }
+    }
+}
+
+
 /*
  * NAVIGATION PAGES (02.2022)
  */
