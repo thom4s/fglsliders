@@ -147,7 +147,13 @@ img.desaturate {
     padding-bottom: 56.5%;
   }
 }
+.ratio_4_3 {
+  @extend .ratio;
 
+  &:after {
+    padding-bottom: 75%;
+  }
+}
 
 .ratio_square {
   @extend .ratio;
