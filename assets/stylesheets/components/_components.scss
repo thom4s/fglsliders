@@ -131,12 +131,16 @@
     .c-card-intro {
         @extend %mb-4;
     }
-    h2 {
-        margin-bottom: 0;
+    .c-card-title {
+        @extend %mb-1;
+        h2 {
+            margin-bottom: 0;
+        }
     }
+
     .c-card-media {
         @extend %mb-4;
-        max-width: 275px;
+        max-width: 300px;
     } 
 }
 
@@ -286,6 +290,37 @@
 
 
 
+// Pour manifestations
+
+.c-event-id {
+    .c-card-meta {
+        @extend %mb-2;
+    }
+    .c-card-title {
+        @extend %mb-7;
+    }
+    .c-card-openings {
+        border-top: 1px solid $gray_light;
+        border-bottom: 1px solid $gray_light;
+        padding: 15px 0;
+        margin: 15px 0;
+    }
+    p {
+        margin: 0;
+    }
+    .c-card-action {
+        align-items: center;
+    }
+}
+
+
+.c-event-cover {
+    @extend %mb-7;
+}
+
+
+
+// Grille des éditions
 
 .c-grid-editions {
     @include up-to(medium) {
@@ -302,6 +337,8 @@
 		width: 5%;
 	}
 }
+
+
 
 
 // Cards for edition templates
@@ -448,7 +485,7 @@
  */
 
 .c-copy {
-    max-width: 750px;
+    max-width: 850px;
 
     h3 {
         @extend .ft_h3;

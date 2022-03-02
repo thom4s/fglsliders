@@ -745,11 +745,11 @@ td, th { padding: 0; }
 .fl-centered { display: flex; justify-content: center; align-items: center; }
 
 /* MARGES */
-.c-card-persona .c-card-title, .c-card-persona p, .c-card-persona h4, .c-card-1 .c-card-meta, .c-card-1--empty .c-card-meta, .c-card-3 .c-card-meta, .c-card-5 .c-card-title, .c-card-7 .c-card-title, .c-card-8 .c-card-title, .c-event-label { margin-bottom: 5px; }
+.c-card-persona .c-card-title, .c-card-persona p, .c-card-persona h4, .c-card-1 .c-card-meta, .c-card-1--empty .c-card-meta, .c-card-2 .c-card-title, .c-card-3 .c-card-meta, .c-card-5 .c-card-title, .c-card-7 .c-card-title, .c-card-8 .c-card-title, .c-event-label { margin-bottom: 5px; }
 
-.c-card-1 .c-card-media, .c-card-1--empty .c-card-media, .c-card-3 .c-card-media, .c-card-3 .c-card-title, .c-card-artwork .c-card-media, .c-expo-maintitle { margin-bottom: 10px; }
+.c-card-1 .c-card-media, .c-card-1--empty .c-card-media, .c-card-3 .c-card-media, .c-card-3 .c-card-title, .c-event-id .c-card-meta, .c-card-artwork .c-card-media, .c-expo-maintitle { margin-bottom: 10px; }
 
-.c-card-3 .c-card-copy, .c-card-5 .c-card-media, .c-card-6 .c-card-group, .c-card-8 .c-card-media, .c-copy p, .mod_slider .mod_title, .mod_slider--artworks .mod_title { margin-bottom: 15px; }
+.c-card-3 .c-card-copy, .c-card-5 .c-card-media, .c-card-6 .c-card-group, .c-card-8 .c-card-media, .c-copy p, .mod_navigation .mod_upper, .mod_slider .mod_title, .mod_slider--artworks .mod_title { margin-bottom: 15px; }
 
 @media (max-width: 880px) { .c-card-2 .c-card-intro, .c-card-2 .c-card-media, .c-card-7 .c-card-media, .c-opening .c-opening-title, .c-opening--passed .c-opening-title, .c-opening--bordered .c-opening-title, .c-tarifs .c-opening-title { margin-bottom: 20px; } }
 
@@ -763,17 +763,17 @@ td, th { padding: 0; }
 
 @media (min-width: 880px) { .c-card-persona, .c-section-title h2, .c-card-6 .c-card-title, .c-opening-group, .slide_medium, .slide_medium--artworks, .mod_content .mod_title h2 { margin-bottom: 40px; } }
 
-@media (max-width: 880px) { .c-chapo, .c-personas-title, .mod_mosaic figure { margin-bottom: 40px; } }
+@media (max-width: 880px) { .c-chapo, .c-personas-title, .c-event-id .c-card-title, .c-event-cover, .mod_mosaic figure { margin-bottom: 40px; } }
 
-@media (min-width: 880px) { .c-chapo, .c-personas-title, .mod_mosaic figure { margin-bottom: 55px; } }
+@media (min-width: 880px) { .c-chapo, .c-personas-title, .c-event-id .c-card-title, .c-event-cover, .mod_mosaic figure { margin-bottom: 55px; } }
 
 @media (max-width: 880px) { .c-card-5, .mod_content .mod_title { margin-bottom: 45px; } }
 
 @media (min-width: 880px) { .c-card-5, .mod_content .mod_title { margin-bottom: 90px; } }
 
-@media (max-width: 880px) { .c-card-6, .mod-copy .mod-copy-openings, .mod-copy--festival .mod-copy-openings, .mod-playerfull, .mod_titles, .m_separators, .mod_mosaic, .mod_visites_list, .mod_content, .mod_slider, .mod_slider--artworks, .mod_slider:last-child, .mod_slider--artworks:last-child, .mod_carnetprod { margin-bottom: 70px; } }
+@media (max-width: 880px) { .c-card-6, .mod-copy .mod-copy-openings, .mod-copy--festival .mod-copy-openings, .mod-playerfull, .mod_titles, .m_separators, .mod_mosaic, .mod_visites_list, .mod_navigation, .mod_content, .mod_slider, .mod_slider--artworks, .mod_slider:last-child, .mod_slider--artworks:last-child, .mod_carnetprod { margin-bottom: 70px; } }
 
-@media (min-width: 880px) { .c-card-6, .mod-copy .mod-copy-openings, .mod-copy--festival .mod-copy-openings, .mod-playerfull, .mod_titles, .m_separators, .mod_mosaic, .mod_visites_list, .mod_content, .mod_slider, .mod_slider--artworks, .mod_slider:last-child, .mod_slider--artworks:last-child, .mod_carnetprod { margin-bottom: 110px; } }
+@media (min-width: 880px) { .c-card-6, .mod-copy .mod-copy-openings, .mod-copy--festival .mod-copy-openings, .mod-playerfull, .mod_titles, .m_separators, .mod_mosaic, .mod_visites_list, .mod_navigation, .mod_content, .mod_slider, .mod_slider--artworks, .mod_slider:last-child, .mod_slider--artworks:last-child, .mod_carnetprod { margin-bottom: 110px; } }
 
 .flex-justify { display: flex; justify-content: space-between; }
 
@@ -2125,9 +2125,9 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 .c-card-1--empty:before { content: none; }
 
-.c-card-2 h2 { margin-bottom: 0; }
+.c-card-2 .c-card-title h2 { margin-bottom: 0; }
 
-.c-card-2 .c-card-media { max-width: 275px; }
+.c-card-2 .c-card-media { max-width: 300px; }
 
 .c-card-3 .c-card-media { position: relative; overflow: hidden; }
 
@@ -2164,6 +2164,12 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 .c-card-7 .c-card-media { max-width: 200px; }
 
 .c-card-8 p { margin-bottom: 0; }
+
+.c-event-id .c-card-openings { border-top: 1px solid #F0ECEC; border-bottom: 1px solid #F0ECEC; padding: 15px 0; margin: 15px 0; }
+
+.c-event-id p { margin: 0; }
+
+.c-event-id .c-card-action { align-items: center; }
 
 @media (max-width: 880px) { .c-grid-editions { display: flex; align-items: flex-end; flex-wrap: wrap; } }
 
@@ -2217,7 +2223,7 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 .c-tarifs { width: 100%; max-width: none; }
 
 /* EVENTS COPY (02.2022) */
-.c-copy { max-width: 750px; }
+.c-copy { max-width: 850px; }
 
 .c-copy h3 { margin-top: 30px; margin-bottom: 30px; }
 
@@ -2534,8 +2540,6 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 .mod-copy .c-copy, .mod-copy--festival .c-copy { padding-bottom: 55px; }
 
-.mod-copy + section, .mod-copy--festival + section { box-shadow: 0 -20px 20px #F0ECEC; }
-
 .mod-copy.open, .open.mod-copy--festival { max-height: 3000px; }
 
 @media (max-width: 1040px) { .mod-copy, .mod-copy--festival { max-height: 600px; }
@@ -2568,7 +2572,9 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 @media (min-width: 1040px) { .mod_mosaic-grid[data-columns]::before { content: '3 .m-4col'; } }
 
-.mod_navigation { display: flex; padding: 110px 0; }
+.mod_more { box-shadow: 0 -20px 20px #F0ECEC; }
+
+.mod_navigation .mod_upper { display: flex; }
 
 @media (max-width: 880px) { .mod_navigation { flex-direction: column; } }
 

@@ -107,10 +107,6 @@
 		.c-copy {
 			padding-bottom: 55px;
 		}
-		
-		& + section {
-			box-shadow: 0 -20px 20px $gray_light;
-		}
 
 		&.open {
 			max-height: 3000px;
@@ -237,6 +233,12 @@
 
 
 
+.mod_more {
+	box-shadow: 0 -20px 20px #F0ECEC;
+}
+
+
+
 
 // VISITE CARDS LIST
 .mod_visites_list {
@@ -246,8 +248,12 @@
 
 // Events Navigation
 	.mod_navigation {
-		display: flex;
-		padding: 110px 0;
+		@extend %mb-9;
+
+		.mod_upper {
+			display: flex;
+			@extend %mb-3;
+		}
 
 		@include up-to(medium) {
 			flex-direction: column;
