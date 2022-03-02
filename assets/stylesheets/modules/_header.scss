@@ -45,6 +45,9 @@
 	&.white {
 		background-color: $white;
 	}
+	&.white.nav-down {
+		box-shadow: 0px 0px 12px $gray_light;
+	}
 
 	& .wrap {
 		position: relative;
