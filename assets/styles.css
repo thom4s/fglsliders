@@ -2119,15 +2119,15 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 .c-card p, .c-card-1 p, .c-card-1--empty p { margin-bottom: 0; }
 
-.c-card:before, .c-card-1:before, .c-card-1--empty:before { content: ''; display: block; position: absolute; top: -20px; left: -20px; right: -20px; height: 50%; z-index: 0; transition: all 0.5s ease; opacity: 0; background: linear-gradient(to left, transparent 50%, #83F8DD 50%); background-size: 200% 100%; background-position: right 0px bottom; }
+.c-card .c-link:before, .c-card-1 .c-link:before, .c-card-1--empty .c-link:before { content: ''; display: block; position: absolute; top: -20px; left: -20px; right: -20px; height: 50%; z-index: 0; transition: all 0.5s ease; opacity: 0; background: linear-gradient(to left, transparent 50%, #83F8DD 50%); background-size: 200% 100%; background-position: right 0px bottom; }
 
-.no-touch .c-card:hover, .no-touch .c-card-1:hover, .no-touch .c-card-1--empty:hover { cursor: pointer; }
+.c-card .c-link:hover, .c-card-1 .c-link:hover, .c-card-1--empty .c-link:hover { cursor: pointer; }
 
-.no-touch .c-card:hover:before, .no-touch .c-card-1:hover:before, .no-touch .c-card-1--empty:hover:before { background-position: left bottom; opacity: 1; }
+.c-card .c-link:hover:before, .c-card-1 .c-link:hover:before, .c-card-1--empty .c-link:hover:before { background-position: left bottom; opacity: 1; }
 
-.no-touch .c-card:hover .meta:before, .no-touch .c-card-1:hover .meta:before, .no-touch .c-card-1--empty:hover .meta:before, .no-touch .c-card:hover .meta-exposition:before, .no-touch .c-card-1:hover .meta-exposition:before, .no-touch .c-card-1--empty:hover .meta-exposition:before, .no-touch .c-card:hover .meta-exposition--white:before, .no-touch .c-card-1:hover .meta-exposition--white:before, .no-touch .c-card-1--empty:hover .meta-exposition--white:before, .no-touch .c-card:hover .meta-gray:before, .no-touch .c-card-1:hover .meta-gray:before, .no-touch .c-card-1--empty:hover .meta-gray:before, .no-touch .c-card:hover .meta-edition:before, .no-touch .c-card-1:hover .meta-edition:before, .no-touch .c-card-1--empty:hover .meta-edition:before, .no-touch .c-card:hover .meta--file:before, .no-touch .c-card-1:hover .meta--file:before, .no-touch .c-card-1--empty:hover .meta--file:before { background: white; }
+.c-card .c-link:hover .meta:before, .c-card-1 .c-link:hover .meta:before, .c-card-1--empty .c-link:hover .meta:before, .c-card .c-link:hover .meta-exposition:before, .c-card-1 .c-link:hover .meta-exposition:before, .c-card-1--empty .c-link:hover .meta-exposition:before, .c-card .c-link:hover .meta-exposition--white:before, .c-card-1 .c-link:hover .meta-exposition--white:before, .c-card-1--empty .c-link:hover .meta-exposition--white:before, .c-card .c-link:hover .meta-gray:before, .c-card-1 .c-link:hover .meta-gray:before, .c-card-1--empty .c-link:hover .meta-gray:before, .c-card .c-link:hover .meta-edition:before, .c-card-1 .c-link:hover .meta-edition:before, .c-card-1--empty .c-link:hover .meta-edition:before, .c-card .c-link:hover .meta--file:before, .c-card-1 .c-link:hover .meta--file:before, .c-card-1--empty .c-link:hover .meta--file:before { background: white; }
 
-.c-card:hover img, .c-card-1:hover img, .c-card-1--empty:hover img { transform: scale(1.05); }
+.c-card .c-link:hover img, .c-card-1 .c-link:hover img, .c-card-1--empty .c-link:hover img { transform: scale(1.05); }
 
 .c-card-1 .c-card-title, .c-card-1--empty .c-card-title { height: calc( 1.2em * 4); position: relative; }
 
@@ -2135,7 +2135,7 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 .c-card-1 .c-card-footer, .c-card-1--empty .c-card-footer { border-top: 1px solid #F0ECEC; padding-top: 15px; }
 
-.bg--gray .c-card-1 .c-card-footer, .bg--gray .c-card-1--empty .c-card-footer { border-color: #d2d2d2; }
+.bg--gray .c-card-1 .c-card-footer, .bg--gray .c-card-1--empty .c-card-footer { border-color: #DCDCDC; }
 
 .c-card-1 .c-card-action, .c-card-1--empty .c-card-action { margin-top: 5px; }
 
@@ -2526,6 +2526,8 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 .mod_aside:before { content: ''; position: absolute; background-color: white; z-index: 999; top: 0; bottom: 0; left: -5002px; width: 5000px; }
 
 .bg--gray .mod_aside:before { background-color: #f0ecec; }
+
+.bg--gray .tns-nav { background-color: #DCDCDC; }
 
 .mod_title { position: relative; z-index: 9999; }
 

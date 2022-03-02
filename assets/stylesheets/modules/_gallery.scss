@@ -353,9 +353,15 @@
         left: -5002px;
         width: 5000px;
     }
-    .bg--gray .mod_aside:before {
-        background-color: #f0ecec;
-    
+    .bg--gray {
+
+        .mod_aside:before {
+            background-color: #f0ecec;
+        
+        }
+        .tns-nav {
+            background-color: #DCDCDC;
+        }
     }
     
     .mod_title {
