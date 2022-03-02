@@ -2262,11 +2262,11 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 @media (max-width: 880px) { .site-subtitle { display: none; } }
 
-.site-header { height: 124px; position: relative; z-index: 99999; background-color: rgba(255, 255, 255, 0.75); top: 0; -webkit-transition: top 0.5s, opacity 0.5s; -moz-transition: top 0.5s, opacity 0.5s; -o-transition: top 0.5s, opacity 0.5s; transition: top 0.5s, opacity 0.5s; }
+.site-header { height: 124px; position: relative; z-index: 99999; background: rgba(255, 255, 255, 0.75); background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%); top: 0; -webkit-transition: top 0.5s, opacity 0.5s; -moz-transition: top 0.5s, opacity 0.5s; -o-transition: top 0.5s, opacity 0.5s; transition: top 0.5s, opacity 0.5s; }
 
 .site-header.nav-up { top: -124px; }
 
-.site-header.white { background-color: #fff; }
+.site-header.white { background: #fff; }
 
 .site-header.white.nav-down { box-shadow: 0px 0px 12px #F0ECEC; }
 
