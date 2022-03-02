@@ -388,6 +388,10 @@
         @extend %mb-4;
     }
 }
+.c-opening--passed {
+    @extend .c-opening;
+    opacity: .5;
+}
 .c-opening--bordered {
     @extend .c-opening;
     margin-bottom: 30px;

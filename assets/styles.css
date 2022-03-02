@@ -751,9 +751,9 @@ td, th { padding: 0; }
 
 .c-card-3 .c-card-copy, .c-card-5 .c-card-media, .c-card-6 .c-card-group, .c-card-8 .c-card-media, .c-copy p, .mod_slider .mod_title, .mod_slider--artworks .mod_title { margin-bottom: 15px; }
 
-@media (max-width: 880px) { .c-card-2 .c-card-intro, .c-card-2 .c-card-media, .c-card-7 .c-card-media, .c-opening .c-opening-title, .c-opening--bordered .c-opening-title, .c-tarifs .c-opening-title { margin-bottom: 20px; } }
+@media (max-width: 880px) { .c-card-2 .c-card-intro, .c-card-2 .c-card-media, .c-card-7 .c-card-media, .c-opening .c-opening-title, .c-opening--passed .c-opening-title, .c-opening--bordered .c-opening-title, .c-tarifs .c-opening-title { margin-bottom: 20px; } }
 
-@media (min-width: 880px) { .c-card-2 .c-card-intro, .c-card-2 .c-card-media, .c-card-7 .c-card-media, .c-opening .c-opening-title, .c-opening--bordered .c-opening-title, .c-tarifs .c-opening-title { margin-bottom: 25px; } }
+@media (min-width: 880px) { .c-card-2 .c-card-intro, .c-card-2 .c-card-media, .c-card-7 .c-card-media, .c-opening .c-opening-title, .c-opening--passed .c-opening-title, .c-opening--bordered .c-opening-title, .c-tarifs .c-opening-title { margin-bottom: 25px; } }
 
 @media (max-width: 880px) { .page_cover { margin-bottom: 25px; } }
 
@@ -2184,9 +2184,11 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 .truncated-line--6 { -webkit-line-clamp: 6; }
 
 /* COMPONENT OPENINGS HOURS (02.2022) */
-.c-opening, .c-opening--bordered, .c-tarifs { max-width: 400px; }
+.c-opening, .c-opening--passed, .c-opening--bordered, .c-tarifs { max-width: 400px; }
 
-.c-opening p, .c-opening--bordered p, .c-tarifs p { margin-bottom: 5px; }
+.c-opening p, .c-opening--passed p, .c-opening--bordered p, .c-tarifs p { margin-bottom: 5px; }
+
+.c-opening--passed { opacity: .5; }
 
 .c-opening--bordered, .c-tarifs { margin-bottom: 30px; width: 75%; }
 
