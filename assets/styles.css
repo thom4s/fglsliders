@@ -769,9 +769,9 @@ td, th { padding: 0; }
 
 @media (min-width: 880px) { .c-chapo, .c-personas, .c-personas-title, .c-event-id .c-card-title, .c-event-cover, .mod_mosaic figure { margin-bottom: 55px; } }
 
-@media (max-width: 880px) { .c-card-5, .mod_content .mod_title { margin-bottom: 45px; } }
+@media (max-width: 880px) { .c-card-5, .c-opening, .c-opening--passed, .c-opening--bordered, .c-tarifs, .mod_content .mod_title { margin-bottom: 45px; } }
 
-@media (min-width: 880px) { .c-card-5, .mod_content .mod_title { margin-bottom: 90px; } }
+@media (min-width: 880px) { .c-card-5, .c-opening, .c-opening--passed, .c-opening--bordered, .c-tarifs, .mod_content .mod_title { margin-bottom: 90px; } }
 
 @media (max-width: 880px) { .c-card-6, .mod-copy .mod-copy-openings, .mod-copy--festival .mod-copy-openings, .mod-playerfull, .mod_titles, .m_separators, .mod_mosaic, .mod_visites_list, .mod_navigation, .mod_event_head .mod_id, .mod_content, .mod_slider, .mod_slider--artworks, .mod_slider:last-child, .mod_slider--artworks:last-child, .mod_carnetprod { margin-bottom: 70px; } }
 
@@ -2234,13 +2234,15 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 .truncated-line--6 { -webkit-line-clamp: 6; }
 
 /* COMPONENT OPENINGS HOURS (02.2022) */
-.c-opening, .c-opening--passed, .c-opening--bordered, .c-tarifs { max-width: 400px; }
+@media (min-width: 880px) { .c-opening, .c-opening--passed, .c-opening--bordered, .c-tarifs { max-width: 400px; } }
 
 .c-opening p, .c-opening--passed p, .c-opening--bordered p, .c-tarifs p { margin-bottom: 5px; }
 
 .c-opening--passed { color: #777777; }
 
-.c-opening--bordered, .c-tarifs { margin-bottom: 30px; width: 75%; }
+.c-opening--bordered, .c-tarifs { margin-bottom: 30px; }
+
+@media (min-width: 880px) { .c-opening--bordered, .c-tarifs { width: 80%; } }
 
 .c-opening--bordered p:not(:last-child), .c-tarifs p:not(:last-child) { border-bottom: 1px solid #F0ECEC; padding-bottom: 10px; }
 

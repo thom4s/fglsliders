@@ -101,7 +101,7 @@
     .c-card-action {
         margin-top: 5px;
     }
-    
+
     .c-card-dates p,
     .c-card-dates .ft_h5,
     .ft_h5_g {
@@ -447,8 +447,11 @@
  */
 
 .c-opening {
-    max-width: 400px;
+    @extend %mb-8;
 
+    @include at-least(medium) {
+        max-width: 400px;
+    }
     p {
         margin-bottom: 5px;
     }
@@ -464,7 +467,10 @@
 .c-opening--bordered {
     @extend .c-opening;
     margin-bottom: 30px;
-    width: 75%;
+
+    @include at-least(medium) {
+        width: 80%;
+    }
 
     p:not(:last-child) {
         border-bottom: 1px solid $gray_light;
