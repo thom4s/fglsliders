@@ -83,12 +83,14 @@ body {
 
     img {
       max-height: 70%;
+      @include up-to(medium) {
+        width: auto;
+      }
     }
 
     @include up-to(medium) {
       text-align: left;
       justify-content: flex-end;
-      align-items: flex-start;
       padding: 0 2em;
 
       .meta-exposition {
