@@ -2187,6 +2187,8 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 .c-card-8 p { margin-bottom: 0; }
 
+.c-card-8 .ft_p1_g { font-size: 1.5rem; }
+
 .c-event-id .c-card-openings { border-top: 1px solid #F0ECEC; padding-top: 15px; margin-top: 15px; }
 
 .c-event-id p { margin: 0; }
@@ -2626,7 +2628,11 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 .mod_slider .mod_title, .mod_slider--artworks .mod_title { padding-top: 40px; }
 
-.mod_slider .mod_aside, .mod_slider--artworks .mod_aside { padding-bottom: 75px; padding-top: 40px; }
+.mod_slider .mod_aside, .mod_slider--artworks .mod_aside { padding-bottom: 75px; }
+
+@media (min-width: 880px) { .mod_slider .mod_aside, .mod_slider--artworks .mod_aside { padding-top: 40px; } }
+
+@media (max-width: 880px) { .mod_slider .mod_aside, .mod_slider--artworks .mod_aside { padding-top: 20px; } }
 
 .mod_slider + .mod_slider, .mod_slider--artworks + .mod_slider, .mod_slider + .mod_slider--artworks, .mod_slider--artworks + .mod_slider--artworks { margin-top: -110px; }
 

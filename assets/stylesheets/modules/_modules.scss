@@ -347,7 +347,12 @@
 	}
 	.mod_aside {
 		padding-bottom: 75px;
-		padding-top: 40px;
+		@include at-least(medium) {
+			padding-top: 40px;
+		}
+		@include up-to(medium) {
+			padding-top: 20px;
+		}
 	}
 
 	&:last-child {
