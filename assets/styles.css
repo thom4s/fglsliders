@@ -761,9 +761,9 @@ td, th { padding: 0; }
 
 @media (min-width: 880px) { .page_cover { margin-bottom: 35px; } }
 
-@media (max-width: 880px) { .c-card-persona, .c-section-title h2, .c-card-6 .c-card-title, .c-opening-group, .slide_medium, .slide_medium--artworks, .mod_content .mod_title h2 { margin-bottom: 30px; } }
+@media (max-width: 880px) { .c-card-persona, .c-section-title h2, .c-card-6 .c-card-title, .c-opening-group, .slide_medium, .slide_artworks, .mod_content .mod_title h2 { margin-bottom: 30px; } }
 
-@media (min-width: 880px) { .c-card-persona, .c-section-title h2, .c-card-6 .c-card-title, .c-opening-group, .slide_medium, .slide_medium--artworks, .mod_content .mod_title h2 { margin-bottom: 40px; } }
+@media (min-width: 880px) { .c-card-persona, .c-section-title h2, .c-card-6 .c-card-title, .c-opening-group, .slide_medium, .slide_artworks, .mod_content .mod_title h2 { margin-bottom: 40px; } }
 
 @media (max-width: 880px) { .c-chapo, .c-personas, .c-personas-title, .c-event-id .c-card-title, .c-event-cover, .mod_mosaic figure { margin-bottom: 40px; } }
 
@@ -2529,13 +2529,13 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 @media (max-width: 1040px) { .slide_wrapper--artworks { left: 0; } }
 
-.slide_medium--artworks img { width: auto; }
+.slide_artworks img { width: auto; }
 
-@media (min-width: 880px) { .slide_medium--artworks img { height: 500px; } }
+@media (min-width: 880px) { .slide_artworks img { height: 500px; } }
 
-@media (max-width: 880px) { .slide_medium--artworks img { height: 275px; } }
+@media (max-width: 880px) { .slide_artworks img { height: 275px; } }
 
-.slide_medium--artworks p { max-width: 350px; }
+.slide_artworks p { max-width: 350px; }
 
 .mod_aside:before { content: ''; position: absolute; background-color: white; z-index: 999; top: 0; bottom: 0; left: -5002px; width: 5000px; }
 
