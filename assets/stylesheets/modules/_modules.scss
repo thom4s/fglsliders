@@ -123,9 +123,6 @@
 				display: flex;
 				flex-direction: column;
 			}
-			.fl-order {
-				order: 2;
-			}
 		}
 	}
 
@@ -241,10 +238,22 @@
 
 
 // VISITE CARDS LIST
-.mod_visites_list {
+.mod_pages_list {
     @extend %mb-9;
-	
+
+	.row {
+		@include up-to(medium) {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+	.flex-s-2 {
+        order: 2
+    }
 }
+
+
+
 
 // Events Navigation
 	.mod_navigation {

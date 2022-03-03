@@ -773,9 +773,9 @@ td, th { padding: 0; }
 
 @media (min-width: 880px) { .c-card-5, .c-opening, .c-opening--passed, .c-opening--bordered, .c-tarifs, .mod_content .mod_title { margin-bottom: 90px; } }
 
-@media (max-width: 880px) { .c-card-6, .mod-copy .mod-copy-openings, .mod-copy--festival .mod-copy-openings, .mod-playerfull, .mod_titles, .m_separators, .mod_mosaic, .mod_visites_list, .mod_navigation, .mod_event_head .mod_id, .mod_content, .mod_slider, .mod_slider--artworks, .mod_slider:last-child, .mod_slider--artworks:last-child, .mod_carnetprod { margin-bottom: 70px; } }
+@media (max-width: 880px) { .c-card-6, .mod-copy .mod-copy-openings, .mod-copy--festival .mod-copy-openings, .mod-playerfull, .mod_titles, .m_separators, .mod_mosaic, .mod_pages_list, .mod_navigation, .mod_event_head .mod_id, .mod_content, .mod_slider, .mod_slider--artworks, .mod_slider:last-child, .mod_slider--artworks:last-child, .mod_carnetprod { margin-bottom: 70px; } }
 
-@media (min-width: 880px) { .c-card-6, .mod-copy .mod-copy-openings, .mod-copy--festival .mod-copy-openings, .mod-playerfull, .mod_titles, .m_separators, .mod_mosaic, .mod_visites_list, .mod_navigation, .mod_event_head .mod_id, .mod_content, .mod_slider, .mod_slider--artworks, .mod_slider:last-child, .mod_slider--artworks:last-child, .mod_carnetprod { margin-bottom: 110px; } }
+@media (min-width: 880px) { .c-card-6, .mod-copy .mod-copy-openings, .mod-copy--festival .mod-copy-openings, .mod-playerfull, .mod_titles, .m_separators, .mod_mosaic, .mod_pages_list, .mod_navigation, .mod_event_head .mod_id, .mod_content, .mod_slider, .mod_slider--artworks, .mod_slider:last-child, .mod_slider--artworks:last-child, .mod_carnetprod { margin-bottom: 110px; } }
 
 .flex-justify { display: flex; justify-content: space-between; }
 
@@ -2575,8 +2575,7 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 .mod-copy.open, .open.mod-copy--festival { max-height: 3000px; }
 
 @media (max-width: 1040px) { .mod-copy, .mod-copy--festival { max-height: 600px; }
-  .mod-copy .row, .mod-copy--festival .row { display: flex; flex-direction: column; }
-  .mod-copy .fl-order, .mod-copy--festival .fl-order { order: 2; } }
+  .mod-copy .row, .mod-copy--festival .row { display: flex; flex-direction: column; } }
 
 .mod-copy--festival { max-height: 500px; }
 
@@ -2605,6 +2604,10 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 @media (min-width: 1040px) { .mod_mosaic-grid[data-columns]::before { content: '3 .m-4col'; } }
 
 .mod_more { box-shadow: 0 -20px 20px #F0ECEC; }
+
+@media (max-width: 880px) { .mod_pages_list .row { display: flex; flex-direction: column; } }
+
+.mod_pages_list .flex-s-2 { order: 2; }
 
 .mod_navigation .mod_upper { display: flex; }
 
