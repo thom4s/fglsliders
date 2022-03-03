@@ -315,7 +315,10 @@
 	}
 
 	.mod_aside {
-		padding-bottom: 90px;
+		@include at-least(medium) {
+			padding-bottom: 90px;
+		}
+		
 
 		& > :last-child {
 			margin-bottom: 0;
@@ -343,7 +346,10 @@
 
 	.mod_title {
 		@extend %mb-3;
-		padding-top: 40px;
+		@include at-least(medium) {
+			padding-top: 40px;
+		}
+		
 	}
 	.mod_aside {
 		padding-bottom: 75px;

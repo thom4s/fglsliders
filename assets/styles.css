@@ -2618,7 +2618,7 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 @media (max-width: 880px) { .mod_navigation .c-navItem:first-child { margin-bottom: 70px; } }
 
-.mod_content .mod_aside { padding-bottom: 90px; }
+@media (min-width: 880px) { .mod_content .mod_aside { padding-bottom: 90px; } }
 
 .mod_content .mod_aside > :last-child { margin-bottom: 0; padding-bottom: 0; }
 
@@ -2626,7 +2626,7 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 .mod_content + .mod_content { margin-top: -110px; }
 
-.mod_slider .mod_title, .mod_slider--artworks .mod_title { padding-top: 40px; }
+@media (min-width: 880px) { .mod_slider .mod_title, .mod_slider--artworks .mod_title { padding-top: 40px; } }
 
 .mod_slider .mod_aside, .mod_slider--artworks .mod_aside { padding-bottom: 75px; }
 
