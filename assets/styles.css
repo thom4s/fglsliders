@@ -2699,11 +2699,17 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 .news_feed.top.fixed_top, .top.fixed_top.news_feed--event { top: 0; }
 
+@media (max-width: 880px) { .news_feed.top, .top.news_feed--event { top: 111px; } }
+
 .scrolling .news_feed.top, .scrolling .top.news_feed--event { opacity: 0; }
 
 .news_feed.is-relative, .is-relative.news_feed--event { position: relative !important; top: auto !important; margin: 20px 0 30px; }
 
-.news_feed--event { color: black; text-transform: none; height: 50px; }
+.news_feed--event { color: black; text-transform: none; }
+
+@media (max-width: 880px) { .news_feed--event { height: 40px; } }
+
+@media (min-width: 880px) { .news_feed--event { height: 50px; } }
 
 .news_feed--event.is-relative { margin-top: -35px; opacity: 1 !important; }
 

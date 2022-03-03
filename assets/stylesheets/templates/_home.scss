@@ -115,6 +115,9 @@
 		&.fixed_top {
 			top: 0;
 		}
+		@include up-to(medium) {
+			top: 111px;
+		}
 	}
 
 	.scrolling &.top {
@@ -129,10 +132,15 @@
 }
 .news_feed--event {
 	@extend .news_feed;
-
 	color: black;
 	text-transform: none;
-	height: 50px; 
+
+	@include up-to(medium) {
+		height: 40px; 
+	}
+	@include at-least(medium) {
+		height: 50px; 
+	}
 
 	&.is-relative {
 		margin-top: -35px;
