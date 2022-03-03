@@ -195,6 +195,7 @@ $one_col: (100% - ($gutter * ($cols - 1))) / $cols;
     width: ($one_col * $num) + ($gutter * ($num - 1));
     float: left;
     position: relative;
+    display: inherit;
 }
 
 @mixin sub_cols($num_child, $num_parent) {
