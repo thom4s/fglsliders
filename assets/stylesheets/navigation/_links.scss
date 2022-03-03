@@ -65,6 +65,10 @@ a:active {
 	&.full {
 		width: 100%;
 	}
+
+	@include up-to(medium) {
+		font-size: 1.7rem;
+	}
 }
 
 .btn--gray {
@@ -106,67 +110,71 @@ a:active {
 	display: inline-block;
 }
 .pulse_link--left {
-	position: relative;
-	display: inline-block;
+	@extend .pulse_link;
 }
 .el {
 	word-break: keep-all;
 	word-wrap: normal;
+	position: relative;
+	transition: left .3s;
+	left: 0;
 }
 .no-touch .pulse_link:hover .el {
-	display: inline-block;
-		animation-name: pulse;
-    animation-duration: 1s ;
-    animation-timing-function: ease;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    animation-fill-mode: none;
-    animation-play-state: running;
+	left: 7px
+	// display: inline-block;
+	// animation-name: pulse;
+    // animation-duration: 1s ;
+    // animation-timing-function: ease;
+    // animation-delay: 0s;
+    // animation-iteration-count: infinite;
+    // animation-direction: normal;
+    // animation-fill-mode: none;
+    // animation-play-state: running;
 }
 .no-touch .pulse_link--left:hover .el {
-	display: inline-block;
-		animation-name: pulse-left;
-    animation-duration: 1s ;
-    animation-timing-function: ease;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    animation-fill-mode: none;
-    animation-play-state: running;
+	left: -7px
+	// display: inline-block;
+	// 	animation-name: pulse-left;
+    // animation-duration: 1s ;
+    // animation-timing-function: ease;
+    // animation-delay: 0s;
+    // animation-iteration-count: infinite;
+    // animation-direction: normal;
+    // animation-fill-mode: none;
+    // animation-play-state: running;
 }
 .pulse_link:active {
 	.el {
-    transform: translate(5px, 0);
+    	transform: translate(5px, 0);
 	}
 }
 .pulse_link--left:active {
 	.el {
-    transform: translate(-5px, 0);
+    	transform: translate(-5px, 0);
 	}
 }
-@keyframes pulse {
-  0%  {
-		transform: scale(1);
-    transform: translate(0, 0);
-  }
-	50%  {
-    transform: translate(5px, 0);
-  }
-	100%  {
-    transform: scale(0);
-  }
-}
-@keyframes pulse-left {
-  0%  {
-		transform: scale(1);
-    transform: translate(0, 0);
-  }
-	50%  {
-    transform: translate(-5px, 0);
-  }
-	100%  {
-    transform: scale(0);
-  }
-}
+// @keyframes pulse {
+//   0%  {
+// 		transform: scale(1);
+//     transform: translate(0, 0);
+//   }
+// 	50%  {
+//     transform: translate(5px, 0);
+//   }
+// 	100%  {
+//     transform: scale(0);
+//   }
+// }
+// @keyframes pulse-left {
+//   0%  {
+// 		transform: scale(1);
+//     transform: translate(0, 0);
+//   }
+// 	50%  {
+//     transform: translate(-5px, 0);
+//   }
+// 	100%  {
+//     transform: scale(0);
+//   }
+// }
 

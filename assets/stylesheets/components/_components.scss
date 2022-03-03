@@ -321,11 +321,27 @@
     p {
         margin: 0;
     }
+    .c-card-dates {
+        p {
+            margin-bottom: 5px;
+        
+            @include up-to(medium) {
+                margin-bottom: 10px;
+            }
+        }
+    }
     .c-card-action {
         align-items: center;
         padding-top: 15px;
         margin-top: 15px;
         border-top: 1px solid $gray_light;
+    }
+    .c-card-public {
+        @include up-to(medium) {
+            .ft_h5_g {
+                font-size: 1.9rem;
+            }
+        }
     }
 }
 
