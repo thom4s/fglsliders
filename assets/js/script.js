@@ -2479,6 +2479,14 @@ jQuery( document ).ready(function( ) {
 
 
 
+	const mod_nocover = $('.mod_nocover');
+
+	if( mod_nocover.length == 0) {
+		$("#header").addClass('head_w_cover')
+	}
+
+
+
 	/* 
 	* END READY
 	*******************/ 
