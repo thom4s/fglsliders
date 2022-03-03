@@ -75,6 +75,8 @@
 
 .c-personas {
 	@extend %mb-7;
+
+
 }
 	.c-personas-title {
 		@extend %mb-7;
@@ -89,6 +91,12 @@
     p, h4 {
         @extend %mb-1;
     }
+	.ft_p1_g{
+		@include up-to(medium) {
+			font-size: 1.5rem;
+		}
+		
+	}
 }
 
 
