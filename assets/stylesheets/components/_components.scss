@@ -104,7 +104,8 @@
 }
 
     .c-card-dates p,
-    .c-card-dates .ft_h5 {
+    .c-card-dates .ft_h5,
+    .ft_h5_g {
 
         @include up-to(medium) {
             font-size: 1.7rem;
