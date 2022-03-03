@@ -2149,6 +2149,8 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 .c-card-2 .c-card-media { max-width: 300px; }
 
+.c-card-2 .artist_portrait_outer { width: auto; }
+
 .c-card-3 .c-card-media { position: relative; }
 
 .c-card-3 img { transition: transform .2s; transform: scale(0.95) translateY(2.5%) translateX(-2.5%); box-shadow: 0 0 10px #d2d2d2; }
