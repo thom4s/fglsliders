@@ -331,7 +331,13 @@
 	}
 
 	& + & {
-		margin-top: -110px
+		@include up-to(medium) {
+			margin-top: 0;
+		}
+		@include at-least(medium) {
+			margin-top: -110px
+		}
+		
 	}
 	
 }
@@ -352,12 +358,13 @@
 		
 	}
 	.mod_aside {
-		padding-bottom: 75px;
 		@include at-least(medium) {
 			padding-top: 40px;
+			padding-bottom: 75px;
 		}
 		@include up-to(medium) {
 			padding-top: 20px;
+			padding-bottom: 25px;
 		}
 	}
 
@@ -366,7 +373,9 @@
 	}
 
 	& + & {
-		margin-top: -110px;
+		@include at-least(medium) {
+			margin-top: -110px;
+		}
 	}
 }
 

@@ -195,7 +195,7 @@ $one_col: (100% - ($gutter * ($cols - 1))) / $cols;
     width: ($one_col * $num) + ($gutter * ($num - 1));
     float: left;
     position: relative;
-    display: inherit;
+    display: block;
 }
 
 @mixin sub_cols($num_child, $num_parent) {
@@ -242,7 +242,10 @@ $one_col: (100% - ($gutter * ($cols - 1))) / $cols;
     }
     .row > [class*="col"]:last-child { 
       padding-right: 0 !important;
-  }
+    }
+    .row .m-12col {
+      padding-left: 0 !important;
+    }
     .is-centered {
       margin-left: auto !important;
       margin-right: auto !important;
