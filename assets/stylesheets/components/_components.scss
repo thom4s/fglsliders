@@ -143,6 +143,10 @@
 
     .c-card-media {
         @extend %mb-4;
+
+        @include up-to(medium) {
+            margin: auto;
+        }
         max-width: 300px;
     } 
     .artist_portrait_outer {
