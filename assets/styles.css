@@ -3953,7 +3953,7 @@ body { overflow-y: scroll; -webkit-overflow-scrolling: touch; position: relative
 
 @media (max-width: 880px) { .page_header_visuel img { width: auto; } }
 
-@media (max-width: 880px) { .page_header_visuel { text-align: left; justify-content: flex-end; padding: 0 2em; }
+@media (max-width: 880px) { .page_header_visuel { text-align: left; justify-content: flex-end; padding: 0 2em; height: 461px; }
   .page_header_visuel .meta-exposition { color: #fff; } }
 
 @media (min-width: 880px) { .page_header_visuel { height: 80vh; } }
