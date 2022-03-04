@@ -158,6 +158,12 @@
     .artist_portrait_outer {
         width: auto;
     }
+    .ft_p1_g {
+        @include up-to(medium) {
+            font-size: 1.5rem;
+        }
+    }
+
 }
 
 
@@ -173,6 +179,14 @@
         transition: transform .2s;
         transform: scale(.95) translateY(2.5%) translateX(-2.5%);
         box-shadow: 0 0 10px $gray_medium;
+        width: auto;
+        
+        @include up-to(medium) {
+            height: 275px;
+        }
+        @include at-least(medium) {
+            height: 400px;
+        }
     }
     .c-card-meta {
         @extend %mb-1;

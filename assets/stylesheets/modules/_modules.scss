@@ -373,7 +373,7 @@
 			padding-bottom: 75px;
 		}
 		@include up-to(medium) {
-			padding-top: 20px;
+			padding-top: 0;
 			padding-bottom: 25px;
 		}
 	}
@@ -393,6 +393,13 @@
 			@include up-to(medium) {
 				padding-top: 30px;
 			}
+		}
+	}
+
+	.c-card-2 {
+		@include up-to(medium) {
+			border-bottom: 1px solid $gray_light;
+			padding-bottom: 25px;
 		}
 	}
 }
