@@ -2137,13 +2137,15 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 @media (max-width: 880px) { .c-card-1 .c-card-dates p, .c-card-1--empty .c-card-dates p, .c-card-1 .c-card-dates .ft_h5, .c-card-1--empty .c-card-dates .ft_h5, .c-card-1 .c-card-dates .ft_h5_g, .c-card-1--empty .c-card-dates .ft_h5_g, .c-card-1 .ft_h5_g, .c-card-1--empty .ft_h5_g { font-size: 1.7rem; } }
 
+@media (max-width: 880px) { .c-card-1 .ft_p1_g, .c-card-1--empty .ft_p1_g { font-size: 1.5rem; } }
+
 .c-card-1--empty:before { content: none; }
 
 .c-card-2 .c-card-title h2 { margin-bottom: 0; }
 
 .c-card-2 .c-card-media { max-width: 300px; }
 
-@media (max-width: 880px) { .c-card-2 .c-card-media { margin: auto; } }
+@media (max-width: 880px) { .c-card-2 .c-card-media { margin-left: auto; margin-right: auto; } }
 
 .c-card-2 .artist_portrait_outer { width: auto; }
 
@@ -2652,6 +2654,8 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 @media (max-width: 880px) { .mod_slider .mod_aside, .mod_slider--artworks .mod_aside { padding-top: 20px; padding-bottom: 25px; } }
 
 @media (min-width: 880px) { .mod_slider + .mod_slider, .mod_slider--artworks + .mod_slider, .mod_slider + .mod_slider--artworks, .mod_slider--artworks + .mod_slider--artworks { margin-top: -110px; } }
+
+@media (max-width: 880px) { .mod_slider.bg--gray .mod_title, .bg--gray.mod_slider--artworks .mod_title { padding-top: 30px; } }
 
 .mod_carnetprod .mod_inner { padding: 50px 0; min-height: 200px; background-color: #F0ECEC; box-shadow: inset 0 -10px 10px #d2d2d2; }
 

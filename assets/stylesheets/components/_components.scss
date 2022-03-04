@@ -111,6 +111,11 @@
         }
 
     }
+    .ft_p1_g {
+        @include up-to(medium) {
+            font-size: 1.5rem;
+        }
+    }
 
 }
 
@@ -145,7 +150,8 @@
         @extend %mb-4;
 
         @include up-to(medium) {
-            margin: auto;
+            margin-left: auto;
+            margin-right: auto;
         }
         max-width: 300px;
     } 
