@@ -267,6 +267,9 @@
         opacity: 0.1;
         cursor: auto;
     }
+    @include up-to(medium) {
+        padding-top: 10px;
+    }
 }
 
 
@@ -279,6 +282,10 @@
     width: 70%;
     margin: auto;
     bottom: -14px;
+
+    @include up-to(medium) {
+        bottom: -25px;
+    }
     
     button {
         width: auto;

@@ -84,16 +84,32 @@
         @extend %mb-2;
     }
     .c-card-title {
-        height: calc( 1.2em * 4);
+        
         position: relative;
+        @include up-to(medium) {
+            height: calc( 1.2em * 3);
+        }
+        @include at-least(medium) {
+            height: calc( 1.2em * 4);
+        }
     }
     .c-card-copy {
-        height: calc( 1.6em * 3 + 25px);
+        @include up-to(medium) {
+            height: calc( 1.6em * 3 + 10px);
+        }
+        @include at-least(medium) {
+            height: calc( 1.6em * 3 + 25px);
+        }
     }
     .c-card-footer {
         border-top: 1px solid #F0ECEC;
-        padding-top: 15px;
-
+       
+        @include up-to(medium) {
+            padding-top: 10px;
+        }
+        @include at-least(medium) {
+            padding-top: 15px;
+        }
         .bg--gray & {
             border-color: #DCDCDC;
         }
@@ -155,6 +171,7 @@
         }
         max-width: 300px;
     } 
+
     .artist_portrait_outer {
         width: auto;
     }
@@ -180,7 +197,7 @@
         transform: scale(.95) translateY(2.5%) translateX(-2.5%);
         box-shadow: 0 0 10px $gray_medium;
         width: auto;
-        
+
         @include up-to(medium) {
             height: 275px;
         }

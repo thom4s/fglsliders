@@ -2125,11 +2125,21 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 .c-card .c-link:hover img, .c-card-1 .c-link:hover img, .c-card-1--empty .c-link:hover img { transform: scale(1.05); }
 
-.c-card-1 .c-card-title, .c-card-1--empty .c-card-title { height: calc( 1.2em * 4); position: relative; }
+.c-card-1 .c-card-title, .c-card-1--empty .c-card-title { position: relative; }
 
-.c-card-1 .c-card-copy, .c-card-1--empty .c-card-copy { height: calc( 1.6em * 3 + 25px); }
+@media (max-width: 880px) { .c-card-1 .c-card-title, .c-card-1--empty .c-card-title { height: calc( 1.2em * 3); } }
 
-.c-card-1 .c-card-footer, .c-card-1--empty .c-card-footer { border-top: 1px solid #F0ECEC; padding-top: 15px; }
+@media (min-width: 880px) { .c-card-1 .c-card-title, .c-card-1--empty .c-card-title { height: calc( 1.2em * 4); } }
+
+@media (max-width: 880px) { .c-card-1 .c-card-copy, .c-card-1--empty .c-card-copy { height: calc( 1.6em * 3 + 10px); } }
+
+@media (min-width: 880px) { .c-card-1 .c-card-copy, .c-card-1--empty .c-card-copy { height: calc( 1.6em * 3 + 25px); } }
+
+.c-card-1 .c-card-footer, .c-card-1--empty .c-card-footer { border-top: 1px solid #F0ECEC; }
+
+@media (max-width: 880px) { .c-card-1 .c-card-footer, .c-card-1--empty .c-card-footer { padding-top: 10px; } }
+
+@media (min-width: 880px) { .c-card-1 .c-card-footer, .c-card-1--empty .c-card-footer { padding-top: 15px; } }
 
 .bg--gray .c-card-1 .c-card-footer, .bg--gray .c-card-1--empty .c-card-footer { border-color: #DCDCDC; }
 
@@ -2531,7 +2541,11 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 .tns-controls button[disabled] { opacity: 0.1; cursor: auto; }
 
+@media (max-width: 880px) { .tns-controls { padding-top: 10px; } }
+
 .tns-nav { position: relative; background-color: #F0ECEC; display: flex; justify-content: space-between; max-width: 500px; width: 70%; margin: auto; bottom: -14px; }
+
+@media (max-width: 880px) { .tns-nav { bottom: -25px; } }
 
 .tns-nav button { width: auto; height: 3px; border: none; background: none; flex: 1; transition: all 1s; }
 
