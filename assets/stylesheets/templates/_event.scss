@@ -6,6 +6,32 @@
  */
 
 
+
+
+
+ // 20222
+
+.row.event-copy {
+	@include up-to(medium) {
+		display: flex;
+		flex-direction: column-reverse;
+
+		.mod-copy-openings {
+			margin-bottom: 0;
+
+			.c-opening {
+				margin-bottom: 20px;
+				padding-bottom: 20px;
+				border-bottom: 1px solid $gray_light;
+			}
+		}
+	}
+}
+
+
+
+ // Clean & REmove
+
 .event_title {
 	line-height: 0.9;
 	margin-bottom: 0;
@@ -784,3 +810,7 @@
 		}
 	}
 }
+
+
+
+
