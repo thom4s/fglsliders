@@ -583,7 +583,11 @@
     }
 
 .c-expo-titles {
-
+    @include up-to(medium) {
+        margin-bottom: 20px;
+        border-bottom: 1px solid $gray_light;
+        padding-bottom: 20px;
+    }
 }
     .c-expo-maintitle {
         @extend %mb-2;

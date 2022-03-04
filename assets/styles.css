@@ -2267,6 +2267,8 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 .c-more-label { padding-bottom: 5px; }
 
+@media (max-width: 880px) { .c-expo-titles { margin-bottom: 20px; border-bottom: 1px solid #F0ECEC; padding-bottom: 20px; } }
+
 /*--------------------------------------------------------------
 # Modules : 
 --------------------------------------------------------------*/
