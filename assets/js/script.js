@@ -1573,7 +1573,7 @@ jQuery( document ).ready(function( ) {
 
 	}
 
-	if( $('.mod-playerfull').length > 0 ) {
+	if( $('.mod-playerfull').length > 0 && isMobile ) {
 		trigger_event_video();
 	}
 

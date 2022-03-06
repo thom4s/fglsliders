@@ -171,6 +171,9 @@
 .c-section-title {
 	h2 {
 		@extend %mb-6;
+		@include up-to(medium) {
+			margin-bottom: 45px;
+		}
 	}
 }
 
