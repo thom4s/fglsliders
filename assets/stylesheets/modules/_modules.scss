@@ -435,6 +435,10 @@
 			border-bottom: 1px solid $gray_light;
 			padding-bottom: 20px;
 		}
+
+		.c-card-media {
+			max-width: none;
+		}
 	}
 }
 

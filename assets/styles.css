@@ -2697,6 +2697,8 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 @media (max-width: 880px) { .mod_slider .c-card-2, .mod_slider--artworks .c-card-2 { border-bottom: 1px solid #F0ECEC; padding-bottom: 20px; } }
 
+.mod_slider .c-card-2 .c-card-media, .mod_slider--artworks .c-card-2 .c-card-media { max-width: none; }
+
 .mod_carnetprod .mod_inner { padding: 50px 0; min-height: 200px; background-color: #F0ECEC; box-shadow: inset 0 -10px 10px #d2d2d2; }
 
 .m-howtocome { margin-bottom: 45px; }
