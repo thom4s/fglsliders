@@ -451,6 +451,17 @@
 
 
 .c-card-artwork {
+
+    .c-card-link {
+        @include up-to(medium) {
+            display: table;
+
+            .c-card-caption {
+                display: table-caption;
+                caption-side: bottom;
+            }
+        }
+    }
     .c-card-media {
         overflow: hidden;
         @extend %mb-2;
