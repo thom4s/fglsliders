@@ -2455,7 +2455,7 @@ jQuery( document ).ready(function( ) {
 
 			var slider_medium = tns({
 				container: slide,
-				gutter: 40,
+				gutter: 20,
 				items: 1.4,
 				controlsPosition: 'bottom',
 				navPosition: 'bottom',
@@ -2465,7 +2465,8 @@ jQuery( document ).ready(function( ) {
 				controlsText: ['', ''],
 				responsive: {
 					880: {
-						items: data_items
+						items: data_items,
+						gutter: 40,
 					}
 				}
 			});
