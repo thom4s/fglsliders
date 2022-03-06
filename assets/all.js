@@ -2582,8 +2582,13 @@ jQuery( document ).ready(function( ) {
 			e.preventDefault();
 
 			openContent.classList.toggle('reversed');
-			document.querySelector('.mod-copy').classList.toggle('open')
 
+			if( document.querySelector('.mod-copy').length > 0 ) {
+				document.querySelector('.mod-copy').classList.toggle('open')
+			}
+
+			document.querySelector('.mod-copy--festival').classList.toggle('open')
+			
 			if( openContent.classList.contains('reversed') ) {
 				openContent.querySelector('.c-more-label').innerText = 'voir moins';
 			}

@@ -631,8 +631,11 @@
     }
 
 .c-expo-titles {
+    @include at-least(medium) {
+        margin-bottom: 105px;
+    }
     @include up-to(medium) {
-        margin-bottom: 20px;
+        margin-bottom: 25px;
         border-bottom: 1px solid $gray_light;
         padding-bottom: 20px;
     }
