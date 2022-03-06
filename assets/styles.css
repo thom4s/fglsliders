@@ -751,7 +751,7 @@ td, th { padding: 0; }
 
 .c-form-newsletter input:not([type="button"]), .c-card-1 .c-card-media, .c-card-1--empty .c-card-media, .c-card-2 .c-card-title, .c-card-3 .c-card-media, .c-card-3 .c-card-title, .c-event-id .c-card-meta, .c-card-artwork .c-card-media, .c-expo-maintitle { margin-bottom: 10px; }
 
-.c-card-3 .c-card-copy, .c-card-5 .c-card-media, .c-card-6 .c-card-group, .c-card-8 .c-card-media, .c-copy p, .mod_navigation .mod_upper, .mod_slider .mod_title, .mod_slider--artworks .mod_title { margin-bottom: 15px; }
+.c-card-3 .c-card-copy, .c-card-5 .c-card-media, .c-card-6 .c-card-group, .c-card-8 .c-card-media, .c-copy p, .mod_titles, .mod_navigation .mod_upper, .mod_slider .mod_title, .mod_slider--artworks .mod_title { margin-bottom: 15px; }
 
 @media (max-width: 880px) { .c-card-2 .c-card-intro, .c-card-2 .c-card-media, .c-card-7 .c-card-media, .c-opening .c-opening-title, .c-opening--passed .c-opening-title, .c-opening--bordered .c-opening-title, .c-tarifs .c-opening-title { margin-bottom: 20px; } }
 
@@ -773,9 +773,9 @@ td, th { padding: 0; }
 
 @media (min-width: 880px) { .c-card-5, .c-opening, .c-opening--passed, .c-opening--bordered, .c-tarifs, .mod_content .mod_title { margin-bottom: 90px; } }
 
-@media (max-width: 880px) { .c-card-6, .mod-copy .mod-copy-openings, .mod-playerfull, .mod_titles, .m_separators, .mod_mosaic, .mod_pages_list, .mod_navigation, .mod_event_head .mod_id, .mod_content, .mod_slider, .mod_slider--artworks, .mod_slider:last-child, .mod_slider--artworks:last-child, .mod_carnetprod { margin-bottom: 70px; } }
+@media (max-width: 880px) { .c-card-6, .mod-copy .mod-copy-openings, .mod-playerfull, .m_separators, .mod_mosaic, .mod_pages_list, .mod_navigation, .mod_event_head .mod_id, .mod_content, .mod_slider, .mod_slider--artworks, .mod_slider:last-child, .mod_slider--artworks:last-child, .mod_carnetprod { margin-bottom: 70px; } }
 
-@media (min-width: 880px) { .c-card-6, .mod-copy .mod-copy-openings, .mod-playerfull, .mod_titles, .m_separators, .mod_mosaic, .mod_pages_list, .mod_navigation, .mod_event_head .mod_id, .mod_content, .mod_slider, .mod_slider--artworks, .mod_slider:last-child, .mod_slider--artworks:last-child, .mod_carnetprod { margin-bottom: 110px; } }
+@media (min-width: 880px) { .c-card-6, .mod-copy .mod-copy-openings, .mod-playerfull, .m_separators, .mod_mosaic, .mod_pages_list, .mod_navigation, .mod_event_head .mod_id, .mod_content, .mod_slider, .mod_slider--artworks, .mod_slider:last-child, .mod_slider--artworks:last-child, .mod_carnetprod { margin-bottom: 110px; } }
 
 .flex-justify { display: flex; justify-content: space-between; }
 
@@ -2622,7 +2622,7 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 @media (max-width: 1040px) { .mod_slider--artworks .mod_aside { margin-top: 20px; padding-top: 10px; border-top: 1px solid #F0ECEC; } }
 
-.mod-playerfull { transition: all .4s; height: 32vh; width: 50vw; margin-left: auto; margin-right: auto; }
+.mod-playerfull { transition: all .4s; width: 50vw; margin-left: auto; margin-right: auto; }
 
 @media (max-width: 880px) { .mod-playerfull { background-color: #1A1A1A; height: 100vh; width: 102vw; position: relative; left: -1px; } }
 

@@ -162,7 +162,7 @@
 	.mod-playerfull {
 		@extend %mb-9;
 		transition: all .4s;
-		height: 32vh;
+		//height: 32vh;
 		width: 50vw;
 		margin-left: auto;
 		margin-right: auto;
@@ -204,7 +204,7 @@
 
 
 	.mod_titles {
-		@extend %mb-9;
+		@extend %mb-3;
 	}
 
 

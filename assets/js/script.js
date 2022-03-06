@@ -1556,6 +1556,11 @@ jQuery( document ).ready(function( ) {
 
 
 
+	/* VIDEO ANIMATION FOR NEW TPL EXPO (2022)
+	 TODO: faire conctionner... 
+	*/
+
+	// Methode #1 : 
 	function trigger_event_video() {
 
 		$(window).scroll(function() {
@@ -1574,8 +1579,55 @@ jQuery( document ).ready(function( ) {
 	}
 
 	if( $('.mod-playerfull').length > 0 && isMobile ) {
-		trigger_event_video();
+		// trigger_event_video();
 	}
+
+
+
+	// Methode #2 : AOS
+	const zoomElement = document.querySelector('.zoom')
+	const imgElement = document.querySelector('.zoom')
+	const WIDTH = document.body.clientWidth
+	const HEIGHT = zoomElement.clientHeight
+	const IMAGE_WIDTH = imgElement.clientWidth
+	const IMAGE_HEIGHT = imgElement.clientHeight
+	const ZOOM_SPEED = 200 // Lower is faster
+	const ZOOM_BREAKPOINT = WIDTH / IMAGE_WIDTH // When it should stop zooming in
+	const IMAGE_HEIGHT_MAX = IMAGE_HEIGHT * ZOOM_BREAKPOINT
+	const ABSOLUTE = ZOOM_BREAKPOINT * ZOOM_SPEED // Absolute position, when the Element reached maximum size
+	
+	
+	function anim() {
+		let scroll = window.scrollY
+		let temp = scroll / ZOOM_SPEED
+		let zoom = temp > 1 ? temp : 1
+	
+		// Only update the Elements scale, when we are below the breakpoint
+		if (zoom < ZOOM_BREAKPOINT) {
+			// Only scale the Image, so the Zoom element does not mess with the document width
+			//imgElement.style.transform = `scale(${zoom})`
+			imgElement.style.width = `calc( 50vw * ${zoom})`
+
+		} else {
+			// Makes sure the Element always reaches Max Size
+			// imgElement.style.transform = `scale(${ZOOM_BREAKPOINT})`
+			imgElement.style.width = `100vw`
+
+		}
+
+	}
+	
+	// Resets scroll position on every reload
+	if ('scrollRestoration' in history) {
+		history.scrollRestoration = 'manual'
+	}
+	
+	document.addEventListener('scroll', () => window.requestAnimationFrame(anim))
+	
+	
+
+
+
 
 
 
