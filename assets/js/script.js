@@ -1217,7 +1217,7 @@ jQuery( document ).ready(function( ) {
 
 	if( jQuery.browser.mobile || mobile_window ) {
 
-		$('.site-title').html('LA');
+		//$('.site-title').html('LA');
 
 		$('.agenda_trigger').find('br').remove();
 		
@@ -2538,15 +2538,15 @@ jQuery( document ).ready(function( ) {
  * On Window REsize
  *******************/ 
 
-$(window).on('resize', function(){
-	var win = $(this); 
-	if (win.height() < 880) { 
-		$('.site-logo h1').html('LA');
-	}
-	if (win.width() >= 880) { 
-		$('.site-logo h1').html('Lafayette <br>Anticipations');
-	}
-});
+// $(window).on('resize', function(){
+// 	var win = $(this); 
+// 	if (win.height() < 880) { 
+// 		$('.site-logo h1').html('LA');
+// 	}
+// 	if (win.width() >= 880) { 
+// 		$('.site-logo h1').html('Lafayette <br>Anticipations');
+// 	}
+// });
 
 
 
