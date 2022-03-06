@@ -1591,10 +1591,9 @@ jQuery( document ).ready(function( ) {
 	const HEIGHT = zoomElement.clientHeight
 	const IMAGE_WIDTH = imgElement.clientWidth
 	const IMAGE_HEIGHT = imgElement.clientHeight
-	const ZOOM_SPEED = 200 // Lower is faster
+	const ZOOM_SPEED = 300 // Lower is faster
 	const ZOOM_BREAKPOINT = WIDTH / IMAGE_WIDTH // When it should stop zooming in
 	const IMAGE_HEIGHT_MAX = IMAGE_HEIGHT * ZOOM_BREAKPOINT
-	const ABSOLUTE = ZOOM_BREAKPOINT * ZOOM_SPEED // Absolute position, when the Element reached maximum size
 	
 	
 	function anim() {
