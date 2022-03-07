@@ -1669,18 +1669,8 @@ jQuery( document ).ready(function( ) {
 
 
 
-	// Methode #2 : AOS
-	const zoomElement = document.querySelector('.zoom')
-	const imgElement = document.querySelector('.zoom')
-	const WIDTH = document.body.clientWidth
-	const HEIGHT = zoomElement.clientHeight
-	const IMAGE_WIDTH = imgElement.clientWidth
-	const IMAGE_HEIGHT = imgElement.clientHeight
-	const ZOOM_SPEED = 300 // Lower is faster
-	const ZOOM_BREAKPOINT = WIDTH / IMAGE_WIDTH // When it should stop zooming in
-	const IMAGE_HEIGHT_MAX = IMAGE_HEIGHT * ZOOM_BREAKPOINT
-	
-	
+	// Methode #2 
+
 	function anim() {
 		let scroll = window.scrollY
 		let temp = scroll / ZOOM_SPEED
@@ -1696,19 +1686,34 @@ jQuery( document ).ready(function( ) {
 			// Makes sure the Element always reaches Max Size
 			// imgElement.style.transform = `scale(${ZOOM_BREAKPOINT})`
 			imgElement.style.width = `100vw`
-
 		}
+	}
 
+	const zoomElement = document.querySelector('.zoom')
+	const imgElement = document.querySelector('.zoom')
+	if( zoomElement !== null ) {
+
+		const WIDTH = document.body.clientWidth
+		const HEIGHT = zoomElement.clientHeight
+		const IMAGE_WIDTH = imgElement.clientWidth
+		const IMAGE_HEIGHT = imgElement.clientHeight
+		const ZOOM_SPEED = 300 // Lower is faster
+		const ZOOM_BREAKPOINT = WIDTH / IMAGE_WIDTH // When it should stop zooming in
+		const IMAGE_HEIGHT_MAX = IMAGE_HEIGHT * ZOOM_BREAKPOINT
+
+		// Resets scroll position on every reload
+		if ('scrollRestoration' in history) {
+			history.scrollRestoration = 'manual'
+		}
+		
+		document.addEventListener('scroll', () => window.requestAnimationFrame(anim))
+		
 	}
+
 	
-	// Resets scroll position on every reload
-	if ('scrollRestoration' in history) {
-		history.scrollRestoration = 'manual'
-	}
+
 	
-	document.addEventListener('scroll', () => window.requestAnimationFrame(anim))
-	
-	
+
 
 
 
