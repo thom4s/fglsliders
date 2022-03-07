@@ -2683,6 +2683,8 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 @media (min-width: 880px) { .mod_content + .mod_content { margin-top: -110px; } }
 
+@media (max-width: 880px) { .mod_slider, .mod_slider--artworks { overflow: hidden; } }
+
 @media (min-width: 880px) { .mod_slider .mod_title, .mod_slider--artworks .mod_title { padding-top: 40px; } }
 
 @media (max-width: 880px) { .mod_slider .mod_title, .mod_slider--artworks .mod_title { margin-bottom: 10px; } }

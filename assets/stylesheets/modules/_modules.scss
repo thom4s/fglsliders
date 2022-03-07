@@ -389,6 +389,10 @@
 
 .mod_slider {
 	@extend %mb-9;
+	
+	@include up-to(medium) {
+		overflow: hidden;
+	}
 
 	.mod_title {
 		@extend %mb-3;
