@@ -2294,7 +2294,8 @@ ul.nice-menu > li.open > a { background-size: 1px 1em; box-shadow: inset 0 -0.06
 
 @media (min-width: 880px) { .c-expo-titles { margin-bottom: 105px; } }
 
-@media (max-width: 880px) { .c-expo-titles { margin-bottom: 25px; border-bottom: 1px solid #F0ECEC; padding-bottom: 20px; } }
+@media (max-width: 880px) { .c-expo-titles { margin-bottom: 20px; border-bottom: 1px solid #F0ECEC; padding-bottom: 15px; }
+  .c-expo-titles .c-opening-title { margin-bottom: 15px; } }
 
 /*--------------------------------------------------------------
 # Modules : 
@@ -4013,13 +4014,13 @@ body { overflow-y: scroll; -webkit-overflow-scrolling: touch; position: relative
 
 @media (max-width: 880px) { .scene:not(:last-child) { border-bottom: 1px solid #F0ECEC; margin-bottom: 42px; } }
 
-.page_header_visuel { position: relative; height: 375px; text-align: center; align-items: center; justify-content: center; }
+.page_header_visuel { position: relative; height: 375px; text-align: center; align-items: center; justify-content: center; margin-bottom: 55px; }
 
 .page_header_visuel img { max-height: 70%; }
 
 @media (max-width: 880px) { .page_header_visuel img { width: auto; } }
 
-@media (max-width: 880px) { .page_header_visuel { text-align: left; justify-content: flex-end; padding: 0 2em; height: 461px; }
+@media (max-width: 880px) { .page_header_visuel { text-align: left; justify-content: flex-end; padding: 0 2em; height: 461px; margin-bottom: 40px; }
   .page_header_visuel .meta-exposition { color: #fff; } }
 
 @media (min-width: 880px) { .page_header_visuel { height: 80vh; } }

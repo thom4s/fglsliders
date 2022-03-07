@@ -80,6 +80,7 @@ body {
     text-align: center;
     align-items: center;
     justify-content: center;
+    margin-bottom: 55px;
 
     img {
       max-height: 70%;
@@ -93,6 +94,7 @@ body {
       justify-content: flex-end;
       padding: 0 2em;
       height: 461px;
+      margin-bottom: 40px;
 
       .meta-exposition {
         color: $white;
